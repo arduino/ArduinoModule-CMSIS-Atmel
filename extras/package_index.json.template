@@ -1,0 +1,55 @@
+{
+  "packages":
+  [
+    {
+      "name": "Atmel SAM CMSIS headers",
+      "maintainer": "Arduino",
+      "email": "packages@arduino.cc",
+      "tools":
+      [
+        {
+          "name": "Atmel SAM headers",
+          "version": "%%VERSION%%",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/sam-geek/ArduinoModule-CMSIS-Atmel/releases/download/v%%VERSION%%/%%FILENAME%%",
+              "archiveFileName": "%%FILENAME%%",
+              "checksum": "SHA-256:%%CHECKSUM%%",
+              "size": "%%SIZE%%"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/sam-geek/ArduinoModule-CMSIS-Atmel/releases/download/v%%VERSION%%/%%FILENAME%%",
+              "archiveFileName": "%%FILENAME%%",
+              "checksum": "SHA-256:%%CHECKSUM%%",
+              "size": "%%SIZE%%"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/sam-geek/ArduinoModule-CMSIS-Atmel/releases/download/v%%VERSION%%/%%FILENAME%%",
+              "archiveFileName": "%%FILENAME%%",
+              "checksum": "SHA-256:%%CHECKSUM%%",
+              "size": "%%SIZE%%"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/sam-geek/ArduinoModule-CMSIS-Atmel/releases/download/v%%VERSION%%/%%FILENAME%%",
+              "archiveFileName": "%%FILENAME%%",
+              "checksum": "SHA-256:%%CHECKSUM%%",
+              "size": "%%SIZE%%"
+            },
+            {
+              "host": "all",
+              "url": "https://github.com/sam-geek/ArduinoModule-CMSIS-Atmel/releases/download/v%%VERSION%%/%%FILENAME%%",
+              "archiveFileName": "%%FILENAME%%",
+              "checksum": "SHA-256:%%CHECKSUM%%",
+              "size": "%%SIZE%%"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
