@@ -33,7 +33,7 @@ PACKAGE_FOLDER := CMSIS-Atmel
 
 ifeq (postpackaging,$(findstring $(MAKECMDGOALS),postpackaging))
   PACKAGE_FILENAME=$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2
-  PACKAGE_CHKSUM := $(firstword $(shell sha256sum "$(PACKAGE_FILENAME)"))
+  PACKAGE_CHKSUM := $(firstword $(shell shasum -a 256 "$(PACKAGE_FILENAME)"))
   PACKAGE_SIZE := $(firstword $(shell wc -c "$(PACKAGE_FILENAME)"))
 endif
 
