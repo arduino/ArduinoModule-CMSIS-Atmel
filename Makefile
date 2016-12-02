@@ -24,12 +24,12 @@ SHELL = /bin/sh
 
 ROOT_PATH := .
 
-PACKAGE_NAME := $(basename $(notdir $(CURDIR)))
+PACKAGE_NAME := CMSIS-Atmel
 PACKAGE_VERSION := 1.0.0
 
 # -----------------------------------------------------------------------------
 # packaging specific
-PACKAGE_FOLDER := module
+PACKAGE_FOLDER := CMSIS-Atmel
 
 ifeq (postpackaging,$(findstring $(MAKECMDGOALS),postpackaging))
   PACKAGE_FILENAME=$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2
@@ -48,7 +48,7 @@ endif
 all: clean print_info
 	@echo ----------------------------------------------------------
 	@echo "Packaging module."
-	tar --transform "s|module|$(PACKAGE_NAME)-$(PACKAGE_VERSION)|g" --exclude=.gitattributes --exclude=.travis.yml --exclude-vcs -cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2" "$(PACKAGE_FOLDER)"
+	tar --exclude=.gitattributes --exclude=.travis.yml --exclude=.git -cjf "$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2" "$(PACKAGE_FOLDER)"
 	$(MAKE) --no-builtin-rules postpackaging -C .
 	@echo ----------------------------------------------------------
 
