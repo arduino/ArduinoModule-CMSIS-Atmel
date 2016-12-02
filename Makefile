@@ -72,5 +72,4 @@ postpackaging:
 	@echo "PACKAGE_SIZE        = $(PACKAGE_SIZE)"
 	@echo "PACKAGE_FILENAME    = $(PACKAGE_FILENAME)"
 	cat extras/package_index.json.template | sed s/%%VERSION%%/$(PACKAGE_VERSION)/ | sed s/%%FILENAME%%/$(PACKAGE_FILENAME)/ | sed s/%%CHECKSUM%%/$(PACKAGE_CHKSUM)/ | sed s/%%SIZE%%/$(PACKAGE_SIZE)/ > package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json
-	cp package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json test_package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json
 	@echo "package_$(PACKAGE_NAME)_$(PACKAGE_VERSION)_index.json created"
