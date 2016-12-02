@@ -1,14 +1,5 @@
-{
-  "packages":
-  [
-    {
-      "name": "Atmel SAM CMSIS headers",
-      "maintainer": "Arduino",
-      "email": "packages@arduino.cc",
-      "tools":
-      [
         {
-          "name": "Atmel SAM headers",
+          "name": "CMSIS-Atmel",
           "version": "%%VERSION%%",
           "systems":
           [
@@ -49,7 +40,3 @@
             }
           ]
         }
-      ]
-    }
-  ]
-}
