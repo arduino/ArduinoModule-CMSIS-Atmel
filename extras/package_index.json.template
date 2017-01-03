@@ -32,6 +32,13 @@
               "size": "%%SIZE%%"
             },
             {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/arduino/ArduinoModule-CMSIS-Atmel/releases/download/v%%VERSION%%/%%FILENAME%%",
+              "archiveFileName": "%%FILENAME%%",
+              "checksum": "SHA-256:%%CHECKSUM%%",
+              "size": "%%SIZE%%"
+            },
+            {
               "host": "all",
               "url": "https://github.com/arduino/ArduinoModule-CMSIS-Atmel/releases/download/v%%VERSION%%/%%FILENAME%%",
               "archiveFileName": "%%FILENAME%%",
