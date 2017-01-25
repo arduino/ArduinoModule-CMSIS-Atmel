@@ -161,7 +161,53 @@
 #define SAMD21_SERIES (SAMD21J17 || SAMD21G17A || SAMD21E15B || SAMD21E15 || SAMD21E16 || SAMD21E17 || SAMD21E18 || SAMD21E16B || SAMD21J15 || SAMD21J16 || SAMD21G16 || SAMD21G17 || SAMD21G18A || SAMD21G15 || SAMD21G18 || SAMD21J18)
 
 /* Entire SAMD family */
-#define SAMD_SERIES ( SAMD10_SERIES || SAMD11_SERIES || SAMD21_SERIES)
+#define SAMD_SERIES (SAMD10_SERIES || SAMD11_SERIES || SAMD21_SERIES)
+
+/*
+ * ----------------------------------------------------------------------------
+ * SAML family
+ * ----------------------------------------------------------------------------
+ */
+
+/* SAML21 series */
+#define SAML21E18A ( \
+    part_is_defined( SAML21E18A ) )
+#define SAML21G18A ( \
+    part_is_defined( SAML21G18A ) )
+#define SAML21J18A ( \
+    part_is_defined( SAML21J18A ) )
+
+#define SAML21E15B ( \
+    part_is_defined( SAML21E15B ) )
+#define SAML21E16B ( \
+    part_is_defined( SAML21E16B ) )
+#define SAML21E17B ( \
+    part_is_defined( SAML21E17B ) )
+#define SAML21E18B ( \
+    part_is_defined( SAML21E18B ) )
+#define SAML21G16B ( \
+    part_is_defined( SAML21G16B ) )
+#define SAML21G17B ( \
+    part_is_defined( SAML21G17B ) )
+#define SAML21G18B ( \
+    part_is_defined( SAML21G18B ) )
+#define SAML21J16B ( \
+    part_is_defined( SAML21J16B ) )
+#define SAML21J17B ( \
+    part_is_defined( SAML21J17B ) )
+#define SAML21J18B ( \
+    part_is_defined( SAML21J18B ) )
+#define SAML21J18BU ( \
+    part_is_defined( SAML21J18BU ) )
+
+/* Entire SAML21A series */
+#define SAML21_SERIES (SAML21E18A || SAML21G18A || SAML21J18A)
+
+/* Entire SAML21B series */
+#define SAML21B_SERIES (SAML21E15B || SAML21E16B || SAML21E17B || SAML21E18B || SAML21G16B || SAML21G17B || SAML21G18B || SAML21J16B || SAML21J17B || SAML21J18B || SAML21J18BU)
+
+/* Entire SAMD family */
+#define SAML_SERIES (SAML21A_SERIES || SAML21B_SERIES)
 
 /*
  * ----------------------------------------------------------------------------
@@ -404,7 +450,7 @@
  * ----------------------------------------------------------------------------
  */
 
-#define SAM (SAM4_SERIES || SAMR_SERIES || SAM3_SERIES || SAMS_SERIES || SAME_SERIES || SAMD_SERIES || SAMG_SERIES)
+#define SAM (SAM4_SERIES || SAMR_SERIES || SAM3_SERIES || SAMS_SERIES || SAME_SERIES || SAMD_SERIES || SAML_SERIES || SAMG_SERIES)
 
 /*
  * ----------------------------------------------------------------------------
@@ -423,6 +469,10 @@
 #if SAMD_SERIES
 #include "samd.h"
 #endif /* SAMD_SERIES */
+
+#if SAML_SERIES
+#include "saml.h"
+#endif /* SAML_SERIES */
 
 #if SAMS_SERIES
 #include "sams.h"
