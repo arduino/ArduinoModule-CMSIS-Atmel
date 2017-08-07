@@ -29,7 +29,13 @@
 #ifndef _SAMD_INCLUDED_
 #define _SAMD_INCLUDED_
 
-#if defined (__SAMD20E14__)
+#if defined (__SAMD51P20A__)
+#include "samd51/include/samd51.h"
+#elif defined (__SAMD51G19A__)
+#include "samd51/include/samd51.h"
+#elif defined (__SAMD51J20A__)
+#include "samd51/include/samd51.h"
+#elif defined (__SAMD20E14__)
 #include "samd20/include/samd20.h"
 #elif defined (__SAMD20E15__)
 #include "samd20/include/samd20.h"
