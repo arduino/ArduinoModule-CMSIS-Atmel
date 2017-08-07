@@ -29,13 +29,7 @@
 #ifndef _SAMD_INCLUDED_
 #define _SAMD_INCLUDED_
 
-#if defined (__SAMD51P20A__)
-#include "samd51/include/samd51.h"
-#elif defined (__SAMD51G19A__)
-#include "samd51/include/samd51.h"
-#elif defined (__SAMD51J20A__)
-#include "samd51/include/samd51.h"
-#elif defined (__SAMD20E14__)
+#if defined (__SAMD20E14__)
 #include "samd20/include/samd20.h"
 #elif defined (__SAMD20E15__)
 #include "samd20/include/samd20.h"
@@ -141,6 +135,22 @@
 #include "samd11/include/samd11.h"
 #elif defined (__SAMD11D14AM__)
 #include "samd11/include/samd11.h"
+#elif defined (__SAMD51G18A__)
+#include "samd51/include/samd51.h"
+#elif defined (__SAMD51G19A__)
+#include "samd51/include/samd51.h"
+#elif defined (__SAMD51J19A__)
+#include "samd51/include/samd51.h"
+#elif defined (__SAMD51J20A__)
+#include "samd51/include/samd51.h"
+#elif defined (__SAMD51N19A__)
+#include "samd51/include/samd51.h"
+#elif defined (__SAMD51N20A__)
+#include "samd51/include/samd51.h"
+#elif defined (__SAMD51P19A__)
+#include "samd51/include/samd51.h"
+#elif defined (__SAMD51P20A__)
+#include "samd51/include/samd51.h"
 #endif
 
 #endif /* _SAMD_INCLUDED_ */
