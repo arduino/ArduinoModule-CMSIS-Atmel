@@ -58,22 +58,22 @@ typedef union {
 #define RSTC_RCAUSE_OFFSET          0x00         /**< \brief (RSTC_RCAUSE offset) Reset Cause */
 
 #define RSTC_RCAUSE_POR_Pos         0            /**< \brief (RSTC_RCAUSE) Power On Reset */
-#define RSTC_RCAUSE_POR             (_U(0x1) << RSTC_RCAUSE_POR_Pos)
+#define RSTC_RCAUSE_POR             (_Ul(0x1) << RSTC_RCAUSE_POR_Pos)
 #define RSTC_RCAUSE_BODCORE_Pos     1            /**< \brief (RSTC_RCAUSE) Brown Out CORE Detector Reset */
-#define RSTC_RCAUSE_BODCORE         (_U(0x1) << RSTC_RCAUSE_BODCORE_Pos)
+#define RSTC_RCAUSE_BODCORE         (_Ul(0x1) << RSTC_RCAUSE_BODCORE_Pos)
 #define RSTC_RCAUSE_BODVDD_Pos      2            /**< \brief (RSTC_RCAUSE) Brown Out VDD Detector Reset */
-#define RSTC_RCAUSE_BODVDD          (_U(0x1) << RSTC_RCAUSE_BODVDD_Pos)
+#define RSTC_RCAUSE_BODVDD          (_Ul(0x1) << RSTC_RCAUSE_BODVDD_Pos)
 #define RSTC_RCAUSE_NVM_Pos         3            /**< \brief (RSTC_RCAUSE) NVM Reset */
-#define RSTC_RCAUSE_NVM             (_U(0x1) << RSTC_RCAUSE_NVM_Pos)
+#define RSTC_RCAUSE_NVM             (_Ul(0x1) << RSTC_RCAUSE_NVM_Pos)
 #define RSTC_RCAUSE_EXT_Pos         4            /**< \brief (RSTC_RCAUSE) External Reset */
-#define RSTC_RCAUSE_EXT             (_U(0x1) << RSTC_RCAUSE_EXT_Pos)
+#define RSTC_RCAUSE_EXT             (_Ul(0x1) << RSTC_RCAUSE_EXT_Pos)
 #define RSTC_RCAUSE_WDT_Pos         5            /**< \brief (RSTC_RCAUSE) Watchdog Reset */
-#define RSTC_RCAUSE_WDT             (_U(0x1) << RSTC_RCAUSE_WDT_Pos)
+#define RSTC_RCAUSE_WDT             (_Ul(0x1) << RSTC_RCAUSE_WDT_Pos)
 #define RSTC_RCAUSE_SYST_Pos        6            /**< \brief (RSTC_RCAUSE) System Reset Request */
-#define RSTC_RCAUSE_SYST            (_U(0x1) << RSTC_RCAUSE_SYST_Pos)
+#define RSTC_RCAUSE_SYST            (_Ul(0x1) << RSTC_RCAUSE_SYST_Pos)
 #define RSTC_RCAUSE_BACKUP_Pos      7            /**< \brief (RSTC_RCAUSE) Backup Reset */
-#define RSTC_RCAUSE_BACKUP          (_U(0x1) << RSTC_RCAUSE_BACKUP_Pos)
-#define RSTC_RCAUSE_MASK            _U(0xFF)     /**< \brief (RSTC_RCAUSE) MASK Register */
+#define RSTC_RCAUSE_BACKUP          (_Ul(0x1) << RSTC_RCAUSE_BACKUP_Pos)
+#define RSTC_RCAUSE_MASK            _Ul(0xFF)     /**< \brief (RSTC_RCAUSE) MASK Register */
 
 /* -------- RSTC_BKUPEXIT : (RSTC Offset: 0x02) (R/   8) Backup Exit Source -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -90,17 +90,17 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define RSTC_BKUPEXIT_OFFSET        0x02         /**< \brief (RSTC_BKUPEXIT offset) Backup Exit Source */
-#define RSTC_BKUPEXIT_RESETVALUE    _U(0x00)     /**< \brief (RSTC_BKUPEXIT reset_value) Backup Exit Source */
+#define RSTC_BKUPEXIT_RESETVALUE    _Ul(0x00)     /**< \brief (RSTC_BKUPEXIT reset_value) Backup Exit Source */
 
 #define RSTC_BKUPEXIT_EXTWAKE_Pos   0            /**< \brief (RSTC_BKUPEXIT) External Wakeup */
-#define RSTC_BKUPEXIT_EXTWAKE       (_U(0x1) << RSTC_BKUPEXIT_EXTWAKE_Pos)
+#define RSTC_BKUPEXIT_EXTWAKE       (_Ul(0x1) << RSTC_BKUPEXIT_EXTWAKE_Pos)
 #define RSTC_BKUPEXIT_RTC_Pos       1            /**< \brief (RSTC_BKUPEXIT) Real Timer Counter Interrupt */
-#define RSTC_BKUPEXIT_RTC           (_U(0x1) << RSTC_BKUPEXIT_RTC_Pos)
+#define RSTC_BKUPEXIT_RTC           (_Ul(0x1) << RSTC_BKUPEXIT_RTC_Pos)
 #define RSTC_BKUPEXIT_BBPS_Pos      2            /**< \brief (RSTC_BKUPEXIT) Battery Backup Power Switch */
-#define RSTC_BKUPEXIT_BBPS          (_U(0x1) << RSTC_BKUPEXIT_BBPS_Pos)
+#define RSTC_BKUPEXIT_BBPS          (_Ul(0x1) << RSTC_BKUPEXIT_BBPS_Pos)
 #define RSTC_BKUPEXIT_HIB_Pos       7            /**< \brief (RSTC_BKUPEXIT) Hibernate */
-#define RSTC_BKUPEXIT_HIB           (_U(0x1) << RSTC_BKUPEXIT_HIB_Pos)
-#define RSTC_BKUPEXIT_MASK          _U(0x87)     /**< \brief (RSTC_BKUPEXIT) MASK Register */
+#define RSTC_BKUPEXIT_HIB           (_Ul(0x1) << RSTC_BKUPEXIT_HIB_Pos)
+#define RSTC_BKUPEXIT_MASK          _Ul(0x87)     /**< \brief (RSTC_BKUPEXIT) MASK Register */
 
 /** \brief RSTC hardware registers */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))

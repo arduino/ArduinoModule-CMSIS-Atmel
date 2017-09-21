@@ -55,16 +55,16 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_EVCTRL_OFFSET       0x00         /**< \brief (OSCCTRL_EVCTRL offset) Event Control */
-#define OSCCTRL_EVCTRL_RESETVALUE   _U(0x00)     /**< \brief (OSCCTRL_EVCTRL reset_value) Event Control */
+#define OSCCTRL_EVCTRL_RESETVALUE   _Ul(0x00)     /**< \brief (OSCCTRL_EVCTRL reset_value) Event Control */
 
 #define OSCCTRL_EVCTRL_CFDEO0_Pos   0            /**< \brief (OSCCTRL_EVCTRL) Clock 0 Failure Detector Event Output Enable */
 #define OSCCTRL_EVCTRL_CFDEO0       (1 << OSCCTRL_EVCTRL_CFDEO0_Pos)
 #define OSCCTRL_EVCTRL_CFDEO1_Pos   1            /**< \brief (OSCCTRL_EVCTRL) Clock 1 Failure Detector Event Output Enable */
 #define OSCCTRL_EVCTRL_CFDEO1       (1 << OSCCTRL_EVCTRL_CFDEO1_Pos)
 #define OSCCTRL_EVCTRL_CFDEO_Pos    0            /**< \brief (OSCCTRL_EVCTRL) Clock x Failure Detector Event Output Enable */
-#define OSCCTRL_EVCTRL_CFDEO_Msk    (_U(0x3) << OSCCTRL_EVCTRL_CFDEO_Pos)
+#define OSCCTRL_EVCTRL_CFDEO_Msk    (_Ul(0x3) << OSCCTRL_EVCTRL_CFDEO_Pos)
 #define OSCCTRL_EVCTRL_CFDEO(value) (OSCCTRL_EVCTRL_CFDEO_Msk & ((value) << OSCCTRL_EVCTRL_CFDEO_Pos))
-#define OSCCTRL_EVCTRL_MASK         _U(0x03)     /**< \brief (OSCCTRL_EVCTRL) MASK Register */
+#define OSCCTRL_EVCTRL_MASK         _Ul(0x03)     /**< \brief (OSCCTRL_EVCTRL) MASK Register */
 
 /* -------- OSCCTRL_INTENCLR : (OSCCTRL Offset: 0x04) (R/W 32) Interrupt Enable Clear -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -102,49 +102,49 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_INTENCLR_OFFSET     0x04         /**< \brief (OSCCTRL_INTENCLR offset) Interrupt Enable Clear */
-#define OSCCTRL_INTENCLR_RESETVALUE _U(0x00000000) /**< \brief (OSCCTRL_INTENCLR reset_value) Interrupt Enable Clear */
+#define OSCCTRL_INTENCLR_RESETVALUE _Ul(0x00000000) /**< \brief (OSCCTRL_INTENCLR reset_value) Interrupt Enable Clear */
 
 #define OSCCTRL_INTENCLR_XOSCRDY0_Pos 0            /**< \brief (OSCCTRL_INTENCLR) XOSC 0 Ready Interrupt Enable */
 #define OSCCTRL_INTENCLR_XOSCRDY0   (1 << OSCCTRL_INTENCLR_XOSCRDY0_Pos)
 #define OSCCTRL_INTENCLR_XOSCRDY1_Pos 1            /**< \brief (OSCCTRL_INTENCLR) XOSC 1 Ready Interrupt Enable */
 #define OSCCTRL_INTENCLR_XOSCRDY1   (1 << OSCCTRL_INTENCLR_XOSCRDY1_Pos)
 #define OSCCTRL_INTENCLR_XOSCRDY_Pos 0            /**< \brief (OSCCTRL_INTENCLR) XOSC x Ready Interrupt Enable */
-#define OSCCTRL_INTENCLR_XOSCRDY_Msk (_U(0x3) << OSCCTRL_INTENCLR_XOSCRDY_Pos)
+#define OSCCTRL_INTENCLR_XOSCRDY_Msk (_Ul(0x3) << OSCCTRL_INTENCLR_XOSCRDY_Pos)
 #define OSCCTRL_INTENCLR_XOSCRDY(value) (OSCCTRL_INTENCLR_XOSCRDY_Msk & ((value) << OSCCTRL_INTENCLR_XOSCRDY_Pos))
 #define OSCCTRL_INTENCLR_XOSCFAIL0_Pos 2            /**< \brief (OSCCTRL_INTENCLR) XOSC 0 Clock Failure Detector Interrupt Enable */
 #define OSCCTRL_INTENCLR_XOSCFAIL0  (1 << OSCCTRL_INTENCLR_XOSCFAIL0_Pos)
 #define OSCCTRL_INTENCLR_XOSCFAIL1_Pos 3            /**< \brief (OSCCTRL_INTENCLR) XOSC 1 Clock Failure Detector Interrupt Enable */
 #define OSCCTRL_INTENCLR_XOSCFAIL1  (1 << OSCCTRL_INTENCLR_XOSCFAIL1_Pos)
 #define OSCCTRL_INTENCLR_XOSCFAIL_Pos 2            /**< \brief (OSCCTRL_INTENCLR) XOSC x Clock Failure Detector Interrupt Enable */
-#define OSCCTRL_INTENCLR_XOSCFAIL_Msk (_U(0x3) << OSCCTRL_INTENCLR_XOSCFAIL_Pos)
+#define OSCCTRL_INTENCLR_XOSCFAIL_Msk (_Ul(0x3) << OSCCTRL_INTENCLR_XOSCFAIL_Pos)
 #define OSCCTRL_INTENCLR_XOSCFAIL(value) (OSCCTRL_INTENCLR_XOSCFAIL_Msk & ((value) << OSCCTRL_INTENCLR_XOSCFAIL_Pos))
 #define OSCCTRL_INTENCLR_DFLLRDY_Pos 8            /**< \brief (OSCCTRL_INTENCLR) DFLL Ready Interrupt Enable */
-#define OSCCTRL_INTENCLR_DFLLRDY    (_U(0x1) << OSCCTRL_INTENCLR_DFLLRDY_Pos)
+#define OSCCTRL_INTENCLR_DFLLRDY    (_Ul(0x1) << OSCCTRL_INTENCLR_DFLLRDY_Pos)
 #define OSCCTRL_INTENCLR_DFLLOOB_Pos 9            /**< \brief (OSCCTRL_INTENCLR) DFLL Out Of Bounds Interrupt Enable */
-#define OSCCTRL_INTENCLR_DFLLOOB    (_U(0x1) << OSCCTRL_INTENCLR_DFLLOOB_Pos)
+#define OSCCTRL_INTENCLR_DFLLOOB    (_Ul(0x1) << OSCCTRL_INTENCLR_DFLLOOB_Pos)
 #define OSCCTRL_INTENCLR_DFLLLCKF_Pos 10           /**< \brief (OSCCTRL_INTENCLR) DFLL Lock Fine Interrupt Enable */
-#define OSCCTRL_INTENCLR_DFLLLCKF   (_U(0x1) << OSCCTRL_INTENCLR_DFLLLCKF_Pos)
+#define OSCCTRL_INTENCLR_DFLLLCKF   (_Ul(0x1) << OSCCTRL_INTENCLR_DFLLLCKF_Pos)
 #define OSCCTRL_INTENCLR_DFLLLCKC_Pos 11           /**< \brief (OSCCTRL_INTENCLR) DFLL Lock Coarse Interrupt Enable */
-#define OSCCTRL_INTENCLR_DFLLLCKC   (_U(0x1) << OSCCTRL_INTENCLR_DFLLLCKC_Pos)
+#define OSCCTRL_INTENCLR_DFLLLCKC   (_Ul(0x1) << OSCCTRL_INTENCLR_DFLLLCKC_Pos)
 #define OSCCTRL_INTENCLR_DFLLRCS_Pos 12           /**< \brief (OSCCTRL_INTENCLR) DFLL Reference Clock Stopped Interrupt Enable */
-#define OSCCTRL_INTENCLR_DFLLRCS    (_U(0x1) << OSCCTRL_INTENCLR_DFLLRCS_Pos)
+#define OSCCTRL_INTENCLR_DFLLRCS    (_Ul(0x1) << OSCCTRL_INTENCLR_DFLLRCS_Pos)
 #define OSCCTRL_INTENCLR_DPLL0LCKR_Pos 16           /**< \brief (OSCCTRL_INTENCLR) DPLL0 Lock Rise Interrupt Enable */
-#define OSCCTRL_INTENCLR_DPLL0LCKR  (_U(0x1) << OSCCTRL_INTENCLR_DPLL0LCKR_Pos)
+#define OSCCTRL_INTENCLR_DPLL0LCKR  (_Ul(0x1) << OSCCTRL_INTENCLR_DPLL0LCKR_Pos)
 #define OSCCTRL_INTENCLR_DPLL0LCKF_Pos 17           /**< \brief (OSCCTRL_INTENCLR) DPLL0 Lock Fall Interrupt Enable */
-#define OSCCTRL_INTENCLR_DPLL0LCKF  (_U(0x1) << OSCCTRL_INTENCLR_DPLL0LCKF_Pos)
+#define OSCCTRL_INTENCLR_DPLL0LCKF  (_Ul(0x1) << OSCCTRL_INTENCLR_DPLL0LCKF_Pos)
 #define OSCCTRL_INTENCLR_DPLL0LTO_Pos 18           /**< \brief (OSCCTRL_INTENCLR) DPLL0 Lock Timeout Interrupt Enable */
-#define OSCCTRL_INTENCLR_DPLL0LTO   (_U(0x1) << OSCCTRL_INTENCLR_DPLL0LTO_Pos)
+#define OSCCTRL_INTENCLR_DPLL0LTO   (_Ul(0x1) << OSCCTRL_INTENCLR_DPLL0LTO_Pos)
 #define OSCCTRL_INTENCLR_DPLL0LDRTO_Pos 19           /**< \brief (OSCCTRL_INTENCLR) DPLL0 Loop Divider Ratio Update Complete Interrupt Enable */
-#define OSCCTRL_INTENCLR_DPLL0LDRTO (_U(0x1) << OSCCTRL_INTENCLR_DPLL0LDRTO_Pos)
+#define OSCCTRL_INTENCLR_DPLL0LDRTO (_Ul(0x1) << OSCCTRL_INTENCLR_DPLL0LDRTO_Pos)
 #define OSCCTRL_INTENCLR_DPLL1LCKR_Pos 24           /**< \brief (OSCCTRL_INTENCLR) DPLL1 Lock Rise Interrupt Enable */
-#define OSCCTRL_INTENCLR_DPLL1LCKR  (_U(0x1) << OSCCTRL_INTENCLR_DPLL1LCKR_Pos)
+#define OSCCTRL_INTENCLR_DPLL1LCKR  (_Ul(0x1) << OSCCTRL_INTENCLR_DPLL1LCKR_Pos)
 #define OSCCTRL_INTENCLR_DPLL1LCKF_Pos 25           /**< \brief (OSCCTRL_INTENCLR) DPLL1 Lock Fall Interrupt Enable */
-#define OSCCTRL_INTENCLR_DPLL1LCKF  (_U(0x1) << OSCCTRL_INTENCLR_DPLL1LCKF_Pos)
+#define OSCCTRL_INTENCLR_DPLL1LCKF  (_Ul(0x1) << OSCCTRL_INTENCLR_DPLL1LCKF_Pos)
 #define OSCCTRL_INTENCLR_DPLL1LTO_Pos 26           /**< \brief (OSCCTRL_INTENCLR) DPLL1 Lock Timeout Interrupt Enable */
-#define OSCCTRL_INTENCLR_DPLL1LTO   (_U(0x1) << OSCCTRL_INTENCLR_DPLL1LTO_Pos)
+#define OSCCTRL_INTENCLR_DPLL1LTO   (_Ul(0x1) << OSCCTRL_INTENCLR_DPLL1LTO_Pos)
 #define OSCCTRL_INTENCLR_DPLL1LDRTO_Pos 27           /**< \brief (OSCCTRL_INTENCLR) DPLL1 Loop Divider Ratio Update Complete Interrupt Enable */
-#define OSCCTRL_INTENCLR_DPLL1LDRTO (_U(0x1) << OSCCTRL_INTENCLR_DPLL1LDRTO_Pos)
-#define OSCCTRL_INTENCLR_MASK       _U(0x0F0F1F0F) /**< \brief (OSCCTRL_INTENCLR) MASK Register */
+#define OSCCTRL_INTENCLR_DPLL1LDRTO (_Ul(0x1) << OSCCTRL_INTENCLR_DPLL1LDRTO_Pos)
+#define OSCCTRL_INTENCLR_MASK       _Ul(0x0F0F1F0F) /**< \brief (OSCCTRL_INTENCLR) MASK Register */
 
 /* -------- OSCCTRL_INTENSET : (OSCCTRL Offset: 0x08) (R/W 32) Interrupt Enable Set -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -182,49 +182,49 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_INTENSET_OFFSET     0x08         /**< \brief (OSCCTRL_INTENSET offset) Interrupt Enable Set */
-#define OSCCTRL_INTENSET_RESETVALUE _U(0x00000000) /**< \brief (OSCCTRL_INTENSET reset_value) Interrupt Enable Set */
+#define OSCCTRL_INTENSET_RESETVALUE _Ul(0x00000000) /**< \brief (OSCCTRL_INTENSET reset_value) Interrupt Enable Set */
 
 #define OSCCTRL_INTENSET_XOSCRDY0_Pos 0            /**< \brief (OSCCTRL_INTENSET) XOSC 0 Ready Interrupt Enable */
 #define OSCCTRL_INTENSET_XOSCRDY0   (1 << OSCCTRL_INTENSET_XOSCRDY0_Pos)
 #define OSCCTRL_INTENSET_XOSCRDY1_Pos 1            /**< \brief (OSCCTRL_INTENSET) XOSC 1 Ready Interrupt Enable */
 #define OSCCTRL_INTENSET_XOSCRDY1   (1 << OSCCTRL_INTENSET_XOSCRDY1_Pos)
 #define OSCCTRL_INTENSET_XOSCRDY_Pos 0            /**< \brief (OSCCTRL_INTENSET) XOSC x Ready Interrupt Enable */
-#define OSCCTRL_INTENSET_XOSCRDY_Msk (_U(0x3) << OSCCTRL_INTENSET_XOSCRDY_Pos)
+#define OSCCTRL_INTENSET_XOSCRDY_Msk (_Ul(0x3) << OSCCTRL_INTENSET_XOSCRDY_Pos)
 #define OSCCTRL_INTENSET_XOSCRDY(value) (OSCCTRL_INTENSET_XOSCRDY_Msk & ((value) << OSCCTRL_INTENSET_XOSCRDY_Pos))
 #define OSCCTRL_INTENSET_XOSCFAIL0_Pos 2            /**< \brief (OSCCTRL_INTENSET) XOSC 0 Clock Failure Detector Interrupt Enable */
 #define OSCCTRL_INTENSET_XOSCFAIL0  (1 << OSCCTRL_INTENSET_XOSCFAIL0_Pos)
 #define OSCCTRL_INTENSET_XOSCFAIL1_Pos 3            /**< \brief (OSCCTRL_INTENSET) XOSC 1 Clock Failure Detector Interrupt Enable */
 #define OSCCTRL_INTENSET_XOSCFAIL1  (1 << OSCCTRL_INTENSET_XOSCFAIL1_Pos)
 #define OSCCTRL_INTENSET_XOSCFAIL_Pos 2            /**< \brief (OSCCTRL_INTENSET) XOSC x Clock Failure Detector Interrupt Enable */
-#define OSCCTRL_INTENSET_XOSCFAIL_Msk (_U(0x3) << OSCCTRL_INTENSET_XOSCFAIL_Pos)
+#define OSCCTRL_INTENSET_XOSCFAIL_Msk (_Ul(0x3) << OSCCTRL_INTENSET_XOSCFAIL_Pos)
 #define OSCCTRL_INTENSET_XOSCFAIL(value) (OSCCTRL_INTENSET_XOSCFAIL_Msk & ((value) << OSCCTRL_INTENSET_XOSCFAIL_Pos))
 #define OSCCTRL_INTENSET_DFLLRDY_Pos 8            /**< \brief (OSCCTRL_INTENSET) DFLL Ready Interrupt Enable */
-#define OSCCTRL_INTENSET_DFLLRDY    (_U(0x1) << OSCCTRL_INTENSET_DFLLRDY_Pos)
+#define OSCCTRL_INTENSET_DFLLRDY    (_Ul(0x1) << OSCCTRL_INTENSET_DFLLRDY_Pos)
 #define OSCCTRL_INTENSET_DFLLOOB_Pos 9            /**< \brief (OSCCTRL_INTENSET) DFLL Out Of Bounds Interrupt Enable */
-#define OSCCTRL_INTENSET_DFLLOOB    (_U(0x1) << OSCCTRL_INTENSET_DFLLOOB_Pos)
+#define OSCCTRL_INTENSET_DFLLOOB    (_Ul(0x1) << OSCCTRL_INTENSET_DFLLOOB_Pos)
 #define OSCCTRL_INTENSET_DFLLLCKF_Pos 10           /**< \brief (OSCCTRL_INTENSET) DFLL Lock Fine Interrupt Enable */
-#define OSCCTRL_INTENSET_DFLLLCKF   (_U(0x1) << OSCCTRL_INTENSET_DFLLLCKF_Pos)
+#define OSCCTRL_INTENSET_DFLLLCKF   (_Ul(0x1) << OSCCTRL_INTENSET_DFLLLCKF_Pos)
 #define OSCCTRL_INTENSET_DFLLLCKC_Pos 11           /**< \brief (OSCCTRL_INTENSET) DFLL Lock Coarse Interrupt Enable */
-#define OSCCTRL_INTENSET_DFLLLCKC   (_U(0x1) << OSCCTRL_INTENSET_DFLLLCKC_Pos)
+#define OSCCTRL_INTENSET_DFLLLCKC   (_Ul(0x1) << OSCCTRL_INTENSET_DFLLLCKC_Pos)
 #define OSCCTRL_INTENSET_DFLLRCS_Pos 12           /**< \brief (OSCCTRL_INTENSET) DFLL Reference Clock Stopped Interrupt Enable */
-#define OSCCTRL_INTENSET_DFLLRCS    (_U(0x1) << OSCCTRL_INTENSET_DFLLRCS_Pos)
+#define OSCCTRL_INTENSET_DFLLRCS    (_Ul(0x1) << OSCCTRL_INTENSET_DFLLRCS_Pos)
 #define OSCCTRL_INTENSET_DPLL0LCKR_Pos 16           /**< \brief (OSCCTRL_INTENSET) DPLL0 Lock Rise Interrupt Enable */
-#define OSCCTRL_INTENSET_DPLL0LCKR  (_U(0x1) << OSCCTRL_INTENSET_DPLL0LCKR_Pos)
+#define OSCCTRL_INTENSET_DPLL0LCKR  (_Ul(0x1) << OSCCTRL_INTENSET_DPLL0LCKR_Pos)
 #define OSCCTRL_INTENSET_DPLL0LCKF_Pos 17           /**< \brief (OSCCTRL_INTENSET) DPLL0 Lock Fall Interrupt Enable */
-#define OSCCTRL_INTENSET_DPLL0LCKF  (_U(0x1) << OSCCTRL_INTENSET_DPLL0LCKF_Pos)
+#define OSCCTRL_INTENSET_DPLL0LCKF  (_Ul(0x1) << OSCCTRL_INTENSET_DPLL0LCKF_Pos)
 #define OSCCTRL_INTENSET_DPLL0LTO_Pos 18           /**< \brief (OSCCTRL_INTENSET) DPLL0 Lock Timeout Interrupt Enable */
-#define OSCCTRL_INTENSET_DPLL0LTO   (_U(0x1) << OSCCTRL_INTENSET_DPLL0LTO_Pos)
+#define OSCCTRL_INTENSET_DPLL0LTO   (_Ul(0x1) << OSCCTRL_INTENSET_DPLL0LTO_Pos)
 #define OSCCTRL_INTENSET_DPLL0LDRTO_Pos 19           /**< \brief (OSCCTRL_INTENSET) DPLL0 Loop Divider Ratio Update Complete Interrupt Enable */
-#define OSCCTRL_INTENSET_DPLL0LDRTO (_U(0x1) << OSCCTRL_INTENSET_DPLL0LDRTO_Pos)
+#define OSCCTRL_INTENSET_DPLL0LDRTO (_Ul(0x1) << OSCCTRL_INTENSET_DPLL0LDRTO_Pos)
 #define OSCCTRL_INTENSET_DPLL1LCKR_Pos 24           /**< \brief (OSCCTRL_INTENSET) DPLL1 Lock Rise Interrupt Enable */
-#define OSCCTRL_INTENSET_DPLL1LCKR  (_U(0x1) << OSCCTRL_INTENSET_DPLL1LCKR_Pos)
+#define OSCCTRL_INTENSET_DPLL1LCKR  (_Ul(0x1) << OSCCTRL_INTENSET_DPLL1LCKR_Pos)
 #define OSCCTRL_INTENSET_DPLL1LCKF_Pos 25           /**< \brief (OSCCTRL_INTENSET) DPLL1 Lock Fall Interrupt Enable */
-#define OSCCTRL_INTENSET_DPLL1LCKF  (_U(0x1) << OSCCTRL_INTENSET_DPLL1LCKF_Pos)
+#define OSCCTRL_INTENSET_DPLL1LCKF  (_Ul(0x1) << OSCCTRL_INTENSET_DPLL1LCKF_Pos)
 #define OSCCTRL_INTENSET_DPLL1LTO_Pos 26           /**< \brief (OSCCTRL_INTENSET) DPLL1 Lock Timeout Interrupt Enable */
-#define OSCCTRL_INTENSET_DPLL1LTO   (_U(0x1) << OSCCTRL_INTENSET_DPLL1LTO_Pos)
+#define OSCCTRL_INTENSET_DPLL1LTO   (_Ul(0x1) << OSCCTRL_INTENSET_DPLL1LTO_Pos)
 #define OSCCTRL_INTENSET_DPLL1LDRTO_Pos 27           /**< \brief (OSCCTRL_INTENSET) DPLL1 Loop Divider Ratio Update Complete Interrupt Enable */
-#define OSCCTRL_INTENSET_DPLL1LDRTO (_U(0x1) << OSCCTRL_INTENSET_DPLL1LDRTO_Pos)
-#define OSCCTRL_INTENSET_MASK       _U(0x0F0F1F0F) /**< \brief (OSCCTRL_INTENSET) MASK Register */
+#define OSCCTRL_INTENSET_DPLL1LDRTO (_Ul(0x1) << OSCCTRL_INTENSET_DPLL1LDRTO_Pos)
+#define OSCCTRL_INTENSET_MASK       _Ul(0x0F0F1F0F) /**< \brief (OSCCTRL_INTENSET) MASK Register */
 
 /* -------- OSCCTRL_INTFLAG : (OSCCTRL Offset: 0x0C) (R/W 32) Interrupt Flag Status and Clear -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -262,49 +262,49 @@ typedef union { // __I to avoid read-modify-write on write-to-clear register
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_INTFLAG_OFFSET      0x0C         /**< \brief (OSCCTRL_INTFLAG offset) Interrupt Flag Status and Clear */
-#define OSCCTRL_INTFLAG_RESETVALUE  _U(0x00000000) /**< \brief (OSCCTRL_INTFLAG reset_value) Interrupt Flag Status and Clear */
+#define OSCCTRL_INTFLAG_RESETVALUE  _Ul(0x00000000) /**< \brief (OSCCTRL_INTFLAG reset_value) Interrupt Flag Status and Clear */
 
 #define OSCCTRL_INTFLAG_XOSCRDY0_Pos 0            /**< \brief (OSCCTRL_INTFLAG) XOSC 0 Ready */
 #define OSCCTRL_INTFLAG_XOSCRDY0    (1 << OSCCTRL_INTFLAG_XOSCRDY0_Pos)
 #define OSCCTRL_INTFLAG_XOSCRDY1_Pos 1            /**< \brief (OSCCTRL_INTFLAG) XOSC 1 Ready */
 #define OSCCTRL_INTFLAG_XOSCRDY1    (1 << OSCCTRL_INTFLAG_XOSCRDY1_Pos)
 #define OSCCTRL_INTFLAG_XOSCRDY_Pos 0            /**< \brief (OSCCTRL_INTFLAG) XOSC x Ready */
-#define OSCCTRL_INTFLAG_XOSCRDY_Msk (_U(0x3) << OSCCTRL_INTFLAG_XOSCRDY_Pos)
+#define OSCCTRL_INTFLAG_XOSCRDY_Msk (_Ul(0x3) << OSCCTRL_INTFLAG_XOSCRDY_Pos)
 #define OSCCTRL_INTFLAG_XOSCRDY(value) (OSCCTRL_INTFLAG_XOSCRDY_Msk & ((value) << OSCCTRL_INTFLAG_XOSCRDY_Pos))
 #define OSCCTRL_INTFLAG_XOSCFAIL0_Pos 2            /**< \brief (OSCCTRL_INTFLAG) XOSC 0 Clock Failure Detector */
 #define OSCCTRL_INTFLAG_XOSCFAIL0   (1 << OSCCTRL_INTFLAG_XOSCFAIL0_Pos)
 #define OSCCTRL_INTFLAG_XOSCFAIL1_Pos 3            /**< \brief (OSCCTRL_INTFLAG) XOSC 1 Clock Failure Detector */
 #define OSCCTRL_INTFLAG_XOSCFAIL1   (1 << OSCCTRL_INTFLAG_XOSCFAIL1_Pos)
 #define OSCCTRL_INTFLAG_XOSCFAIL_Pos 2            /**< \brief (OSCCTRL_INTFLAG) XOSC x Clock Failure Detector */
-#define OSCCTRL_INTFLAG_XOSCFAIL_Msk (_U(0x3) << OSCCTRL_INTFLAG_XOSCFAIL_Pos)
+#define OSCCTRL_INTFLAG_XOSCFAIL_Msk (_Ul(0x3) << OSCCTRL_INTFLAG_XOSCFAIL_Pos)
 #define OSCCTRL_INTFLAG_XOSCFAIL(value) (OSCCTRL_INTFLAG_XOSCFAIL_Msk & ((value) << OSCCTRL_INTFLAG_XOSCFAIL_Pos))
 #define OSCCTRL_INTFLAG_DFLLRDY_Pos 8            /**< \brief (OSCCTRL_INTFLAG) DFLL Ready */
-#define OSCCTRL_INTFLAG_DFLLRDY     (_U(0x1) << OSCCTRL_INTFLAG_DFLLRDY_Pos)
+#define OSCCTRL_INTFLAG_DFLLRDY     (_Ul(0x1) << OSCCTRL_INTFLAG_DFLLRDY_Pos)
 #define OSCCTRL_INTFLAG_DFLLOOB_Pos 9            /**< \brief (OSCCTRL_INTFLAG) DFLL Out Of Bounds */
-#define OSCCTRL_INTFLAG_DFLLOOB     (_U(0x1) << OSCCTRL_INTFLAG_DFLLOOB_Pos)
+#define OSCCTRL_INTFLAG_DFLLOOB     (_Ul(0x1) << OSCCTRL_INTFLAG_DFLLOOB_Pos)
 #define OSCCTRL_INTFLAG_DFLLLCKF_Pos 10           /**< \brief (OSCCTRL_INTFLAG) DFLL Lock Fine */
-#define OSCCTRL_INTFLAG_DFLLLCKF    (_U(0x1) << OSCCTRL_INTFLAG_DFLLLCKF_Pos)
+#define OSCCTRL_INTFLAG_DFLLLCKF    (_Ul(0x1) << OSCCTRL_INTFLAG_DFLLLCKF_Pos)
 #define OSCCTRL_INTFLAG_DFLLLCKC_Pos 11           /**< \brief (OSCCTRL_INTFLAG) DFLL Lock Coarse */
-#define OSCCTRL_INTFLAG_DFLLLCKC    (_U(0x1) << OSCCTRL_INTFLAG_DFLLLCKC_Pos)
+#define OSCCTRL_INTFLAG_DFLLLCKC    (_Ul(0x1) << OSCCTRL_INTFLAG_DFLLLCKC_Pos)
 #define OSCCTRL_INTFLAG_DFLLRCS_Pos 12           /**< \brief (OSCCTRL_INTFLAG) DFLL Reference Clock Stopped */
-#define OSCCTRL_INTFLAG_DFLLRCS     (_U(0x1) << OSCCTRL_INTFLAG_DFLLRCS_Pos)
+#define OSCCTRL_INTFLAG_DFLLRCS     (_Ul(0x1) << OSCCTRL_INTFLAG_DFLLRCS_Pos)
 #define OSCCTRL_INTFLAG_DPLL0LCKR_Pos 16           /**< \brief (OSCCTRL_INTFLAG) DPLL0 Lock Rise */
-#define OSCCTRL_INTFLAG_DPLL0LCKR   (_U(0x1) << OSCCTRL_INTFLAG_DPLL0LCKR_Pos)
+#define OSCCTRL_INTFLAG_DPLL0LCKR   (_Ul(0x1) << OSCCTRL_INTFLAG_DPLL0LCKR_Pos)
 #define OSCCTRL_INTFLAG_DPLL0LCKF_Pos 17           /**< \brief (OSCCTRL_INTFLAG) DPLL0 Lock Fall */
-#define OSCCTRL_INTFLAG_DPLL0LCKF   (_U(0x1) << OSCCTRL_INTFLAG_DPLL0LCKF_Pos)
+#define OSCCTRL_INTFLAG_DPLL0LCKF   (_Ul(0x1) << OSCCTRL_INTFLAG_DPLL0LCKF_Pos)
 #define OSCCTRL_INTFLAG_DPLL0LTO_Pos 18           /**< \brief (OSCCTRL_INTFLAG) DPLL0 Lock Timeout */
-#define OSCCTRL_INTFLAG_DPLL0LTO    (_U(0x1) << OSCCTRL_INTFLAG_DPLL0LTO_Pos)
+#define OSCCTRL_INTFLAG_DPLL0LTO    (_Ul(0x1) << OSCCTRL_INTFLAG_DPLL0LTO_Pos)
 #define OSCCTRL_INTFLAG_DPLL0LDRTO_Pos 19           /**< \brief (OSCCTRL_INTFLAG) DPLL0 Loop Divider Ratio Update Complete */
-#define OSCCTRL_INTFLAG_DPLL0LDRTO  (_U(0x1) << OSCCTRL_INTFLAG_DPLL0LDRTO_Pos)
+#define OSCCTRL_INTFLAG_DPLL0LDRTO  (_Ul(0x1) << OSCCTRL_INTFLAG_DPLL0LDRTO_Pos)
 #define OSCCTRL_INTFLAG_DPLL1LCKR_Pos 24           /**< \brief (OSCCTRL_INTFLAG) DPLL1 Lock Rise */
-#define OSCCTRL_INTFLAG_DPLL1LCKR   (_U(0x1) << OSCCTRL_INTFLAG_DPLL1LCKR_Pos)
+#define OSCCTRL_INTFLAG_DPLL1LCKR   (_Ul(0x1) << OSCCTRL_INTFLAG_DPLL1LCKR_Pos)
 #define OSCCTRL_INTFLAG_DPLL1LCKF_Pos 25           /**< \brief (OSCCTRL_INTFLAG) DPLL1 Lock Fall */
-#define OSCCTRL_INTFLAG_DPLL1LCKF   (_U(0x1) << OSCCTRL_INTFLAG_DPLL1LCKF_Pos)
+#define OSCCTRL_INTFLAG_DPLL1LCKF   (_Ul(0x1) << OSCCTRL_INTFLAG_DPLL1LCKF_Pos)
 #define OSCCTRL_INTFLAG_DPLL1LTO_Pos 26           /**< \brief (OSCCTRL_INTFLAG) DPLL1 Lock Timeout */
-#define OSCCTRL_INTFLAG_DPLL1LTO    (_U(0x1) << OSCCTRL_INTFLAG_DPLL1LTO_Pos)
+#define OSCCTRL_INTFLAG_DPLL1LTO    (_Ul(0x1) << OSCCTRL_INTFLAG_DPLL1LTO_Pos)
 #define OSCCTRL_INTFLAG_DPLL1LDRTO_Pos 27           /**< \brief (OSCCTRL_INTFLAG) DPLL1 Loop Divider Ratio Update Complete */
-#define OSCCTRL_INTFLAG_DPLL1LDRTO  (_U(0x1) << OSCCTRL_INTFLAG_DPLL1LDRTO_Pos)
-#define OSCCTRL_INTFLAG_MASK        _U(0x0F0F1F0F) /**< \brief (OSCCTRL_INTFLAG) MASK Register */
+#define OSCCTRL_INTFLAG_DPLL1LDRTO  (_Ul(0x1) << OSCCTRL_INTFLAG_DPLL1LDRTO_Pos)
+#define OSCCTRL_INTFLAG_MASK        _Ul(0x0F0F1F0F) /**< \brief (OSCCTRL_INTFLAG) MASK Register */
 
 /* -------- OSCCTRL_STATUS : (OSCCTRL Offset: 0x10) (R/  32) Status -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -345,56 +345,56 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_STATUS_OFFSET       0x10         /**< \brief (OSCCTRL_STATUS offset) Status */
-#define OSCCTRL_STATUS_RESETVALUE   _U(0x00000000) /**< \brief (OSCCTRL_STATUS reset_value) Status */
+#define OSCCTRL_STATUS_RESETVALUE   _Ul(0x00000000) /**< \brief (OSCCTRL_STATUS reset_value) Status */
 
 #define OSCCTRL_STATUS_XOSCRDY0_Pos 0            /**< \brief (OSCCTRL_STATUS) XOSC 0 Ready */
 #define OSCCTRL_STATUS_XOSCRDY0     (1 << OSCCTRL_STATUS_XOSCRDY0_Pos)
 #define OSCCTRL_STATUS_XOSCRDY1_Pos 1            /**< \brief (OSCCTRL_STATUS) XOSC 1 Ready */
 #define OSCCTRL_STATUS_XOSCRDY1     (1 << OSCCTRL_STATUS_XOSCRDY1_Pos)
 #define OSCCTRL_STATUS_XOSCRDY_Pos  0            /**< \brief (OSCCTRL_STATUS) XOSC x Ready */
-#define OSCCTRL_STATUS_XOSCRDY_Msk  (_U(0x3) << OSCCTRL_STATUS_XOSCRDY_Pos)
+#define OSCCTRL_STATUS_XOSCRDY_Msk  (_Ul(0x3) << OSCCTRL_STATUS_XOSCRDY_Pos)
 #define OSCCTRL_STATUS_XOSCRDY(value) (OSCCTRL_STATUS_XOSCRDY_Msk & ((value) << OSCCTRL_STATUS_XOSCRDY_Pos))
 #define OSCCTRL_STATUS_XOSCFAIL0_Pos 2            /**< \brief (OSCCTRL_STATUS) XOSC 0 Clock Failure Detector */
 #define OSCCTRL_STATUS_XOSCFAIL0    (1 << OSCCTRL_STATUS_XOSCFAIL0_Pos)
 #define OSCCTRL_STATUS_XOSCFAIL1_Pos 3            /**< \brief (OSCCTRL_STATUS) XOSC 1 Clock Failure Detector */
 #define OSCCTRL_STATUS_XOSCFAIL1    (1 << OSCCTRL_STATUS_XOSCFAIL1_Pos)
 #define OSCCTRL_STATUS_XOSCFAIL_Pos 2            /**< \brief (OSCCTRL_STATUS) XOSC x Clock Failure Detector */
-#define OSCCTRL_STATUS_XOSCFAIL_Msk (_U(0x3) << OSCCTRL_STATUS_XOSCFAIL_Pos)
+#define OSCCTRL_STATUS_XOSCFAIL_Msk (_Ul(0x3) << OSCCTRL_STATUS_XOSCFAIL_Pos)
 #define OSCCTRL_STATUS_XOSCFAIL(value) (OSCCTRL_STATUS_XOSCFAIL_Msk & ((value) << OSCCTRL_STATUS_XOSCFAIL_Pos))
 #define OSCCTRL_STATUS_XOSCCKSW0_Pos 4            /**< \brief (OSCCTRL_STATUS) XOSC 0 Clock Switch */
 #define OSCCTRL_STATUS_XOSCCKSW0    (1 << OSCCTRL_STATUS_XOSCCKSW0_Pos)
 #define OSCCTRL_STATUS_XOSCCKSW1_Pos 5            /**< \brief (OSCCTRL_STATUS) XOSC 1 Clock Switch */
 #define OSCCTRL_STATUS_XOSCCKSW1    (1 << OSCCTRL_STATUS_XOSCCKSW1_Pos)
 #define OSCCTRL_STATUS_XOSCCKSW_Pos 4            /**< \brief (OSCCTRL_STATUS) XOSC x Clock Switch */
-#define OSCCTRL_STATUS_XOSCCKSW_Msk (_U(0x3) << OSCCTRL_STATUS_XOSCCKSW_Pos)
+#define OSCCTRL_STATUS_XOSCCKSW_Msk (_Ul(0x3) << OSCCTRL_STATUS_XOSCCKSW_Pos)
 #define OSCCTRL_STATUS_XOSCCKSW(value) (OSCCTRL_STATUS_XOSCCKSW_Msk & ((value) << OSCCTRL_STATUS_XOSCCKSW_Pos))
 #define OSCCTRL_STATUS_DFLLRDY_Pos  8            /**< \brief (OSCCTRL_STATUS) DFLL Ready */
-#define OSCCTRL_STATUS_DFLLRDY      (_U(0x1) << OSCCTRL_STATUS_DFLLRDY_Pos)
+#define OSCCTRL_STATUS_DFLLRDY      (_Ul(0x1) << OSCCTRL_STATUS_DFLLRDY_Pos)
 #define OSCCTRL_STATUS_DFLLOOB_Pos  9            /**< \brief (OSCCTRL_STATUS) DFLL Out Of Bounds */
-#define OSCCTRL_STATUS_DFLLOOB      (_U(0x1) << OSCCTRL_STATUS_DFLLOOB_Pos)
+#define OSCCTRL_STATUS_DFLLOOB      (_Ul(0x1) << OSCCTRL_STATUS_DFLLOOB_Pos)
 #define OSCCTRL_STATUS_DFLLLCKF_Pos 10           /**< \brief (OSCCTRL_STATUS) DFLL Lock Fine */
-#define OSCCTRL_STATUS_DFLLLCKF     (_U(0x1) << OSCCTRL_STATUS_DFLLLCKF_Pos)
+#define OSCCTRL_STATUS_DFLLLCKF     (_Ul(0x1) << OSCCTRL_STATUS_DFLLLCKF_Pos)
 #define OSCCTRL_STATUS_DFLLLCKC_Pos 11           /**< \brief (OSCCTRL_STATUS) DFLL Lock Coarse */
-#define OSCCTRL_STATUS_DFLLLCKC     (_U(0x1) << OSCCTRL_STATUS_DFLLLCKC_Pos)
+#define OSCCTRL_STATUS_DFLLLCKC     (_Ul(0x1) << OSCCTRL_STATUS_DFLLLCKC_Pos)
 #define OSCCTRL_STATUS_DFLLRCS_Pos  12           /**< \brief (OSCCTRL_STATUS) DFLL Reference Clock Stopped */
-#define OSCCTRL_STATUS_DFLLRCS      (_U(0x1) << OSCCTRL_STATUS_DFLLRCS_Pos)
+#define OSCCTRL_STATUS_DFLLRCS      (_Ul(0x1) << OSCCTRL_STATUS_DFLLRCS_Pos)
 #define OSCCTRL_STATUS_DPLL0LCKR_Pos 16           /**< \brief (OSCCTRL_STATUS) DPLL0 Lock Rise */
-#define OSCCTRL_STATUS_DPLL0LCKR    (_U(0x1) << OSCCTRL_STATUS_DPLL0LCKR_Pos)
+#define OSCCTRL_STATUS_DPLL0LCKR    (_Ul(0x1) << OSCCTRL_STATUS_DPLL0LCKR_Pos)
 #define OSCCTRL_STATUS_DPLL0LCKF_Pos 17           /**< \brief (OSCCTRL_STATUS) DPLL0 Lock Fall */
-#define OSCCTRL_STATUS_DPLL0LCKF    (_U(0x1) << OSCCTRL_STATUS_DPLL0LCKF_Pos)
+#define OSCCTRL_STATUS_DPLL0LCKF    (_Ul(0x1) << OSCCTRL_STATUS_DPLL0LCKF_Pos)
 #define OSCCTRL_STATUS_DPLL0TO_Pos  18           /**< \brief (OSCCTRL_STATUS) DPLL0 Timeout */
-#define OSCCTRL_STATUS_DPLL0TO      (_U(0x1) << OSCCTRL_STATUS_DPLL0TO_Pos)
+#define OSCCTRL_STATUS_DPLL0TO      (_Ul(0x1) << OSCCTRL_STATUS_DPLL0TO_Pos)
 #define OSCCTRL_STATUS_DPLL0LDRTO_Pos 19           /**< \brief (OSCCTRL_STATUS) DPLL0 Loop Divider Ratio Update Complete */
-#define OSCCTRL_STATUS_DPLL0LDRTO   (_U(0x1) << OSCCTRL_STATUS_DPLL0LDRTO_Pos)
+#define OSCCTRL_STATUS_DPLL0LDRTO   (_Ul(0x1) << OSCCTRL_STATUS_DPLL0LDRTO_Pos)
 #define OSCCTRL_STATUS_DPLL1LCKR_Pos 24           /**< \brief (OSCCTRL_STATUS) DPLL1 Lock Rise */
-#define OSCCTRL_STATUS_DPLL1LCKR    (_U(0x1) << OSCCTRL_STATUS_DPLL1LCKR_Pos)
+#define OSCCTRL_STATUS_DPLL1LCKR    (_Ul(0x1) << OSCCTRL_STATUS_DPLL1LCKR_Pos)
 #define OSCCTRL_STATUS_DPLL1LCKF_Pos 25           /**< \brief (OSCCTRL_STATUS) DPLL1 Lock Fall */
-#define OSCCTRL_STATUS_DPLL1LCKF    (_U(0x1) << OSCCTRL_STATUS_DPLL1LCKF_Pos)
+#define OSCCTRL_STATUS_DPLL1LCKF    (_Ul(0x1) << OSCCTRL_STATUS_DPLL1LCKF_Pos)
 #define OSCCTRL_STATUS_DPLL1TO_Pos  26           /**< \brief (OSCCTRL_STATUS) DPLL1 Timeout */
-#define OSCCTRL_STATUS_DPLL1TO      (_U(0x1) << OSCCTRL_STATUS_DPLL1TO_Pos)
+#define OSCCTRL_STATUS_DPLL1TO      (_Ul(0x1) << OSCCTRL_STATUS_DPLL1TO_Pos)
 #define OSCCTRL_STATUS_DPLL1LDRTO_Pos 27           /**< \brief (OSCCTRL_STATUS) DPLL1 Loop Divider Ratio Update Complete */
-#define OSCCTRL_STATUS_DPLL1LDRTO   (_U(0x1) << OSCCTRL_STATUS_DPLL1LDRTO_Pos)
-#define OSCCTRL_STATUS_MASK         _U(0x0F0F1F3F) /**< \brief (OSCCTRL_STATUS) MASK Register */
+#define OSCCTRL_STATUS_DPLL1LDRTO   (_Ul(0x1) << OSCCTRL_STATUS_DPLL1LDRTO_Pos)
+#define OSCCTRL_STATUS_MASK         _Ul(0x0F0F1F3F) /**< \brief (OSCCTRL_STATUS) MASK Register */
 
 /* -------- OSCCTRL_XOSCCTRL : (OSCCTRL Offset: 0x14) (R/W 32) External Multipurpose Crystal Oscillator Control -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -422,37 +422,37 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_XOSCCTRL_OFFSET     0x14         /**< \brief (OSCCTRL_XOSCCTRL offset) External Multipurpose Crystal Oscillator Control */
-#define OSCCTRL_XOSCCTRL_RESETVALUE _U(0x00000080) /**< \brief (OSCCTRL_XOSCCTRL reset_value) External Multipurpose Crystal Oscillator Control */
+#define OSCCTRL_XOSCCTRL_RESETVALUE _Ul(0x00000080) /**< \brief (OSCCTRL_XOSCCTRL reset_value) External Multipurpose Crystal Oscillator Control */
 
 #define OSCCTRL_XOSCCTRL_ENABLE_Pos 1            /**< \brief (OSCCTRL_XOSCCTRL) Oscillator Enable */
-#define OSCCTRL_XOSCCTRL_ENABLE     (_U(0x1) << OSCCTRL_XOSCCTRL_ENABLE_Pos)
+#define OSCCTRL_XOSCCTRL_ENABLE     (_Ul(0x1) << OSCCTRL_XOSCCTRL_ENABLE_Pos)
 #define OSCCTRL_XOSCCTRL_XTALEN_Pos 2            /**< \brief (OSCCTRL_XOSCCTRL) Crystal Oscillator Enable */
-#define OSCCTRL_XOSCCTRL_XTALEN     (_U(0x1) << OSCCTRL_XOSCCTRL_XTALEN_Pos)
+#define OSCCTRL_XOSCCTRL_XTALEN     (_Ul(0x1) << OSCCTRL_XOSCCTRL_XTALEN_Pos)
 #define OSCCTRL_XOSCCTRL_RUNSTDBY_Pos 6            /**< \brief (OSCCTRL_XOSCCTRL) Run in Standby */
-#define OSCCTRL_XOSCCTRL_RUNSTDBY   (_U(0x1) << OSCCTRL_XOSCCTRL_RUNSTDBY_Pos)
+#define OSCCTRL_XOSCCTRL_RUNSTDBY   (_Ul(0x1) << OSCCTRL_XOSCCTRL_RUNSTDBY_Pos)
 #define OSCCTRL_XOSCCTRL_ONDEMAND_Pos 7            /**< \brief (OSCCTRL_XOSCCTRL) On Demand Control */
-#define OSCCTRL_XOSCCTRL_ONDEMAND   (_U(0x1) << OSCCTRL_XOSCCTRL_ONDEMAND_Pos)
+#define OSCCTRL_XOSCCTRL_ONDEMAND   (_Ul(0x1) << OSCCTRL_XOSCCTRL_ONDEMAND_Pos)
 #define OSCCTRL_XOSCCTRL_LOWBUFGAIN_Pos 8            /**< \brief (OSCCTRL_XOSCCTRL) Low Buffer Gain Enable */
-#define OSCCTRL_XOSCCTRL_LOWBUFGAIN (_U(0x1) << OSCCTRL_XOSCCTRL_LOWBUFGAIN_Pos)
+#define OSCCTRL_XOSCCTRL_LOWBUFGAIN (_Ul(0x1) << OSCCTRL_XOSCCTRL_LOWBUFGAIN_Pos)
 #define OSCCTRL_XOSCCTRL_IPTAT_Pos  9            /**< \brief (OSCCTRL_XOSCCTRL) Oscillator Current Reference */
-#define OSCCTRL_XOSCCTRL_IPTAT_Msk  (_U(0x3) << OSCCTRL_XOSCCTRL_IPTAT_Pos)
+#define OSCCTRL_XOSCCTRL_IPTAT_Msk  (_Ul(0x3) << OSCCTRL_XOSCCTRL_IPTAT_Pos)
 #define OSCCTRL_XOSCCTRL_IPTAT(value) (OSCCTRL_XOSCCTRL_IPTAT_Msk & ((value) << OSCCTRL_XOSCCTRL_IPTAT_Pos))
 #define OSCCTRL_XOSCCTRL_IMULT_Pos  11           /**< \brief (OSCCTRL_XOSCCTRL) Oscillator Current Multiplier */
-#define OSCCTRL_XOSCCTRL_IMULT_Msk  (_U(0xF) << OSCCTRL_XOSCCTRL_IMULT_Pos)
+#define OSCCTRL_XOSCCTRL_IMULT_Msk  (_Ul(0xF) << OSCCTRL_XOSCCTRL_IMULT_Pos)
 #define OSCCTRL_XOSCCTRL_IMULT(value) (OSCCTRL_XOSCCTRL_IMULT_Msk & ((value) << OSCCTRL_XOSCCTRL_IMULT_Pos))
 #define OSCCTRL_XOSCCTRL_ENALC_Pos  15           /**< \brief (OSCCTRL_XOSCCTRL) Automatic Loop Control Enable */
-#define OSCCTRL_XOSCCTRL_ENALC      (_U(0x1) << OSCCTRL_XOSCCTRL_ENALC_Pos)
+#define OSCCTRL_XOSCCTRL_ENALC      (_Ul(0x1) << OSCCTRL_XOSCCTRL_ENALC_Pos)
 #define OSCCTRL_XOSCCTRL_CFDEN_Pos  16           /**< \brief (OSCCTRL_XOSCCTRL) Clock Failure Detector Enable */
-#define OSCCTRL_XOSCCTRL_CFDEN      (_U(0x1) << OSCCTRL_XOSCCTRL_CFDEN_Pos)
+#define OSCCTRL_XOSCCTRL_CFDEN      (_Ul(0x1) << OSCCTRL_XOSCCTRL_CFDEN_Pos)
 #define OSCCTRL_XOSCCTRL_SWBEN_Pos  17           /**< \brief (OSCCTRL_XOSCCTRL) Xosc Clock Switch Enable */
-#define OSCCTRL_XOSCCTRL_SWBEN      (_U(0x1) << OSCCTRL_XOSCCTRL_SWBEN_Pos)
+#define OSCCTRL_XOSCCTRL_SWBEN      (_Ul(0x1) << OSCCTRL_XOSCCTRL_SWBEN_Pos)
 #define OSCCTRL_XOSCCTRL_STARTUP_Pos 20           /**< \brief (OSCCTRL_XOSCCTRL) Start-Up Time */
-#define OSCCTRL_XOSCCTRL_STARTUP_Msk (_U(0xF) << OSCCTRL_XOSCCTRL_STARTUP_Pos)
+#define OSCCTRL_XOSCCTRL_STARTUP_Msk (_Ul(0xF) << OSCCTRL_XOSCCTRL_STARTUP_Pos)
 #define OSCCTRL_XOSCCTRL_STARTUP(value) (OSCCTRL_XOSCCTRL_STARTUP_Msk & ((value) << OSCCTRL_XOSCCTRL_STARTUP_Pos))
 #define OSCCTRL_XOSCCTRL_CFDPRESC_Pos 24           /**< \brief (OSCCTRL_XOSCCTRL) Clock Failure Detector Prescaler */
-#define OSCCTRL_XOSCCTRL_CFDPRESC_Msk (_U(0xF) << OSCCTRL_XOSCCTRL_CFDPRESC_Pos)
+#define OSCCTRL_XOSCCTRL_CFDPRESC_Msk (_Ul(0xF) << OSCCTRL_XOSCCTRL_CFDPRESC_Pos)
 #define OSCCTRL_XOSCCTRL_CFDPRESC(value) (OSCCTRL_XOSCCTRL_CFDPRESC_Msk & ((value) << OSCCTRL_XOSCCTRL_CFDPRESC_Pos))
-#define OSCCTRL_XOSCCTRL_MASK       _U(0x0FF3FFC6) /**< \brief (OSCCTRL_XOSCCTRL) MASK Register */
+#define OSCCTRL_XOSCCTRL_MASK       _Ul(0x0FF3FFC6) /**< \brief (OSCCTRL_XOSCCTRL) MASK Register */
 
 /* -------- OSCCTRL_DFLLCTRLA : (OSCCTRL Offset: 0x1C) (R/W  8) DFLL48M Control A -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -469,15 +469,15 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_DFLLCTRLA_OFFSET    0x1C         /**< \brief (OSCCTRL_DFLLCTRLA offset) DFLL48M Control A */
-#define OSCCTRL_DFLLCTRLA_RESETVALUE _U(0x82)     /**< \brief (OSCCTRL_DFLLCTRLA reset_value) DFLL48M Control A */
+#define OSCCTRL_DFLLCTRLA_RESETVALUE _Ul(0x82)     /**< \brief (OSCCTRL_DFLLCTRLA reset_value) DFLL48M Control A */
 
 #define OSCCTRL_DFLLCTRLA_ENABLE_Pos 1            /**< \brief (OSCCTRL_DFLLCTRLA) DFLL Enable */
-#define OSCCTRL_DFLLCTRLA_ENABLE    (_U(0x1) << OSCCTRL_DFLLCTRLA_ENABLE_Pos)
+#define OSCCTRL_DFLLCTRLA_ENABLE    (_Ul(0x1) << OSCCTRL_DFLLCTRLA_ENABLE_Pos)
 #define OSCCTRL_DFLLCTRLA_RUNSTDBY_Pos 6            /**< \brief (OSCCTRL_DFLLCTRLA) Run in Standby */
-#define OSCCTRL_DFLLCTRLA_RUNSTDBY  (_U(0x1) << OSCCTRL_DFLLCTRLA_RUNSTDBY_Pos)
+#define OSCCTRL_DFLLCTRLA_RUNSTDBY  (_Ul(0x1) << OSCCTRL_DFLLCTRLA_RUNSTDBY_Pos)
 #define OSCCTRL_DFLLCTRLA_ONDEMAND_Pos 7            /**< \brief (OSCCTRL_DFLLCTRLA) On Demand Control */
-#define OSCCTRL_DFLLCTRLA_ONDEMAND  (_U(0x1) << OSCCTRL_DFLLCTRLA_ONDEMAND_Pos)
-#define OSCCTRL_DFLLCTRLA_MASK      _U(0xC2)     /**< \brief (OSCCTRL_DFLLCTRLA) MASK Register */
+#define OSCCTRL_DFLLCTRLA_ONDEMAND  (_Ul(0x1) << OSCCTRL_DFLLCTRLA_ONDEMAND_Pos)
+#define OSCCTRL_DFLLCTRLA_MASK      _Ul(0xC2)     /**< \brief (OSCCTRL_DFLLCTRLA) MASK Register */
 
 /* -------- OSCCTRL_DFLLCTRLB : (OSCCTRL Offset: 0x20) (R/W  8) DFLL48M Control B -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -497,25 +497,25 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_DFLLCTRLB_OFFSET    0x20         /**< \brief (OSCCTRL_DFLLCTRLB offset) DFLL48M Control B */
-#define OSCCTRL_DFLLCTRLB_RESETVALUE _U(0x00)     /**< \brief (OSCCTRL_DFLLCTRLB reset_value) DFLL48M Control B */
+#define OSCCTRL_DFLLCTRLB_RESETVALUE _Ul(0x00)     /**< \brief (OSCCTRL_DFLLCTRLB reset_value) DFLL48M Control B */
 
 #define OSCCTRL_DFLLCTRLB_MODE_Pos  0            /**< \brief (OSCCTRL_DFLLCTRLB) Operating Mode Selection */
-#define OSCCTRL_DFLLCTRLB_MODE      (_U(0x1) << OSCCTRL_DFLLCTRLB_MODE_Pos)
+#define OSCCTRL_DFLLCTRLB_MODE      (_Ul(0x1) << OSCCTRL_DFLLCTRLB_MODE_Pos)
 #define OSCCTRL_DFLLCTRLB_STABLE_Pos 1            /**< \brief (OSCCTRL_DFLLCTRLB) Stable DFLL Frequency */
-#define OSCCTRL_DFLLCTRLB_STABLE    (_U(0x1) << OSCCTRL_DFLLCTRLB_STABLE_Pos)
+#define OSCCTRL_DFLLCTRLB_STABLE    (_Ul(0x1) << OSCCTRL_DFLLCTRLB_STABLE_Pos)
 #define OSCCTRL_DFLLCTRLB_LLAW_Pos  2            /**< \brief (OSCCTRL_DFLLCTRLB) Lose Lock After Wake */
-#define OSCCTRL_DFLLCTRLB_LLAW      (_U(0x1) << OSCCTRL_DFLLCTRLB_LLAW_Pos)
+#define OSCCTRL_DFLLCTRLB_LLAW      (_Ul(0x1) << OSCCTRL_DFLLCTRLB_LLAW_Pos)
 #define OSCCTRL_DFLLCTRLB_USBCRM_Pos 3            /**< \brief (OSCCTRL_DFLLCTRLB) USB Clock Recovery Mode */
-#define OSCCTRL_DFLLCTRLB_USBCRM    (_U(0x1) << OSCCTRL_DFLLCTRLB_USBCRM_Pos)
+#define OSCCTRL_DFLLCTRLB_USBCRM    (_Ul(0x1) << OSCCTRL_DFLLCTRLB_USBCRM_Pos)
 #define OSCCTRL_DFLLCTRLB_CCDIS_Pos 4            /**< \brief (OSCCTRL_DFLLCTRLB) Chill Cycle Disable */
-#define OSCCTRL_DFLLCTRLB_CCDIS     (_U(0x1) << OSCCTRL_DFLLCTRLB_CCDIS_Pos)
+#define OSCCTRL_DFLLCTRLB_CCDIS     (_Ul(0x1) << OSCCTRL_DFLLCTRLB_CCDIS_Pos)
 #define OSCCTRL_DFLLCTRLB_QLDIS_Pos 5            /**< \brief (OSCCTRL_DFLLCTRLB) Quick Lock Disable */
-#define OSCCTRL_DFLLCTRLB_QLDIS     (_U(0x1) << OSCCTRL_DFLLCTRLB_QLDIS_Pos)
+#define OSCCTRL_DFLLCTRLB_QLDIS     (_Ul(0x1) << OSCCTRL_DFLLCTRLB_QLDIS_Pos)
 #define OSCCTRL_DFLLCTRLB_BPLCKC_Pos 6            /**< \brief (OSCCTRL_DFLLCTRLB) Bypass Coarse Lock */
-#define OSCCTRL_DFLLCTRLB_BPLCKC    (_U(0x1) << OSCCTRL_DFLLCTRLB_BPLCKC_Pos)
+#define OSCCTRL_DFLLCTRLB_BPLCKC    (_Ul(0x1) << OSCCTRL_DFLLCTRLB_BPLCKC_Pos)
 #define OSCCTRL_DFLLCTRLB_WAITLOCK_Pos 7            /**< \brief (OSCCTRL_DFLLCTRLB) Wait Lock */
-#define OSCCTRL_DFLLCTRLB_WAITLOCK  (_U(0x1) << OSCCTRL_DFLLCTRLB_WAITLOCK_Pos)
-#define OSCCTRL_DFLLCTRLB_MASK      _U(0xFF)     /**< \brief (OSCCTRL_DFLLCTRLB) MASK Register */
+#define OSCCTRL_DFLLCTRLB_WAITLOCK  (_Ul(0x1) << OSCCTRL_DFLLCTRLB_WAITLOCK_Pos)
+#define OSCCTRL_DFLLCTRLB_MASK      _Ul(0xFF)     /**< \brief (OSCCTRL_DFLLCTRLB) MASK Register */
 
 /* -------- OSCCTRL_DFLLVAL : (OSCCTRL Offset: 0x24) (R/W 32) DFLL48M Value -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -531,18 +531,18 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_DFLLVAL_OFFSET      0x24         /**< \brief (OSCCTRL_DFLLVAL offset) DFLL48M Value */
-#define OSCCTRL_DFLLVAL_RESETVALUE  _U(0x00000000) /**< \brief (OSCCTRL_DFLLVAL reset_value) DFLL48M Value */
+#define OSCCTRL_DFLLVAL_RESETVALUE  _Ul(0x00000000) /**< \brief (OSCCTRL_DFLLVAL reset_value) DFLL48M Value */
 
 #define OSCCTRL_DFLLVAL_FINE_Pos    0            /**< \brief (OSCCTRL_DFLLVAL) Fine Value */
-#define OSCCTRL_DFLLVAL_FINE_Msk    (_U(0xFF) << OSCCTRL_DFLLVAL_FINE_Pos)
+#define OSCCTRL_DFLLVAL_FINE_Msk    (_Ul(0xFF) << OSCCTRL_DFLLVAL_FINE_Pos)
 #define OSCCTRL_DFLLVAL_FINE(value) (OSCCTRL_DFLLVAL_FINE_Msk & ((value) << OSCCTRL_DFLLVAL_FINE_Pos))
 #define OSCCTRL_DFLLVAL_COARSE_Pos  10           /**< \brief (OSCCTRL_DFLLVAL) Coarse Value */
-#define OSCCTRL_DFLLVAL_COARSE_Msk  (_U(0x3F) << OSCCTRL_DFLLVAL_COARSE_Pos)
+#define OSCCTRL_DFLLVAL_COARSE_Msk  (_Ul(0x3F) << OSCCTRL_DFLLVAL_COARSE_Pos)
 #define OSCCTRL_DFLLVAL_COARSE(value) (OSCCTRL_DFLLVAL_COARSE_Msk & ((value) << OSCCTRL_DFLLVAL_COARSE_Pos))
 #define OSCCTRL_DFLLVAL_DIFF_Pos    16           /**< \brief (OSCCTRL_DFLLVAL) Multiplication Ratio Difference */
-#define OSCCTRL_DFLLVAL_DIFF_Msk    (_U(0xFFFF) << OSCCTRL_DFLLVAL_DIFF_Pos)
+#define OSCCTRL_DFLLVAL_DIFF_Msk    (_Ul(0xFFFF) << OSCCTRL_DFLLVAL_DIFF_Pos)
 #define OSCCTRL_DFLLVAL_DIFF(value) (OSCCTRL_DFLLVAL_DIFF_Msk & ((value) << OSCCTRL_DFLLVAL_DIFF_Pos))
-#define OSCCTRL_DFLLVAL_MASK        _U(0xFFFFFCFF) /**< \brief (OSCCTRL_DFLLVAL) MASK Register */
+#define OSCCTRL_DFLLVAL_MASK        _Ul(0xFFFFFCFF) /**< \brief (OSCCTRL_DFLLVAL) MASK Register */
 
 /* -------- OSCCTRL_DFLLMUL : (OSCCTRL Offset: 0x28) (R/W 32) DFLL48M Multiplier -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -558,18 +558,18 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_DFLLMUL_OFFSET      0x28         /**< \brief (OSCCTRL_DFLLMUL offset) DFLL48M Multiplier */
-#define OSCCTRL_DFLLMUL_RESETVALUE  _U(0x00000000) /**< \brief (OSCCTRL_DFLLMUL reset_value) DFLL48M Multiplier */
+#define OSCCTRL_DFLLMUL_RESETVALUE  _Ul(0x00000000) /**< \brief (OSCCTRL_DFLLMUL reset_value) DFLL48M Multiplier */
 
 #define OSCCTRL_DFLLMUL_MUL_Pos     0            /**< \brief (OSCCTRL_DFLLMUL) DFLL Multiply Factor */
-#define OSCCTRL_DFLLMUL_MUL_Msk     (_U(0xFFFF) << OSCCTRL_DFLLMUL_MUL_Pos)
+#define OSCCTRL_DFLLMUL_MUL_Msk     (_Ul(0xFFFF) << OSCCTRL_DFLLMUL_MUL_Pos)
 #define OSCCTRL_DFLLMUL_MUL(value)  (OSCCTRL_DFLLMUL_MUL_Msk & ((value) << OSCCTRL_DFLLMUL_MUL_Pos))
 #define OSCCTRL_DFLLMUL_FSTEP_Pos   16           /**< \brief (OSCCTRL_DFLLMUL) Fine Maximum Step */
-#define OSCCTRL_DFLLMUL_FSTEP_Msk   (_U(0xFF) << OSCCTRL_DFLLMUL_FSTEP_Pos)
+#define OSCCTRL_DFLLMUL_FSTEP_Msk   (_Ul(0xFF) << OSCCTRL_DFLLMUL_FSTEP_Pos)
 #define OSCCTRL_DFLLMUL_FSTEP(value) (OSCCTRL_DFLLMUL_FSTEP_Msk & ((value) << OSCCTRL_DFLLMUL_FSTEP_Pos))
 #define OSCCTRL_DFLLMUL_CSTEP_Pos   26           /**< \brief (OSCCTRL_DFLLMUL) Coarse Maximum Step */
-#define OSCCTRL_DFLLMUL_CSTEP_Msk   (_U(0x3F) << OSCCTRL_DFLLMUL_CSTEP_Pos)
+#define OSCCTRL_DFLLMUL_CSTEP_Msk   (_Ul(0x3F) << OSCCTRL_DFLLMUL_CSTEP_Pos)
 #define OSCCTRL_DFLLMUL_CSTEP(value) (OSCCTRL_DFLLMUL_CSTEP_Msk & ((value) << OSCCTRL_DFLLMUL_CSTEP_Pos))
-#define OSCCTRL_DFLLMUL_MASK        _U(0xFCFFFFFF) /**< \brief (OSCCTRL_DFLLMUL) MASK Register */
+#define OSCCTRL_DFLLMUL_MASK        _Ul(0xFCFFFFFF) /**< \brief (OSCCTRL_DFLLMUL) MASK Register */
 
 /* -------- OSCCTRL_DFLLSYNC : (OSCCTRL Offset: 0x2C) (R/W  8) DFLL48M Synchronization -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -587,17 +587,17 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_DFLLSYNC_OFFSET     0x2C         /**< \brief (OSCCTRL_DFLLSYNC offset) DFLL48M Synchronization */
-#define OSCCTRL_DFLLSYNC_RESETVALUE _U(0x00)     /**< \brief (OSCCTRL_DFLLSYNC reset_value) DFLL48M Synchronization */
+#define OSCCTRL_DFLLSYNC_RESETVALUE _Ul(0x00)     /**< \brief (OSCCTRL_DFLLSYNC reset_value) DFLL48M Synchronization */
 
 #define OSCCTRL_DFLLSYNC_ENABLE_Pos 1            /**< \brief (OSCCTRL_DFLLSYNC) ENABLE Synchronization Busy */
-#define OSCCTRL_DFLLSYNC_ENABLE     (_U(0x1) << OSCCTRL_DFLLSYNC_ENABLE_Pos)
+#define OSCCTRL_DFLLSYNC_ENABLE     (_Ul(0x1) << OSCCTRL_DFLLSYNC_ENABLE_Pos)
 #define OSCCTRL_DFLLSYNC_DFLLCTRLB_Pos 2            /**< \brief (OSCCTRL_DFLLSYNC) DFLLCTRLB Synchronization Busy */
-#define OSCCTRL_DFLLSYNC_DFLLCTRLB  (_U(0x1) << OSCCTRL_DFLLSYNC_DFLLCTRLB_Pos)
+#define OSCCTRL_DFLLSYNC_DFLLCTRLB  (_Ul(0x1) << OSCCTRL_DFLLSYNC_DFLLCTRLB_Pos)
 #define OSCCTRL_DFLLSYNC_DFLLVAL_Pos 3            /**< \brief (OSCCTRL_DFLLSYNC) DFLLVAL Synchronization Busy */
-#define OSCCTRL_DFLLSYNC_DFLLVAL    (_U(0x1) << OSCCTRL_DFLLSYNC_DFLLVAL_Pos)
+#define OSCCTRL_DFLLSYNC_DFLLVAL    (_Ul(0x1) << OSCCTRL_DFLLSYNC_DFLLVAL_Pos)
 #define OSCCTRL_DFLLSYNC_DFLLMUL_Pos 4            /**< \brief (OSCCTRL_DFLLSYNC) DFLLMUL Synchronization Busy */
-#define OSCCTRL_DFLLSYNC_DFLLMUL    (_U(0x1) << OSCCTRL_DFLLSYNC_DFLLMUL_Pos)
-#define OSCCTRL_DFLLSYNC_MASK       _U(0x1E)     /**< \brief (OSCCTRL_DFLLSYNC) MASK Register */
+#define OSCCTRL_DFLLSYNC_DFLLMUL    (_Ul(0x1) << OSCCTRL_DFLLSYNC_DFLLMUL_Pos)
+#define OSCCTRL_DFLLSYNC_MASK       _Ul(0x1E)     /**< \brief (OSCCTRL_DFLLSYNC) MASK Register */
 
 /* -------- OSCCTRL_DPLLCTRLA : (OSCCTRL Offset: 0x30) (R/W  8) DPLL DPLL Control A -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -614,15 +614,15 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_DPLLCTRLA_OFFSET    0x30         /**< \brief (OSCCTRL_DPLLCTRLA offset) DPLL Control A */
-#define OSCCTRL_DPLLCTRLA_RESETVALUE _U(0x80)     /**< \brief (OSCCTRL_DPLLCTRLA reset_value) DPLL Control A */
+#define OSCCTRL_DPLLCTRLA_RESETVALUE _Ul(0x80)     /**< \brief (OSCCTRL_DPLLCTRLA reset_value) DPLL Control A */
 
 #define OSCCTRL_DPLLCTRLA_ENABLE_Pos 1            /**< \brief (OSCCTRL_DPLLCTRLA) DPLL Enable */
-#define OSCCTRL_DPLLCTRLA_ENABLE    (_U(0x1) << OSCCTRL_DPLLCTRLA_ENABLE_Pos)
+#define OSCCTRL_DPLLCTRLA_ENABLE    (_Ul(0x1) << OSCCTRL_DPLLCTRLA_ENABLE_Pos)
 #define OSCCTRL_DPLLCTRLA_RUNSTDBY_Pos 6            /**< \brief (OSCCTRL_DPLLCTRLA) Run in Standby */
-#define OSCCTRL_DPLLCTRLA_RUNSTDBY  (_U(0x1) << OSCCTRL_DPLLCTRLA_RUNSTDBY_Pos)
+#define OSCCTRL_DPLLCTRLA_RUNSTDBY  (_Ul(0x1) << OSCCTRL_DPLLCTRLA_RUNSTDBY_Pos)
 #define OSCCTRL_DPLLCTRLA_ONDEMAND_Pos 7            /**< \brief (OSCCTRL_DPLLCTRLA) On Demand Control */
-#define OSCCTRL_DPLLCTRLA_ONDEMAND  (_U(0x1) << OSCCTRL_DPLLCTRLA_ONDEMAND_Pos)
-#define OSCCTRL_DPLLCTRLA_MASK      _U(0xC2)     /**< \brief (OSCCTRL_DPLLCTRLA) MASK Register */
+#define OSCCTRL_DPLLCTRLA_ONDEMAND  (_Ul(0x1) << OSCCTRL_DPLLCTRLA_ONDEMAND_Pos)
+#define OSCCTRL_DPLLCTRLA_MASK      _Ul(0xC2)     /**< \brief (OSCCTRL_DPLLCTRLA) MASK Register */
 
 /* -------- OSCCTRL_DPLLRATIO : (OSCCTRL Offset: 0x34) (R/W 32) DPLL DPLL Ratio Control -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -638,15 +638,15 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_DPLLRATIO_OFFSET    0x34         /**< \brief (OSCCTRL_DPLLRATIO offset) DPLL Ratio Control */
-#define OSCCTRL_DPLLRATIO_RESETVALUE _U(0x00000000) /**< \brief (OSCCTRL_DPLLRATIO reset_value) DPLL Ratio Control */
+#define OSCCTRL_DPLLRATIO_RESETVALUE _Ul(0x00000000) /**< \brief (OSCCTRL_DPLLRATIO reset_value) DPLL Ratio Control */
 
 #define OSCCTRL_DPLLRATIO_LDR_Pos   0            /**< \brief (OSCCTRL_DPLLRATIO) Loop Divider Ratio */
-#define OSCCTRL_DPLLRATIO_LDR_Msk   (_U(0x1FFF) << OSCCTRL_DPLLRATIO_LDR_Pos)
+#define OSCCTRL_DPLLRATIO_LDR_Msk   (_Ul(0x1FFF) << OSCCTRL_DPLLRATIO_LDR_Pos)
 #define OSCCTRL_DPLLRATIO_LDR(value) (OSCCTRL_DPLLRATIO_LDR_Msk & ((value) << OSCCTRL_DPLLRATIO_LDR_Pos))
 #define OSCCTRL_DPLLRATIO_LDRFRAC_Pos 16           /**< \brief (OSCCTRL_DPLLRATIO) Loop Divider Ratio Fractional Part */
-#define OSCCTRL_DPLLRATIO_LDRFRAC_Msk (_U(0x1F) << OSCCTRL_DPLLRATIO_LDRFRAC_Pos)
+#define OSCCTRL_DPLLRATIO_LDRFRAC_Msk (_Ul(0x1F) << OSCCTRL_DPLLRATIO_LDRFRAC_Pos)
 #define OSCCTRL_DPLLRATIO_LDRFRAC(value) (OSCCTRL_DPLLRATIO_LDRFRAC_Msk & ((value) << OSCCTRL_DPLLRATIO_LDRFRAC_Pos))
-#define OSCCTRL_DPLLRATIO_MASK      _U(0x001F1FFF) /**< \brief (OSCCTRL_DPLLRATIO) MASK Register */
+#define OSCCTRL_DPLLRATIO_MASK      _Ul(0x001F1FFF) /**< \brief (OSCCTRL_DPLLRATIO) MASK Register */
 
 /* -------- OSCCTRL_DPLLCTRLB : (OSCCTRL Offset: 0x38) (R/W 32) DPLL DPLL Control B -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -667,48 +667,48 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_DPLLCTRLB_OFFSET    0x38         /**< \brief (OSCCTRL_DPLLCTRLB offset) DPLL Control B */
-#define OSCCTRL_DPLLCTRLB_RESETVALUE _U(0x00000020) /**< \brief (OSCCTRL_DPLLCTRLB reset_value) DPLL Control B */
+#define OSCCTRL_DPLLCTRLB_RESETVALUE _Ul(0x00000020) /**< \brief (OSCCTRL_DPLLCTRLB reset_value) DPLL Control B */
 
 #define OSCCTRL_DPLLCTRLB_FILTER_Pos 0            /**< \brief (OSCCTRL_DPLLCTRLB) Proportional Integral Filter Selection */
-#define OSCCTRL_DPLLCTRLB_FILTER_Msk (_U(0xF) << OSCCTRL_DPLLCTRLB_FILTER_Pos)
+#define OSCCTRL_DPLLCTRLB_FILTER_Msk (_Ul(0xF) << OSCCTRL_DPLLCTRLB_FILTER_Pos)
 #define OSCCTRL_DPLLCTRLB_FILTER(value) (OSCCTRL_DPLLCTRLB_FILTER_Msk & ((value) << OSCCTRL_DPLLCTRLB_FILTER_Pos))
 #define OSCCTRL_DPLLCTRLB_WUF_Pos   4            /**< \brief (OSCCTRL_DPLLCTRLB) Wake Up Fast */
-#define OSCCTRL_DPLLCTRLB_WUF       (_U(0x1) << OSCCTRL_DPLLCTRLB_WUF_Pos)
+#define OSCCTRL_DPLLCTRLB_WUF       (_Ul(0x1) << OSCCTRL_DPLLCTRLB_WUF_Pos)
 #define OSCCTRL_DPLLCTRLB_REFCLK_Pos 5            /**< \brief (OSCCTRL_DPLLCTRLB) Reference Clock Selection */
-#define OSCCTRL_DPLLCTRLB_REFCLK_Msk (_U(0x7) << OSCCTRL_DPLLCTRLB_REFCLK_Pos)
+#define OSCCTRL_DPLLCTRLB_REFCLK_Msk (_Ul(0x7) << OSCCTRL_DPLLCTRLB_REFCLK_Pos)
 #define OSCCTRL_DPLLCTRLB_REFCLK(value) (OSCCTRL_DPLLCTRLB_REFCLK_Msk & ((value) << OSCCTRL_DPLLCTRLB_REFCLK_Pos))
-#define   OSCCTRL_DPLLCTRLB_REFCLK_GCLK_Val _U(0x0)   /**< \brief (OSCCTRL_DPLLCTRLB) Dedicated GCLK clock reference */
-#define   OSCCTRL_DPLLCTRLB_REFCLK_XOSC32_Val _U(0x1)   /**< \brief (OSCCTRL_DPLLCTRLB) XOSC32K clock reference */
-#define   OSCCTRL_DPLLCTRLB_REFCLK_XOSC0_Val _U(0x2)   /**< \brief (OSCCTRL_DPLLCTRLB) XOSC0 clock reference */
-#define   OSCCTRL_DPLLCTRLB_REFCLK_XOSC1_Val _U(0x3)   /**< \brief (OSCCTRL_DPLLCTRLB) XOSC1 clock reference */
+#define   OSCCTRL_DPLLCTRLB_REFCLK_GCLK_Val _Ul(0x0)   /**< \brief (OSCCTRL_DPLLCTRLB) Dedicated GCLK clock reference */
+#define   OSCCTRL_DPLLCTRLB_REFCLK_XOSC32_Val _Ul(0x1)   /**< \brief (OSCCTRL_DPLLCTRLB) XOSC32K clock reference */
+#define   OSCCTRL_DPLLCTRLB_REFCLK_XOSC0_Val _Ul(0x2)   /**< \brief (OSCCTRL_DPLLCTRLB) XOSC0 clock reference */
+#define   OSCCTRL_DPLLCTRLB_REFCLK_XOSC1_Val _Ul(0x3)   /**< \brief (OSCCTRL_DPLLCTRLB) XOSC1 clock reference */
 #define OSCCTRL_DPLLCTRLB_REFCLK_GCLK (OSCCTRL_DPLLCTRLB_REFCLK_GCLK_Val << OSCCTRL_DPLLCTRLB_REFCLK_Pos)
 #define OSCCTRL_DPLLCTRLB_REFCLK_XOSC32 (OSCCTRL_DPLLCTRLB_REFCLK_XOSC32_Val << OSCCTRL_DPLLCTRLB_REFCLK_Pos)
 #define OSCCTRL_DPLLCTRLB_REFCLK_XOSC0 (OSCCTRL_DPLLCTRLB_REFCLK_XOSC0_Val << OSCCTRL_DPLLCTRLB_REFCLK_Pos)
 #define OSCCTRL_DPLLCTRLB_REFCLK_XOSC1 (OSCCTRL_DPLLCTRLB_REFCLK_XOSC1_Val << OSCCTRL_DPLLCTRLB_REFCLK_Pos)
 #define OSCCTRL_DPLLCTRLB_LTIME_Pos 8            /**< \brief (OSCCTRL_DPLLCTRLB) Lock Time */
-#define OSCCTRL_DPLLCTRLB_LTIME_Msk (_U(0x7) << OSCCTRL_DPLLCTRLB_LTIME_Pos)
+#define OSCCTRL_DPLLCTRLB_LTIME_Msk (_Ul(0x7) << OSCCTRL_DPLLCTRLB_LTIME_Pos)
 #define OSCCTRL_DPLLCTRLB_LTIME(value) (OSCCTRL_DPLLCTRLB_LTIME_Msk & ((value) << OSCCTRL_DPLLCTRLB_LTIME_Pos))
-#define   OSCCTRL_DPLLCTRLB_LTIME_DEFAULT_Val _U(0x0)   /**< \brief (OSCCTRL_DPLLCTRLB) No time-out. Automatic lock */
-#define   OSCCTRL_DPLLCTRLB_LTIME_800US_Val _U(0x4)   /**< \brief (OSCCTRL_DPLLCTRLB) Time-out if no lock within 800us */
-#define   OSCCTRL_DPLLCTRLB_LTIME_900US_Val _U(0x5)   /**< \brief (OSCCTRL_DPLLCTRLB) Time-out if no lock within 900us */
-#define   OSCCTRL_DPLLCTRLB_LTIME_1MS_Val _U(0x6)   /**< \brief (OSCCTRL_DPLLCTRLB) Time-out if no lock within 1ms */
-#define   OSCCTRL_DPLLCTRLB_LTIME_1P1MS_Val _U(0x7)   /**< \brief (OSCCTRL_DPLLCTRLB) Time-out if no lock within 1.1ms */
+#define   OSCCTRL_DPLLCTRLB_LTIME_DEFAULT_Val _Ul(0x0)   /**< \brief (OSCCTRL_DPLLCTRLB) No time-out. Automatic lock */
+#define   OSCCTRL_DPLLCTRLB_LTIME_800US_Val _Ul(0x4)   /**< \brief (OSCCTRL_DPLLCTRLB) Time-out if no lock within 800us */
+#define   OSCCTRL_DPLLCTRLB_LTIME_900US_Val _Ul(0x5)   /**< \brief (OSCCTRL_DPLLCTRLB) Time-out if no lock within 900us */
+#define   OSCCTRL_DPLLCTRLB_LTIME_1MS_Val _Ul(0x6)   /**< \brief (OSCCTRL_DPLLCTRLB) Time-out if no lock within 1ms */
+#define   OSCCTRL_DPLLCTRLB_LTIME_1P1MS_Val _Ul(0x7)   /**< \brief (OSCCTRL_DPLLCTRLB) Time-out if no lock within 1.1ms */
 #define OSCCTRL_DPLLCTRLB_LTIME_DEFAULT (OSCCTRL_DPLLCTRLB_LTIME_DEFAULT_Val << OSCCTRL_DPLLCTRLB_LTIME_Pos)
 #define OSCCTRL_DPLLCTRLB_LTIME_800US (OSCCTRL_DPLLCTRLB_LTIME_800US_Val << OSCCTRL_DPLLCTRLB_LTIME_Pos)
 #define OSCCTRL_DPLLCTRLB_LTIME_900US (OSCCTRL_DPLLCTRLB_LTIME_900US_Val << OSCCTRL_DPLLCTRLB_LTIME_Pos)
 #define OSCCTRL_DPLLCTRLB_LTIME_1MS (OSCCTRL_DPLLCTRLB_LTIME_1MS_Val << OSCCTRL_DPLLCTRLB_LTIME_Pos)
 #define OSCCTRL_DPLLCTRLB_LTIME_1P1MS (OSCCTRL_DPLLCTRLB_LTIME_1P1MS_Val << OSCCTRL_DPLLCTRLB_LTIME_Pos)
 #define OSCCTRL_DPLLCTRLB_LBYPASS_Pos 11           /**< \brief (OSCCTRL_DPLLCTRLB) Lock Bypass */
-#define OSCCTRL_DPLLCTRLB_LBYPASS   (_U(0x1) << OSCCTRL_DPLLCTRLB_LBYPASS_Pos)
+#define OSCCTRL_DPLLCTRLB_LBYPASS   (_Ul(0x1) << OSCCTRL_DPLLCTRLB_LBYPASS_Pos)
 #define OSCCTRL_DPLLCTRLB_DCOFILTER_Pos 12           /**< \brief (OSCCTRL_DPLLCTRLB) Sigma-Delta DCO Filter Selection */
-#define OSCCTRL_DPLLCTRLB_DCOFILTER_Msk (_U(0x7) << OSCCTRL_DPLLCTRLB_DCOFILTER_Pos)
+#define OSCCTRL_DPLLCTRLB_DCOFILTER_Msk (_Ul(0x7) << OSCCTRL_DPLLCTRLB_DCOFILTER_Pos)
 #define OSCCTRL_DPLLCTRLB_DCOFILTER(value) (OSCCTRL_DPLLCTRLB_DCOFILTER_Msk & ((value) << OSCCTRL_DPLLCTRLB_DCOFILTER_Pos))
 #define OSCCTRL_DPLLCTRLB_DCOEN_Pos 15           /**< \brief (OSCCTRL_DPLLCTRLB) DCO Filter Enable */
-#define OSCCTRL_DPLLCTRLB_DCOEN     (_U(0x1) << OSCCTRL_DPLLCTRLB_DCOEN_Pos)
+#define OSCCTRL_DPLLCTRLB_DCOEN     (_Ul(0x1) << OSCCTRL_DPLLCTRLB_DCOEN_Pos)
 #define OSCCTRL_DPLLCTRLB_DIV_Pos   16           /**< \brief (OSCCTRL_DPLLCTRLB) Clock Divider */
-#define OSCCTRL_DPLLCTRLB_DIV_Msk   (_U(0x7FF) << OSCCTRL_DPLLCTRLB_DIV_Pos)
+#define OSCCTRL_DPLLCTRLB_DIV_Msk   (_Ul(0x7FF) << OSCCTRL_DPLLCTRLB_DIV_Pos)
 #define OSCCTRL_DPLLCTRLB_DIV(value) (OSCCTRL_DPLLCTRLB_DIV_Msk & ((value) << OSCCTRL_DPLLCTRLB_DIV_Pos))
-#define OSCCTRL_DPLLCTRLB_MASK      _U(0x07FFFFFF) /**< \brief (OSCCTRL_DPLLCTRLB) MASK Register */
+#define OSCCTRL_DPLLCTRLB_MASK      _Ul(0x07FFFFFF) /**< \brief (OSCCTRL_DPLLCTRLB) MASK Register */
 
 /* -------- OSCCTRL_DPLLSYNCBUSY : (OSCCTRL Offset: 0x3C) (R/  32) DPLL DPLL Synchronization Busy -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -724,13 +724,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_DPLLSYNCBUSY_OFFSET 0x3C         /**< \brief (OSCCTRL_DPLLSYNCBUSY offset) DPLL Synchronization Busy */
-#define OSCCTRL_DPLLSYNCBUSY_RESETVALUE _U(0x00000000) /**< \brief (OSCCTRL_DPLLSYNCBUSY reset_value) DPLL Synchronization Busy */
+#define OSCCTRL_DPLLSYNCBUSY_RESETVALUE _Ul(0x00000000) /**< \brief (OSCCTRL_DPLLSYNCBUSY reset_value) DPLL Synchronization Busy */
 
 #define OSCCTRL_DPLLSYNCBUSY_ENABLE_Pos 1            /**< \brief (OSCCTRL_DPLLSYNCBUSY) DPLL Enable Synchronization Status */
-#define OSCCTRL_DPLLSYNCBUSY_ENABLE (_U(0x1) << OSCCTRL_DPLLSYNCBUSY_ENABLE_Pos)
+#define OSCCTRL_DPLLSYNCBUSY_ENABLE (_Ul(0x1) << OSCCTRL_DPLLSYNCBUSY_ENABLE_Pos)
 #define OSCCTRL_DPLLSYNCBUSY_DPLLRATIO_Pos 2            /**< \brief (OSCCTRL_DPLLSYNCBUSY) DPLL Loop Divider Ratio Synchronization Status */
-#define OSCCTRL_DPLLSYNCBUSY_DPLLRATIO (_U(0x1) << OSCCTRL_DPLLSYNCBUSY_DPLLRATIO_Pos)
-#define OSCCTRL_DPLLSYNCBUSY_MASK   _U(0x00000006) /**< \brief (OSCCTRL_DPLLSYNCBUSY) MASK Register */
+#define OSCCTRL_DPLLSYNCBUSY_DPLLRATIO (_Ul(0x1) << OSCCTRL_DPLLSYNCBUSY_DPLLRATIO_Pos)
+#define OSCCTRL_DPLLSYNCBUSY_MASK   _Ul(0x00000006) /**< \brief (OSCCTRL_DPLLSYNCBUSY) MASK Register */
 
 /* -------- OSCCTRL_DPLLSTATUS : (OSCCTRL Offset: 0x40) (R/  32) DPLL DPLL Status -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -745,13 +745,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define OSCCTRL_DPLLSTATUS_OFFSET   0x40         /**< \brief (OSCCTRL_DPLLSTATUS offset) DPLL Status */
-#define OSCCTRL_DPLLSTATUS_RESETVALUE _U(0x00000000) /**< \brief (OSCCTRL_DPLLSTATUS reset_value) DPLL Status */
+#define OSCCTRL_DPLLSTATUS_RESETVALUE _Ul(0x00000000) /**< \brief (OSCCTRL_DPLLSTATUS reset_value) DPLL Status */
 
 #define OSCCTRL_DPLLSTATUS_LOCK_Pos 0            /**< \brief (OSCCTRL_DPLLSTATUS) DPLL Lock Status */
-#define OSCCTRL_DPLLSTATUS_LOCK     (_U(0x1) << OSCCTRL_DPLLSTATUS_LOCK_Pos)
+#define OSCCTRL_DPLLSTATUS_LOCK     (_Ul(0x1) << OSCCTRL_DPLLSTATUS_LOCK_Pos)
 #define OSCCTRL_DPLLSTATUS_CLKRDY_Pos 1            /**< \brief (OSCCTRL_DPLLSTATUS) DPLL Clock Ready */
-#define OSCCTRL_DPLLSTATUS_CLKRDY   (_U(0x1) << OSCCTRL_DPLLSTATUS_CLKRDY_Pos)
-#define OSCCTRL_DPLLSTATUS_MASK     _U(0x00000003) /**< \brief (OSCCTRL_DPLLSTATUS) MASK Register */
+#define OSCCTRL_DPLLSTATUS_CLKRDY   (_Ul(0x1) << OSCCTRL_DPLLSTATUS_CLKRDY_Pos)
+#define OSCCTRL_DPLLSTATUS_MASK     _Ul(0x00000003) /**< \brief (OSCCTRL_DPLLSTATUS) MASK Register */
 
 /** \brief OscctrlDpll hardware registers */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))

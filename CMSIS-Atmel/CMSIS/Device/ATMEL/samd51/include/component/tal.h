@@ -51,13 +51,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_CTRLA_OFFSET            0x000        /**< \brief (TAL_CTRLA offset) Control A */
-#define TAL_CTRLA_RESETVALUE        _U(0x00)     /**< \brief (TAL_CTRLA reset_value) Control A */
+#define TAL_CTRLA_RESETVALUE        _Ul(0x00)     /**< \brief (TAL_CTRLA reset_value) Control A */
 
 #define TAL_CTRLA_SWRST_Pos         0            /**< \brief (TAL_CTRLA) Software Reset */
-#define TAL_CTRLA_SWRST             (_U(0x1) << TAL_CTRLA_SWRST_Pos)
+#define TAL_CTRLA_SWRST             (_Ul(0x1) << TAL_CTRLA_SWRST_Pos)
 #define TAL_CTRLA_ENABLE_Pos        1            /**< \brief (TAL_CTRLA) Enable */
-#define TAL_CTRLA_ENABLE            (_U(0x1) << TAL_CTRLA_ENABLE_Pos)
-#define TAL_CTRLA_MASK              _U(0x03)     /**< \brief (TAL_CTRLA) MASK Register */
+#define TAL_CTRLA_ENABLE            (_Ul(0x1) << TAL_CTRLA_ENABLE_Pos)
+#define TAL_CTRLA_MASK              _Ul(0x03)     /**< \brief (TAL_CTRLA) MASK Register */
 
 /* -------- TAL_EXTCTRL : (TAL Offset: 0x001) (R/W  8) External Break Control -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -72,13 +72,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_EXTCTRL_OFFSET          0x001        /**< \brief (TAL_EXTCTRL offset) External Break Control */
-#define TAL_EXTCTRL_RESETVALUE      _U(0x00)     /**< \brief (TAL_EXTCTRL reset_value) External Break Control */
+#define TAL_EXTCTRL_RESETVALUE      _Ul(0x00)     /**< \brief (TAL_EXTCTRL reset_value) External Break Control */
 
 #define TAL_EXTCTRL_ENABLE_Pos      0            /**< \brief (TAL_EXTCTRL) Enable BRK Pin */
-#define TAL_EXTCTRL_ENABLE          (_U(0x1) << TAL_EXTCTRL_ENABLE_Pos)
+#define TAL_EXTCTRL_ENABLE          (_Ul(0x1) << TAL_EXTCTRL_ENABLE_Pos)
 #define TAL_EXTCTRL_INV_Pos         1            /**< \brief (TAL_EXTCTRL) Invert BRK Pin */
-#define TAL_EXTCTRL_INV             (_U(0x1) << TAL_EXTCTRL_INV_Pos)
-#define TAL_EXTCTRL_MASK            _U(0x03)     /**< \brief (TAL_EXTCTRL) MASK Register */
+#define TAL_EXTCTRL_INV             (_Ul(0x1) << TAL_EXTCTRL_INV_Pos)
+#define TAL_EXTCTRL_MASK            _Ul(0x03)     /**< \brief (TAL_EXTCTRL) MASK Register */
 
 /* -------- TAL_EVCTRL : (TAL Offset: 0x004) (R/W 16) Event Control -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -99,18 +99,18 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_EVCTRL_OFFSET           0x004        /**< \brief (TAL_EVCTRL offset) Event Control */
-#define TAL_EVCTRL_RESETVALUE       _U(0x0000)   /**< \brief (TAL_EVCTRL reset_value) Event Control */
+#define TAL_EVCTRL_RESETVALUE       _Ul(0x0000)   /**< \brief (TAL_EVCTRL reset_value) Event Control */
 
 #define TAL_EVCTRL_BRKEI_Pos        0            /**< \brief (TAL_EVCTRL) Break Input Event Enable */
-#define TAL_EVCTRL_BRKEI            (_U(0x1) << TAL_EVCTRL_BRKEI_Pos)
+#define TAL_EVCTRL_BRKEI            (_Ul(0x1) << TAL_EVCTRL_BRKEI_Pos)
 #define TAL_EVCTRL_BRKEO_Pos        1            /**< \brief (TAL_EVCTRL) Break Output Event Enable */
-#define TAL_EVCTRL_BRKEO            (_U(0x1) << TAL_EVCTRL_BRKEO_Pos)
+#define TAL_EVCTRL_BRKEO            (_Ul(0x1) << TAL_EVCTRL_BRKEO_Pos)
 #define TAL_EVCTRL_IRQMONEO0_Pos    2            /**< \brief (TAL_EVCTRL) Interrupt Request Monitor 0 Output Event Enable */
 #define TAL_EVCTRL_IRQMONEO0        (1 << TAL_EVCTRL_IRQMONEO0_Pos)
 #define TAL_EVCTRL_IRQMONEO_Pos     2            /**< \brief (TAL_EVCTRL) Interrupt Request Monitor x Output Event Enable */
-#define TAL_EVCTRL_IRQMONEO_Msk     (_U(0x1) << TAL_EVCTRL_IRQMONEO_Pos)
+#define TAL_EVCTRL_IRQMONEO_Msk     (_Ul(0x1) << TAL_EVCTRL_IRQMONEO_Pos)
 #define TAL_EVCTRL_IRQMONEO(value)  (TAL_EVCTRL_IRQMONEO_Msk & ((value) << TAL_EVCTRL_IRQMONEO_Pos))
-#define TAL_EVCTRL_MASK             _U(0x0007)   /**< \brief (TAL_EVCTRL) MASK Register */
+#define TAL_EVCTRL_MASK             _Ul(0x0007)   /**< \brief (TAL_EVCTRL) MASK Register */
 
 /* -------- TAL_INTENCLR : (TAL Offset: 0x008) (R/W  8) Interrupt Enable Clear -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -131,18 +131,18 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTENCLR_OFFSET         0x008        /**< \brief (TAL_INTENCLR offset) Interrupt Enable Clear */
-#define TAL_INTENCLR_RESETVALUE     _U(0x00)     /**< \brief (TAL_INTENCLR reset_value) Interrupt Enable Clear */
+#define TAL_INTENCLR_RESETVALUE     _Ul(0x00)     /**< \brief (TAL_INTENCLR reset_value) Interrupt Enable Clear */
 
 #define TAL_INTENCLR_BRK_Pos        0            /**< \brief (TAL_INTENCLR) Break Interrupt Enable */
-#define TAL_INTENCLR_BRK            (_U(0x1) << TAL_INTENCLR_BRK_Pos)
+#define TAL_INTENCLR_BRK            (_Ul(0x1) << TAL_INTENCLR_BRK_Pos)
 #define TAL_INTENCLR_IPS0_Pos       1            /**< \brief (TAL_INTENCLR) Inter-Processor Signal Interrupt Enable for CPU 0 */
 #define TAL_INTENCLR_IPS0           (1 << TAL_INTENCLR_IPS0_Pos)
 #define TAL_INTENCLR_IPS1_Pos       2            /**< \brief (TAL_INTENCLR) Inter-Processor Signal Interrupt Enable for CPU 1 */
 #define TAL_INTENCLR_IPS1           (1 << TAL_INTENCLR_IPS1_Pos)
 #define TAL_INTENCLR_IPS_Pos        1            /**< \brief (TAL_INTENCLR) Inter-Processor Signal Interrupt Enable for CPU x */
-#define TAL_INTENCLR_IPS_Msk        (_U(0x3) << TAL_INTENCLR_IPS_Pos)
+#define TAL_INTENCLR_IPS_Msk        (_Ul(0x3) << TAL_INTENCLR_IPS_Pos)
 #define TAL_INTENCLR_IPS(value)     (TAL_INTENCLR_IPS_Msk & ((value) << TAL_INTENCLR_IPS_Pos))
-#define TAL_INTENCLR_MASK           _U(0x07)     /**< \brief (TAL_INTENCLR) MASK Register */
+#define TAL_INTENCLR_MASK           _Ul(0x07)     /**< \brief (TAL_INTENCLR) MASK Register */
 
 /* -------- TAL_INTENSET : (TAL Offset: 0x009) (R/W  8) Interrupt Enable Set -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -163,18 +163,18 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTENSET_OFFSET         0x009        /**< \brief (TAL_INTENSET offset) Interrupt Enable Set */
-#define TAL_INTENSET_RESETVALUE     _U(0x00)     /**< \brief (TAL_INTENSET reset_value) Interrupt Enable Set */
+#define TAL_INTENSET_RESETVALUE     _Ul(0x00)     /**< \brief (TAL_INTENSET reset_value) Interrupt Enable Set */
 
 #define TAL_INTENSET_BRK_Pos        0            /**< \brief (TAL_INTENSET) Break Interrupt Enable */
-#define TAL_INTENSET_BRK            (_U(0x1) << TAL_INTENSET_BRK_Pos)
+#define TAL_INTENSET_BRK            (_Ul(0x1) << TAL_INTENSET_BRK_Pos)
 #define TAL_INTENSET_IPS0_Pos       1            /**< \brief (TAL_INTENSET) Inter-Processor Signal Interrupt Enable for CPU 0 */
 #define TAL_INTENSET_IPS0           (1 << TAL_INTENSET_IPS0_Pos)
 #define TAL_INTENSET_IPS1_Pos       2            /**< \brief (TAL_INTENSET) Inter-Processor Signal Interrupt Enable for CPU 1 */
 #define TAL_INTENSET_IPS1           (1 << TAL_INTENSET_IPS1_Pos)
 #define TAL_INTENSET_IPS_Pos        1            /**< \brief (TAL_INTENSET) Inter-Processor Signal Interrupt Enable for CPU x */
-#define TAL_INTENSET_IPS_Msk        (_U(0x3) << TAL_INTENSET_IPS_Pos)
+#define TAL_INTENSET_IPS_Msk        (_Ul(0x3) << TAL_INTENSET_IPS_Pos)
 #define TAL_INTENSET_IPS(value)     (TAL_INTENSET_IPS_Msk & ((value) << TAL_INTENSET_IPS_Pos))
-#define TAL_INTENSET_MASK           _U(0x07)     /**< \brief (TAL_INTENSET) MASK Register */
+#define TAL_INTENSET_MASK           _Ul(0x07)     /**< \brief (TAL_INTENSET) MASK Register */
 
 /* -------- TAL_INTFLAG : (TAL Offset: 0x00A) (R/W  8) Interrupt Flag Status and Clear -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -195,18 +195,18 @@ typedef union { // __I to avoid read-modify-write on write-to-clear register
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTFLAG_OFFSET          0x00A        /**< \brief (TAL_INTFLAG offset) Interrupt Flag Status and Clear */
-#define TAL_INTFLAG_RESETVALUE      _U(0x00)     /**< \brief (TAL_INTFLAG reset_value) Interrupt Flag Status and Clear */
+#define TAL_INTFLAG_RESETVALUE      _Ul(0x00)     /**< \brief (TAL_INTFLAG reset_value) Interrupt Flag Status and Clear */
 
 #define TAL_INTFLAG_BRK_Pos         0            /**< \brief (TAL_INTFLAG) Break */
-#define TAL_INTFLAG_BRK             (_U(0x1) << TAL_INTFLAG_BRK_Pos)
+#define TAL_INTFLAG_BRK             (_Ul(0x1) << TAL_INTFLAG_BRK_Pos)
 #define TAL_INTFLAG_IPS0_Pos        1            /**< \brief (TAL_INTFLAG) Inter-Processor Signal for CPU 0 */
 #define TAL_INTFLAG_IPS0            (1 << TAL_INTFLAG_IPS0_Pos)
 #define TAL_INTFLAG_IPS1_Pos        2            /**< \brief (TAL_INTFLAG) Inter-Processor Signal for CPU 1 */
 #define TAL_INTFLAG_IPS1            (1 << TAL_INTFLAG_IPS1_Pos)
 #define TAL_INTFLAG_IPS_Pos         1            /**< \brief (TAL_INTFLAG) Inter-Processor Signal for CPU x */
-#define TAL_INTFLAG_IPS_Msk         (_U(0x3) << TAL_INTFLAG_IPS_Pos)
+#define TAL_INTFLAG_IPS_Msk         (_Ul(0x3) << TAL_INTFLAG_IPS_Pos)
 #define TAL_INTFLAG_IPS(value)      (TAL_INTFLAG_IPS_Msk & ((value) << TAL_INTFLAG_IPS_Pos))
-#define TAL_INTFLAG_MASK            _U(0x07)     /**< \brief (TAL_INTFLAG) MASK Register */
+#define TAL_INTFLAG_MASK            _Ul(0x07)     /**< \brief (TAL_INTFLAG) MASK Register */
 
 /* -------- TAL_GLOBMASK : (TAL Offset: 0x00B) (R/W  8) Global Break Requests Mask -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -227,20 +227,20 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_GLOBMASK_OFFSET         0x00B        /**< \brief (TAL_GLOBMASK offset) Global Break Requests Mask */
-#define TAL_GLOBMASK_RESETVALUE     _U(0x00)     /**< \brief (TAL_GLOBMASK reset_value) Global Break Requests Mask */
+#define TAL_GLOBMASK_RESETVALUE     _Ul(0x00)     /**< \brief (TAL_GLOBMASK reset_value) Global Break Requests Mask */
 
 #define TAL_GLOBMASK_CPU0_Pos       0            /**< \brief (TAL_GLOBMASK) CPU 0 Break Master */
 #define TAL_GLOBMASK_CPU0           (1 << TAL_GLOBMASK_CPU0_Pos)
 #define TAL_GLOBMASK_CPU1_Pos       1            /**< \brief (TAL_GLOBMASK) CPU 1 Break Master */
 #define TAL_GLOBMASK_CPU1           (1 << TAL_GLOBMASK_CPU1_Pos)
 #define TAL_GLOBMASK_CPU_Pos        0            /**< \brief (TAL_GLOBMASK) CPU x Break Master */
-#define TAL_GLOBMASK_CPU_Msk        (_U(0x3) << TAL_GLOBMASK_CPU_Pos)
+#define TAL_GLOBMASK_CPU_Msk        (_Ul(0x3) << TAL_GLOBMASK_CPU_Pos)
 #define TAL_GLOBMASK_CPU(value)     (TAL_GLOBMASK_CPU_Msk & ((value) << TAL_GLOBMASK_CPU_Pos))
 #define TAL_GLOBMASK_EVBRK_Pos      6            /**< \brief (TAL_GLOBMASK) Event Break Master */
-#define TAL_GLOBMASK_EVBRK          (_U(0x1) << TAL_GLOBMASK_EVBRK_Pos)
+#define TAL_GLOBMASK_EVBRK          (_Ul(0x1) << TAL_GLOBMASK_EVBRK_Pos)
 #define TAL_GLOBMASK_EXTBRK_Pos     7            /**< \brief (TAL_GLOBMASK) External Break Master */
-#define TAL_GLOBMASK_EXTBRK         (_U(0x1) << TAL_GLOBMASK_EXTBRK_Pos)
-#define TAL_GLOBMASK_MASK           _U(0xC3)     /**< \brief (TAL_GLOBMASK) MASK Register */
+#define TAL_GLOBMASK_EXTBRK         (_Ul(0x1) << TAL_GLOBMASK_EXTBRK_Pos)
+#define TAL_GLOBMASK_MASK           _Ul(0xC3)     /**< \brief (TAL_GLOBMASK) MASK Register */
 
 /* -------- TAL_HALT : (TAL Offset: 0x00C) ( /W  8) Debug Halt Request -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -261,20 +261,20 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_HALT_OFFSET             0x00C        /**< \brief (TAL_HALT offset) Debug Halt Request */
-#define TAL_HALT_RESETVALUE         _U(0x00)     /**< \brief (TAL_HALT reset_value) Debug Halt Request */
+#define TAL_HALT_RESETVALUE         _Ul(0x00)     /**< \brief (TAL_HALT reset_value) Debug Halt Request */
 
 #define TAL_HALT_CPU0_Pos           0            /**< \brief (TAL_HALT) CPU 0 Break Master */
 #define TAL_HALT_CPU0               (1 << TAL_HALT_CPU0_Pos)
 #define TAL_HALT_CPU1_Pos           1            /**< \brief (TAL_HALT) CPU 1 Break Master */
 #define TAL_HALT_CPU1               (1 << TAL_HALT_CPU1_Pos)
 #define TAL_HALT_CPU_Pos            0            /**< \brief (TAL_HALT) CPU x Break Master */
-#define TAL_HALT_CPU_Msk            (_U(0x3) << TAL_HALT_CPU_Pos)
+#define TAL_HALT_CPU_Msk            (_Ul(0x3) << TAL_HALT_CPU_Pos)
 #define TAL_HALT_CPU(value)         (TAL_HALT_CPU_Msk & ((value) << TAL_HALT_CPU_Pos))
 #define TAL_HALT_EVBRK_Pos          6            /**< \brief (TAL_HALT) Event Break Master */
-#define TAL_HALT_EVBRK              (_U(0x1) << TAL_HALT_EVBRK_Pos)
+#define TAL_HALT_EVBRK              (_Ul(0x1) << TAL_HALT_EVBRK_Pos)
 #define TAL_HALT_EXTBRK_Pos         7            /**< \brief (TAL_HALT) External Break Master */
-#define TAL_HALT_EXTBRK             (_U(0x1) << TAL_HALT_EXTBRK_Pos)
-#define TAL_HALT_MASK               _U(0xC3)     /**< \brief (TAL_HALT) MASK Register */
+#define TAL_HALT_EXTBRK             (_Ul(0x1) << TAL_HALT_EXTBRK_Pos)
+#define TAL_HALT_MASK               _Ul(0xC3)     /**< \brief (TAL_HALT) MASK Register */
 
 /* -------- TAL_RESTART : (TAL Offset: 0x00D) ( /W  8) Debug Restart Request -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -294,18 +294,18 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_RESTART_OFFSET          0x00D        /**< \brief (TAL_RESTART offset) Debug Restart Request */
-#define TAL_RESTART_RESETVALUE      _U(0x00)     /**< \brief (TAL_RESTART reset_value) Debug Restart Request */
+#define TAL_RESTART_RESETVALUE      _Ul(0x00)     /**< \brief (TAL_RESTART reset_value) Debug Restart Request */
 
 #define TAL_RESTART_CPU0_Pos        0            /**< \brief (TAL_RESTART) CPU 0 Break Master */
 #define TAL_RESTART_CPU0            (1 << TAL_RESTART_CPU0_Pos)
 #define TAL_RESTART_CPU1_Pos        1            /**< \brief (TAL_RESTART) CPU 1 Break Master */
 #define TAL_RESTART_CPU1            (1 << TAL_RESTART_CPU1_Pos)
 #define TAL_RESTART_CPU_Pos         0            /**< \brief (TAL_RESTART) CPU x Break Master */
-#define TAL_RESTART_CPU_Msk         (_U(0x3) << TAL_RESTART_CPU_Pos)
+#define TAL_RESTART_CPU_Msk         (_Ul(0x3) << TAL_RESTART_CPU_Pos)
 #define TAL_RESTART_CPU(value)      (TAL_RESTART_CPU_Msk & ((value) << TAL_RESTART_CPU_Pos))
 #define TAL_RESTART_EXTBRK_Pos      7            /**< \brief (TAL_RESTART) External Break Master */
-#define TAL_RESTART_EXTBRK          (_U(0x1) << TAL_RESTART_EXTBRK_Pos)
-#define TAL_RESTART_MASK            _U(0x83)     /**< \brief (TAL_RESTART) MASK Register */
+#define TAL_RESTART_EXTBRK          (_Ul(0x1) << TAL_RESTART_EXTBRK_Pos)
+#define TAL_RESTART_MASK            _Ul(0x83)     /**< \brief (TAL_RESTART) MASK Register */
 
 /* -------- TAL_BRKSTATUS : (TAL Offset: 0x00E) (R/  16) Break Request Status -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -322,21 +322,21 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_BRKSTATUS_OFFSET        0x00E        /**< \brief (TAL_BRKSTATUS offset) Break Request Status */
-#define TAL_BRKSTATUS_RESETVALUE    _U(0x0000)   /**< \brief (TAL_BRKSTATUS reset_value) Break Request Status */
+#define TAL_BRKSTATUS_RESETVALUE    _Ul(0x0000)   /**< \brief (TAL_BRKSTATUS reset_value) Break Request Status */
 
 #define TAL_BRKSTATUS_CPU0_Pos      0            /**< \brief (TAL_BRKSTATUS) CPU 0 Break Request */
-#define TAL_BRKSTATUS_CPU0_Msk      (_U(0x3) << TAL_BRKSTATUS_CPU0_Pos)
+#define TAL_BRKSTATUS_CPU0_Msk      (_Ul(0x3) << TAL_BRKSTATUS_CPU0_Pos)
 #define TAL_BRKSTATUS_CPU0(value)   (TAL_BRKSTATUS_CPU0_Msk & ((value) << TAL_BRKSTATUS_CPU0_Pos))
 #define TAL_BRKSTATUS_CPU1_Pos      2            /**< \brief (TAL_BRKSTATUS) CPU 1 Break Request */
-#define TAL_BRKSTATUS_CPU1_Msk      (_U(0x3) << TAL_BRKSTATUS_CPU1_Pos)
+#define TAL_BRKSTATUS_CPU1_Msk      (_Ul(0x3) << TAL_BRKSTATUS_CPU1_Pos)
 #define TAL_BRKSTATUS_CPU1(value)   (TAL_BRKSTATUS_CPU1_Msk & ((value) << TAL_BRKSTATUS_CPU1_Pos))
 #define TAL_BRKSTATUS_EVBRK_Pos     12           /**< \brief (TAL_BRKSTATUS) Event Break Request */
-#define TAL_BRKSTATUS_EVBRK_Msk     (_U(0x3) << TAL_BRKSTATUS_EVBRK_Pos)
+#define TAL_BRKSTATUS_EVBRK_Msk     (_Ul(0x3) << TAL_BRKSTATUS_EVBRK_Pos)
 #define TAL_BRKSTATUS_EVBRK(value)  (TAL_BRKSTATUS_EVBRK_Msk & ((value) << TAL_BRKSTATUS_EVBRK_Pos))
 #define TAL_BRKSTATUS_EXTBRK_Pos    14           /**< \brief (TAL_BRKSTATUS) External Break Request */
-#define TAL_BRKSTATUS_EXTBRK_Msk    (_U(0x3) << TAL_BRKSTATUS_EXTBRK_Pos)
+#define TAL_BRKSTATUS_EXTBRK_Msk    (_Ul(0x3) << TAL_BRKSTATUS_EXTBRK_Pos)
 #define TAL_BRKSTATUS_EXTBRK(value) (TAL_BRKSTATUS_EXTBRK_Msk & ((value) << TAL_BRKSTATUS_EXTBRK_Pos))
-#define TAL_BRKSTATUS_MASK          _U(0xF00F)   /**< \brief (TAL_BRKSTATUS) MASK Register */
+#define TAL_BRKSTATUS_MASK          _Ul(0xF00F)   /**< \brief (TAL_BRKSTATUS) MASK Register */
 
 /* -------- TAL_CTICTRLA : (TAL Offset: 0x010) (R/W  8) CTIS Cross-Trigger Interface n Control A -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -352,30 +352,30 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_CTICTRLA_OFFSET         0x010        /**< \brief (TAL_CTICTRLA offset) Cross-Trigger Interface n Control A */
-#define TAL_CTICTRLA_RESETVALUE     _U(0x00)     /**< \brief (TAL_CTICTRLA reset_value) Cross-Trigger Interface n Control A */
+#define TAL_CTICTRLA_RESETVALUE     _Ul(0x00)     /**< \brief (TAL_CTICTRLA reset_value) Cross-Trigger Interface n Control A */
 
 #define TAL_CTICTRLA_BRK_Pos        0            /**< \brief (TAL_CTICTRLA) Action when global break issued */
-#define TAL_CTICTRLA_BRK_Msk        (_U(0x3) << TAL_CTICTRLA_BRK_Pos)
+#define TAL_CTICTRLA_BRK_Msk        (_Ul(0x3) << TAL_CTICTRLA_BRK_Pos)
 #define TAL_CTICTRLA_BRK(value)     (TAL_CTICTRLA_BRK_Msk & ((value) << TAL_CTICTRLA_BRK_Pos))
-#define   TAL_CTICTRLA_BRK_BREAK_Val      _U(0x0)   /**< \brief (TAL_CTICTRLA) Break when requested */
-#define   TAL_CTICTRLA_BRK_INTERRUPT_Val  _U(0x1)   /**< \brief (TAL_CTICTRLA) Trigger DBG interrupt instead of break */
-#define   TAL_CTICTRLA_BRK_IGNORE_Val     _U(0x2)   /**< \brief (TAL_CTICTRLA) Ignore break request */
+#define   TAL_CTICTRLA_BRK_BREAK_Val      _Ul(0x0)   /**< \brief (TAL_CTICTRLA) Break when requested */
+#define   TAL_CTICTRLA_BRK_INTERRUPT_Val  _Ul(0x1)   /**< \brief (TAL_CTICTRLA) Trigger DBG interrupt instead of break */
+#define   TAL_CTICTRLA_BRK_IGNORE_Val     _Ul(0x2)   /**< \brief (TAL_CTICTRLA) Ignore break request */
 #define TAL_CTICTRLA_BRK_BREAK      (TAL_CTICTRLA_BRK_BREAK_Val    << TAL_CTICTRLA_BRK_Pos)
 #define TAL_CTICTRLA_BRK_INTERRUPT  (TAL_CTICTRLA_BRK_INTERRUPT_Val << TAL_CTICTRLA_BRK_Pos)
 #define TAL_CTICTRLA_BRK_IGNORE     (TAL_CTICTRLA_BRK_IGNORE_Val   << TAL_CTICTRLA_BRK_Pos)
 #define TAL_CTICTRLA_RESTART_Pos    2            /**< \brief (TAL_CTICTRLA) Action when global restart issued */
-#define TAL_CTICTRLA_RESTART        (_U(0x1) << TAL_CTICTRLA_RESTART_Pos)
-#define   TAL_CTICTRLA_RESTART_RESTART_Val _U(0x0)   /**< \brief (TAL_CTICTRLA) Restart when requested */
-#define   TAL_CTICTRLA_RESTART_IGNORE_Val _U(0x1)   /**< \brief (TAL_CTICTRLA) Ignore restart request */
+#define TAL_CTICTRLA_RESTART        (_Ul(0x1) << TAL_CTICTRLA_RESTART_Pos)
+#define   TAL_CTICTRLA_RESTART_RESTART_Val _Ul(0x0)   /**< \brief (TAL_CTICTRLA) Restart when requested */
+#define   TAL_CTICTRLA_RESTART_IGNORE_Val _Ul(0x1)   /**< \brief (TAL_CTICTRLA) Ignore restart request */
 #define TAL_CTICTRLA_RESTART_RESTART (TAL_CTICTRLA_RESTART_RESTART_Val << TAL_CTICTRLA_RESTART_Pos)
 #define TAL_CTICTRLA_RESTART_IGNORE (TAL_CTICTRLA_RESTART_IGNORE_Val << TAL_CTICTRLA_RESTART_Pos)
 #define TAL_CTICTRLA_IPS_Pos        3            /**< \brief (TAL_CTICTRLA) Action when inter-process resource freed */
-#define TAL_CTICTRLA_IPS            (_U(0x1) << TAL_CTICTRLA_IPS_Pos)
-#define   TAL_CTICTRLA_IPS_EVENT_Val      _U(0x0)   /**< \brief (TAL_CTICTRLA) Generate CPU Event when awaited resource is freed. */
-#define   TAL_CTICTRLA_IPS_INTERRUPT_Val  _U(0x1)   /**< \brief (TAL_CTICTRLA) Generate Interrupt when awaited resource is freed. */
+#define TAL_CTICTRLA_IPS            (_Ul(0x1) << TAL_CTICTRLA_IPS_Pos)
+#define   TAL_CTICTRLA_IPS_EVENT_Val      _Ul(0x0)   /**< \brief (TAL_CTICTRLA) Generate CPU Event when awaited resource is freed. */
+#define   TAL_CTICTRLA_IPS_INTERRUPT_Val  _Ul(0x1)   /**< \brief (TAL_CTICTRLA) Generate Interrupt when awaited resource is freed. */
 #define TAL_CTICTRLA_IPS_EVENT      (TAL_CTICTRLA_IPS_EVENT_Val    << TAL_CTICTRLA_IPS_Pos)
 #define TAL_CTICTRLA_IPS_INTERRUPT  (TAL_CTICTRLA_IPS_INTERRUPT_Val << TAL_CTICTRLA_IPS_Pos)
-#define TAL_CTICTRLA_MASK           _U(0x0F)     /**< \brief (TAL_CTICTRLA) MASK Register */
+#define TAL_CTICTRLA_MASK           _Ul(0x0F)     /**< \brief (TAL_CTICTRLA) MASK Register */
 
 /* -------- TAL_CTIMASK : (TAL Offset: 0x011) (R/W  8) CTIS Cross-Trigger Interface n Mask -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -396,20 +396,20 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_CTIMASK_OFFSET          0x011        /**< \brief (TAL_CTIMASK offset) Cross-Trigger Interface n Mask */
-#define TAL_CTIMASK_RESETVALUE      _U(0x00)     /**< \brief (TAL_CTIMASK reset_value) Cross-Trigger Interface n Mask */
+#define TAL_CTIMASK_RESETVALUE      _Ul(0x00)     /**< \brief (TAL_CTIMASK reset_value) Cross-Trigger Interface n Mask */
 
 #define TAL_CTIMASK_CPU0_Pos        0            /**< \brief (TAL_CTIMASK) CPU 0 Break Master */
 #define TAL_CTIMASK_CPU0            (1 << TAL_CTIMASK_CPU0_Pos)
 #define TAL_CTIMASK_CPU1_Pos        1            /**< \brief (TAL_CTIMASK) CPU 1 Break Master */
 #define TAL_CTIMASK_CPU1            (1 << TAL_CTIMASK_CPU1_Pos)
 #define TAL_CTIMASK_CPU_Pos         0            /**< \brief (TAL_CTIMASK) CPU x Break Master */
-#define TAL_CTIMASK_CPU_Msk         (_U(0x3) << TAL_CTIMASK_CPU_Pos)
+#define TAL_CTIMASK_CPU_Msk         (_Ul(0x3) << TAL_CTIMASK_CPU_Pos)
 #define TAL_CTIMASK_CPU(value)      (TAL_CTIMASK_CPU_Msk & ((value) << TAL_CTIMASK_CPU_Pos))
 #define TAL_CTIMASK_EVBRK_Pos       6            /**< \brief (TAL_CTIMASK) Event Break Master */
-#define TAL_CTIMASK_EVBRK           (_U(0x1) << TAL_CTIMASK_EVBRK_Pos)
+#define TAL_CTIMASK_EVBRK           (_Ul(0x1) << TAL_CTIMASK_EVBRK_Pos)
 #define TAL_CTIMASK_EXTBRK_Pos      7            /**< \brief (TAL_CTIMASK) External Break Master */
-#define TAL_CTIMASK_EXTBRK          (_U(0x1) << TAL_CTIMASK_EXTBRK_Pos)
-#define TAL_CTIMASK_MASK            _U(0xC3)     /**< \brief (TAL_CTIMASK) MASK Register */
+#define TAL_CTIMASK_EXTBRK          (_Ul(0x1) << TAL_CTIMASK_EXTBRK_Pos)
+#define TAL_CTIMASK_MASK            _Ul(0xC3)     /**< \brief (TAL_CTIMASK) MASK Register */
 
 /* -------- TAL_INTSTATUS : (TAL Offset: 0x020) (R/   8) Interrupt n Status -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -432,7 +432,7 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTSTATUS_OFFSET        0x020        /**< \brief (TAL_INTSTATUS offset) Interrupt n Status */
-#define TAL_INTSTATUS_RESETVALUE    _U(0x00)     /**< \brief (TAL_INTSTATUS reset_value) Interrupt n Status */
+#define TAL_INTSTATUS_RESETVALUE    _Ul(0x00)     /**< \brief (TAL_INTSTATUS reset_value) Interrupt n Status */
 
 #define TAL_INTSTATUS_IRQ0_Pos      0            /**< \brief (TAL_INTSTATUS) Interrupt Status for Interrupt Request 0 within Interrupt n */
 #define TAL_INTSTATUS_IRQ0          (1 << TAL_INTSTATUS_IRQ0_Pos)
@@ -451,9 +451,9 @@ typedef union {
 #define TAL_INTSTATUS_IRQ7_Pos      7            /**< \brief (TAL_INTSTATUS) Interrupt Status for Interrupt Request 7 within Interrupt n */
 #define TAL_INTSTATUS_IRQ7          (1 << TAL_INTSTATUS_IRQ7_Pos)
 #define TAL_INTSTATUS_IRQ_Pos       0            /**< \brief (TAL_INTSTATUS) Interrupt Status for Interrupt Request x within Interrupt n */
-#define TAL_INTSTATUS_IRQ_Msk       (_U(0xFF) << TAL_INTSTATUS_IRQ_Pos)
+#define TAL_INTSTATUS_IRQ_Msk       (_Ul(0xFF) << TAL_INTSTATUS_IRQ_Pos)
 #define TAL_INTSTATUS_IRQ(value)    (TAL_INTSTATUS_IRQ_Msk & ((value) << TAL_INTSTATUS_IRQ_Pos))
-#define TAL_INTSTATUS_MASK          _U(0xFF)     /**< \brief (TAL_INTSTATUS) MASK Register */
+#define TAL_INTSTATUS_MASK          _Ul(0xFF)     /**< \brief (TAL_INTSTATUS) MASK Register */
 
 /* -------- TAL_DMACPUSEL0 : (TAL Offset: 0x110) (R/W 32) DMA Channel Interrupts CPU Select 0 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -497,57 +497,57 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_DMACPUSEL0_OFFSET       0x110        /**< \brief (TAL_DMACPUSEL0 offset) DMA Channel Interrupts CPU Select 0 */
-#define TAL_DMACPUSEL0_RESETVALUE   _U(0x00000000) /**< \brief (TAL_DMACPUSEL0 reset_value) DMA Channel Interrupts CPU Select 0 */
+#define TAL_DMACPUSEL0_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_DMACPUSEL0 reset_value) DMA Channel Interrupts CPU Select 0 */
 
 #define TAL_DMACPUSEL0_CH0_Pos      0            /**< \brief (TAL_DMACPUSEL0) DMA Channel 0 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH0_Msk      (_U(0x1) << TAL_DMACPUSEL0_CH0_Pos)
+#define TAL_DMACPUSEL0_CH0_Msk      (_Ul(0x1) << TAL_DMACPUSEL0_CH0_Pos)
 #define TAL_DMACPUSEL0_CH0(value)   (TAL_DMACPUSEL0_CH0_Msk & ((value) << TAL_DMACPUSEL0_CH0_Pos))
 #define TAL_DMACPUSEL0_CH1_Pos      2            /**< \brief (TAL_DMACPUSEL0) DMA Channel 1 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH1_Msk      (_U(0x1) << TAL_DMACPUSEL0_CH1_Pos)
+#define TAL_DMACPUSEL0_CH1_Msk      (_Ul(0x1) << TAL_DMACPUSEL0_CH1_Pos)
 #define TAL_DMACPUSEL0_CH1(value)   (TAL_DMACPUSEL0_CH1_Msk & ((value) << TAL_DMACPUSEL0_CH1_Pos))
 #define TAL_DMACPUSEL0_CH2_Pos      4            /**< \brief (TAL_DMACPUSEL0) DMA Channel 2 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH2_Msk      (_U(0x1) << TAL_DMACPUSEL0_CH2_Pos)
+#define TAL_DMACPUSEL0_CH2_Msk      (_Ul(0x1) << TAL_DMACPUSEL0_CH2_Pos)
 #define TAL_DMACPUSEL0_CH2(value)   (TAL_DMACPUSEL0_CH2_Msk & ((value) << TAL_DMACPUSEL0_CH2_Pos))
 #define TAL_DMACPUSEL0_CH3_Pos      6            /**< \brief (TAL_DMACPUSEL0) DMA Channel 3 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH3_Msk      (_U(0x1) << TAL_DMACPUSEL0_CH3_Pos)
+#define TAL_DMACPUSEL0_CH3_Msk      (_Ul(0x1) << TAL_DMACPUSEL0_CH3_Pos)
 #define TAL_DMACPUSEL0_CH3(value)   (TAL_DMACPUSEL0_CH3_Msk & ((value) << TAL_DMACPUSEL0_CH3_Pos))
 #define TAL_DMACPUSEL0_CH4_Pos      8            /**< \brief (TAL_DMACPUSEL0) DMA Channel 4 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH4_Msk      (_U(0x1) << TAL_DMACPUSEL0_CH4_Pos)
+#define TAL_DMACPUSEL0_CH4_Msk      (_Ul(0x1) << TAL_DMACPUSEL0_CH4_Pos)
 #define TAL_DMACPUSEL0_CH4(value)   (TAL_DMACPUSEL0_CH4_Msk & ((value) << TAL_DMACPUSEL0_CH4_Pos))
 #define TAL_DMACPUSEL0_CH5_Pos      10           /**< \brief (TAL_DMACPUSEL0) DMA Channel 5 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH5_Msk      (_U(0x1) << TAL_DMACPUSEL0_CH5_Pos)
+#define TAL_DMACPUSEL0_CH5_Msk      (_Ul(0x1) << TAL_DMACPUSEL0_CH5_Pos)
 #define TAL_DMACPUSEL0_CH5(value)   (TAL_DMACPUSEL0_CH5_Msk & ((value) << TAL_DMACPUSEL0_CH5_Pos))
 #define TAL_DMACPUSEL0_CH6_Pos      12           /**< \brief (TAL_DMACPUSEL0) DMA Channel 6 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH6_Msk      (_U(0x1) << TAL_DMACPUSEL0_CH6_Pos)
+#define TAL_DMACPUSEL0_CH6_Msk      (_Ul(0x1) << TAL_DMACPUSEL0_CH6_Pos)
 #define TAL_DMACPUSEL0_CH6(value)   (TAL_DMACPUSEL0_CH6_Msk & ((value) << TAL_DMACPUSEL0_CH6_Pos))
 #define TAL_DMACPUSEL0_CH7_Pos      14           /**< \brief (TAL_DMACPUSEL0) DMA Channel 7 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH7_Msk      (_U(0x1) << TAL_DMACPUSEL0_CH7_Pos)
+#define TAL_DMACPUSEL0_CH7_Msk      (_Ul(0x1) << TAL_DMACPUSEL0_CH7_Pos)
 #define TAL_DMACPUSEL0_CH7(value)   (TAL_DMACPUSEL0_CH7_Msk & ((value) << TAL_DMACPUSEL0_CH7_Pos))
 #define TAL_DMACPUSEL0_CH8_Pos      16           /**< \brief (TAL_DMACPUSEL0) DMA Channel 8 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH8_Msk      (_U(0x1) << TAL_DMACPUSEL0_CH8_Pos)
+#define TAL_DMACPUSEL0_CH8_Msk      (_Ul(0x1) << TAL_DMACPUSEL0_CH8_Pos)
 #define TAL_DMACPUSEL0_CH8(value)   (TAL_DMACPUSEL0_CH8_Msk & ((value) << TAL_DMACPUSEL0_CH8_Pos))
 #define TAL_DMACPUSEL0_CH9_Pos      18           /**< \brief (TAL_DMACPUSEL0) DMA Channel 9 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH9_Msk      (_U(0x1) << TAL_DMACPUSEL0_CH9_Pos)
+#define TAL_DMACPUSEL0_CH9_Msk      (_Ul(0x1) << TAL_DMACPUSEL0_CH9_Pos)
 #define TAL_DMACPUSEL0_CH9(value)   (TAL_DMACPUSEL0_CH9_Msk & ((value) << TAL_DMACPUSEL0_CH9_Pos))
 #define TAL_DMACPUSEL0_CH10_Pos     20           /**< \brief (TAL_DMACPUSEL0) DMA Channel 10 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH10_Msk     (_U(0x1) << TAL_DMACPUSEL0_CH10_Pos)
+#define TAL_DMACPUSEL0_CH10_Msk     (_Ul(0x1) << TAL_DMACPUSEL0_CH10_Pos)
 #define TAL_DMACPUSEL0_CH10(value)  (TAL_DMACPUSEL0_CH10_Msk & ((value) << TAL_DMACPUSEL0_CH10_Pos))
 #define TAL_DMACPUSEL0_CH11_Pos     22           /**< \brief (TAL_DMACPUSEL0) DMA Channel 11 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH11_Msk     (_U(0x1) << TAL_DMACPUSEL0_CH11_Pos)
+#define TAL_DMACPUSEL0_CH11_Msk     (_Ul(0x1) << TAL_DMACPUSEL0_CH11_Pos)
 #define TAL_DMACPUSEL0_CH11(value)  (TAL_DMACPUSEL0_CH11_Msk & ((value) << TAL_DMACPUSEL0_CH11_Pos))
 #define TAL_DMACPUSEL0_CH12_Pos     24           /**< \brief (TAL_DMACPUSEL0) DMA Channel 12 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH12_Msk     (_U(0x1) << TAL_DMACPUSEL0_CH12_Pos)
+#define TAL_DMACPUSEL0_CH12_Msk     (_Ul(0x1) << TAL_DMACPUSEL0_CH12_Pos)
 #define TAL_DMACPUSEL0_CH12(value)  (TAL_DMACPUSEL0_CH12_Msk & ((value) << TAL_DMACPUSEL0_CH12_Pos))
 #define TAL_DMACPUSEL0_CH13_Pos     26           /**< \brief (TAL_DMACPUSEL0) DMA Channel 13 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH13_Msk     (_U(0x1) << TAL_DMACPUSEL0_CH13_Pos)
+#define TAL_DMACPUSEL0_CH13_Msk     (_Ul(0x1) << TAL_DMACPUSEL0_CH13_Pos)
 #define TAL_DMACPUSEL0_CH13(value)  (TAL_DMACPUSEL0_CH13_Msk & ((value) << TAL_DMACPUSEL0_CH13_Pos))
 #define TAL_DMACPUSEL0_CH14_Pos     28           /**< \brief (TAL_DMACPUSEL0) DMA Channel 14 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH14_Msk     (_U(0x1) << TAL_DMACPUSEL0_CH14_Pos)
+#define TAL_DMACPUSEL0_CH14_Msk     (_Ul(0x1) << TAL_DMACPUSEL0_CH14_Pos)
 #define TAL_DMACPUSEL0_CH14(value)  (TAL_DMACPUSEL0_CH14_Msk & ((value) << TAL_DMACPUSEL0_CH14_Pos))
 #define TAL_DMACPUSEL0_CH15_Pos     30           /**< \brief (TAL_DMACPUSEL0) DMA Channel 15 Interrupt CPU Select */
-#define TAL_DMACPUSEL0_CH15_Msk     (_U(0x1) << TAL_DMACPUSEL0_CH15_Pos)
+#define TAL_DMACPUSEL0_CH15_Msk     (_Ul(0x1) << TAL_DMACPUSEL0_CH15_Pos)
 #define TAL_DMACPUSEL0_CH15(value)  (TAL_DMACPUSEL0_CH15_Msk & ((value) << TAL_DMACPUSEL0_CH15_Pos))
-#define TAL_DMACPUSEL0_MASK         _U(0x55555555) /**< \brief (TAL_DMACPUSEL0) MASK Register */
+#define TAL_DMACPUSEL0_MASK         _Ul(0x55555555) /**< \brief (TAL_DMACPUSEL0) MASK Register */
 
 /* -------- TAL_DMACPUSEL1 : (TAL Offset: 0x114) (R/W 32) DMA Channel Interrupts CPU Select 1 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -591,57 +591,57 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_DMACPUSEL1_OFFSET       0x114        /**< \brief (TAL_DMACPUSEL1 offset) DMA Channel Interrupts CPU Select 1 */
-#define TAL_DMACPUSEL1_RESETVALUE   _U(0x00000000) /**< \brief (TAL_DMACPUSEL1 reset_value) DMA Channel Interrupts CPU Select 1 */
+#define TAL_DMACPUSEL1_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_DMACPUSEL1 reset_value) DMA Channel Interrupts CPU Select 1 */
 
 #define TAL_DMACPUSEL1_CH16_Pos     0            /**< \brief (TAL_DMACPUSEL1) DMA Channel 16 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH16_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH16_Pos)
+#define TAL_DMACPUSEL1_CH16_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH16_Pos)
 #define TAL_DMACPUSEL1_CH16(value)  (TAL_DMACPUSEL1_CH16_Msk & ((value) << TAL_DMACPUSEL1_CH16_Pos))
 #define TAL_DMACPUSEL1_CH17_Pos     2            /**< \brief (TAL_DMACPUSEL1) DMA Channel 17 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH17_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH17_Pos)
+#define TAL_DMACPUSEL1_CH17_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH17_Pos)
 #define TAL_DMACPUSEL1_CH17(value)  (TAL_DMACPUSEL1_CH17_Msk & ((value) << TAL_DMACPUSEL1_CH17_Pos))
 #define TAL_DMACPUSEL1_CH18_Pos     4            /**< \brief (TAL_DMACPUSEL1) DMA Channel 18 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH18_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH18_Pos)
+#define TAL_DMACPUSEL1_CH18_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH18_Pos)
 #define TAL_DMACPUSEL1_CH18(value)  (TAL_DMACPUSEL1_CH18_Msk & ((value) << TAL_DMACPUSEL1_CH18_Pos))
 #define TAL_DMACPUSEL1_CH19_Pos     6            /**< \brief (TAL_DMACPUSEL1) DMA Channel 19 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH19_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH19_Pos)
+#define TAL_DMACPUSEL1_CH19_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH19_Pos)
 #define TAL_DMACPUSEL1_CH19(value)  (TAL_DMACPUSEL1_CH19_Msk & ((value) << TAL_DMACPUSEL1_CH19_Pos))
 #define TAL_DMACPUSEL1_CH20_Pos     8            /**< \brief (TAL_DMACPUSEL1) DMA Channel 20 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH20_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH20_Pos)
+#define TAL_DMACPUSEL1_CH20_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH20_Pos)
 #define TAL_DMACPUSEL1_CH20(value)  (TAL_DMACPUSEL1_CH20_Msk & ((value) << TAL_DMACPUSEL1_CH20_Pos))
 #define TAL_DMACPUSEL1_CH21_Pos     10           /**< \brief (TAL_DMACPUSEL1) DMA Channel 21 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH21_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH21_Pos)
+#define TAL_DMACPUSEL1_CH21_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH21_Pos)
 #define TAL_DMACPUSEL1_CH21(value)  (TAL_DMACPUSEL1_CH21_Msk & ((value) << TAL_DMACPUSEL1_CH21_Pos))
 #define TAL_DMACPUSEL1_CH22_Pos     12           /**< \brief (TAL_DMACPUSEL1) DMA Channel 22 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH22_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH22_Pos)
+#define TAL_DMACPUSEL1_CH22_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH22_Pos)
 #define TAL_DMACPUSEL1_CH22(value)  (TAL_DMACPUSEL1_CH22_Msk & ((value) << TAL_DMACPUSEL1_CH22_Pos))
 #define TAL_DMACPUSEL1_CH23_Pos     14           /**< \brief (TAL_DMACPUSEL1) DMA Channel 23 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH23_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH23_Pos)
+#define TAL_DMACPUSEL1_CH23_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH23_Pos)
 #define TAL_DMACPUSEL1_CH23(value)  (TAL_DMACPUSEL1_CH23_Msk & ((value) << TAL_DMACPUSEL1_CH23_Pos))
 #define TAL_DMACPUSEL1_CH24_Pos     16           /**< \brief (TAL_DMACPUSEL1) DMA Channel 24 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH24_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH24_Pos)
+#define TAL_DMACPUSEL1_CH24_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH24_Pos)
 #define TAL_DMACPUSEL1_CH24(value)  (TAL_DMACPUSEL1_CH24_Msk & ((value) << TAL_DMACPUSEL1_CH24_Pos))
 #define TAL_DMACPUSEL1_CH25_Pos     18           /**< \brief (TAL_DMACPUSEL1) DMA Channel 25 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH25_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH25_Pos)
+#define TAL_DMACPUSEL1_CH25_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH25_Pos)
 #define TAL_DMACPUSEL1_CH25(value)  (TAL_DMACPUSEL1_CH25_Msk & ((value) << TAL_DMACPUSEL1_CH25_Pos))
 #define TAL_DMACPUSEL1_CH26_Pos     20           /**< \brief (TAL_DMACPUSEL1) DMA Channel 26 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH26_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH26_Pos)
+#define TAL_DMACPUSEL1_CH26_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH26_Pos)
 #define TAL_DMACPUSEL1_CH26(value)  (TAL_DMACPUSEL1_CH26_Msk & ((value) << TAL_DMACPUSEL1_CH26_Pos))
 #define TAL_DMACPUSEL1_CH27_Pos     22           /**< \brief (TAL_DMACPUSEL1) DMA Channel 27 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH27_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH27_Pos)
+#define TAL_DMACPUSEL1_CH27_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH27_Pos)
 #define TAL_DMACPUSEL1_CH27(value)  (TAL_DMACPUSEL1_CH27_Msk & ((value) << TAL_DMACPUSEL1_CH27_Pos))
 #define TAL_DMACPUSEL1_CH28_Pos     24           /**< \brief (TAL_DMACPUSEL1) DMA Channel 28 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH28_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH28_Pos)
+#define TAL_DMACPUSEL1_CH28_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH28_Pos)
 #define TAL_DMACPUSEL1_CH28(value)  (TAL_DMACPUSEL1_CH28_Msk & ((value) << TAL_DMACPUSEL1_CH28_Pos))
 #define TAL_DMACPUSEL1_CH29_Pos     26           /**< \brief (TAL_DMACPUSEL1) DMA Channel 29 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH29_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH29_Pos)
+#define TAL_DMACPUSEL1_CH29_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH29_Pos)
 #define TAL_DMACPUSEL1_CH29(value)  (TAL_DMACPUSEL1_CH29_Msk & ((value) << TAL_DMACPUSEL1_CH29_Pos))
 #define TAL_DMACPUSEL1_CH30_Pos     28           /**< \brief (TAL_DMACPUSEL1) DMA Channel 30 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH30_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH30_Pos)
+#define TAL_DMACPUSEL1_CH30_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH30_Pos)
 #define TAL_DMACPUSEL1_CH30(value)  (TAL_DMACPUSEL1_CH30_Msk & ((value) << TAL_DMACPUSEL1_CH30_Pos))
 #define TAL_DMACPUSEL1_CH31_Pos     30           /**< \brief (TAL_DMACPUSEL1) DMA Channel 31 Interrupt CPU Select */
-#define TAL_DMACPUSEL1_CH31_Msk     (_U(0x1) << TAL_DMACPUSEL1_CH31_Pos)
+#define TAL_DMACPUSEL1_CH31_Msk     (_Ul(0x1) << TAL_DMACPUSEL1_CH31_Pos)
 #define TAL_DMACPUSEL1_CH31(value)  (TAL_DMACPUSEL1_CH31_Msk & ((value) << TAL_DMACPUSEL1_CH31_Pos))
-#define TAL_DMACPUSEL1_MASK         _U(0x55555555) /**< \brief (TAL_DMACPUSEL1) MASK Register */
+#define TAL_DMACPUSEL1_MASK         _Ul(0x55555555) /**< \brief (TAL_DMACPUSEL1) MASK Register */
 
 /* -------- TAL_EVCPUSEL0 : (TAL Offset: 0x118) (R/W 32) EVSYS Channel Interrupts CPU Select 0 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -677,45 +677,45 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_EVCPUSEL0_OFFSET        0x118        /**< \brief (TAL_EVCPUSEL0 offset) EVSYS Channel Interrupts CPU Select 0 */
-#define TAL_EVCPUSEL0_RESETVALUE    _U(0x00000000) /**< \brief (TAL_EVCPUSEL0 reset_value) EVSYS Channel Interrupts CPU Select 0 */
+#define TAL_EVCPUSEL0_RESETVALUE    _Ul(0x00000000) /**< \brief (TAL_EVCPUSEL0 reset_value) EVSYS Channel Interrupts CPU Select 0 */
 
 #define TAL_EVCPUSEL0_CH0_Pos       0            /**< \brief (TAL_EVCPUSEL0) Event Channel 0 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH0_Msk       (_U(0x1) << TAL_EVCPUSEL0_CH0_Pos)
+#define TAL_EVCPUSEL0_CH0_Msk       (_Ul(0x1) << TAL_EVCPUSEL0_CH0_Pos)
 #define TAL_EVCPUSEL0_CH0(value)    (TAL_EVCPUSEL0_CH0_Msk & ((value) << TAL_EVCPUSEL0_CH0_Pos))
 #define TAL_EVCPUSEL0_CH1_Pos       2            /**< \brief (TAL_EVCPUSEL0) Event Channel 1 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH1_Msk       (_U(0x1) << TAL_EVCPUSEL0_CH1_Pos)
+#define TAL_EVCPUSEL0_CH1_Msk       (_Ul(0x1) << TAL_EVCPUSEL0_CH1_Pos)
 #define TAL_EVCPUSEL0_CH1(value)    (TAL_EVCPUSEL0_CH1_Msk & ((value) << TAL_EVCPUSEL0_CH1_Pos))
 #define TAL_EVCPUSEL0_CH2_Pos       4            /**< \brief (TAL_EVCPUSEL0) Event Channel 2 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH2_Msk       (_U(0x1) << TAL_EVCPUSEL0_CH2_Pos)
+#define TAL_EVCPUSEL0_CH2_Msk       (_Ul(0x1) << TAL_EVCPUSEL0_CH2_Pos)
 #define TAL_EVCPUSEL0_CH2(value)    (TAL_EVCPUSEL0_CH2_Msk & ((value) << TAL_EVCPUSEL0_CH2_Pos))
 #define TAL_EVCPUSEL0_CH3_Pos       6            /**< \brief (TAL_EVCPUSEL0) Event Channel 3 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH3_Msk       (_U(0x1) << TAL_EVCPUSEL0_CH3_Pos)
+#define TAL_EVCPUSEL0_CH3_Msk       (_Ul(0x1) << TAL_EVCPUSEL0_CH3_Pos)
 #define TAL_EVCPUSEL0_CH3(value)    (TAL_EVCPUSEL0_CH3_Msk & ((value) << TAL_EVCPUSEL0_CH3_Pos))
 #define TAL_EVCPUSEL0_CH4_Pos       8            /**< \brief (TAL_EVCPUSEL0) Event Channel 4 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH4_Msk       (_U(0x1) << TAL_EVCPUSEL0_CH4_Pos)
+#define TAL_EVCPUSEL0_CH4_Msk       (_Ul(0x1) << TAL_EVCPUSEL0_CH4_Pos)
 #define TAL_EVCPUSEL0_CH4(value)    (TAL_EVCPUSEL0_CH4_Msk & ((value) << TAL_EVCPUSEL0_CH4_Pos))
 #define TAL_EVCPUSEL0_CH5_Pos       10           /**< \brief (TAL_EVCPUSEL0) Event Channel 5 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH5_Msk       (_U(0x1) << TAL_EVCPUSEL0_CH5_Pos)
+#define TAL_EVCPUSEL0_CH5_Msk       (_Ul(0x1) << TAL_EVCPUSEL0_CH5_Pos)
 #define TAL_EVCPUSEL0_CH5(value)    (TAL_EVCPUSEL0_CH5_Msk & ((value) << TAL_EVCPUSEL0_CH5_Pos))
 #define TAL_EVCPUSEL0_CH6_Pos       12           /**< \brief (TAL_EVCPUSEL0) Event Channel 6 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH6_Msk       (_U(0x1) << TAL_EVCPUSEL0_CH6_Pos)
+#define TAL_EVCPUSEL0_CH6_Msk       (_Ul(0x1) << TAL_EVCPUSEL0_CH6_Pos)
 #define TAL_EVCPUSEL0_CH6(value)    (TAL_EVCPUSEL0_CH6_Msk & ((value) << TAL_EVCPUSEL0_CH6_Pos))
 #define TAL_EVCPUSEL0_CH7_Pos       14           /**< \brief (TAL_EVCPUSEL0) Event Channel 7 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH7_Msk       (_U(0x1) << TAL_EVCPUSEL0_CH7_Pos)
+#define TAL_EVCPUSEL0_CH7_Msk       (_Ul(0x1) << TAL_EVCPUSEL0_CH7_Pos)
 #define TAL_EVCPUSEL0_CH7(value)    (TAL_EVCPUSEL0_CH7_Msk & ((value) << TAL_EVCPUSEL0_CH7_Pos))
 #define TAL_EVCPUSEL0_CH8_Pos       16           /**< \brief (TAL_EVCPUSEL0) Event Channel 8 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH8_Msk       (_U(0x1) << TAL_EVCPUSEL0_CH8_Pos)
+#define TAL_EVCPUSEL0_CH8_Msk       (_Ul(0x1) << TAL_EVCPUSEL0_CH8_Pos)
 #define TAL_EVCPUSEL0_CH8(value)    (TAL_EVCPUSEL0_CH8_Msk & ((value) << TAL_EVCPUSEL0_CH8_Pos))
 #define TAL_EVCPUSEL0_CH9_Pos       18           /**< \brief (TAL_EVCPUSEL0) Event Channel 9 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH9_Msk       (_U(0x1) << TAL_EVCPUSEL0_CH9_Pos)
+#define TAL_EVCPUSEL0_CH9_Msk       (_Ul(0x1) << TAL_EVCPUSEL0_CH9_Pos)
 #define TAL_EVCPUSEL0_CH9(value)    (TAL_EVCPUSEL0_CH9_Msk & ((value) << TAL_EVCPUSEL0_CH9_Pos))
 #define TAL_EVCPUSEL0_CH10_Pos      20           /**< \brief (TAL_EVCPUSEL0) Event Channel 10 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH10_Msk      (_U(0x1) << TAL_EVCPUSEL0_CH10_Pos)
+#define TAL_EVCPUSEL0_CH10_Msk      (_Ul(0x1) << TAL_EVCPUSEL0_CH10_Pos)
 #define TAL_EVCPUSEL0_CH10(value)   (TAL_EVCPUSEL0_CH10_Msk & ((value) << TAL_EVCPUSEL0_CH10_Pos))
 #define TAL_EVCPUSEL0_CH11_Pos      22           /**< \brief (TAL_EVCPUSEL0) Event Channel 11 Interrupt CPU Select */
-#define TAL_EVCPUSEL0_CH11_Msk      (_U(0x1) << TAL_EVCPUSEL0_CH11_Pos)
+#define TAL_EVCPUSEL0_CH11_Msk      (_Ul(0x1) << TAL_EVCPUSEL0_CH11_Pos)
 #define TAL_EVCPUSEL0_CH11(value)   (TAL_EVCPUSEL0_CH11_Msk & ((value) << TAL_EVCPUSEL0_CH11_Pos))
-#define TAL_EVCPUSEL0_MASK          _U(0x00555555) /**< \brief (TAL_EVCPUSEL0) MASK Register */
+#define TAL_EVCPUSEL0_MASK          _Ul(0x00555555) /**< \brief (TAL_EVCPUSEL0) MASK Register */
 
 /* -------- TAL_EICCPUSEL0 : (TAL Offset: 0x120) (R/W 32) EIC External Interrupts CPU Select 0 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -759,57 +759,57 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_EICCPUSEL0_OFFSET       0x120        /**< \brief (TAL_EICCPUSEL0 offset) EIC External Interrupts CPU Select 0 */
-#define TAL_EICCPUSEL0_RESETVALUE   _U(0x00000000) /**< \brief (TAL_EICCPUSEL0 reset_value) EIC External Interrupts CPU Select 0 */
+#define TAL_EICCPUSEL0_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_EICCPUSEL0 reset_value) EIC External Interrupts CPU Select 0 */
 
 #define TAL_EICCPUSEL0_EXTINT0_Pos  0            /**< \brief (TAL_EICCPUSEL0) External Interrupt 0 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT0_Msk  (_U(0x1) << TAL_EICCPUSEL0_EXTINT0_Pos)
+#define TAL_EICCPUSEL0_EXTINT0_Msk  (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT0_Pos)
 #define TAL_EICCPUSEL0_EXTINT0(value) (TAL_EICCPUSEL0_EXTINT0_Msk & ((value) << TAL_EICCPUSEL0_EXTINT0_Pos))
 #define TAL_EICCPUSEL0_EXTINT1_Pos  2            /**< \brief (TAL_EICCPUSEL0) External Interrupt 1 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT1_Msk  (_U(0x1) << TAL_EICCPUSEL0_EXTINT1_Pos)
+#define TAL_EICCPUSEL0_EXTINT1_Msk  (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT1_Pos)
 #define TAL_EICCPUSEL0_EXTINT1(value) (TAL_EICCPUSEL0_EXTINT1_Msk & ((value) << TAL_EICCPUSEL0_EXTINT1_Pos))
 #define TAL_EICCPUSEL0_EXTINT2_Pos  4            /**< \brief (TAL_EICCPUSEL0) External Interrupt 2 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT2_Msk  (_U(0x1) << TAL_EICCPUSEL0_EXTINT2_Pos)
+#define TAL_EICCPUSEL0_EXTINT2_Msk  (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT2_Pos)
 #define TAL_EICCPUSEL0_EXTINT2(value) (TAL_EICCPUSEL0_EXTINT2_Msk & ((value) << TAL_EICCPUSEL0_EXTINT2_Pos))
 #define TAL_EICCPUSEL0_EXTINT3_Pos  6            /**< \brief (TAL_EICCPUSEL0) External Interrupt 3 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT3_Msk  (_U(0x1) << TAL_EICCPUSEL0_EXTINT3_Pos)
+#define TAL_EICCPUSEL0_EXTINT3_Msk  (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT3_Pos)
 #define TAL_EICCPUSEL0_EXTINT3(value) (TAL_EICCPUSEL0_EXTINT3_Msk & ((value) << TAL_EICCPUSEL0_EXTINT3_Pos))
 #define TAL_EICCPUSEL0_EXTINT4_Pos  8            /**< \brief (TAL_EICCPUSEL0) External Interrupt 4 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT4_Msk  (_U(0x1) << TAL_EICCPUSEL0_EXTINT4_Pos)
+#define TAL_EICCPUSEL0_EXTINT4_Msk  (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT4_Pos)
 #define TAL_EICCPUSEL0_EXTINT4(value) (TAL_EICCPUSEL0_EXTINT4_Msk & ((value) << TAL_EICCPUSEL0_EXTINT4_Pos))
 #define TAL_EICCPUSEL0_EXTINT5_Pos  10           /**< \brief (TAL_EICCPUSEL0) External Interrupt 5 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT5_Msk  (_U(0x1) << TAL_EICCPUSEL0_EXTINT5_Pos)
+#define TAL_EICCPUSEL0_EXTINT5_Msk  (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT5_Pos)
 #define TAL_EICCPUSEL0_EXTINT5(value) (TAL_EICCPUSEL0_EXTINT5_Msk & ((value) << TAL_EICCPUSEL0_EXTINT5_Pos))
 #define TAL_EICCPUSEL0_EXTINT6_Pos  12           /**< \brief (TAL_EICCPUSEL0) External Interrupt 6 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT6_Msk  (_U(0x1) << TAL_EICCPUSEL0_EXTINT6_Pos)
+#define TAL_EICCPUSEL0_EXTINT6_Msk  (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT6_Pos)
 #define TAL_EICCPUSEL0_EXTINT6(value) (TAL_EICCPUSEL0_EXTINT6_Msk & ((value) << TAL_EICCPUSEL0_EXTINT6_Pos))
 #define TAL_EICCPUSEL0_EXTINT7_Pos  14           /**< \brief (TAL_EICCPUSEL0) External Interrupt 7 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT7_Msk  (_U(0x1) << TAL_EICCPUSEL0_EXTINT7_Pos)
+#define TAL_EICCPUSEL0_EXTINT7_Msk  (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT7_Pos)
 #define TAL_EICCPUSEL0_EXTINT7(value) (TAL_EICCPUSEL0_EXTINT7_Msk & ((value) << TAL_EICCPUSEL0_EXTINT7_Pos))
 #define TAL_EICCPUSEL0_EXTINT8_Pos  16           /**< \brief (TAL_EICCPUSEL0) External Interrupt 8 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT8_Msk  (_U(0x1) << TAL_EICCPUSEL0_EXTINT8_Pos)
+#define TAL_EICCPUSEL0_EXTINT8_Msk  (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT8_Pos)
 #define TAL_EICCPUSEL0_EXTINT8(value) (TAL_EICCPUSEL0_EXTINT8_Msk & ((value) << TAL_EICCPUSEL0_EXTINT8_Pos))
 #define TAL_EICCPUSEL0_EXTINT9_Pos  18           /**< \brief (TAL_EICCPUSEL0) External Interrupt 9 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT9_Msk  (_U(0x1) << TAL_EICCPUSEL0_EXTINT9_Pos)
+#define TAL_EICCPUSEL0_EXTINT9_Msk  (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT9_Pos)
 #define TAL_EICCPUSEL0_EXTINT9(value) (TAL_EICCPUSEL0_EXTINT9_Msk & ((value) << TAL_EICCPUSEL0_EXTINT9_Pos))
 #define TAL_EICCPUSEL0_EXTINT10_Pos 20           /**< \brief (TAL_EICCPUSEL0) External Interrupt 10 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT10_Msk (_U(0x1) << TAL_EICCPUSEL0_EXTINT10_Pos)
+#define TAL_EICCPUSEL0_EXTINT10_Msk (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT10_Pos)
 #define TAL_EICCPUSEL0_EXTINT10(value) (TAL_EICCPUSEL0_EXTINT10_Msk & ((value) << TAL_EICCPUSEL0_EXTINT10_Pos))
 #define TAL_EICCPUSEL0_EXTINT11_Pos 22           /**< \brief (TAL_EICCPUSEL0) External Interrupt 11 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT11_Msk (_U(0x1) << TAL_EICCPUSEL0_EXTINT11_Pos)
+#define TAL_EICCPUSEL0_EXTINT11_Msk (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT11_Pos)
 #define TAL_EICCPUSEL0_EXTINT11(value) (TAL_EICCPUSEL0_EXTINT11_Msk & ((value) << TAL_EICCPUSEL0_EXTINT11_Pos))
 #define TAL_EICCPUSEL0_EXTINT12_Pos 24           /**< \brief (TAL_EICCPUSEL0) External Interrupt 12 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT12_Msk (_U(0x1) << TAL_EICCPUSEL0_EXTINT12_Pos)
+#define TAL_EICCPUSEL0_EXTINT12_Msk (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT12_Pos)
 #define TAL_EICCPUSEL0_EXTINT12(value) (TAL_EICCPUSEL0_EXTINT12_Msk & ((value) << TAL_EICCPUSEL0_EXTINT12_Pos))
 #define TAL_EICCPUSEL0_EXTINT13_Pos 26           /**< \brief (TAL_EICCPUSEL0) External Interrupt 13 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT13_Msk (_U(0x1) << TAL_EICCPUSEL0_EXTINT13_Pos)
+#define TAL_EICCPUSEL0_EXTINT13_Msk (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT13_Pos)
 #define TAL_EICCPUSEL0_EXTINT13(value) (TAL_EICCPUSEL0_EXTINT13_Msk & ((value) << TAL_EICCPUSEL0_EXTINT13_Pos))
 #define TAL_EICCPUSEL0_EXTINT14_Pos 28           /**< \brief (TAL_EICCPUSEL0) External Interrupt 14 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT14_Msk (_U(0x1) << TAL_EICCPUSEL0_EXTINT14_Pos)
+#define TAL_EICCPUSEL0_EXTINT14_Msk (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT14_Pos)
 #define TAL_EICCPUSEL0_EXTINT14(value) (TAL_EICCPUSEL0_EXTINT14_Msk & ((value) << TAL_EICCPUSEL0_EXTINT14_Pos))
 #define TAL_EICCPUSEL0_EXTINT15_Pos 30           /**< \brief (TAL_EICCPUSEL0) External Interrupt 15 CPU Select */
-#define TAL_EICCPUSEL0_EXTINT15_Msk (_U(0x1) << TAL_EICCPUSEL0_EXTINT15_Pos)
+#define TAL_EICCPUSEL0_EXTINT15_Msk (_Ul(0x1) << TAL_EICCPUSEL0_EXTINT15_Pos)
 #define TAL_EICCPUSEL0_EXTINT15(value) (TAL_EICCPUSEL0_EXTINT15_Msk & ((value) << TAL_EICCPUSEL0_EXTINT15_Pos))
-#define TAL_EICCPUSEL0_MASK         _U(0x55555555) /**< \brief (TAL_EICCPUSEL0) MASK Register */
+#define TAL_EICCPUSEL0_MASK         _Ul(0x55555555) /**< \brief (TAL_EICCPUSEL0) MASK Register */
 
 /* -------- TAL_INTCPUSEL0 : (TAL Offset: 0x128) (R/W 32) Interrupts CPU Select 0 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -849,51 +849,51 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTCPUSEL0_OFFSET       0x128        /**< \brief (TAL_INTCPUSEL0 offset) Interrupts CPU Select 0 */
-#define TAL_INTCPUSEL0_RESETVALUE   _U(0x00000000) /**< \brief (TAL_INTCPUSEL0 reset_value) Interrupts CPU Select 0 */
+#define TAL_INTCPUSEL0_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL0 reset_value) Interrupts CPU Select 0 */
 
 #define TAL_INTCPUSEL0_PAC_Pos      0            /**< \brief (TAL_INTCPUSEL0) PAC Interrupt CPU Select */
-#define TAL_INTCPUSEL0_PAC_Msk      (_U(0x1) << TAL_INTCPUSEL0_PAC_Pos)
+#define TAL_INTCPUSEL0_PAC_Msk      (_Ul(0x1) << TAL_INTCPUSEL0_PAC_Pos)
 #define TAL_INTCPUSEL0_PAC(value)   (TAL_INTCPUSEL0_PAC_Msk & ((value) << TAL_INTCPUSEL0_PAC_Pos))
 #define TAL_INTCPUSEL0_PM_Pos       2            /**< \brief (TAL_INTCPUSEL0) PM Interrupt CPU Select */
-#define TAL_INTCPUSEL0_PM_Msk       (_U(0x1) << TAL_INTCPUSEL0_PM_Pos)
+#define TAL_INTCPUSEL0_PM_Msk       (_Ul(0x1) << TAL_INTCPUSEL0_PM_Pos)
 #define TAL_INTCPUSEL0_PM(value)    (TAL_INTCPUSEL0_PM_Msk & ((value) << TAL_INTCPUSEL0_PM_Pos))
 #define TAL_INTCPUSEL0_MCLK_Pos     4            /**< \brief (TAL_INTCPUSEL0) MCLK Interrupt CPU Select */
-#define TAL_INTCPUSEL0_MCLK_Msk     (_U(0x1) << TAL_INTCPUSEL0_MCLK_Pos)
+#define TAL_INTCPUSEL0_MCLK_Msk     (_Ul(0x1) << TAL_INTCPUSEL0_MCLK_Pos)
 #define TAL_INTCPUSEL0_MCLK(value)  (TAL_INTCPUSEL0_MCLK_Msk & ((value) << TAL_INTCPUSEL0_MCLK_Pos))
 #define TAL_INTCPUSEL0_OSCCTRL_Pos  8            /**< \brief (TAL_INTCPUSEL0) OSCCTRL Interrupt CPU Select */
-#define TAL_INTCPUSEL0_OSCCTRL_Msk  (_U(0x1) << TAL_INTCPUSEL0_OSCCTRL_Pos)
+#define TAL_INTCPUSEL0_OSCCTRL_Msk  (_Ul(0x1) << TAL_INTCPUSEL0_OSCCTRL_Pos)
 #define TAL_INTCPUSEL0_OSCCTRL(value) (TAL_INTCPUSEL0_OSCCTRL_Msk & ((value) << TAL_INTCPUSEL0_OSCCTRL_Pos))
 #define TAL_INTCPUSEL0_OSC32KCTRL_Pos 10           /**< \brief (TAL_INTCPUSEL0) OSC32KCTRL Interrupt CPU Select */
-#define TAL_INTCPUSEL0_OSC32KCTRL_Msk (_U(0x1) << TAL_INTCPUSEL0_OSC32KCTRL_Pos)
+#define TAL_INTCPUSEL0_OSC32KCTRL_Msk (_Ul(0x1) << TAL_INTCPUSEL0_OSC32KCTRL_Pos)
 #define TAL_INTCPUSEL0_OSC32KCTRL(value) (TAL_INTCPUSEL0_OSC32KCTRL_Msk & ((value) << TAL_INTCPUSEL0_OSC32KCTRL_Pos))
 #define TAL_INTCPUSEL0_SUPC_Pos     12           /**< \brief (TAL_INTCPUSEL0) SUPC Interrupt CPU Select */
-#define TAL_INTCPUSEL0_SUPC_Msk     (_U(0x1) << TAL_INTCPUSEL0_SUPC_Pos)
+#define TAL_INTCPUSEL0_SUPC_Msk     (_Ul(0x1) << TAL_INTCPUSEL0_SUPC_Pos)
 #define TAL_INTCPUSEL0_SUPC(value)  (TAL_INTCPUSEL0_SUPC_Msk & ((value) << TAL_INTCPUSEL0_SUPC_Pos))
 #define TAL_INTCPUSEL0_WDT_Pos      16           /**< \brief (TAL_INTCPUSEL0) WDT Interrupt CPU Select */
-#define TAL_INTCPUSEL0_WDT_Msk      (_U(0x1) << TAL_INTCPUSEL0_WDT_Pos)
+#define TAL_INTCPUSEL0_WDT_Msk      (_Ul(0x1) << TAL_INTCPUSEL0_WDT_Pos)
 #define TAL_INTCPUSEL0_WDT(value)   (TAL_INTCPUSEL0_WDT_Msk & ((value) << TAL_INTCPUSEL0_WDT_Pos))
 #define TAL_INTCPUSEL0_RTC_Pos      18           /**< \brief (TAL_INTCPUSEL0) RTC Interrupt CPU Select */
-#define TAL_INTCPUSEL0_RTC_Msk      (_U(0x1) << TAL_INTCPUSEL0_RTC_Pos)
+#define TAL_INTCPUSEL0_RTC_Msk      (_Ul(0x1) << TAL_INTCPUSEL0_RTC_Pos)
 #define TAL_INTCPUSEL0_RTC(value)   (TAL_INTCPUSEL0_RTC_Msk & ((value) << TAL_INTCPUSEL0_RTC_Pos))
 #define TAL_INTCPUSEL0_EIC_Pos      20           /**< \brief (TAL_INTCPUSEL0) EIC Interrupt CPU Select */
-#define TAL_INTCPUSEL0_EIC_Msk      (_U(0x1) << TAL_INTCPUSEL0_EIC_Pos)
+#define TAL_INTCPUSEL0_EIC_Msk      (_Ul(0x1) << TAL_INTCPUSEL0_EIC_Pos)
 #define TAL_INTCPUSEL0_EIC(value)   (TAL_INTCPUSEL0_EIC_Msk & ((value) << TAL_INTCPUSEL0_EIC_Pos))
 #define TAL_INTCPUSEL0_FREQM_Pos    22           /**< \brief (TAL_INTCPUSEL0) FREQM Interrupt CPU Select */
-#define TAL_INTCPUSEL0_FREQM_Msk    (_U(0x1) << TAL_INTCPUSEL0_FREQM_Pos)
+#define TAL_INTCPUSEL0_FREQM_Msk    (_Ul(0x1) << TAL_INTCPUSEL0_FREQM_Pos)
 #define TAL_INTCPUSEL0_FREQM(value) (TAL_INTCPUSEL0_FREQM_Msk & ((value) << TAL_INTCPUSEL0_FREQM_Pos))
 #define TAL_INTCPUSEL0_SERCOM0_Pos  24           /**< \brief (TAL_INTCPUSEL0) SERCOM0 Interrupt CPU Select */
-#define TAL_INTCPUSEL0_SERCOM0_Msk  (_U(0x1) << TAL_INTCPUSEL0_SERCOM0_Pos)
+#define TAL_INTCPUSEL0_SERCOM0_Msk  (_Ul(0x1) << TAL_INTCPUSEL0_SERCOM0_Pos)
 #define TAL_INTCPUSEL0_SERCOM0(value) (TAL_INTCPUSEL0_SERCOM0_Msk & ((value) << TAL_INTCPUSEL0_SERCOM0_Pos))
 #define TAL_INTCPUSEL0_SERCOM1_Pos  26           /**< \brief (TAL_INTCPUSEL0) SERCOM1 Interrupt CPU Select */
-#define TAL_INTCPUSEL0_SERCOM1_Msk  (_U(0x1) << TAL_INTCPUSEL0_SERCOM1_Pos)
+#define TAL_INTCPUSEL0_SERCOM1_Msk  (_Ul(0x1) << TAL_INTCPUSEL0_SERCOM1_Pos)
 #define TAL_INTCPUSEL0_SERCOM1(value) (TAL_INTCPUSEL0_SERCOM1_Msk & ((value) << TAL_INTCPUSEL0_SERCOM1_Pos))
 #define TAL_INTCPUSEL0_TC0_Pos      28           /**< \brief (TAL_INTCPUSEL0) TC0 Interrupt CPU Select */
-#define TAL_INTCPUSEL0_TC0_Msk      (_U(0x1) << TAL_INTCPUSEL0_TC0_Pos)
+#define TAL_INTCPUSEL0_TC0_Msk      (_Ul(0x1) << TAL_INTCPUSEL0_TC0_Pos)
 #define TAL_INTCPUSEL0_TC0(value)   (TAL_INTCPUSEL0_TC0_Msk & ((value) << TAL_INTCPUSEL0_TC0_Pos))
 #define TAL_INTCPUSEL0_TC1_Pos      30           /**< \brief (TAL_INTCPUSEL0) TC1 Interrupt CPU Select */
-#define TAL_INTCPUSEL0_TC1_Msk      (_U(0x1) << TAL_INTCPUSEL0_TC1_Pos)
+#define TAL_INTCPUSEL0_TC1_Msk      (_Ul(0x1) << TAL_INTCPUSEL0_TC1_Pos)
 #define TAL_INTCPUSEL0_TC1(value)   (TAL_INTCPUSEL0_TC1_Msk & ((value) << TAL_INTCPUSEL0_TC1_Pos))
-#define TAL_INTCPUSEL0_MASK         _U(0x55551515) /**< \brief (TAL_INTCPUSEL0) MASK Register */
+#define TAL_INTCPUSEL0_MASK         _Ul(0x55551515) /**< \brief (TAL_INTCPUSEL0) MASK Register */
 
 /* -------- TAL_INTCPUSEL1 : (TAL Offset: 0x12C) (R/W 32) Interrupts CPU Select 1 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -903,8 +903,8 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTCPUSEL1_OFFSET       0x12C        /**< \brief (TAL_INTCPUSEL1 offset) Interrupts CPU Select 1 */
-#define TAL_INTCPUSEL1_RESETVALUE   _U(0x00000000) /**< \brief (TAL_INTCPUSEL1 reset_value) Interrupts CPU Select 1 */
-#define TAL_INTCPUSEL1_MASK         _U(0x00000000) /**< \brief (TAL_INTCPUSEL1) MASK Register */
+#define TAL_INTCPUSEL1_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL1 reset_value) Interrupts CPU Select 1 */
+#define TAL_INTCPUSEL1_MASK         _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL1) MASK Register */
 
 /* -------- TAL_INTCPUSEL2 : (TAL Offset: 0x130) (R/W 32) Interrupts CPU Select 2 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -940,45 +940,45 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTCPUSEL2_OFFSET       0x130        /**< \brief (TAL_INTCPUSEL2 offset) Interrupts CPU Select 2 */
-#define TAL_INTCPUSEL2_RESETVALUE   _U(0x00000000) /**< \brief (TAL_INTCPUSEL2 reset_value) Interrupts CPU Select 2 */
+#define TAL_INTCPUSEL2_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL2 reset_value) Interrupts CPU Select 2 */
 
 #define TAL_INTCPUSEL2_USB_Pos      0            /**< \brief (TAL_INTCPUSEL2) USB Interrupt CPU Select */
-#define TAL_INTCPUSEL2_USB_Msk      (_U(0x1) << TAL_INTCPUSEL2_USB_Pos)
+#define TAL_INTCPUSEL2_USB_Msk      (_Ul(0x1) << TAL_INTCPUSEL2_USB_Pos)
 #define TAL_INTCPUSEL2_USB(value)   (TAL_INTCPUSEL2_USB_Msk & ((value) << TAL_INTCPUSEL2_USB_Pos))
 #define TAL_INTCPUSEL2_NVMCTRL_Pos  4            /**< \brief (TAL_INTCPUSEL2) NVMCTRL Interrupt CPU Select */
-#define TAL_INTCPUSEL2_NVMCTRL_Msk  (_U(0x1) << TAL_INTCPUSEL2_NVMCTRL_Pos)
+#define TAL_INTCPUSEL2_NVMCTRL_Msk  (_Ul(0x1) << TAL_INTCPUSEL2_NVMCTRL_Pos)
 #define TAL_INTCPUSEL2_NVMCTRL(value) (TAL_INTCPUSEL2_NVMCTRL_Msk & ((value) << TAL_INTCPUSEL2_NVMCTRL_Pos))
 #define TAL_INTCPUSEL2_DMAC_Pos     10           /**< \brief (TAL_INTCPUSEL2) DMAC Interrupt CPU Select */
-#define TAL_INTCPUSEL2_DMAC_Msk     (_U(0x1) << TAL_INTCPUSEL2_DMAC_Pos)
+#define TAL_INTCPUSEL2_DMAC_Msk     (_Ul(0x1) << TAL_INTCPUSEL2_DMAC_Pos)
 #define TAL_INTCPUSEL2_DMAC(value)  (TAL_INTCPUSEL2_DMAC_Msk & ((value) << TAL_INTCPUSEL2_DMAC_Pos))
 #define TAL_INTCPUSEL2_EVSYS_Pos    14           /**< \brief (TAL_INTCPUSEL2) EVSYS Interrupt CPU Select */
-#define TAL_INTCPUSEL2_EVSYS_Msk    (_U(0x1) << TAL_INTCPUSEL2_EVSYS_Pos)
+#define TAL_INTCPUSEL2_EVSYS_Msk    (_Ul(0x1) << TAL_INTCPUSEL2_EVSYS_Pos)
 #define TAL_INTCPUSEL2_EVSYS(value) (TAL_INTCPUSEL2_EVSYS_Msk & ((value) << TAL_INTCPUSEL2_EVSYS_Pos))
 #define TAL_INTCPUSEL2_PICOP_Pos    16           /**< \brief (TAL_INTCPUSEL2) PICOP Interrupt CPU Select */
-#define TAL_INTCPUSEL2_PICOP_Msk    (_U(0x1) << TAL_INTCPUSEL2_PICOP_Pos)
+#define TAL_INTCPUSEL2_PICOP_Msk    (_Ul(0x1) << TAL_INTCPUSEL2_PICOP_Pos)
 #define TAL_INTCPUSEL2_PICOP(value) (TAL_INTCPUSEL2_PICOP_Msk & ((value) << TAL_INTCPUSEL2_PICOP_Pos))
 #define TAL_INTCPUSEL2_SERCOM2_Pos  18           /**< \brief (TAL_INTCPUSEL2) SERCOM2 Interrupt CPU Select */
-#define TAL_INTCPUSEL2_SERCOM2_Msk  (_U(0x1) << TAL_INTCPUSEL2_SERCOM2_Pos)
+#define TAL_INTCPUSEL2_SERCOM2_Msk  (_Ul(0x1) << TAL_INTCPUSEL2_SERCOM2_Pos)
 #define TAL_INTCPUSEL2_SERCOM2(value) (TAL_INTCPUSEL2_SERCOM2_Msk & ((value) << TAL_INTCPUSEL2_SERCOM2_Pos))
 #define TAL_INTCPUSEL2_SERCOM3_Pos  20           /**< \brief (TAL_INTCPUSEL2) SERCOM3 Interrupt CPU Select */
-#define TAL_INTCPUSEL2_SERCOM3_Msk  (_U(0x1) << TAL_INTCPUSEL2_SERCOM3_Pos)
+#define TAL_INTCPUSEL2_SERCOM3_Msk  (_Ul(0x1) << TAL_INTCPUSEL2_SERCOM3_Pos)
 #define TAL_INTCPUSEL2_SERCOM3(value) (TAL_INTCPUSEL2_SERCOM3_Msk & ((value) << TAL_INTCPUSEL2_SERCOM3_Pos))
 #define TAL_INTCPUSEL2_TCC0_Pos     22           /**< \brief (TAL_INTCPUSEL2) TCC0 Interrupt CPU Select */
-#define TAL_INTCPUSEL2_TCC0_Msk     (_U(0x1) << TAL_INTCPUSEL2_TCC0_Pos)
+#define TAL_INTCPUSEL2_TCC0_Msk     (_Ul(0x1) << TAL_INTCPUSEL2_TCC0_Pos)
 #define TAL_INTCPUSEL2_TCC0(value)  (TAL_INTCPUSEL2_TCC0_Msk & ((value) << TAL_INTCPUSEL2_TCC0_Pos))
 #define TAL_INTCPUSEL2_TCC1_Pos     24           /**< \brief (TAL_INTCPUSEL2) TCC1 Interrupt CPU Select */
-#define TAL_INTCPUSEL2_TCC1_Msk     (_U(0x1) << TAL_INTCPUSEL2_TCC1_Pos)
+#define TAL_INTCPUSEL2_TCC1_Msk     (_Ul(0x1) << TAL_INTCPUSEL2_TCC1_Pos)
 #define TAL_INTCPUSEL2_TCC1(value)  (TAL_INTCPUSEL2_TCC1_Msk & ((value) << TAL_INTCPUSEL2_TCC1_Pos))
 #define TAL_INTCPUSEL2_TC2_Pos      26           /**< \brief (TAL_INTCPUSEL2) TC2 Interrupt CPU Select */
-#define TAL_INTCPUSEL2_TC2_Msk      (_U(0x1) << TAL_INTCPUSEL2_TC2_Pos)
+#define TAL_INTCPUSEL2_TC2_Msk      (_Ul(0x1) << TAL_INTCPUSEL2_TC2_Pos)
 #define TAL_INTCPUSEL2_TC2(value)   (TAL_INTCPUSEL2_TC2_Msk & ((value) << TAL_INTCPUSEL2_TC2_Pos))
 #define TAL_INTCPUSEL2_TC3_Pos      28           /**< \brief (TAL_INTCPUSEL2) TC3 Interrupt CPU Select */
-#define TAL_INTCPUSEL2_TC3_Msk      (_U(0x1) << TAL_INTCPUSEL2_TC3_Pos)
+#define TAL_INTCPUSEL2_TC3_Msk      (_Ul(0x1) << TAL_INTCPUSEL2_TC3_Pos)
 #define TAL_INTCPUSEL2_TC3(value)   (TAL_INTCPUSEL2_TC3_Msk & ((value) << TAL_INTCPUSEL2_TC3_Pos))
 #define TAL_INTCPUSEL2_TAL_Pos      30           /**< \brief (TAL_INTCPUSEL2) TAL Interrupt CPU Select */
-#define TAL_INTCPUSEL2_TAL_Msk      (_U(0x1) << TAL_INTCPUSEL2_TAL_Pos)
+#define TAL_INTCPUSEL2_TAL_Msk      (_Ul(0x1) << TAL_INTCPUSEL2_TAL_Pos)
 #define TAL_INTCPUSEL2_TAL(value)   (TAL_INTCPUSEL2_TAL_Msk & ((value) << TAL_INTCPUSEL2_TAL_Pos))
-#define TAL_INTCPUSEL2_MASK         _U(0x55554411) /**< \brief (TAL_INTCPUSEL2) MASK Register */
+#define TAL_INTCPUSEL2_MASK         _Ul(0x55554411) /**< \brief (TAL_INTCPUSEL2) MASK Register */
 
 /* -------- TAL_INTCPUSEL3 : (TAL Offset: 0x134) (R/W 32) Interrupts CPU Select 3 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -992,12 +992,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTCPUSEL3_OFFSET       0x134        /**< \brief (TAL_INTCPUSEL3 offset) Interrupts CPU Select 3 */
-#define TAL_INTCPUSEL3_RESETVALUE   _U(0x00000000) /**< \brief (TAL_INTCPUSEL3 reset_value) Interrupts CPU Select 3 */
+#define TAL_INTCPUSEL3_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL3 reset_value) Interrupts CPU Select 3 */
 
 #define TAL_INTCPUSEL3_RAMECC_Pos   0            /**< \brief (TAL_INTCPUSEL3) RAMECC Interrupt CPU Select */
-#define TAL_INTCPUSEL3_RAMECC_Msk   (_U(0x1) << TAL_INTCPUSEL3_RAMECC_Pos)
+#define TAL_INTCPUSEL3_RAMECC_Msk   (_Ul(0x1) << TAL_INTCPUSEL3_RAMECC_Pos)
 #define TAL_INTCPUSEL3_RAMECC(value) (TAL_INTCPUSEL3_RAMECC_Msk & ((value) << TAL_INTCPUSEL3_RAMECC_Pos))
-#define TAL_INTCPUSEL3_MASK         _U(0x00000001) /**< \brief (TAL_INTCPUSEL3) MASK Register */
+#define TAL_INTCPUSEL3_MASK         _Ul(0x00000001) /**< \brief (TAL_INTCPUSEL3) MASK Register */
 
 /* -------- TAL_INTCPUSEL4 : (TAL Offset: 0x138) (R/W 32) Interrupts CPU Select 4 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1037,51 +1037,51 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTCPUSEL4_OFFSET       0x138        /**< \brief (TAL_INTCPUSEL4 offset) Interrupts CPU Select 4 */
-#define TAL_INTCPUSEL4_RESETVALUE   _U(0x00000000) /**< \brief (TAL_INTCPUSEL4 reset_value) Interrupts CPU Select 4 */
+#define TAL_INTCPUSEL4_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL4 reset_value) Interrupts CPU Select 4 */
 
 #define TAL_INTCPUSEL4_CAN0_Pos     0            /**< \brief (TAL_INTCPUSEL4) CAN0 Interrupt CPU Select */
-#define TAL_INTCPUSEL4_CAN0_Msk     (_U(0x1) << TAL_INTCPUSEL4_CAN0_Pos)
+#define TAL_INTCPUSEL4_CAN0_Msk     (_Ul(0x1) << TAL_INTCPUSEL4_CAN0_Pos)
 #define TAL_INTCPUSEL4_CAN0(value)  (TAL_INTCPUSEL4_CAN0_Msk & ((value) << TAL_INTCPUSEL4_CAN0_Pos))
 #define TAL_INTCPUSEL4_CAN1_Pos     2            /**< \brief (TAL_INTCPUSEL4) CAN1 Interrupt CPU Select */
-#define TAL_INTCPUSEL4_CAN1_Msk     (_U(0x1) << TAL_INTCPUSEL4_CAN1_Pos)
+#define TAL_INTCPUSEL4_CAN1_Msk     (_Ul(0x1) << TAL_INTCPUSEL4_CAN1_Pos)
 #define TAL_INTCPUSEL4_CAN1(value)  (TAL_INTCPUSEL4_CAN1_Msk & ((value) << TAL_INTCPUSEL4_CAN1_Pos))
 #define TAL_INTCPUSEL4_GMAC_Pos     4            /**< \brief (TAL_INTCPUSEL4) GMAC Interrupt CPU Select */
-#define TAL_INTCPUSEL4_GMAC_Msk     (_U(0x1) << TAL_INTCPUSEL4_GMAC_Pos)
+#define TAL_INTCPUSEL4_GMAC_Msk     (_Ul(0x1) << TAL_INTCPUSEL4_GMAC_Pos)
 #define TAL_INTCPUSEL4_GMAC(value)  (TAL_INTCPUSEL4_GMAC_Msk & ((value) << TAL_INTCPUSEL4_GMAC_Pos))
 #define TAL_INTCPUSEL4_TCC2_Pos     6            /**< \brief (TAL_INTCPUSEL4) TCC2 Interrupt CPU Select */
-#define TAL_INTCPUSEL4_TCC2_Msk     (_U(0x1) << TAL_INTCPUSEL4_TCC2_Pos)
+#define TAL_INTCPUSEL4_TCC2_Msk     (_Ul(0x1) << TAL_INTCPUSEL4_TCC2_Pos)
 #define TAL_INTCPUSEL4_TCC2(value)  (TAL_INTCPUSEL4_TCC2_Msk & ((value) << TAL_INTCPUSEL4_TCC2_Pos))
 #define TAL_INTCPUSEL4_TCC3_Pos     8            /**< \brief (TAL_INTCPUSEL4) TCC3 Interrupt CPU Select */
-#define TAL_INTCPUSEL4_TCC3_Msk     (_U(0x1) << TAL_INTCPUSEL4_TCC3_Pos)
+#define TAL_INTCPUSEL4_TCC3_Msk     (_Ul(0x1) << TAL_INTCPUSEL4_TCC3_Pos)
 #define TAL_INTCPUSEL4_TCC3(value)  (TAL_INTCPUSEL4_TCC3_Msk & ((value) << TAL_INTCPUSEL4_TCC3_Pos))
 #define TAL_INTCPUSEL4_TC4_Pos      10           /**< \brief (TAL_INTCPUSEL4) TC4 Interrupt CPU Select */
-#define TAL_INTCPUSEL4_TC4_Msk      (_U(0x1) << TAL_INTCPUSEL4_TC4_Pos)
+#define TAL_INTCPUSEL4_TC4_Msk      (_Ul(0x1) << TAL_INTCPUSEL4_TC4_Pos)
 #define TAL_INTCPUSEL4_TC4(value)   (TAL_INTCPUSEL4_TC4_Msk & ((value) << TAL_INTCPUSEL4_TC4_Pos))
 #define TAL_INTCPUSEL4_TC5_Pos      12           /**< \brief (TAL_INTCPUSEL4) TC5 Interrupt CPU Select */
-#define TAL_INTCPUSEL4_TC5_Msk      (_U(0x1) << TAL_INTCPUSEL4_TC5_Pos)
+#define TAL_INTCPUSEL4_TC5_Msk      (_Ul(0x1) << TAL_INTCPUSEL4_TC5_Pos)
 #define TAL_INTCPUSEL4_TC5(value)   (TAL_INTCPUSEL4_TC5_Msk & ((value) << TAL_INTCPUSEL4_TC5_Pos))
 #define TAL_INTCPUSEL4_PDEC_Pos     14           /**< \brief (TAL_INTCPUSEL4) PDEC Interrupt CPU Select */
-#define TAL_INTCPUSEL4_PDEC_Msk     (_U(0x1) << TAL_INTCPUSEL4_PDEC_Pos)
+#define TAL_INTCPUSEL4_PDEC_Msk     (_Ul(0x1) << TAL_INTCPUSEL4_PDEC_Pos)
 #define TAL_INTCPUSEL4_PDEC(value)  (TAL_INTCPUSEL4_PDEC_Msk & ((value) << TAL_INTCPUSEL4_PDEC_Pos))
 #define TAL_INTCPUSEL4_AC_Pos       16           /**< \brief (TAL_INTCPUSEL4) AC Interrupt CPU Select */
-#define TAL_INTCPUSEL4_AC_Msk       (_U(0x1) << TAL_INTCPUSEL4_AC_Pos)
+#define TAL_INTCPUSEL4_AC_Msk       (_Ul(0x1) << TAL_INTCPUSEL4_AC_Pos)
 #define TAL_INTCPUSEL4_AC(value)    (TAL_INTCPUSEL4_AC_Msk & ((value) << TAL_INTCPUSEL4_AC_Pos))
 #define TAL_INTCPUSEL4_AES_Pos      18           /**< \brief (TAL_INTCPUSEL4) AES Interrupt CPU Select */
-#define TAL_INTCPUSEL4_AES_Msk      (_U(0x1) << TAL_INTCPUSEL4_AES_Pos)
+#define TAL_INTCPUSEL4_AES_Msk      (_Ul(0x1) << TAL_INTCPUSEL4_AES_Pos)
 #define TAL_INTCPUSEL4_AES(value)   (TAL_INTCPUSEL4_AES_Msk & ((value) << TAL_INTCPUSEL4_AES_Pos))
 #define TAL_INTCPUSEL4_TRNG_Pos     20           /**< \brief (TAL_INTCPUSEL4) TRNG Interrupt CPU Select */
-#define TAL_INTCPUSEL4_TRNG_Msk     (_U(0x1) << TAL_INTCPUSEL4_TRNG_Pos)
+#define TAL_INTCPUSEL4_TRNG_Msk     (_Ul(0x1) << TAL_INTCPUSEL4_TRNG_Pos)
 #define TAL_INTCPUSEL4_TRNG(value)  (TAL_INTCPUSEL4_TRNG_Msk & ((value) << TAL_INTCPUSEL4_TRNG_Pos))
 #define TAL_INTCPUSEL4_ICM_Pos      22           /**< \brief (TAL_INTCPUSEL4) ICM Interrupt CPU Select */
-#define TAL_INTCPUSEL4_ICM_Msk      (_U(0x1) << TAL_INTCPUSEL4_ICM_Pos)
+#define TAL_INTCPUSEL4_ICM_Msk      (_Ul(0x1) << TAL_INTCPUSEL4_ICM_Pos)
 #define TAL_INTCPUSEL4_ICM(value)   (TAL_INTCPUSEL4_ICM_Msk & ((value) << TAL_INTCPUSEL4_ICM_Pos))
 #define TAL_INTCPUSEL4_PUKCC_Pos    24           /**< \brief (TAL_INTCPUSEL4) PUKCC Interrupt CPU Select */
-#define TAL_INTCPUSEL4_PUKCC_Msk    (_U(0x1) << TAL_INTCPUSEL4_PUKCC_Pos)
+#define TAL_INTCPUSEL4_PUKCC_Msk    (_Ul(0x1) << TAL_INTCPUSEL4_PUKCC_Pos)
 #define TAL_INTCPUSEL4_PUKCC(value) (TAL_INTCPUSEL4_PUKCC_Msk & ((value) << TAL_INTCPUSEL4_PUKCC_Pos))
 #define TAL_INTCPUSEL4_QSPI_Pos     26           /**< \brief (TAL_INTCPUSEL4) QSPI Interrupt CPU Select */
-#define TAL_INTCPUSEL4_QSPI_Msk     (_U(0x1) << TAL_INTCPUSEL4_QSPI_Pos)
+#define TAL_INTCPUSEL4_QSPI_Msk     (_Ul(0x1) << TAL_INTCPUSEL4_QSPI_Pos)
 #define TAL_INTCPUSEL4_QSPI(value)  (TAL_INTCPUSEL4_QSPI_Msk & ((value) << TAL_INTCPUSEL4_QSPI_Pos))
-#define TAL_INTCPUSEL4_MASK         _U(0x05555555) /**< \brief (TAL_INTCPUSEL4) MASK Register */
+#define TAL_INTCPUSEL4_MASK         _Ul(0x05555555) /**< \brief (TAL_INTCPUSEL4) MASK Register */
 
 /* -------- TAL_INTCPUSEL5 : (TAL Offset: 0x13C) (R/W 32) Interrupts CPU Select 5 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1091,8 +1091,8 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTCPUSEL5_OFFSET       0x13C        /**< \brief (TAL_INTCPUSEL5 offset) Interrupts CPU Select 5 */
-#define TAL_INTCPUSEL5_RESETVALUE   _U(0x00000000) /**< \brief (TAL_INTCPUSEL5 reset_value) Interrupts CPU Select 5 */
-#define TAL_INTCPUSEL5_MASK         _U(0x00000000) /**< \brief (TAL_INTCPUSEL5) MASK Register */
+#define TAL_INTCPUSEL5_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL5 reset_value) Interrupts CPU Select 5 */
+#define TAL_INTCPUSEL5_MASK         _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL5) MASK Register */
 
 /* -------- TAL_INTCPUSEL6 : (TAL Offset: 0x140) (R/W 32) Interrupts CPU Select 6 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1128,45 +1128,45 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTCPUSEL6_OFFSET       0x140        /**< \brief (TAL_INTCPUSEL6 offset) Interrupts CPU Select 6 */
-#define TAL_INTCPUSEL6_RESETVALUE   _U(0x00000000) /**< \brief (TAL_INTCPUSEL6 reset_value) Interrupts CPU Select 6 */
+#define TAL_INTCPUSEL6_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL6 reset_value) Interrupts CPU Select 6 */
 
 #define TAL_INTCPUSEL6_SERCOM4_Pos  0            /**< \brief (TAL_INTCPUSEL6) SERCOM4 Interrupt CPU Select */
-#define TAL_INTCPUSEL6_SERCOM4_Msk  (_U(0x1) << TAL_INTCPUSEL6_SERCOM4_Pos)
+#define TAL_INTCPUSEL6_SERCOM4_Msk  (_Ul(0x1) << TAL_INTCPUSEL6_SERCOM4_Pos)
 #define TAL_INTCPUSEL6_SERCOM4(value) (TAL_INTCPUSEL6_SERCOM4_Msk & ((value) << TAL_INTCPUSEL6_SERCOM4_Pos))
 #define TAL_INTCPUSEL6_SERCOM5_Pos  2            /**< \brief (TAL_INTCPUSEL6) SERCOM5 Interrupt CPU Select */
-#define TAL_INTCPUSEL6_SERCOM5_Msk  (_U(0x1) << TAL_INTCPUSEL6_SERCOM5_Pos)
+#define TAL_INTCPUSEL6_SERCOM5_Msk  (_Ul(0x1) << TAL_INTCPUSEL6_SERCOM5_Pos)
 #define TAL_INTCPUSEL6_SERCOM5(value) (TAL_INTCPUSEL6_SERCOM5_Msk & ((value) << TAL_INTCPUSEL6_SERCOM5_Pos))
 #define TAL_INTCPUSEL6_SERCOM6_Pos  4            /**< \brief (TAL_INTCPUSEL6) SERCOM6 Interrupt CPU Select */
-#define TAL_INTCPUSEL6_SERCOM6_Msk  (_U(0x1) << TAL_INTCPUSEL6_SERCOM6_Pos)
+#define TAL_INTCPUSEL6_SERCOM6_Msk  (_Ul(0x1) << TAL_INTCPUSEL6_SERCOM6_Pos)
 #define TAL_INTCPUSEL6_SERCOM6(value) (TAL_INTCPUSEL6_SERCOM6_Msk & ((value) << TAL_INTCPUSEL6_SERCOM6_Pos))
 #define TAL_INTCPUSEL6_SERCOM7_Pos  6            /**< \brief (TAL_INTCPUSEL6) SERCOM7 Interrupt CPU Select */
-#define TAL_INTCPUSEL6_SERCOM7_Msk  (_U(0x1) << TAL_INTCPUSEL6_SERCOM7_Pos)
+#define TAL_INTCPUSEL6_SERCOM7_Msk  (_Ul(0x1) << TAL_INTCPUSEL6_SERCOM7_Pos)
 #define TAL_INTCPUSEL6_SERCOM7(value) (TAL_INTCPUSEL6_SERCOM7_Msk & ((value) << TAL_INTCPUSEL6_SERCOM7_Pos))
 #define TAL_INTCPUSEL6_TCC4_Pos     8            /**< \brief (TAL_INTCPUSEL6) TCC4 Interrupt CPU Select */
-#define TAL_INTCPUSEL6_TCC4_Msk     (_U(0x1) << TAL_INTCPUSEL6_TCC4_Pos)
+#define TAL_INTCPUSEL6_TCC4_Msk     (_Ul(0x1) << TAL_INTCPUSEL6_TCC4_Pos)
 #define TAL_INTCPUSEL6_TCC4(value)  (TAL_INTCPUSEL6_TCC4_Msk & ((value) << TAL_INTCPUSEL6_TCC4_Pos))
 #define TAL_INTCPUSEL6_TC6_Pos      10           /**< \brief (TAL_INTCPUSEL6) TC6 Interrupt CPU Select */
-#define TAL_INTCPUSEL6_TC6_Msk      (_U(0x1) << TAL_INTCPUSEL6_TC6_Pos)
+#define TAL_INTCPUSEL6_TC6_Msk      (_Ul(0x1) << TAL_INTCPUSEL6_TC6_Pos)
 #define TAL_INTCPUSEL6_TC6(value)   (TAL_INTCPUSEL6_TC6_Msk & ((value) << TAL_INTCPUSEL6_TC6_Pos))
 #define TAL_INTCPUSEL6_TC7_Pos      12           /**< \brief (TAL_INTCPUSEL6) TC7 Interrupt CPU Select */
-#define TAL_INTCPUSEL6_TC7_Msk      (_U(0x1) << TAL_INTCPUSEL6_TC7_Pos)
+#define TAL_INTCPUSEL6_TC7_Msk      (_Ul(0x1) << TAL_INTCPUSEL6_TC7_Pos)
 #define TAL_INTCPUSEL6_TC7(value)   (TAL_INTCPUSEL6_TC7_Msk & ((value) << TAL_INTCPUSEL6_TC7_Pos))
 #define TAL_INTCPUSEL6_ADC0_Pos     14           /**< \brief (TAL_INTCPUSEL6) ADC0 Interrupt CPU Select */
-#define TAL_INTCPUSEL6_ADC0_Msk     (_U(0x1) << TAL_INTCPUSEL6_ADC0_Pos)
+#define TAL_INTCPUSEL6_ADC0_Msk     (_Ul(0x1) << TAL_INTCPUSEL6_ADC0_Pos)
 #define TAL_INTCPUSEL6_ADC0(value)  (TAL_INTCPUSEL6_ADC0_Msk & ((value) << TAL_INTCPUSEL6_ADC0_Pos))
 #define TAL_INTCPUSEL6_ADC1_Pos     16           /**< \brief (TAL_INTCPUSEL6) ADC1 Interrupt CPU Select */
-#define TAL_INTCPUSEL6_ADC1_Msk     (_U(0x1) << TAL_INTCPUSEL6_ADC1_Pos)
+#define TAL_INTCPUSEL6_ADC1_Msk     (_Ul(0x1) << TAL_INTCPUSEL6_ADC1_Pos)
 #define TAL_INTCPUSEL6_ADC1(value)  (TAL_INTCPUSEL6_ADC1_Msk & ((value) << TAL_INTCPUSEL6_ADC1_Pos))
 #define TAL_INTCPUSEL6_DAC_Pos      18           /**< \brief (TAL_INTCPUSEL6) DAC Interrupt CPU Select */
-#define TAL_INTCPUSEL6_DAC_Msk      (_U(0x1) << TAL_INTCPUSEL6_DAC_Pos)
+#define TAL_INTCPUSEL6_DAC_Msk      (_Ul(0x1) << TAL_INTCPUSEL6_DAC_Pos)
 #define TAL_INTCPUSEL6_DAC(value)   (TAL_INTCPUSEL6_DAC_Msk & ((value) << TAL_INTCPUSEL6_DAC_Pos))
 #define TAL_INTCPUSEL6_I2S_Pos      20           /**< \brief (TAL_INTCPUSEL6) I2S Interrupt CPU Select */
-#define TAL_INTCPUSEL6_I2S_Msk      (_U(0x1) << TAL_INTCPUSEL6_I2S_Pos)
+#define TAL_INTCPUSEL6_I2S_Msk      (_Ul(0x1) << TAL_INTCPUSEL6_I2S_Pos)
 #define TAL_INTCPUSEL6_I2S(value)   (TAL_INTCPUSEL6_I2S_Msk & ((value) << TAL_INTCPUSEL6_I2S_Pos))
 #define TAL_INTCPUSEL6_PCC_Pos      22           /**< \brief (TAL_INTCPUSEL6) PCC Interrupt CPU Select */
-#define TAL_INTCPUSEL6_PCC_Msk      (_U(0x1) << TAL_INTCPUSEL6_PCC_Pos)
+#define TAL_INTCPUSEL6_PCC_Msk      (_Ul(0x1) << TAL_INTCPUSEL6_PCC_Pos)
 #define TAL_INTCPUSEL6_PCC(value)   (TAL_INTCPUSEL6_PCC_Msk & ((value) << TAL_INTCPUSEL6_PCC_Pos))
-#define TAL_INTCPUSEL6_MASK         _U(0x00555555) /**< \brief (TAL_INTCPUSEL6) MASK Register */
+#define TAL_INTCPUSEL6_MASK         _Ul(0x00555555) /**< \brief (TAL_INTCPUSEL6) MASK Register */
 
 /* -------- TAL_INTCPUSEL7 : (TAL Offset: 0x144) (R/W 32) Interrupts CPU Select 7 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1176,8 +1176,8 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTCPUSEL7_OFFSET       0x144        /**< \brief (TAL_INTCPUSEL7 offset) Interrupts CPU Select 7 */
-#define TAL_INTCPUSEL7_RESETVALUE   _U(0x00000000) /**< \brief (TAL_INTCPUSEL7 reset_value) Interrupts CPU Select 7 */
-#define TAL_INTCPUSEL7_MASK         _U(0x00000000) /**< \brief (TAL_INTCPUSEL7) MASK Register */
+#define TAL_INTCPUSEL7_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL7 reset_value) Interrupts CPU Select 7 */
+#define TAL_INTCPUSEL7_MASK         _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL7) MASK Register */
 
 /* -------- TAL_INTCPUSEL8 : (TAL Offset: 0x148) (R/W 32) Interrupts CPU Select 8 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1193,15 +1193,15 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_INTCPUSEL8_OFFSET       0x148        /**< \brief (TAL_INTCPUSEL8 offset) Interrupts CPU Select 8 */
-#define TAL_INTCPUSEL8_RESETVALUE   _U(0x00000000) /**< \brief (TAL_INTCPUSEL8 reset_value) Interrupts CPU Select 8 */
+#define TAL_INTCPUSEL8_RESETVALUE   _Ul(0x00000000) /**< \brief (TAL_INTCPUSEL8 reset_value) Interrupts CPU Select 8 */
 
 #define TAL_INTCPUSEL8_SDHC0_Pos    0            /**< \brief (TAL_INTCPUSEL8) SDHC0 Interrupt CPU Select */
-#define TAL_INTCPUSEL8_SDHC0_Msk    (_U(0x1) << TAL_INTCPUSEL8_SDHC0_Pos)
+#define TAL_INTCPUSEL8_SDHC0_Msk    (_Ul(0x1) << TAL_INTCPUSEL8_SDHC0_Pos)
 #define TAL_INTCPUSEL8_SDHC0(value) (TAL_INTCPUSEL8_SDHC0_Msk & ((value) << TAL_INTCPUSEL8_SDHC0_Pos))
 #define TAL_INTCPUSEL8_SDHC1_Pos    2            /**< \brief (TAL_INTCPUSEL8) SDHC1 Interrupt CPU Select */
-#define TAL_INTCPUSEL8_SDHC1_Msk    (_U(0x1) << TAL_INTCPUSEL8_SDHC1_Pos)
+#define TAL_INTCPUSEL8_SDHC1_Msk    (_Ul(0x1) << TAL_INTCPUSEL8_SDHC1_Pos)
 #define TAL_INTCPUSEL8_SDHC1(value) (TAL_INTCPUSEL8_SDHC1_Msk & ((value) << TAL_INTCPUSEL8_SDHC1_Pos))
-#define TAL_INTCPUSEL8_MASK         _U(0x00000005) /**< \brief (TAL_INTCPUSEL8) MASK Register */
+#define TAL_INTCPUSEL8_MASK         _Ul(0x00000005) /**< \brief (TAL_INTCPUSEL8) MASK Register */
 
 /* -------- TAL_IRQTRIG : (TAL Offset: 0x164) (R/W 32) Interrupt Trigger -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1218,17 +1218,17 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_IRQTRIG_OFFSET          0x164        /**< \brief (TAL_IRQTRIG offset) Interrupt Trigger */
-#define TAL_IRQTRIG_RESETVALUE      _U(0x00000000) /**< \brief (TAL_IRQTRIG reset_value) Interrupt Trigger */
+#define TAL_IRQTRIG_RESETVALUE      _Ul(0x00000000) /**< \brief (TAL_IRQTRIG reset_value) Interrupt Trigger */
 
 #define TAL_IRQTRIG_ENABLE_Pos      0            /**< \brief (TAL_IRQTRIG) Trigger Enable */
-#define TAL_IRQTRIG_ENABLE          (_U(0x1) << TAL_IRQTRIG_ENABLE_Pos)
+#define TAL_IRQTRIG_ENABLE          (_Ul(0x1) << TAL_IRQTRIG_ENABLE_Pos)
 #define TAL_IRQTRIG_IRQNUM_Pos      8            /**< \brief (TAL_IRQTRIG) Interrupt Request Number */
-#define TAL_IRQTRIG_IRQNUM_Msk      (_U(0xFF) << TAL_IRQTRIG_IRQNUM_Pos)
+#define TAL_IRQTRIG_IRQNUM_Msk      (_Ul(0xFF) << TAL_IRQTRIG_IRQNUM_Pos)
 #define TAL_IRQTRIG_IRQNUM(value)   (TAL_IRQTRIG_IRQNUM_Msk & ((value) << TAL_IRQTRIG_IRQNUM_Pos))
 #define TAL_IRQTRIG_OVERRIDE_Pos    16           /**< \brief (TAL_IRQTRIG) Interrupt Request Override Value */
-#define TAL_IRQTRIG_OVERRIDE_Msk    (_U(0xFF) << TAL_IRQTRIG_OVERRIDE_Pos)
+#define TAL_IRQTRIG_OVERRIDE_Msk    (_Ul(0xFF) << TAL_IRQTRIG_OVERRIDE_Pos)
 #define TAL_IRQTRIG_OVERRIDE(value) (TAL_IRQTRIG_OVERRIDE_Msk & ((value) << TAL_IRQTRIG_OVERRIDE_Pos))
-#define TAL_IRQTRIG_MASK            _U(0x00FFFF01) /**< \brief (TAL_IRQTRIG) MASK Register */
+#define TAL_IRQTRIG_MASK            _Ul(0x00FFFF01) /**< \brief (TAL_IRQTRIG) MASK Register */
 
 /* -------- TAL_IRQMON : (TAL Offset: 0x168) (R/W 16) Interrupt Monitor Select -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1245,23 +1245,23 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_IRQMON_OFFSET           0x168        /**< \brief (TAL_IRQMON offset) Interrupt Monitor Select */
-#define TAL_IRQMON_RESETVALUE       _U(0x0000)   /**< \brief (TAL_IRQMON reset_value) Interrupt Monitor Select */
+#define TAL_IRQMON_RESETVALUE       _Ul(0x0000)   /**< \brief (TAL_IRQMON reset_value) Interrupt Monitor Select */
 
 #define TAL_IRQMON_EXTEND_Pos       0            /**< \brief (TAL_IRQMON) Extended Interrupt Request */
-#define TAL_IRQMON_EXTEND           (_U(0x1) << TAL_IRQMON_EXTEND_Pos)
-#define   TAL_IRQMON_EXTEND_NO_Val        _U(0x0)   /**< \brief (TAL_IRQMON) Event is Interrupt Request signal */
-#define   TAL_IRQMON_EXTEND_YES_Val       _U(0x1)   /**< \brief (TAL_IRQMON) Event is Interrupt Request signal extended until end of Interrupt Handler */
+#define TAL_IRQMON_EXTEND           (_Ul(0x1) << TAL_IRQMON_EXTEND_Pos)
+#define   TAL_IRQMON_EXTEND_NO_Val        _Ul(0x0)   /**< \brief (TAL_IRQMON) Event is Interrupt Request signal */
+#define   TAL_IRQMON_EXTEND_YES_Val       _Ul(0x1)   /**< \brief (TAL_IRQMON) Event is Interrupt Request signal extended until end of Interrupt Handler */
 #define TAL_IRQMON_EXTEND_NO        (TAL_IRQMON_EXTEND_NO_Val      << TAL_IRQMON_EXTEND_Pos)
 #define TAL_IRQMON_EXTEND_YES       (TAL_IRQMON_EXTEND_YES_Val     << TAL_IRQMON_EXTEND_Pos)
 #define TAL_IRQMON_DROP_Pos         1            /**< \brief (TAL_IRQMON) Drop Shortened Events */
-#define TAL_IRQMON_DROP             (_U(0x1) << TAL_IRQMON_DROP_Pos)
+#define TAL_IRQMON_DROP             (_Ul(0x1) << TAL_IRQMON_DROP_Pos)
 #define TAL_IRQMON_CPUID_Pos        2            /**< \brief (TAL_IRQMON) ID of CPU currently servicing this IRQ */
-#define TAL_IRQMON_CPUID_Msk        (_U(0x1) << TAL_IRQMON_CPUID_Pos)
+#define TAL_IRQMON_CPUID_Msk        (_Ul(0x1) << TAL_IRQMON_CPUID_Pos)
 #define TAL_IRQMON_CPUID(value)     (TAL_IRQMON_CPUID_Msk & ((value) << TAL_IRQMON_CPUID_Pos))
 #define TAL_IRQMON_IRQNUM_Pos       8            /**< \brief (TAL_IRQMON) Interrupt Request Number */
-#define TAL_IRQMON_IRQNUM_Msk       (_U(0xFF) << TAL_IRQMON_IRQNUM_Pos)
+#define TAL_IRQMON_IRQNUM_Msk       (_Ul(0xFF) << TAL_IRQMON_IRQNUM_Pos)
 #define TAL_IRQMON_IRQNUM(value)    (TAL_IRQMON_IRQNUM_Msk & ((value) << TAL_IRQMON_IRQNUM_Pos))
-#define TAL_IRQMON_MASK             _U(0xFF07)   /**< \brief (TAL_IRQMON) MASK Register */
+#define TAL_IRQMON_MASK             _Ul(0xFF07)   /**< \brief (TAL_IRQMON) MASK Register */
 
 /* -------- TAL_CPUIRQS : (TAL Offset: 0x180) (R/  32) CPUIRQS Interrupt Status m for CPU n -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1274,12 +1274,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_CPUIRQS_OFFSET          0x180        /**< \brief (TAL_CPUIRQS offset) Interrupt Status m for CPU n */
-#define TAL_CPUIRQS_RESETVALUE      _U(0x00000000) /**< \brief (TAL_CPUIRQS reset_value) Interrupt Status m for CPU n */
+#define TAL_CPUIRQS_RESETVALUE      _Ul(0x00000000) /**< \brief (TAL_CPUIRQS reset_value) Interrupt Status m for CPU n */
 
 #define TAL_CPUIRQS_CPUIRQS_Pos     0            /**< \brief (TAL_CPUIRQS) Interrupt Requests for CPU n */
-#define TAL_CPUIRQS_CPUIRQS_Msk     (_U(0xFFFFFFFF) << TAL_CPUIRQS_CPUIRQS_Pos)
+#define TAL_CPUIRQS_CPUIRQS_Msk     (_Ul(0xFFFFFFFF) << TAL_CPUIRQS_CPUIRQS_Pos)
 #define TAL_CPUIRQS_CPUIRQS(value)  (TAL_CPUIRQS_CPUIRQS_Msk & ((value) << TAL_CPUIRQS_CPUIRQS_Pos))
-#define TAL_CPUIRQS_MASK            _U(0xFFFFFFFF) /**< \brief (TAL_CPUIRQS) MASK Register */
+#define TAL_CPUIRQS_MASK            _Ul(0xFFFFFFFF) /**< \brief (TAL_CPUIRQS) MASK Register */
 
 /* -------- TAL_SMASK : (TAL Offset: 0x200) (R/W 32) SMASKS Inter-Process Signal Mask m for CPU n -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1326,7 +1326,7 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_SMASK_OFFSET            0x200        /**< \brief (TAL_SMASK offset) Inter-Process Signal Mask m for CPU n */
-#define TAL_SMASK_RESETVALUE        _U(0x00000000) /**< \brief (TAL_SMASK reset_value) Inter-Process Signal Mask m for CPU n */
+#define TAL_SMASK_RESETVALUE        _Ul(0x00000000) /**< \brief (TAL_SMASK reset_value) Inter-Process Signal Mask m for CPU n */
 
 #define TAL_SMASK_IPS0_Pos          0            /**< \brief (TAL_SMASK) Inter-Process Signal 0 */
 #define TAL_SMASK_IPS0              (1 << TAL_SMASK_IPS0_Pos)
@@ -1393,9 +1393,9 @@ typedef union {
 #define TAL_SMASK_IPS31_Pos         31           /**< \brief (TAL_SMASK) Inter-Process Signal 31 */
 #define TAL_SMASK_IPS31             (1 << TAL_SMASK_IPS31_Pos)
 #define TAL_SMASK_IPS_Pos           0            /**< \brief (TAL_SMASK) Inter-Process Signal x */
-#define TAL_SMASK_IPS_Msk           (_U(0xFFFFFFFF) << TAL_SMASK_IPS_Pos)
+#define TAL_SMASK_IPS_Msk           (_Ul(0xFFFFFFFF) << TAL_SMASK_IPS_Pos)
 #define TAL_SMASK_IPS(value)        (TAL_SMASK_IPS_Msk & ((value) << TAL_SMASK_IPS_Pos))
-#define TAL_SMASK_MASK              _U(0xFFFFFFFF) /**< \brief (TAL_SMASK) MASK Register */
+#define TAL_SMASK_MASK              _Ul(0xFFFFFFFF) /**< \brief (TAL_SMASK) MASK Register */
 
 /* -------- TAL_SFLAGCLR : (TAL Offset: 0x220) ( /W 32) Inter-Process Signal Flag Clear -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1442,7 +1442,7 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_SFLAGCLR_OFFSET         0x220        /**< \brief (TAL_SFLAGCLR offset) Inter-Process Signal Flag Clear */
-#define TAL_SFLAGCLR_RESETVALUE     _U(0x00000000) /**< \brief (TAL_SFLAGCLR reset_value) Inter-Process Signal Flag Clear */
+#define TAL_SFLAGCLR_RESETVALUE     _Ul(0x00000000) /**< \brief (TAL_SFLAGCLR reset_value) Inter-Process Signal Flag Clear */
 
 #define TAL_SFLAGCLR_IPS0_Pos       0            /**< \brief (TAL_SFLAGCLR) Inter-Process Signal 0 */
 #define TAL_SFLAGCLR_IPS0           (1 << TAL_SFLAGCLR_IPS0_Pos)
@@ -1509,9 +1509,9 @@ typedef union {
 #define TAL_SFLAGCLR_IPS31_Pos      31           /**< \brief (TAL_SFLAGCLR) Inter-Process Signal 31 */
 #define TAL_SFLAGCLR_IPS31          (1 << TAL_SFLAGCLR_IPS31_Pos)
 #define TAL_SFLAGCLR_IPS_Pos        0            /**< \brief (TAL_SFLAGCLR) Inter-Process Signal x */
-#define TAL_SFLAGCLR_IPS_Msk        (_U(0xFFFFFFFF) << TAL_SFLAGCLR_IPS_Pos)
+#define TAL_SFLAGCLR_IPS_Msk        (_Ul(0xFFFFFFFF) << TAL_SFLAGCLR_IPS_Pos)
 #define TAL_SFLAGCLR_IPS(value)     (TAL_SFLAGCLR_IPS_Msk & ((value) << TAL_SFLAGCLR_IPS_Pos))
-#define TAL_SFLAGCLR_MASK           _U(0xFFFFFFFF) /**< \brief (TAL_SFLAGCLR) MASK Register */
+#define TAL_SFLAGCLR_MASK           _Ul(0xFFFFFFFF) /**< \brief (TAL_SFLAGCLR) MASK Register */
 
 /* -------- TAL_SFLAGSET : (TAL Offset: 0x228) ( /W 32) Inter-Process Signal Flag Set -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1558,7 +1558,7 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_SFLAGSET_OFFSET         0x228        /**< \brief (TAL_SFLAGSET offset) Inter-Process Signal Flag Set */
-#define TAL_SFLAGSET_RESETVALUE     _U(0x00000000) /**< \brief (TAL_SFLAGSET reset_value) Inter-Process Signal Flag Set */
+#define TAL_SFLAGSET_RESETVALUE     _Ul(0x00000000) /**< \brief (TAL_SFLAGSET reset_value) Inter-Process Signal Flag Set */
 
 #define TAL_SFLAGSET_IPS0_Pos       0            /**< \brief (TAL_SFLAGSET) Inter-Process Signal 0 */
 #define TAL_SFLAGSET_IPS0           (1 << TAL_SFLAGSET_IPS0_Pos)
@@ -1625,9 +1625,9 @@ typedef union {
 #define TAL_SFLAGSET_IPS31_Pos      31           /**< \brief (TAL_SFLAGSET) Inter-Process Signal 31 */
 #define TAL_SFLAGSET_IPS31          (1 << TAL_SFLAGSET_IPS31_Pos)
 #define TAL_SFLAGSET_IPS_Pos        0            /**< \brief (TAL_SFLAGSET) Inter-Process Signal x */
-#define TAL_SFLAGSET_IPS_Msk        (_U(0xFFFFFFFF) << TAL_SFLAGSET_IPS_Pos)
+#define TAL_SFLAGSET_IPS_Msk        (_Ul(0xFFFFFFFF) << TAL_SFLAGSET_IPS_Pos)
 #define TAL_SFLAGSET_IPS(value)     (TAL_SFLAGSET_IPS_Msk & ((value) << TAL_SFLAGSET_IPS_Pos))
-#define TAL_SFLAGSET_MASK           _U(0xFFFFFFFF) /**< \brief (TAL_SFLAGSET) MASK Register */
+#define TAL_SFLAGSET_MASK           _Ul(0xFFFFFFFF) /**< \brief (TAL_SFLAGSET) MASK Register */
 
 /* -------- TAL_SFLAG : (TAL Offset: 0x230) (R/  32) Inter-Process Signal Flag -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1674,7 +1674,7 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_SFLAG_OFFSET            0x230        /**< \brief (TAL_SFLAG offset) Inter-Process Signal Flag */
-#define TAL_SFLAG_RESETVALUE        _U(0x00000000) /**< \brief (TAL_SFLAG reset_value) Inter-Process Signal Flag */
+#define TAL_SFLAG_RESETVALUE        _Ul(0x00000000) /**< \brief (TAL_SFLAG reset_value) Inter-Process Signal Flag */
 
 #define TAL_SFLAG_IPS0_Pos          0            /**< \brief (TAL_SFLAG) Inter-Process Signal 0 */
 #define TAL_SFLAG_IPS0              (1 << TAL_SFLAG_IPS0_Pos)
@@ -1741,9 +1741,9 @@ typedef union {
 #define TAL_SFLAG_IPS31_Pos         31           /**< \brief (TAL_SFLAG) Inter-Process Signal 31 */
 #define TAL_SFLAG_IPS31             (1 << TAL_SFLAG_IPS31_Pos)
 #define TAL_SFLAG_IPS_Pos           0            /**< \brief (TAL_SFLAG) Inter-Process Signal x */
-#define TAL_SFLAG_IPS_Msk           (_U(0xFFFFFFFF) << TAL_SFLAG_IPS_Pos)
+#define TAL_SFLAG_IPS_Msk           (_Ul(0xFFFFFFFF) << TAL_SFLAG_IPS_Pos)
 #define TAL_SFLAG_IPS(value)        (TAL_SFLAG_IPS_Msk & ((value) << TAL_SFLAG_IPS_Pos))
-#define TAL_SFLAG_MASK              _U(0xFFFFFFFF) /**< \brief (TAL_SFLAG) MASK Register */
+#define TAL_SFLAG_MASK              _Ul(0xFFFFFFFF) /**< \brief (TAL_SFLAG) MASK Register */
 
 /* -------- TAL_SFLAGCLRR : (TAL Offset: 0x300) (R/W  8) Inter-Process Signal Flag Bit n -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1757,11 +1757,11 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define TAL_SFLAGCLRR_OFFSET        0x300        /**< \brief (TAL_SFLAGCLRR offset) Inter-Process Signal Flag Bit n */
-#define TAL_SFLAGCLRR_RESETVALUE    _U(0x00)     /**< \brief (TAL_SFLAGCLRR reset_value) Inter-Process Signal Flag Bit n */
+#define TAL_SFLAGCLRR_RESETVALUE    _Ul(0x00)     /**< \brief (TAL_SFLAGCLRR reset_value) Inter-Process Signal Flag Bit n */
 
 #define TAL_SFLAGCLRR_IPS_Pos       0            /**< \brief (TAL_SFLAGCLRR) Inter-Process Signal n */
-#define TAL_SFLAGCLRR_IPS           (_U(0x1) << TAL_SFLAGCLRR_IPS_Pos)
-#define TAL_SFLAGCLRR_MASK          _U(0x01)     /**< \brief (TAL_SFLAGCLRR) MASK Register */
+#define TAL_SFLAGCLRR_IPS           (_Ul(0x1) << TAL_SFLAGCLRR_IPS_Pos)
+#define TAL_SFLAGCLRR_MASK          _Ul(0x01)     /**< \brief (TAL_SFLAGCLRR) MASK Register */
 
 /** \brief TalCpuirqs hardware registers */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))

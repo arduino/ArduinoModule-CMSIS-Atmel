@@ -51,13 +51,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define FREQM_CTRLA_OFFSET          0x00         /**< \brief (FREQM_CTRLA offset) Control A Register */
-#define FREQM_CTRLA_RESETVALUE      _U(0x00)     /**< \brief (FREQM_CTRLA reset_value) Control A Register */
+#define FREQM_CTRLA_RESETVALUE      _Ul(0x00)     /**< \brief (FREQM_CTRLA reset_value) Control A Register */
 
 #define FREQM_CTRLA_SWRST_Pos       0            /**< \brief (FREQM_CTRLA) Software Reset */
-#define FREQM_CTRLA_SWRST           (_U(0x1) << FREQM_CTRLA_SWRST_Pos)
+#define FREQM_CTRLA_SWRST           (_Ul(0x1) << FREQM_CTRLA_SWRST_Pos)
 #define FREQM_CTRLA_ENABLE_Pos      1            /**< \brief (FREQM_CTRLA) Enable */
-#define FREQM_CTRLA_ENABLE          (_U(0x1) << FREQM_CTRLA_ENABLE_Pos)
-#define FREQM_CTRLA_MASK            _U(0x03)     /**< \brief (FREQM_CTRLA) MASK Register */
+#define FREQM_CTRLA_ENABLE          (_Ul(0x1) << FREQM_CTRLA_ENABLE_Pos)
+#define FREQM_CTRLA_MASK            _Ul(0x03)     /**< \brief (FREQM_CTRLA) MASK Register */
 
 /* -------- FREQM_CTRLB : (FREQM Offset: 0x01) ( /W  8) Control B Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -71,11 +71,11 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define FREQM_CTRLB_OFFSET          0x01         /**< \brief (FREQM_CTRLB offset) Control B Register */
-#define FREQM_CTRLB_RESETVALUE      _U(0x00)     /**< \brief (FREQM_CTRLB reset_value) Control B Register */
+#define FREQM_CTRLB_RESETVALUE      _Ul(0x00)     /**< \brief (FREQM_CTRLB reset_value) Control B Register */
 
 #define FREQM_CTRLB_START_Pos       0            /**< \brief (FREQM_CTRLB) Start Measurement */
-#define FREQM_CTRLB_START           (_U(0x1) << FREQM_CTRLB_START_Pos)
-#define FREQM_CTRLB_MASK            _U(0x01)     /**< \brief (FREQM_CTRLB) MASK Register */
+#define FREQM_CTRLB_START           (_Ul(0x1) << FREQM_CTRLB_START_Pos)
+#define FREQM_CTRLB_MASK            _Ul(0x01)     /**< \brief (FREQM_CTRLB) MASK Register */
 
 /* -------- FREQM_CFGA : (FREQM Offset: 0x02) (R/W 16) Config A register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -89,12 +89,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define FREQM_CFGA_OFFSET           0x02         /**< \brief (FREQM_CFGA offset) Config A register */
-#define FREQM_CFGA_RESETVALUE       _U(0x0000)   /**< \brief (FREQM_CFGA reset_value) Config A register */
+#define FREQM_CFGA_RESETVALUE       _Ul(0x0000)   /**< \brief (FREQM_CFGA reset_value) Config A register */
 
 #define FREQM_CFGA_REFNUM_Pos       0            /**< \brief (FREQM_CFGA) Number of Reference Clock Cycles */
-#define FREQM_CFGA_REFNUM_Msk       (_U(0xFF) << FREQM_CFGA_REFNUM_Pos)
+#define FREQM_CFGA_REFNUM_Msk       (_Ul(0xFF) << FREQM_CFGA_REFNUM_Pos)
 #define FREQM_CFGA_REFNUM(value)    (FREQM_CFGA_REFNUM_Msk & ((value) << FREQM_CFGA_REFNUM_Pos))
-#define FREQM_CFGA_MASK             _U(0x00FF)   /**< \brief (FREQM_CFGA) MASK Register */
+#define FREQM_CFGA_MASK             _Ul(0x00FF)   /**< \brief (FREQM_CFGA) MASK Register */
 
 /* -------- FREQM_INTENCLR : (FREQM Offset: 0x08) (R/W  8) Interrupt Enable Clear Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -108,11 +108,11 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define FREQM_INTENCLR_OFFSET       0x08         /**< \brief (FREQM_INTENCLR offset) Interrupt Enable Clear Register */
-#define FREQM_INTENCLR_RESETVALUE   _U(0x00)     /**< \brief (FREQM_INTENCLR reset_value) Interrupt Enable Clear Register */
+#define FREQM_INTENCLR_RESETVALUE   _Ul(0x00)     /**< \brief (FREQM_INTENCLR reset_value) Interrupt Enable Clear Register */
 
 #define FREQM_INTENCLR_DONE_Pos     0            /**< \brief (FREQM_INTENCLR) Measurement Done Interrupt Enable */
-#define FREQM_INTENCLR_DONE         (_U(0x1) << FREQM_INTENCLR_DONE_Pos)
-#define FREQM_INTENCLR_MASK         _U(0x01)     /**< \brief (FREQM_INTENCLR) MASK Register */
+#define FREQM_INTENCLR_DONE         (_Ul(0x1) << FREQM_INTENCLR_DONE_Pos)
+#define FREQM_INTENCLR_MASK         _Ul(0x01)     /**< \brief (FREQM_INTENCLR) MASK Register */
 
 /* -------- FREQM_INTENSET : (FREQM Offset: 0x09) (R/W  8) Interrupt Enable Set Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -126,11 +126,11 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define FREQM_INTENSET_OFFSET       0x09         /**< \brief (FREQM_INTENSET offset) Interrupt Enable Set Register */
-#define FREQM_INTENSET_RESETVALUE   _U(0x00)     /**< \brief (FREQM_INTENSET reset_value) Interrupt Enable Set Register */
+#define FREQM_INTENSET_RESETVALUE   _Ul(0x00)     /**< \brief (FREQM_INTENSET reset_value) Interrupt Enable Set Register */
 
 #define FREQM_INTENSET_DONE_Pos     0            /**< \brief (FREQM_INTENSET) Measurement Done Interrupt Enable */
-#define FREQM_INTENSET_DONE         (_U(0x1) << FREQM_INTENSET_DONE_Pos)
-#define FREQM_INTENSET_MASK         _U(0x01)     /**< \brief (FREQM_INTENSET) MASK Register */
+#define FREQM_INTENSET_DONE         (_Ul(0x1) << FREQM_INTENSET_DONE_Pos)
+#define FREQM_INTENSET_MASK         _Ul(0x01)     /**< \brief (FREQM_INTENSET) MASK Register */
 
 /* -------- FREQM_INTFLAG : (FREQM Offset: 0x0A) (R/W  8) Interrupt Flag Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -144,11 +144,11 @@ typedef union { // __I to avoid read-modify-write on write-to-clear register
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define FREQM_INTFLAG_OFFSET        0x0A         /**< \brief (FREQM_INTFLAG offset) Interrupt Flag Register */
-#define FREQM_INTFLAG_RESETVALUE    _U(0x00)     /**< \brief (FREQM_INTFLAG reset_value) Interrupt Flag Register */
+#define FREQM_INTFLAG_RESETVALUE    _Ul(0x00)     /**< \brief (FREQM_INTFLAG reset_value) Interrupt Flag Register */
 
 #define FREQM_INTFLAG_DONE_Pos      0            /**< \brief (FREQM_INTFLAG) Measurement Done */
-#define FREQM_INTFLAG_DONE          (_U(0x1) << FREQM_INTFLAG_DONE_Pos)
-#define FREQM_INTFLAG_MASK          _U(0x01)     /**< \brief (FREQM_INTFLAG) MASK Register */
+#define FREQM_INTFLAG_DONE          (_Ul(0x1) << FREQM_INTFLAG_DONE_Pos)
+#define FREQM_INTFLAG_MASK          _Ul(0x01)     /**< \brief (FREQM_INTFLAG) MASK Register */
 
 /* -------- FREQM_STATUS : (FREQM Offset: 0x0B) (R/W  8) Status Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -163,13 +163,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define FREQM_STATUS_OFFSET         0x0B         /**< \brief (FREQM_STATUS offset) Status Register */
-#define FREQM_STATUS_RESETVALUE     _U(0x00)     /**< \brief (FREQM_STATUS reset_value) Status Register */
+#define FREQM_STATUS_RESETVALUE     _Ul(0x00)     /**< \brief (FREQM_STATUS reset_value) Status Register */
 
 #define FREQM_STATUS_BUSY_Pos       0            /**< \brief (FREQM_STATUS) FREQM Status */
-#define FREQM_STATUS_BUSY           (_U(0x1) << FREQM_STATUS_BUSY_Pos)
+#define FREQM_STATUS_BUSY           (_Ul(0x1) << FREQM_STATUS_BUSY_Pos)
 #define FREQM_STATUS_OVF_Pos        1            /**< \brief (FREQM_STATUS) Sticky Count Value Overflow */
-#define FREQM_STATUS_OVF            (_U(0x1) << FREQM_STATUS_OVF_Pos)
-#define FREQM_STATUS_MASK           _U(0x03)     /**< \brief (FREQM_STATUS) MASK Register */
+#define FREQM_STATUS_OVF            (_Ul(0x1) << FREQM_STATUS_OVF_Pos)
+#define FREQM_STATUS_MASK           _Ul(0x03)     /**< \brief (FREQM_STATUS) MASK Register */
 
 /* -------- FREQM_SYNCBUSY : (FREQM Offset: 0x0C) (R/  32) Synchronization Busy Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -184,13 +184,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define FREQM_SYNCBUSY_OFFSET       0x0C         /**< \brief (FREQM_SYNCBUSY offset) Synchronization Busy Register */
-#define FREQM_SYNCBUSY_RESETVALUE   _U(0x00000000) /**< \brief (FREQM_SYNCBUSY reset_value) Synchronization Busy Register */
+#define FREQM_SYNCBUSY_RESETVALUE   _Ul(0x00000000) /**< \brief (FREQM_SYNCBUSY reset_value) Synchronization Busy Register */
 
 #define FREQM_SYNCBUSY_SWRST_Pos    0            /**< \brief (FREQM_SYNCBUSY) Software Reset */
-#define FREQM_SYNCBUSY_SWRST        (_U(0x1) << FREQM_SYNCBUSY_SWRST_Pos)
+#define FREQM_SYNCBUSY_SWRST        (_Ul(0x1) << FREQM_SYNCBUSY_SWRST_Pos)
 #define FREQM_SYNCBUSY_ENABLE_Pos   1            /**< \brief (FREQM_SYNCBUSY) Enable */
-#define FREQM_SYNCBUSY_ENABLE       (_U(0x1) << FREQM_SYNCBUSY_ENABLE_Pos)
-#define FREQM_SYNCBUSY_MASK         _U(0x00000003) /**< \brief (FREQM_SYNCBUSY) MASK Register */
+#define FREQM_SYNCBUSY_ENABLE       (_Ul(0x1) << FREQM_SYNCBUSY_ENABLE_Pos)
+#define FREQM_SYNCBUSY_MASK         _Ul(0x00000003) /**< \brief (FREQM_SYNCBUSY) MASK Register */
 
 /* -------- FREQM_VALUE : (FREQM Offset: 0x10) (R/  32) Count Value Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -204,12 +204,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define FREQM_VALUE_OFFSET          0x10         /**< \brief (FREQM_VALUE offset) Count Value Register */
-#define FREQM_VALUE_RESETVALUE      _U(0x00000000) /**< \brief (FREQM_VALUE reset_value) Count Value Register */
+#define FREQM_VALUE_RESETVALUE      _Ul(0x00000000) /**< \brief (FREQM_VALUE reset_value) Count Value Register */
 
 #define FREQM_VALUE_VALUE_Pos       0            /**< \brief (FREQM_VALUE) Measurement Value */
-#define FREQM_VALUE_VALUE_Msk       (_U(0xFFFFFF) << FREQM_VALUE_VALUE_Pos)
+#define FREQM_VALUE_VALUE_Msk       (_Ul(0xFFFFFF) << FREQM_VALUE_VALUE_Pos)
 #define FREQM_VALUE_VALUE(value)    (FREQM_VALUE_VALUE_Msk & ((value) << FREQM_VALUE_VALUE_Pos))
-#define FREQM_VALUE_MASK            _U(0x00FFFFFF) /**< \brief (FREQM_VALUE) MASK Register */
+#define FREQM_VALUE_MASK            _Ul(0x00FFFFFF) /**< \brief (FREQM_VALUE) MASK Register */
 
 /** \brief FREQM hardware registers */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))

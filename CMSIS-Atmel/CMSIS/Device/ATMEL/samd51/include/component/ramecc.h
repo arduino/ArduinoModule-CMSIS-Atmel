@@ -51,13 +51,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define RAMECC_INTENCLR_OFFSET      0x0          /**< \brief (RAMECC_INTENCLR offset) Interrupt Enable Clear */
-#define RAMECC_INTENCLR_RESETVALUE  _U(0x00)     /**< \brief (RAMECC_INTENCLR reset_value) Interrupt Enable Clear */
+#define RAMECC_INTENCLR_RESETVALUE  _Ul(0x00)     /**< \brief (RAMECC_INTENCLR reset_value) Interrupt Enable Clear */
 
 #define RAMECC_INTENCLR_SINGLEE_Pos 0            /**< \brief (RAMECC_INTENCLR) Single Bit ECC Error Interrupt Enable Clear */
-#define RAMECC_INTENCLR_SINGLEE     (_U(0x1) << RAMECC_INTENCLR_SINGLEE_Pos)
+#define RAMECC_INTENCLR_SINGLEE     (_Ul(0x1) << RAMECC_INTENCLR_SINGLEE_Pos)
 #define RAMECC_INTENCLR_DUALE_Pos   1            /**< \brief (RAMECC_INTENCLR) Dual Bit ECC Error Interrupt Enable Clear */
-#define RAMECC_INTENCLR_DUALE       (_U(0x1) << RAMECC_INTENCLR_DUALE_Pos)
-#define RAMECC_INTENCLR_MASK        _U(0x03)     /**< \brief (RAMECC_INTENCLR) MASK Register */
+#define RAMECC_INTENCLR_DUALE       (_Ul(0x1) << RAMECC_INTENCLR_DUALE_Pos)
+#define RAMECC_INTENCLR_MASK        _Ul(0x03)     /**< \brief (RAMECC_INTENCLR) MASK Register */
 
 /* -------- RAMECC_INTENSET : (RAMECC Offset: 0x1) (R/W  8) Interrupt Enable Set -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -72,13 +72,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define RAMECC_INTENSET_OFFSET      0x1          /**< \brief (RAMECC_INTENSET offset) Interrupt Enable Set */
-#define RAMECC_INTENSET_RESETVALUE  _U(0x00)     /**< \brief (RAMECC_INTENSET reset_value) Interrupt Enable Set */
+#define RAMECC_INTENSET_RESETVALUE  _Ul(0x00)     /**< \brief (RAMECC_INTENSET reset_value) Interrupt Enable Set */
 
 #define RAMECC_INTENSET_SINGLEE_Pos 0            /**< \brief (RAMECC_INTENSET) Single Bit ECC Error Interrupt Enable Set */
-#define RAMECC_INTENSET_SINGLEE     (_U(0x1) << RAMECC_INTENSET_SINGLEE_Pos)
+#define RAMECC_INTENSET_SINGLEE     (_Ul(0x1) << RAMECC_INTENSET_SINGLEE_Pos)
 #define RAMECC_INTENSET_DUALE_Pos   1            /**< \brief (RAMECC_INTENSET) Dual Bit ECC Error Interrupt Enable Set */
-#define RAMECC_INTENSET_DUALE       (_U(0x1) << RAMECC_INTENSET_DUALE_Pos)
-#define RAMECC_INTENSET_MASK        _U(0x03)     /**< \brief (RAMECC_INTENSET) MASK Register */
+#define RAMECC_INTENSET_DUALE       (_Ul(0x1) << RAMECC_INTENSET_DUALE_Pos)
+#define RAMECC_INTENSET_MASK        _Ul(0x03)     /**< \brief (RAMECC_INTENSET) MASK Register */
 
 /* -------- RAMECC_INTFLAG : (RAMECC Offset: 0x2) (R/W  8) Interrupt Flag -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -93,13 +93,13 @@ typedef union { // __I to avoid read-modify-write on write-to-clear register
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define RAMECC_INTFLAG_OFFSET       0x2          /**< \brief (RAMECC_INTFLAG offset) Interrupt Flag */
-#define RAMECC_INTFLAG_RESETVALUE   _U(0x00)     /**< \brief (RAMECC_INTFLAG reset_value) Interrupt Flag */
+#define RAMECC_INTFLAG_RESETVALUE   _Ul(0x00)     /**< \brief (RAMECC_INTFLAG reset_value) Interrupt Flag */
 
 #define RAMECC_INTFLAG_SINGLEE_Pos  0            /**< \brief (RAMECC_INTFLAG) Single Bit ECC Error Interrupt */
-#define RAMECC_INTFLAG_SINGLEE      (_U(0x1) << RAMECC_INTFLAG_SINGLEE_Pos)
+#define RAMECC_INTFLAG_SINGLEE      (_Ul(0x1) << RAMECC_INTFLAG_SINGLEE_Pos)
 #define RAMECC_INTFLAG_DUALE_Pos    1            /**< \brief (RAMECC_INTFLAG) Dual Bit ECC Error Interrupt */
-#define RAMECC_INTFLAG_DUALE        (_U(0x1) << RAMECC_INTFLAG_DUALE_Pos)
-#define RAMECC_INTFLAG_MASK         _U(0x03)     /**< \brief (RAMECC_INTFLAG) MASK Register */
+#define RAMECC_INTFLAG_DUALE        (_Ul(0x1) << RAMECC_INTFLAG_DUALE_Pos)
+#define RAMECC_INTFLAG_MASK         _Ul(0x03)     /**< \brief (RAMECC_INTFLAG) MASK Register */
 
 /* -------- RAMECC_STATUS : (RAMECC Offset: 0x3) (R/   8) Status -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -113,11 +113,11 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define RAMECC_STATUS_OFFSET        0x3          /**< \brief (RAMECC_STATUS offset) Status */
-#define RAMECC_STATUS_RESETVALUE    _U(0x00)     /**< \brief (RAMECC_STATUS reset_value) Status */
+#define RAMECC_STATUS_RESETVALUE    _Ul(0x00)     /**< \brief (RAMECC_STATUS reset_value) Status */
 
 #define RAMECC_STATUS_ECCDIS_Pos    0            /**< \brief (RAMECC_STATUS) ECC Disable */
-#define RAMECC_STATUS_ECCDIS        (_U(0x1) << RAMECC_STATUS_ECCDIS_Pos)
-#define RAMECC_STATUS_MASK          _U(0x01)     /**< \brief (RAMECC_STATUS) MASK Register */
+#define RAMECC_STATUS_ECCDIS        (_Ul(0x1) << RAMECC_STATUS_ECCDIS_Pos)
+#define RAMECC_STATUS_MASK          _Ul(0x01)     /**< \brief (RAMECC_STATUS) MASK Register */
 
 /* -------- RAMECC_ERRADDR : (RAMECC Offset: 0x4) (R/  32) Error Address -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -131,12 +131,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define RAMECC_ERRADDR_OFFSET       0x4          /**< \brief (RAMECC_ERRADDR offset) Error Address */
-#define RAMECC_ERRADDR_RESETVALUE   _U(0x00000000) /**< \brief (RAMECC_ERRADDR reset_value) Error Address */
+#define RAMECC_ERRADDR_RESETVALUE   _Ul(0x00000000) /**< \brief (RAMECC_ERRADDR reset_value) Error Address */
 
 #define RAMECC_ERRADDR_ERRADDR_Pos  0            /**< \brief (RAMECC_ERRADDR) Error Address */
-#define RAMECC_ERRADDR_ERRADDR_Msk  (_U(0x1FFFF) << RAMECC_ERRADDR_ERRADDR_Pos)
+#define RAMECC_ERRADDR_ERRADDR_Msk  (_Ul(0x1FFFF) << RAMECC_ERRADDR_ERRADDR_Pos)
 #define RAMECC_ERRADDR_ERRADDR(value) (RAMECC_ERRADDR_ERRADDR_Msk & ((value) << RAMECC_ERRADDR_ERRADDR_Pos))
-#define RAMECC_ERRADDR_MASK         _U(0x0001FFFF) /**< \brief (RAMECC_ERRADDR) MASK Register */
+#define RAMECC_ERRADDR_MASK         _Ul(0x0001FFFF) /**< \brief (RAMECC_ERRADDR) MASK Register */
 
 /* -------- RAMECC_DBGCTRL : (RAMECC Offset: 0xF) (R/W  8) Debug Control -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -151,13 +151,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define RAMECC_DBGCTRL_OFFSET       0xF          /**< \brief (RAMECC_DBGCTRL offset) Debug Control */
-#define RAMECC_DBGCTRL_RESETVALUE   _U(0x00)     /**< \brief (RAMECC_DBGCTRL reset_value) Debug Control */
+#define RAMECC_DBGCTRL_RESETVALUE   _Ul(0x00)     /**< \brief (RAMECC_DBGCTRL reset_value) Debug Control */
 
 #define RAMECC_DBGCTRL_ECCDIS_Pos   0            /**< \brief (RAMECC_DBGCTRL) ECC Disable */
-#define RAMECC_DBGCTRL_ECCDIS       (_U(0x1) << RAMECC_DBGCTRL_ECCDIS_Pos)
+#define RAMECC_DBGCTRL_ECCDIS       (_Ul(0x1) << RAMECC_DBGCTRL_ECCDIS_Pos)
 #define RAMECC_DBGCTRL_ECCELOG_Pos  1            /**< \brief (RAMECC_DBGCTRL) ECC Error Log */
-#define RAMECC_DBGCTRL_ECCELOG      (_U(0x1) << RAMECC_DBGCTRL_ECCELOG_Pos)
-#define RAMECC_DBGCTRL_MASK         _U(0x03)     /**< \brief (RAMECC_DBGCTRL) MASK Register */
+#define RAMECC_DBGCTRL_ECCELOG      (_Ul(0x1) << RAMECC_DBGCTRL_ECCELOG_Pos)
+#define RAMECC_DBGCTRL_MASK         _Ul(0x03)     /**< \brief (RAMECC_DBGCTRL) MASK Register */
 
 /** \brief RAMECC hardware registers */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))

@@ -56,21 +56,21 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_CTRL_OFFSET             0x0000       /**< \brief (DSU_CTRL offset) Control */
-#define DSU_CTRL_RESETVALUE         _U(0x00)     /**< \brief (DSU_CTRL reset_value) Control */
+#define DSU_CTRL_RESETVALUE         _Ul(0x00)     /**< \brief (DSU_CTRL reset_value) Control */
 
 #define DSU_CTRL_SWRST_Pos          0            /**< \brief (DSU_CTRL) Software Reset */
-#define DSU_CTRL_SWRST              (_U(0x1) << DSU_CTRL_SWRST_Pos)
+#define DSU_CTRL_SWRST              (_Ul(0x1) << DSU_CTRL_SWRST_Pos)
 #define DSU_CTRL_CRC_Pos            2            /**< \brief (DSU_CTRL) 32-bit Cyclic Redundancy Code */
-#define DSU_CTRL_CRC                (_U(0x1) << DSU_CTRL_CRC_Pos)
+#define DSU_CTRL_CRC                (_Ul(0x1) << DSU_CTRL_CRC_Pos)
 #define DSU_CTRL_MBIST_Pos          3            /**< \brief (DSU_CTRL) Memory built-in self-test */
-#define DSU_CTRL_MBIST              (_U(0x1) << DSU_CTRL_MBIST_Pos)
+#define DSU_CTRL_MBIST              (_Ul(0x1) << DSU_CTRL_MBIST_Pos)
 #define DSU_CTRL_CE_Pos             4            /**< \brief (DSU_CTRL) Chip-Erase */
-#define DSU_CTRL_CE                 (_U(0x1) << DSU_CTRL_CE_Pos)
+#define DSU_CTRL_CE                 (_Ul(0x1) << DSU_CTRL_CE_Pos)
 #define DSU_CTRL_ARR_Pos            6            /**< \brief (DSU_CTRL) Auxiliary Row Read */
-#define DSU_CTRL_ARR                (_U(0x1) << DSU_CTRL_ARR_Pos)
+#define DSU_CTRL_ARR                (_Ul(0x1) << DSU_CTRL_ARR_Pos)
 #define DSU_CTRL_SMSA_Pos           7            /**< \brief (DSU_CTRL) Start Memory Stream Access */
-#define DSU_CTRL_SMSA               (_U(0x1) << DSU_CTRL_SMSA_Pos)
-#define DSU_CTRL_MASK               _U(0xDD)     /**< \brief (DSU_CTRL) MASK Register */
+#define DSU_CTRL_SMSA               (_Ul(0x1) << DSU_CTRL_SMSA_Pos)
+#define DSU_CTRL_MASK               _Ul(0xDD)     /**< \brief (DSU_CTRL) MASK Register */
 
 /* -------- DSU_STATUSA : (DSU Offset: 0x0001) (R/W  8) Status A -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -88,19 +88,19 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_STATUSA_OFFSET          0x0001       /**< \brief (DSU_STATUSA offset) Status A */
-#define DSU_STATUSA_RESETVALUE      _U(0x00)     /**< \brief (DSU_STATUSA reset_value) Status A */
+#define DSU_STATUSA_RESETVALUE      _Ul(0x00)     /**< \brief (DSU_STATUSA reset_value) Status A */
 
 #define DSU_STATUSA_DONE_Pos        0            /**< \brief (DSU_STATUSA) Done */
-#define DSU_STATUSA_DONE            (_U(0x1) << DSU_STATUSA_DONE_Pos)
+#define DSU_STATUSA_DONE            (_Ul(0x1) << DSU_STATUSA_DONE_Pos)
 #define DSU_STATUSA_CRSTEXT_Pos     1            /**< \brief (DSU_STATUSA) CPU Reset Phase Extension */
-#define DSU_STATUSA_CRSTEXT         (_U(0x1) << DSU_STATUSA_CRSTEXT_Pos)
+#define DSU_STATUSA_CRSTEXT         (_Ul(0x1) << DSU_STATUSA_CRSTEXT_Pos)
 #define DSU_STATUSA_BERR_Pos        2            /**< \brief (DSU_STATUSA) Bus Error */
-#define DSU_STATUSA_BERR            (_U(0x1) << DSU_STATUSA_BERR_Pos)
+#define DSU_STATUSA_BERR            (_Ul(0x1) << DSU_STATUSA_BERR_Pos)
 #define DSU_STATUSA_FAIL_Pos        3            /**< \brief (DSU_STATUSA) Failure */
-#define DSU_STATUSA_FAIL            (_U(0x1) << DSU_STATUSA_FAIL_Pos)
+#define DSU_STATUSA_FAIL            (_Ul(0x1) << DSU_STATUSA_FAIL_Pos)
 #define DSU_STATUSA_PERR_Pos        4            /**< \brief (DSU_STATUSA) Protection Error */
-#define DSU_STATUSA_PERR            (_U(0x1) << DSU_STATUSA_PERR_Pos)
-#define DSU_STATUSA_MASK            _U(0x1F)     /**< \brief (DSU_STATUSA) MASK Register */
+#define DSU_STATUSA_PERR            (_Ul(0x1) << DSU_STATUSA_PERR_Pos)
+#define DSU_STATUSA_MASK            _Ul(0x1F)     /**< \brief (DSU_STATUSA) MASK Register */
 
 /* -------- DSU_STATUSB : (DSU Offset: 0x0002) (R/   8) Status B -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -126,31 +126,31 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_STATUSB_OFFSET          0x0002       /**< \brief (DSU_STATUSB offset) Status B */
-#define DSU_STATUSB_RESETVALUE      _U(0x00)     /**< \brief (DSU_STATUSB reset_value) Status B */
+#define DSU_STATUSB_RESETVALUE      _Ul(0x00)     /**< \brief (DSU_STATUSB reset_value) Status B */
 
 #define DSU_STATUSB_PROT_Pos        0            /**< \brief (DSU_STATUSB) Protected */
-#define DSU_STATUSB_PROT            (_U(0x1) << DSU_STATUSB_PROT_Pos)
+#define DSU_STATUSB_PROT            (_Ul(0x1) << DSU_STATUSB_PROT_Pos)
 #define DSU_STATUSB_DBGPRES_Pos     1            /**< \brief (DSU_STATUSB) Debugger Present */
-#define DSU_STATUSB_DBGPRES         (_U(0x1) << DSU_STATUSB_DBGPRES_Pos)
+#define DSU_STATUSB_DBGPRES         (_Ul(0x1) << DSU_STATUSB_DBGPRES_Pos)
 #define DSU_STATUSB_DCCD0_Pos       2            /**< \brief (DSU_STATUSB) Debug Communication Channel 0 Dirty */
 #define DSU_STATUSB_DCCD0           (1 << DSU_STATUSB_DCCD0_Pos)
 #define DSU_STATUSB_DCCD1_Pos       3            /**< \brief (DSU_STATUSB) Debug Communication Channel 1 Dirty */
 #define DSU_STATUSB_DCCD1           (1 << DSU_STATUSB_DCCD1_Pos)
 #define DSU_STATUSB_DCCD_Pos        2            /**< \brief (DSU_STATUSB) Debug Communication Channel x Dirty */
-#define DSU_STATUSB_DCCD_Msk        (_U(0x3) << DSU_STATUSB_DCCD_Pos)
+#define DSU_STATUSB_DCCD_Msk        (_Ul(0x3) << DSU_STATUSB_DCCD_Pos)
 #define DSU_STATUSB_DCCD(value)     (DSU_STATUSB_DCCD_Msk & ((value) << DSU_STATUSB_DCCD_Pos))
 #define DSU_STATUSB_HPE_Pos         4            /**< \brief (DSU_STATUSB) Hot-Plugging Enable */
-#define DSU_STATUSB_HPE             (_U(0x1) << DSU_STATUSB_HPE_Pos)
+#define DSU_STATUSB_HPE             (_Ul(0x1) << DSU_STATUSB_HPE_Pos)
 #define DSU_STATUSB_CELCK_Pos       5            /**< \brief (DSU_STATUSB) Chip Erase Locked */
-#define DSU_STATUSB_CELCK           (_U(0x1) << DSU_STATUSB_CELCK_Pos)
+#define DSU_STATUSB_CELCK           (_Ul(0x1) << DSU_STATUSB_CELCK_Pos)
 #define DSU_STATUSB_TDCCD0_Pos      6            /**< \brief (DSU_STATUSB) Test Debug Communication Channel 0 Dirty */
 #define DSU_STATUSB_TDCCD0          (1 << DSU_STATUSB_TDCCD0_Pos)
 #define DSU_STATUSB_TDCCD1_Pos      7            /**< \brief (DSU_STATUSB) Test Debug Communication Channel 1 Dirty */
 #define DSU_STATUSB_TDCCD1          (1 << DSU_STATUSB_TDCCD1_Pos)
 #define DSU_STATUSB_TDCCD_Pos       6            /**< \brief (DSU_STATUSB) Test Debug Communication Channel x Dirty */
-#define DSU_STATUSB_TDCCD_Msk       (_U(0x3) << DSU_STATUSB_TDCCD_Pos)
+#define DSU_STATUSB_TDCCD_Msk       (_Ul(0x3) << DSU_STATUSB_TDCCD_Pos)
 #define DSU_STATUSB_TDCCD(value)    (DSU_STATUSB_TDCCD_Msk & ((value) << DSU_STATUSB_TDCCD_Pos))
-#define DSU_STATUSB_MASK            _U(0xFF)     /**< \brief (DSU_STATUSB) MASK Register */
+#define DSU_STATUSB_MASK            _Ul(0xFF)     /**< \brief (DSU_STATUSB) MASK Register */
 
 /* -------- DSU_ADDR : (DSU Offset: 0x0004) (R/W 32) Address -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -164,15 +164,15 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_ADDR_OFFSET             0x0004       /**< \brief (DSU_ADDR offset) Address */
-#define DSU_ADDR_RESETVALUE         _U(0x00000000) /**< \brief (DSU_ADDR reset_value) Address */
+#define DSU_ADDR_RESETVALUE         _Ul(0x00000000) /**< \brief (DSU_ADDR reset_value) Address */
 
 #define DSU_ADDR_AMOD_Pos           0            /**< \brief (DSU_ADDR) Access Mode */
-#define DSU_ADDR_AMOD_Msk           (_U(0x3) << DSU_ADDR_AMOD_Pos)
+#define DSU_ADDR_AMOD_Msk           (_Ul(0x3) << DSU_ADDR_AMOD_Pos)
 #define DSU_ADDR_AMOD(value)        (DSU_ADDR_AMOD_Msk & ((value) << DSU_ADDR_AMOD_Pos))
 #define DSU_ADDR_ADDR_Pos           2            /**< \brief (DSU_ADDR) Address */
-#define DSU_ADDR_ADDR_Msk           (_U(0x3FFFFFFF) << DSU_ADDR_ADDR_Pos)
+#define DSU_ADDR_ADDR_Msk           (_Ul(0x3FFFFFFF) << DSU_ADDR_ADDR_Pos)
 #define DSU_ADDR_ADDR(value)        (DSU_ADDR_ADDR_Msk & ((value) << DSU_ADDR_ADDR_Pos))
-#define DSU_ADDR_MASK               _U(0xFFFFFFFF) /**< \brief (DSU_ADDR) MASK Register */
+#define DSU_ADDR_MASK               _Ul(0xFFFFFFFF) /**< \brief (DSU_ADDR) MASK Register */
 
 /* -------- DSU_LENGTH : (DSU Offset: 0x0008) (R/W 32) Length -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -186,12 +186,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_LENGTH_OFFSET           0x0008       /**< \brief (DSU_LENGTH offset) Length */
-#define DSU_LENGTH_RESETVALUE       _U(0x00000000) /**< \brief (DSU_LENGTH reset_value) Length */
+#define DSU_LENGTH_RESETVALUE       _Ul(0x00000000) /**< \brief (DSU_LENGTH reset_value) Length */
 
 #define DSU_LENGTH_LENGTH_Pos       2            /**< \brief (DSU_LENGTH) Length */
-#define DSU_LENGTH_LENGTH_Msk       (_U(0x3FFFFFFF) << DSU_LENGTH_LENGTH_Pos)
+#define DSU_LENGTH_LENGTH_Msk       (_Ul(0x3FFFFFFF) << DSU_LENGTH_LENGTH_Pos)
 #define DSU_LENGTH_LENGTH(value)    (DSU_LENGTH_LENGTH_Msk & ((value) << DSU_LENGTH_LENGTH_Pos))
-#define DSU_LENGTH_MASK             _U(0xFFFFFFFC) /**< \brief (DSU_LENGTH) MASK Register */
+#define DSU_LENGTH_MASK             _Ul(0xFFFFFFFC) /**< \brief (DSU_LENGTH) MASK Register */
 
 /* -------- DSU_DATA : (DSU Offset: 0x000C) (R/W 32) Data -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -204,12 +204,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_DATA_OFFSET             0x000C       /**< \brief (DSU_DATA offset) Data */
-#define DSU_DATA_RESETVALUE         _U(0x00000000) /**< \brief (DSU_DATA reset_value) Data */
+#define DSU_DATA_RESETVALUE         _Ul(0x00000000) /**< \brief (DSU_DATA reset_value) Data */
 
 #define DSU_DATA_DATA_Pos           0            /**< \brief (DSU_DATA) Data */
-#define DSU_DATA_DATA_Msk           (_U(0xFFFFFFFF) << DSU_DATA_DATA_Pos)
+#define DSU_DATA_DATA_Msk           (_Ul(0xFFFFFFFF) << DSU_DATA_DATA_Pos)
 #define DSU_DATA_DATA(value)        (DSU_DATA_DATA_Msk & ((value) << DSU_DATA_DATA_Pos))
-#define DSU_DATA_MASK               _U(0xFFFFFFFF) /**< \brief (DSU_DATA) MASK Register */
+#define DSU_DATA_MASK               _Ul(0xFFFFFFFF) /**< \brief (DSU_DATA) MASK Register */
 
 /* -------- DSU_DCC : (DSU Offset: 0x0010) (R/W 32) Debug Communication Channel n -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -222,12 +222,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_DCC_OFFSET              0x0010       /**< \brief (DSU_DCC offset) Debug Communication Channel n */
-#define DSU_DCC_RESETVALUE          _U(0x00000000) /**< \brief (DSU_DCC reset_value) Debug Communication Channel n */
+#define DSU_DCC_RESETVALUE          _Ul(0x00000000) /**< \brief (DSU_DCC reset_value) Debug Communication Channel n */
 
 #define DSU_DCC_DATA_Pos            0            /**< \brief (DSU_DCC) Data */
-#define DSU_DCC_DATA_Msk            (_U(0xFFFFFFFF) << DSU_DCC_DATA_Pos)
+#define DSU_DCC_DATA_Msk            (_Ul(0xFFFFFFFF) << DSU_DCC_DATA_Pos)
 #define DSU_DCC_DATA(value)         (DSU_DCC_DATA_Msk & ((value) << DSU_DCC_DATA_Pos))
-#define DSU_DCC_MASK                _U(0xFFFFFFFF) /**< \brief (DSU_DCC) MASK Register */
+#define DSU_DCC_MASK                _Ul(0xFFFFFFFF) /**< \brief (DSU_DCC) MASK Register */
 
 /* -------- DSU_DID : (DSU Offset: 0x0018) (R/  32) Device Identification -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -248,36 +248,36 @@ typedef union {
 #define DSU_DID_OFFSET              0x0018       /**< \brief (DSU_DID offset) Device Identification */
 
 #define DSU_DID_DEVSEL_Pos          0            /**< \brief (DSU_DID) Device Select */
-#define DSU_DID_DEVSEL_Msk          (_U(0xFF) << DSU_DID_DEVSEL_Pos)
+#define DSU_DID_DEVSEL_Msk          (_Ul(0xFF) << DSU_DID_DEVSEL_Pos)
 #define DSU_DID_DEVSEL(value)       (DSU_DID_DEVSEL_Msk & ((value) << DSU_DID_DEVSEL_Pos))
 #define DSU_DID_REVISION_Pos        8            /**< \brief (DSU_DID) Revision Number */
-#define DSU_DID_REVISION_Msk        (_U(0xF) << DSU_DID_REVISION_Pos)
+#define DSU_DID_REVISION_Msk        (_Ul(0xF) << DSU_DID_REVISION_Pos)
 #define DSU_DID_REVISION(value)     (DSU_DID_REVISION_Msk & ((value) << DSU_DID_REVISION_Pos))
 #define DSU_DID_DIE_Pos             12           /**< \brief (DSU_DID) Die Number */
-#define DSU_DID_DIE_Msk             (_U(0xF) << DSU_DID_DIE_Pos)
+#define DSU_DID_DIE_Msk             (_Ul(0xF) << DSU_DID_DIE_Pos)
 #define DSU_DID_DIE(value)          (DSU_DID_DIE_Msk & ((value) << DSU_DID_DIE_Pos))
 #define DSU_DID_SERIES_Pos          16           /**< \brief (DSU_DID) Series */
-#define DSU_DID_SERIES_Msk          (_U(0x3F) << DSU_DID_SERIES_Pos)
+#define DSU_DID_SERIES_Msk          (_Ul(0x3F) << DSU_DID_SERIES_Pos)
 #define DSU_DID_SERIES(value)       (DSU_DID_SERIES_Msk & ((value) << DSU_DID_SERIES_Pos))
-#define   DSU_DID_SERIES_0_Val            _U(0x0)   /**< \brief (DSU_DID) Cortex-M0+ processor, basic feature set */
-#define   DSU_DID_SERIES_1_Val            _U(0x1)   /**< \brief (DSU_DID) Cortex-M0+ processor, USB */
+#define   DSU_DID_SERIES_0_Val            _Ul(0x0)   /**< \brief (DSU_DID) Cortex-M0+ processor, basic feature set */
+#define   DSU_DID_SERIES_1_Val            _Ul(0x1)   /**< \brief (DSU_DID) Cortex-M0+ processor, USB */
 #define DSU_DID_SERIES_0            (DSU_DID_SERIES_0_Val          << DSU_DID_SERIES_Pos)
 #define DSU_DID_SERIES_1            (DSU_DID_SERIES_1_Val          << DSU_DID_SERIES_Pos)
 #define DSU_DID_FAMILY_Pos          23           /**< \brief (DSU_DID) Family */
-#define DSU_DID_FAMILY_Msk          (_U(0x1F) << DSU_DID_FAMILY_Pos)
+#define DSU_DID_FAMILY_Msk          (_Ul(0x1F) << DSU_DID_FAMILY_Pos)
 #define DSU_DID_FAMILY(value)       (DSU_DID_FAMILY_Msk & ((value) << DSU_DID_FAMILY_Pos))
-#define   DSU_DID_FAMILY_0_Val            _U(0x0)   /**< \brief (DSU_DID) General purpose microcontroller */
-#define   DSU_DID_FAMILY_1_Val            _U(0x1)   /**< \brief (DSU_DID) PicoPower */
+#define   DSU_DID_FAMILY_0_Val            _Ul(0x0)   /**< \brief (DSU_DID) General purpose microcontroller */
+#define   DSU_DID_FAMILY_1_Val            _Ul(0x1)   /**< \brief (DSU_DID) PicoPower */
 #define DSU_DID_FAMILY_0            (DSU_DID_FAMILY_0_Val          << DSU_DID_FAMILY_Pos)
 #define DSU_DID_FAMILY_1            (DSU_DID_FAMILY_1_Val          << DSU_DID_FAMILY_Pos)
 #define DSU_DID_PROCESSOR_Pos       28           /**< \brief (DSU_DID) Processor */
-#define DSU_DID_PROCESSOR_Msk       (_U(0xF) << DSU_DID_PROCESSOR_Pos)
+#define DSU_DID_PROCESSOR_Msk       (_Ul(0xF) << DSU_DID_PROCESSOR_Pos)
 #define DSU_DID_PROCESSOR(value)    (DSU_DID_PROCESSOR_Msk & ((value) << DSU_DID_PROCESSOR_Pos))
-#define   DSU_DID_PROCESSOR_5_Val         _U(0x5)   /**< \brief (DSU_DID) Cortex-M4 */
-#define   DSU_DID_PROCESSOR_6_Val         _U(0x6)   /**< \brief (DSU_DID) Cortex-M4 with FPU */
+#define   DSU_DID_PROCESSOR_5_Val         _Ul(0x5)   /**< \brief (DSU_DID) Cortex-M4 */
+#define   DSU_DID_PROCESSOR_6_Val         _Ul(0x6)   /**< \brief (DSU_DID) Cortex-M4 with FPU */
 #define DSU_DID_PROCESSOR_5         (DSU_DID_PROCESSOR_5_Val       << DSU_DID_PROCESSOR_Pos)
 #define DSU_DID_PROCESSOR_6         (DSU_DID_PROCESSOR_6_Val       << DSU_DID_PROCESSOR_Pos)
-#define DSU_DID_MASK                _U(0xFFBFFFFF) /**< \brief (DSU_DID) MASK Register */
+#define DSU_DID_MASK                _Ul(0xFFBFFFFF) /**< \brief (DSU_DID) MASK Register */
 
 /* -------- DSU_CFG : (DSU Offset: 0x001C) (R/W 32) Configuration -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -293,21 +293,21 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_CFG_OFFSET              0x001C       /**< \brief (DSU_CFG offset) Configuration */
-#define DSU_CFG_RESETVALUE          _U(0x00000002) /**< \brief (DSU_CFG reset_value) Configuration */
+#define DSU_CFG_RESETVALUE          _Ul(0x00000002) /**< \brief (DSU_CFG reset_value) Configuration */
 
 #define DSU_CFG_LQOS_Pos            0            /**< \brief (DSU_CFG) Latency Quality Of Service */
-#define DSU_CFG_LQOS_Msk            (_U(0x3) << DSU_CFG_LQOS_Pos)
+#define DSU_CFG_LQOS_Msk            (_Ul(0x3) << DSU_CFG_LQOS_Pos)
 #define DSU_CFG_LQOS(value)         (DSU_CFG_LQOS_Msk & ((value) << DSU_CFG_LQOS_Pos))
 #define DSU_CFG_DCCDMALEVEL_Pos     2            /**< \brief (DSU_CFG) DMA Trigger Level */
-#define DSU_CFG_DCCDMALEVEL_Msk     (_U(0x3) << DSU_CFG_DCCDMALEVEL_Pos)
+#define DSU_CFG_DCCDMALEVEL_Msk     (_Ul(0x3) << DSU_CFG_DCCDMALEVEL_Pos)
 #define DSU_CFG_DCCDMALEVEL(value)  (DSU_CFG_DCCDMALEVEL_Msk & ((value) << DSU_CFG_DCCDMALEVEL_Pos))
-#define   DSU_CFG_DCCDMALEVEL_EMPTY_Val   _U(0x0)   /**< \brief (DSU_CFG) Trigger rises when DCC is empty */
-#define   DSU_CFG_DCCDMALEVEL_FULL_Val    _U(0x1)   /**< \brief (DSU_CFG) Trigger rises when DCC is full */
+#define   DSU_CFG_DCCDMALEVEL_EMPTY_Val   _Ul(0x0)   /**< \brief (DSU_CFG) Trigger rises when DCC is empty */
+#define   DSU_CFG_DCCDMALEVEL_FULL_Val    _Ul(0x1)   /**< \brief (DSU_CFG) Trigger rises when DCC is full */
 #define DSU_CFG_DCCDMALEVEL_EMPTY   (DSU_CFG_DCCDMALEVEL_EMPTY_Val << DSU_CFG_DCCDMALEVEL_Pos)
 #define DSU_CFG_DCCDMALEVEL_FULL    (DSU_CFG_DCCDMALEVEL_FULL_Val  << DSU_CFG_DCCDMALEVEL_Pos)
 #define DSU_CFG_ETBRAMEN_Pos        4            /**< \brief (DSU_CFG) Trace Control */
-#define DSU_CFG_ETBRAMEN            (_U(0x1) << DSU_CFG_ETBRAMEN_Pos)
-#define DSU_CFG_MASK                _U(0x0000001F) /**< \brief (DSU_CFG) MASK Register */
+#define DSU_CFG_ETBRAMEN            (_Ul(0x1) << DSU_CFG_ETBRAMEN_Pos)
+#define DSU_CFG_MASK                _Ul(0x0000001F) /**< \brief (DSU_CFG) MASK Register */
 
 /* -------- DSU_MBCTRL : (DSU Offset: 0x0040) (R/W 32) MBIST Control -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -322,13 +322,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MBCTRL_OFFSET           0x0040       /**< \brief (DSU_MBCTRL offset) MBIST Control */
-#define DSU_MBCTRL_RESETVALUE       _U(0x00000000) /**< \brief (DSU_MBCTRL reset_value) MBIST Control */
+#define DSU_MBCTRL_RESETVALUE       _Ul(0x00000000) /**< \brief (DSU_MBCTRL reset_value) MBIST Control */
 
 #define DSU_MBCTRL_SWRST_Pos        0            /**< \brief (DSU_MBCTRL) MBIST Software Reset */
-#define DSU_MBCTRL_SWRST            (_U(0x1) << DSU_MBCTRL_SWRST_Pos)
+#define DSU_MBCTRL_SWRST            (_Ul(0x1) << DSU_MBCTRL_SWRST_Pos)
 #define DSU_MBCTRL_ENABLE_Pos       1            /**< \brief (DSU_MBCTRL) MBIST Enable */
-#define DSU_MBCTRL_ENABLE           (_U(0x1) << DSU_MBCTRL_ENABLE_Pos)
-#define DSU_MBCTRL_MASK             _U(0x00000003) /**< \brief (DSU_MBCTRL) MASK Register */
+#define DSU_MBCTRL_ENABLE           (_Ul(0x1) << DSU_MBCTRL_ENABLE_Pos)
+#define DSU_MBCTRL_MASK             _Ul(0x00000003) /**< \brief (DSU_MBCTRL) MASK Register */
 
 /* -------- DSU_MBCONFIG : (DSU Offset: 0x0044) (R/W 32) MBIST Configuration -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -345,20 +345,20 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MBCONFIG_OFFSET         0x0044       /**< \brief (DSU_MBCONFIG offset) MBIST Configuration */
-#define DSU_MBCONFIG_RESETVALUE     _U(0x00000000) /**< \brief (DSU_MBCONFIG reset_value) MBIST Configuration */
+#define DSU_MBCONFIG_RESETVALUE     _Ul(0x00000000) /**< \brief (DSU_MBCONFIG reset_value) MBIST Configuration */
 
 #define DSU_MBCONFIG_ALGO_Pos       0            /**< \brief (DSU_MBCONFIG) MBIST Algorithm */
-#define DSU_MBCONFIG_ALGO_Msk       (_U(0x1F) << DSU_MBCONFIG_ALGO_Pos)
+#define DSU_MBCONFIG_ALGO_Msk       (_Ul(0x1F) << DSU_MBCONFIG_ALGO_Pos)
 #define DSU_MBCONFIG_ALGO(value)    (DSU_MBCONFIG_ALGO_Msk & ((value) << DSU_MBCONFIG_ALGO_Pos))
-#define   DSU_MBCONFIG_ALGO_MEMCLEAR_Val  _U(0x0)   /**< \brief (DSU_MBCONFIG) Memory Clear (1n) */
-#define   DSU_MBCONFIG_ALGO_VERIFY_Val    _U(0x1)   /**< \brief (DSU_MBCONFIG) Memory Verify (1n) */
-#define   DSU_MBCONFIG_ALGO_CLEARVER_Val  _U(0x2)   /**< \brief (DSU_MBCONFIG) Memory Clear and Verify (2n) */
-#define   DSU_MBCONFIG_ALGO_ADDR_DEC_Val  _U(0x3)   /**< \brief (DSU_MBCONFIG) Address Decoder (2n) */
-#define   DSU_MBCONFIG_ALGO_MARCH_LR_Val  _U(0x4)   /**< \brief (DSU_MBCONFIG) March LR (14n) */
-#define   DSU_MBCONFIG_ALGO_MARCH_SR_Val  _U(0x5)   /**< \brief (DSU_MBCONFIG) March SR (14n) */
-#define   DSU_MBCONFIG_ALGO_MARCH_SS_Val  _U(0x6)   /**< \brief (DSU_MBCONFIG) March SS (22n) */
-#define   DSU_MBCONFIG_ALGO_CRC_UP_Val    _U(0x8)   /**< \brief (DSU_MBCONFIG) CRC increasing address (1n) */
-#define   DSU_MBCONFIG_ALGO_CRC_DOWN_Val  _U(0x9)   /**< \brief (DSU_MBCONFIG) CRC decreasing address (1n) */
+#define   DSU_MBCONFIG_ALGO_MEMCLEAR_Val  _Ul(0x0)   /**< \brief (DSU_MBCONFIG) Memory Clear (1n) */
+#define   DSU_MBCONFIG_ALGO_VERIFY_Val    _Ul(0x1)   /**< \brief (DSU_MBCONFIG) Memory Verify (1n) */
+#define   DSU_MBCONFIG_ALGO_CLEARVER_Val  _Ul(0x2)   /**< \brief (DSU_MBCONFIG) Memory Clear and Verify (2n) */
+#define   DSU_MBCONFIG_ALGO_ADDR_DEC_Val  _Ul(0x3)   /**< \brief (DSU_MBCONFIG) Address Decoder (2n) */
+#define   DSU_MBCONFIG_ALGO_MARCH_LR_Val  _Ul(0x4)   /**< \brief (DSU_MBCONFIG) March LR (14n) */
+#define   DSU_MBCONFIG_ALGO_MARCH_SR_Val  _Ul(0x5)   /**< \brief (DSU_MBCONFIG) March SR (14n) */
+#define   DSU_MBCONFIG_ALGO_MARCH_SS_Val  _Ul(0x6)   /**< \brief (DSU_MBCONFIG) March SS (22n) */
+#define   DSU_MBCONFIG_ALGO_CRC_UP_Val    _Ul(0x8)   /**< \brief (DSU_MBCONFIG) CRC increasing address (1n) */
+#define   DSU_MBCONFIG_ALGO_CRC_DOWN_Val  _Ul(0x9)   /**< \brief (DSU_MBCONFIG) CRC decreasing address (1n) */
 #define DSU_MBCONFIG_ALGO_MEMCLEAR  (DSU_MBCONFIG_ALGO_MEMCLEAR_Val << DSU_MBCONFIG_ALGO_Pos)
 #define DSU_MBCONFIG_ALGO_VERIFY    (DSU_MBCONFIG_ALGO_VERIFY_Val  << DSU_MBCONFIG_ALGO_Pos)
 #define DSU_MBCONFIG_ALGO_CLEARVER  (DSU_MBCONFIG_ALGO_CLEARVER_Val << DSU_MBCONFIG_ALGO_Pos)
@@ -369,10 +369,10 @@ typedef union {
 #define DSU_MBCONFIG_ALGO_CRC_UP    (DSU_MBCONFIG_ALGO_CRC_UP_Val  << DSU_MBCONFIG_ALGO_Pos)
 #define DSU_MBCONFIG_ALGO_CRC_DOWN  (DSU_MBCONFIG_ALGO_CRC_DOWN_Val << DSU_MBCONFIG_ALGO_Pos)
 #define DSU_MBCONFIG_DEFRDMARGIN_Pos 6            /**< \brief (DSU_MBCONFIG) Force Default Read Margin */
-#define DSU_MBCONFIG_DEFRDMARGIN    (_U(0x1) << DSU_MBCONFIG_DEFRDMARGIN_Pos)
+#define DSU_MBCONFIG_DEFRDMARGIN    (_Ul(0x1) << DSU_MBCONFIG_DEFRDMARGIN_Pos)
 #define DSU_MBCONFIG_DBG_Pos        7            /**< \brief (DSU_MBCONFIG) Enable Debug Mode */
-#define DSU_MBCONFIG_DBG            (_U(0x1) << DSU_MBCONFIG_DBG_Pos)
-#define DSU_MBCONFIG_MASK           _U(0x000000DF) /**< \brief (DSU_MBCONFIG) MASK Register */
+#define DSU_MBCONFIG_DBG            (_Ul(0x1) << DSU_MBCONFIG_DBG_Pos)
+#define DSU_MBCONFIG_MASK           _Ul(0x000000DF) /**< \brief (DSU_MBCONFIG) MASK Register */
 
 /* -------- DSU_MBWORD : (DSU Offset: 0x0048) (R/W 32) MBIST Background Word -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -385,12 +385,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MBWORD_OFFSET           0x0048       /**< \brief (DSU_MBWORD offset) MBIST Background Word */
-#define DSU_MBWORD_RESETVALUE       _U(0x00000000) /**< \brief (DSU_MBWORD reset_value) MBIST Background Word */
+#define DSU_MBWORD_RESETVALUE       _Ul(0x00000000) /**< \brief (DSU_MBWORD reset_value) MBIST Background Word */
 
 #define DSU_MBWORD_DATA_Pos         0            /**< \brief (DSU_MBWORD) MBIST Background Word */
-#define DSU_MBWORD_DATA_Msk         (_U(0xFFFFFFFF) << DSU_MBWORD_DATA_Pos)
+#define DSU_MBWORD_DATA_Msk         (_Ul(0xFFFFFFFF) << DSU_MBWORD_DATA_Pos)
 #define DSU_MBWORD_DATA(value)      (DSU_MBWORD_DATA_Msk & ((value) << DSU_MBWORD_DATA_Pos))
-#define DSU_MBWORD_MASK             _U(0xFFFFFFFF) /**< \brief (DSU_MBWORD) MASK Register */
+#define DSU_MBWORD_MASK             _Ul(0xFFFFFFFF) /**< \brief (DSU_MBWORD) MASK Register */
 
 /* -------- DSU_MBGSTAT : (DSU Offset: 0x004C) (R/W 32) MBIST Global Status -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -407,17 +407,17 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MBGSTAT_OFFSET          0x004C       /**< \brief (DSU_MBGSTAT offset) MBIST Global Status */
-#define DSU_MBGSTAT_RESETVALUE      _U(0x00000000) /**< \brief (DSU_MBGSTAT reset_value) MBIST Global Status */
+#define DSU_MBGSTAT_RESETVALUE      _Ul(0x00000000) /**< \brief (DSU_MBGSTAT reset_value) MBIST Global Status */
 
 #define DSU_MBGSTAT_ALLDONE_Pos     0            /**< \brief (DSU_MBGSTAT) MBIST Completed */
-#define DSU_MBGSTAT_ALLDONE         (_U(0x1) << DSU_MBGSTAT_ALLDONE_Pos)
+#define DSU_MBGSTAT_ALLDONE         (_Ul(0x1) << DSU_MBGSTAT_ALLDONE_Pos)
 #define DSU_MBGSTAT_FAILED_Pos      1            /**< \brief (DSU_MBGSTAT) MBIST Failed */
-#define DSU_MBGSTAT_FAILED          (_U(0x1) << DSU_MBGSTAT_FAILED_Pos)
+#define DSU_MBGSTAT_FAILED          (_Ul(0x1) << DSU_MBGSTAT_FAILED_Pos)
 #define DSU_MBGSTAT_ERRINFO_Pos     2            /**< \brief (DSU_MBGSTAT) MBIST Error Info Present */
-#define DSU_MBGSTAT_ERRINFO         (_U(0x1) << DSU_MBGSTAT_ERRINFO_Pos)
+#define DSU_MBGSTAT_ERRINFO         (_Ul(0x1) << DSU_MBGSTAT_ERRINFO_Pos)
 #define DSU_MBGSTAT_CONFIGURED_Pos  3            /**< \brief (DSU_MBGSTAT) MBIST Configuration Sent */
-#define DSU_MBGSTAT_CONFIGURED      (_U(0x1) << DSU_MBGSTAT_CONFIGURED_Pos)
-#define DSU_MBGSTAT_MASK            _U(0x0000000F) /**< \brief (DSU_MBGSTAT) MASK Register */
+#define DSU_MBGSTAT_CONFIGURED      (_Ul(0x1) << DSU_MBGSTAT_CONFIGURED_Pos)
+#define DSU_MBGSTAT_MASK            _Ul(0x0000000F) /**< \brief (DSU_MBGSTAT) MASK Register */
 
 /* -------- DSU_MBDFAIL : (DSU Offset: 0x0050) (R/  32) MBIST Fail Data -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -430,12 +430,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MBDFAIL_OFFSET          0x0050       /**< \brief (DSU_MBDFAIL offset) MBIST Fail Data */
-#define DSU_MBDFAIL_RESETVALUE      _U(0x00000000) /**< \brief (DSU_MBDFAIL reset_value) MBIST Fail Data */
+#define DSU_MBDFAIL_RESETVALUE      _Ul(0x00000000) /**< \brief (DSU_MBDFAIL reset_value) MBIST Fail Data */
 
 #define DSU_MBDFAIL_DATA_Pos        0            /**< \brief (DSU_MBDFAIL) Error Data Read */
-#define DSU_MBDFAIL_DATA_Msk        (_U(0xFFFFFFFF) << DSU_MBDFAIL_DATA_Pos)
+#define DSU_MBDFAIL_DATA_Msk        (_Ul(0xFFFFFFFF) << DSU_MBDFAIL_DATA_Pos)
 #define DSU_MBDFAIL_DATA(value)     (DSU_MBDFAIL_DATA_Msk & ((value) << DSU_MBDFAIL_DATA_Pos))
-#define DSU_MBDFAIL_MASK            _U(0xFFFFFFFF) /**< \brief (DSU_MBDFAIL) MASK Register */
+#define DSU_MBDFAIL_MASK            _Ul(0xFFFFFFFF) /**< \brief (DSU_MBDFAIL) MASK Register */
 
 /* -------- DSU_MBDEXP : (DSU Offset: 0x0054) (R/  32) MBIST Expected Data -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -448,12 +448,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MBDEXP_OFFSET           0x0054       /**< \brief (DSU_MBDEXP offset) MBIST Expected Data */
-#define DSU_MBDEXP_RESETVALUE       _U(0x00000000) /**< \brief (DSU_MBDEXP reset_value) MBIST Expected Data */
+#define DSU_MBDEXP_RESETVALUE       _Ul(0x00000000) /**< \brief (DSU_MBDEXP reset_value) MBIST Expected Data */
 
 #define DSU_MBDEXP_DATA_Pos         0            /**< \brief (DSU_MBDEXP) Expected Data */
-#define DSU_MBDEXP_DATA_Msk         (_U(0xFFFFFFFF) << DSU_MBDEXP_DATA_Pos)
+#define DSU_MBDEXP_DATA_Msk         (_Ul(0xFFFFFFFF) << DSU_MBDEXP_DATA_Pos)
 #define DSU_MBDEXP_DATA(value)      (DSU_MBDEXP_DATA_Msk & ((value) << DSU_MBDEXP_DATA_Pos))
-#define DSU_MBDEXP_MASK             _U(0xFFFFFFFF) /**< \brief (DSU_MBDEXP) MASK Register */
+#define DSU_MBDEXP_MASK             _Ul(0xFFFFFFFF) /**< \brief (DSU_MBDEXP) MASK Register */
 
 /* -------- DSU_MBAFAIL : (DSU Offset: 0x0058) (R/  32) MBIST Fail Address -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -467,12 +467,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MBAFAIL_OFFSET          0x0058       /**< \brief (DSU_MBAFAIL offset) MBIST Fail Address */
-#define DSU_MBAFAIL_RESETVALUE      _U(0x00000000) /**< \brief (DSU_MBAFAIL reset_value) MBIST Fail Address */
+#define DSU_MBAFAIL_RESETVALUE      _Ul(0x00000000) /**< \brief (DSU_MBAFAIL reset_value) MBIST Fail Address */
 
 #define DSU_MBAFAIL_ADDR_Pos        0            /**< \brief (DSU_MBAFAIL) Error Address */
-#define DSU_MBAFAIL_ADDR_Msk        (_U(0x3FFF) << DSU_MBAFAIL_ADDR_Pos)
+#define DSU_MBAFAIL_ADDR_Msk        (_Ul(0x3FFF) << DSU_MBAFAIL_ADDR_Pos)
 #define DSU_MBAFAIL_ADDR(value)     (DSU_MBAFAIL_ADDR_Msk & ((value) << DSU_MBAFAIL_ADDR_Pos))
-#define DSU_MBAFAIL_MASK            _U(0x00003FFF) /**< \brief (DSU_MBAFAIL) MASK Register */
+#define DSU_MBAFAIL_MASK            _Ul(0x00003FFF) /**< \brief (DSU_MBAFAIL) MASK Register */
 
 /* -------- DSU_MBCONTEXT : (DSU Offset: 0x005C) (R/  32) MBIST Fail Context -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -488,17 +488,17 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MBCONTEXT_OFFSET        0x005C       /**< \brief (DSU_MBCONTEXT offset) MBIST Fail Context */
-#define DSU_MBCONTEXT_RESETVALUE    _U(0x00000000) /**< \brief (DSU_MBCONTEXT reset_value) MBIST Fail Context */
+#define DSU_MBCONTEXT_RESETVALUE    _Ul(0x00000000) /**< \brief (DSU_MBCONTEXT reset_value) MBIST Fail Context */
 
 #define DSU_MBCONTEXT_SUBSTEP_Pos   0            /**< \brief (DSU_MBCONTEXT) Algorithm Sub-step */
-#define DSU_MBCONTEXT_SUBSTEP_Msk   (_U(0x1F) << DSU_MBCONTEXT_SUBSTEP_Pos)
+#define DSU_MBCONTEXT_SUBSTEP_Msk   (_Ul(0x1F) << DSU_MBCONTEXT_SUBSTEP_Pos)
 #define DSU_MBCONTEXT_SUBSTEP(value) (DSU_MBCONTEXT_SUBSTEP_Msk & ((value) << DSU_MBCONTEXT_SUBSTEP_Pos))
-#define   DSU_MBCONTEXT_SUBSTEP_R0_1_Val  _U(0x1)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_SUBSTEP_R1_1_Val  _U(0x3)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_SUBSTEP_R0_2_Val  _U(0x5)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_SUBSTEP_R1_2_Val  _U(0x7)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_SUBSTEP_R0_3_Val  _U(0x9)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_SUBSTEP_R1_3_Val  _U(0xB)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_SUBSTEP_R0_1_Val  _Ul(0x1)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_SUBSTEP_R1_1_Val  _Ul(0x3)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_SUBSTEP_R0_2_Val  _Ul(0x5)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_SUBSTEP_R1_2_Val  _Ul(0x7)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_SUBSTEP_R0_3_Val  _Ul(0x9)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_SUBSTEP_R1_3_Val  _Ul(0xB)   /**< \brief (DSU_MBCONTEXT)  */
 #define DSU_MBCONTEXT_SUBSTEP_R0_1  (DSU_MBCONTEXT_SUBSTEP_R0_1_Val << DSU_MBCONTEXT_SUBSTEP_Pos)
 #define DSU_MBCONTEXT_SUBSTEP_R1_1  (DSU_MBCONTEXT_SUBSTEP_R1_1_Val << DSU_MBCONTEXT_SUBSTEP_Pos)
 #define DSU_MBCONTEXT_SUBSTEP_R0_2  (DSU_MBCONTEXT_SUBSTEP_R0_2_Val << DSU_MBCONTEXT_SUBSTEP_Pos)
@@ -506,20 +506,20 @@ typedef union {
 #define DSU_MBCONTEXT_SUBSTEP_R0_3  (DSU_MBCONTEXT_SUBSTEP_R0_3_Val << DSU_MBCONTEXT_SUBSTEP_Pos)
 #define DSU_MBCONTEXT_SUBSTEP_R1_3  (DSU_MBCONTEXT_SUBSTEP_R1_3_Val << DSU_MBCONTEXT_SUBSTEP_Pos)
 #define DSU_MBCONTEXT_STEP_Pos      5            /**< \brief (DSU_MBCONTEXT) Algorithm Step */
-#define DSU_MBCONTEXT_STEP_Msk      (_U(0x1F) << DSU_MBCONTEXT_STEP_Pos)
+#define DSU_MBCONTEXT_STEP_Msk      (_Ul(0x1F) << DSU_MBCONTEXT_STEP_Pos)
 #define DSU_MBCONTEXT_STEP(value)   (DSU_MBCONTEXT_STEP_Msk & ((value) << DSU_MBCONTEXT_STEP_Pos))
-#define   DSU_MBCONTEXT_STEP_DOWN_R0W1_Val _U(0x2)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_STEP_UP_R1W0R0W1_Val _U(0x3)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_STEP_UP_R1W0_Val  _U(0x4)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_STEP_UP_R0W1R1W0_Val _U(0x5)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_STEP_UP_R0_Val    _U(0x6)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_STEP_UP_R0R0W0R0W1_Val _U(0x7)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_STEP_UP_R1R1W1R1W0_Val _U(0x8)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_STEP_DOWN_R0R0W0R0W1_Val _U(0x9)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_STEP_DOWN_R1R1W1R1W0_Val _U(0xA)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_STEP_UP_R0R0_Val  _U(0xC)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_STEP_DOWN_R1W0R0W1_Val _U(0xE)   /**< \brief (DSU_MBCONTEXT)  */
-#define   DSU_MBCONTEXT_STEP_DOWN_R1R1_Val _U(0xF)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_DOWN_R0W1_Val _Ul(0x2)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_UP_R1W0R0W1_Val _Ul(0x3)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_UP_R1W0_Val  _Ul(0x4)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_UP_R0W1R1W0_Val _Ul(0x5)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_UP_R0_Val    _Ul(0x6)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_UP_R0R0W0R0W1_Val _Ul(0x7)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_UP_R1R1W1R1W0_Val _Ul(0x8)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_DOWN_R0R0W0R0W1_Val _Ul(0x9)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_DOWN_R1R1W1R1W0_Val _Ul(0xA)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_UP_R0R0_Val  _Ul(0xC)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_DOWN_R1W0R0W1_Val _Ul(0xE)   /**< \brief (DSU_MBCONTEXT)  */
+#define   DSU_MBCONTEXT_STEP_DOWN_R1R1_Val _Ul(0xF)   /**< \brief (DSU_MBCONTEXT)  */
 #define DSU_MBCONTEXT_STEP_DOWN_R0W1 (DSU_MBCONTEXT_STEP_DOWN_R0W1_Val << DSU_MBCONTEXT_STEP_Pos)
 #define DSU_MBCONTEXT_STEP_UP_R1W0R0W1 (DSU_MBCONTEXT_STEP_UP_R1W0R0W1_Val << DSU_MBCONTEXT_STEP_Pos)
 #define DSU_MBCONTEXT_STEP_UP_R1W0  (DSU_MBCONTEXT_STEP_UP_R1W0_Val << DSU_MBCONTEXT_STEP_Pos)
@@ -533,8 +533,8 @@ typedef union {
 #define DSU_MBCONTEXT_STEP_DOWN_R1W0R0W1 (DSU_MBCONTEXT_STEP_DOWN_R1W0R0W1_Val << DSU_MBCONTEXT_STEP_Pos)
 #define DSU_MBCONTEXT_STEP_DOWN_R1R1 (DSU_MBCONTEXT_STEP_DOWN_R1R1_Val << DSU_MBCONTEXT_STEP_Pos)
 #define DSU_MBCONTEXT_PORT_Pos      10           /**< \brief (DSU_MBCONTEXT) DPRAM Port Index */
-#define DSU_MBCONTEXT_PORT          (_U(0x1) << DSU_MBCONTEXT_PORT_Pos)
-#define DSU_MBCONTEXT_MASK          _U(0x000007FF) /**< \brief (DSU_MBCONTEXT) MASK Register */
+#define DSU_MBCONTEXT_PORT          (_Ul(0x1) << DSU_MBCONTEXT_PORT_Pos)
+#define DSU_MBCONTEXT_MASK          _Ul(0x000007FF) /**< \brief (DSU_MBCONTEXT) MASK Register */
 
 /* -------- DSU_MBENABLE0 : (DSU Offset: 0x0060) (R/W 32) MBIST Memory Enable 0 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -580,7 +580,7 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MBENABLE0_OFFSET        0x0060       /**< \brief (DSU_MBENABLE0 offset) MBIST Memory Enable 0 */
-#define DSU_MBENABLE0_RESETVALUE    _U(0x00000000) /**< \brief (DSU_MBENABLE0 reset_value) MBIST Memory Enable 0 */
+#define DSU_MBENABLE0_RESETVALUE    _Ul(0x00000000) /**< \brief (DSU_MBENABLE0 reset_value) MBIST Memory Enable 0 */
 
 #define DSU_MBENABLE0_ENABLE0_Pos   0            /**< \brief (DSU_MBENABLE0) Memory 0 MBIST Enable */
 #define DSU_MBENABLE0_ENABLE0       (1 << DSU_MBENABLE0_ENABLE0_Pos)
@@ -641,9 +641,9 @@ typedef union {
 #define DSU_MBENABLE0_ENABLE28_Pos  28           /**< \brief (DSU_MBENABLE0) Memory 28 MBIST Enable */
 #define DSU_MBENABLE0_ENABLE28      (1 << DSU_MBENABLE0_ENABLE28_Pos)
 #define DSU_MBENABLE0_ENABLE_Pos    0            /**< \brief (DSU_MBENABLE0) Memory x MBIST Enable */
-#define DSU_MBENABLE0_ENABLE_Msk    (_U(0x1FFFFFFF) << DSU_MBENABLE0_ENABLE_Pos)
+#define DSU_MBENABLE0_ENABLE_Msk    (_Ul(0x1FFFFFFF) << DSU_MBENABLE0_ENABLE_Pos)
 #define DSU_MBENABLE0_ENABLE(value) (DSU_MBENABLE0_ENABLE_Msk & ((value) << DSU_MBENABLE0_ENABLE_Pos))
-#define DSU_MBENABLE0_MASK          _U(0x1FFFFFFF) /**< \brief (DSU_MBENABLE0) MASK Register */
+#define DSU_MBENABLE0_MASK          _Ul(0x1FFFFFFF) /**< \brief (DSU_MBENABLE0) MASK Register */
 
 /* -------- DSU_MBBUSY0 : (DSU Offset: 0x0068) (R/  32) MBIST Memory Busy 0 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -689,7 +689,7 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MBBUSY0_OFFSET          0x0068       /**< \brief (DSU_MBBUSY0 offset) MBIST Memory Busy 0 */
-#define DSU_MBBUSY0_RESETVALUE      _U(0x00000000) /**< \brief (DSU_MBBUSY0 reset_value) MBIST Memory Busy 0 */
+#define DSU_MBBUSY0_RESETVALUE      _Ul(0x00000000) /**< \brief (DSU_MBBUSY0 reset_value) MBIST Memory Busy 0 */
 
 #define DSU_MBBUSY0_BUSY0_Pos       0            /**< \brief (DSU_MBBUSY0) Memory 0 BIST Busy */
 #define DSU_MBBUSY0_BUSY0           (1 << DSU_MBBUSY0_BUSY0_Pos)
@@ -750,9 +750,9 @@ typedef union {
 #define DSU_MBBUSY0_BUSY28_Pos      28           /**< \brief (DSU_MBBUSY0) Memory 28 BIST Busy */
 #define DSU_MBBUSY0_BUSY28          (1 << DSU_MBBUSY0_BUSY28_Pos)
 #define DSU_MBBUSY0_BUSY_Pos        0            /**< \brief (DSU_MBBUSY0) Memory x BIST Busy */
-#define DSU_MBBUSY0_BUSY_Msk        (_U(0x1FFFFFFF) << DSU_MBBUSY0_BUSY_Pos)
+#define DSU_MBBUSY0_BUSY_Msk        (_Ul(0x1FFFFFFF) << DSU_MBBUSY0_BUSY_Pos)
 #define DSU_MBBUSY0_BUSY(value)     (DSU_MBBUSY0_BUSY_Msk & ((value) << DSU_MBBUSY0_BUSY_Pos))
-#define DSU_MBBUSY0_MASK            _U(0x1FFFFFFF) /**< \brief (DSU_MBBUSY0) MASK Register */
+#define DSU_MBBUSY0_MASK            _Ul(0x1FFFFFFF) /**< \brief (DSU_MBBUSY0) MASK Register */
 
 /* -------- DSU_MBSTATUS0 : (DSU Offset: 0x0070) (R/W 32) MBIST Memory Status 0 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -798,7 +798,7 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MBSTATUS0_OFFSET        0x0070       /**< \brief (DSU_MBSTATUS0 offset) MBIST Memory Status 0 */
-#define DSU_MBSTATUS0_RESETVALUE    _U(0x00000000) /**< \brief (DSU_MBSTATUS0 reset_value) MBIST Memory Status 0 */
+#define DSU_MBSTATUS0_RESETVALUE    _Ul(0x00000000) /**< \brief (DSU_MBSTATUS0 reset_value) MBIST Memory Status 0 */
 
 #define DSU_MBSTATUS0_STATUS0_Pos   0            /**< \brief (DSU_MBSTATUS0) Memory 0 MBIST Status */
 #define DSU_MBSTATUS0_STATUS0       (1 << DSU_MBSTATUS0_STATUS0_Pos)
@@ -859,9 +859,9 @@ typedef union {
 #define DSU_MBSTATUS0_STATUS28_Pos  28           /**< \brief (DSU_MBSTATUS0) Memory 28 MBIST Status */
 #define DSU_MBSTATUS0_STATUS28      (1 << DSU_MBSTATUS0_STATUS28_Pos)
 #define DSU_MBSTATUS0_STATUS_Pos    0            /**< \brief (DSU_MBSTATUS0) Memory x MBIST Status */
-#define DSU_MBSTATUS0_STATUS_Msk    (_U(0x1FFFFFFF) << DSU_MBSTATUS0_STATUS_Pos)
+#define DSU_MBSTATUS0_STATUS_Msk    (_Ul(0x1FFFFFFF) << DSU_MBSTATUS0_STATUS_Pos)
 #define DSU_MBSTATUS0_STATUS(value) (DSU_MBSTATUS0_STATUS_Msk & ((value) << DSU_MBSTATUS0_STATUS_Pos))
-#define DSU_MBSTATUS0_MASK          _U(0x1FFFFFFF) /**< \brief (DSU_MBSTATUS0) MASK Register */
+#define DSU_MBSTATUS0_MASK          _Ul(0x1FFFFFFF) /**< \brief (DSU_MBSTATUS0) MASK Register */
 
 /* -------- DSU_DCFG : (DSU Offset: 0x00F0) (R/W 32) Device Configuration -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -874,12 +874,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_DCFG_OFFSET             0x00F0       /**< \brief (DSU_DCFG offset) Device Configuration */
-#define DSU_DCFG_RESETVALUE         _U(0x00000000) /**< \brief (DSU_DCFG reset_value) Device Configuration */
+#define DSU_DCFG_RESETVALUE         _Ul(0x00000000) /**< \brief (DSU_DCFG reset_value) Device Configuration */
 
 #define DSU_DCFG_DCFG_Pos           0            /**< \brief (DSU_DCFG) Device Configuration */
-#define DSU_DCFG_DCFG_Msk           (_U(0xFFFFFFFF) << DSU_DCFG_DCFG_Pos)
+#define DSU_DCFG_DCFG_Msk           (_Ul(0xFFFFFFFF) << DSU_DCFG_DCFG_Pos)
 #define DSU_DCFG_DCFG(value)        (DSU_DCFG_DCFG_Msk & ((value) << DSU_DCFG_DCFG_Pos))
-#define DSU_DCFG_MASK               _U(0xFFFFFFFF) /**< \brief (DSU_DCFG) MASK Register */
+#define DSU_DCFG_MASK               _Ul(0xFFFFFFFF) /**< \brief (DSU_DCFG) MASK Register */
 
 /* -------- DSU_ENTRY : (DSU Offset: 0x1000) (R/  32) Coresight ROM Table Entry n -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -897,13 +897,13 @@ typedef union {
 #define DSU_ENTRY_OFFSET            0x1000       /**< \brief (DSU_ENTRY offset) Coresight ROM Table Entry n */
 
 #define DSU_ENTRY_EPRES_Pos         0            /**< \brief (DSU_ENTRY) Entry Present */
-#define DSU_ENTRY_EPRES             (_U(0x1) << DSU_ENTRY_EPRES_Pos)
+#define DSU_ENTRY_EPRES             (_Ul(0x1) << DSU_ENTRY_EPRES_Pos)
 #define DSU_ENTRY_FMT_Pos           1            /**< \brief (DSU_ENTRY) Format */
-#define DSU_ENTRY_FMT               (_U(0x1) << DSU_ENTRY_FMT_Pos)
+#define DSU_ENTRY_FMT               (_Ul(0x1) << DSU_ENTRY_FMT_Pos)
 #define DSU_ENTRY_ADDOFF_Pos        12           /**< \brief (DSU_ENTRY) Address Offset */
-#define DSU_ENTRY_ADDOFF_Msk        (_U(0xFFFFF) << DSU_ENTRY_ADDOFF_Pos)
+#define DSU_ENTRY_ADDOFF_Msk        (_Ul(0xFFFFF) << DSU_ENTRY_ADDOFF_Pos)
 #define DSU_ENTRY_ADDOFF(value)     (DSU_ENTRY_ADDOFF_Msk & ((value) << DSU_ENTRY_ADDOFF_Pos))
-#define DSU_ENTRY_MASK              _U(0xFFFFF003) /**< \brief (DSU_ENTRY) MASK Register */
+#define DSU_ENTRY_MASK              _Ul(0xFFFFF003) /**< \brief (DSU_ENTRY) MASK Register */
 
 /* -------- DSU_END : (DSU Offset: 0x1008) (R/  32) Coresight ROM Table End -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -916,12 +916,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_END_OFFSET              0x1008       /**< \brief (DSU_END offset) Coresight ROM Table End */
-#define DSU_END_RESETVALUE          _U(0x00000000) /**< \brief (DSU_END reset_value) Coresight ROM Table End */
+#define DSU_END_RESETVALUE          _Ul(0x00000000) /**< \brief (DSU_END reset_value) Coresight ROM Table End */
 
 #define DSU_END_END_Pos             0            /**< \brief (DSU_END) End Marker */
-#define DSU_END_END_Msk             (_U(0xFFFFFFFF) << DSU_END_END_Pos)
+#define DSU_END_END_Msk             (_Ul(0xFFFFFFFF) << DSU_END_END_Pos)
 #define DSU_END_END(value)          (DSU_END_END_Msk & ((value) << DSU_END_END_Pos))
-#define DSU_END_MASK                _U(0xFFFFFFFF) /**< \brief (DSU_END) MASK Register */
+#define DSU_END_MASK                _Ul(0xFFFFFFFF) /**< \brief (DSU_END) MASK Register */
 
 /* -------- DSU_MEMTYPE : (DSU Offset: 0x1FCC) (R/  32) Coresight ROM Table Memory Type -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -935,11 +935,11 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_MEMTYPE_OFFSET          0x1FCC       /**< \brief (DSU_MEMTYPE offset) Coresight ROM Table Memory Type */
-#define DSU_MEMTYPE_RESETVALUE      _U(0x00000000) /**< \brief (DSU_MEMTYPE reset_value) Coresight ROM Table Memory Type */
+#define DSU_MEMTYPE_RESETVALUE      _Ul(0x00000000) /**< \brief (DSU_MEMTYPE reset_value) Coresight ROM Table Memory Type */
 
 #define DSU_MEMTYPE_SMEMP_Pos       0            /**< \brief (DSU_MEMTYPE) System Memory Present */
-#define DSU_MEMTYPE_SMEMP           (_U(0x1) << DSU_MEMTYPE_SMEMP_Pos)
-#define DSU_MEMTYPE_MASK            _U(0x00000001) /**< \brief (DSU_MEMTYPE) MASK Register */
+#define DSU_MEMTYPE_SMEMP           (_Ul(0x1) << DSU_MEMTYPE_SMEMP_Pos)
+#define DSU_MEMTYPE_MASK            _Ul(0x00000001) /**< \brief (DSU_MEMTYPE) MASK Register */
 
 /* -------- DSU_PID4 : (DSU Offset: 0x1FD0) (R/  32) Peripheral Identification 4 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -954,15 +954,15 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_PID4_OFFSET             0x1FD0       /**< \brief (DSU_PID4 offset) Peripheral Identification 4 */
-#define DSU_PID4_RESETVALUE         _U(0x00000000) /**< \brief (DSU_PID4 reset_value) Peripheral Identification 4 */
+#define DSU_PID4_RESETVALUE         _Ul(0x00000000) /**< \brief (DSU_PID4 reset_value) Peripheral Identification 4 */
 
 #define DSU_PID4_JEPCC_Pos          0            /**< \brief (DSU_PID4) JEP-106 Continuation Code */
-#define DSU_PID4_JEPCC_Msk          (_U(0xF) << DSU_PID4_JEPCC_Pos)
+#define DSU_PID4_JEPCC_Msk          (_Ul(0xF) << DSU_PID4_JEPCC_Pos)
 #define DSU_PID4_JEPCC(value)       (DSU_PID4_JEPCC_Msk & ((value) << DSU_PID4_JEPCC_Pos))
 #define DSU_PID4_FKBC_Pos           4            /**< \brief (DSU_PID4) 4KB count */
-#define DSU_PID4_FKBC_Msk           (_U(0xF) << DSU_PID4_FKBC_Pos)
+#define DSU_PID4_FKBC_Msk           (_Ul(0xF) << DSU_PID4_FKBC_Pos)
 #define DSU_PID4_FKBC(value)        (DSU_PID4_FKBC_Msk & ((value) << DSU_PID4_FKBC_Pos))
-#define DSU_PID4_MASK               _U(0x000000FF) /**< \brief (DSU_PID4) MASK Register */
+#define DSU_PID4_MASK               _Ul(0x000000FF) /**< \brief (DSU_PID4) MASK Register */
 
 /* -------- DSU_PID5 : (DSU Offset: 0x1FD4) (R/  32) Peripheral Identification 5 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -972,7 +972,7 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_PID5_OFFSET             0x1FD4       /**< \brief (DSU_PID5 offset) Peripheral Identification 5 */
-#define DSU_PID5_MASK               _U(0x00000000) /**< \brief (DSU_PID5) MASK Register */
+#define DSU_PID5_MASK               _Ul(0x00000000) /**< \brief (DSU_PID5) MASK Register */
 
 /* -------- DSU_PID6 : (DSU Offset: 0x1FD8) (R/  32) Peripheral Identification 6 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -982,7 +982,7 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_PID6_OFFSET             0x1FD8       /**< \brief (DSU_PID6 offset) Peripheral Identification 6 */
-#define DSU_PID6_MASK               _U(0x00000000) /**< \brief (DSU_PID6) MASK Register */
+#define DSU_PID6_MASK               _Ul(0x00000000) /**< \brief (DSU_PID6) MASK Register */
 
 /* -------- DSU_PID7 : (DSU Offset: 0x1FDC) (R/  32) Peripheral Identification 7 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -992,7 +992,7 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_PID7_OFFSET             0x1FDC       /**< \brief (DSU_PID7 offset) Peripheral Identification 7 */
-#define DSU_PID7_MASK               _U(0x00000000) /**< \brief (DSU_PID7) MASK Register */
+#define DSU_PID7_MASK               _Ul(0x00000000) /**< \brief (DSU_PID7) MASK Register */
 
 /* -------- DSU_PID0 : (DSU Offset: 0x1FE0) (R/  32) Peripheral Identification 0 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1006,12 +1006,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_PID0_OFFSET             0x1FE0       /**< \brief (DSU_PID0 offset) Peripheral Identification 0 */
-#define DSU_PID0_RESETVALUE         _U(0x00000000) /**< \brief (DSU_PID0 reset_value) Peripheral Identification 0 */
+#define DSU_PID0_RESETVALUE         _Ul(0x00000000) /**< \brief (DSU_PID0 reset_value) Peripheral Identification 0 */
 
 #define DSU_PID0_PARTNBL_Pos        0            /**< \brief (DSU_PID0) Part Number Low */
-#define DSU_PID0_PARTNBL_Msk        (_U(0xFF) << DSU_PID0_PARTNBL_Pos)
+#define DSU_PID0_PARTNBL_Msk        (_Ul(0xFF) << DSU_PID0_PARTNBL_Pos)
 #define DSU_PID0_PARTNBL(value)     (DSU_PID0_PARTNBL_Msk & ((value) << DSU_PID0_PARTNBL_Pos))
-#define DSU_PID0_MASK               _U(0x000000FF) /**< \brief (DSU_PID0) MASK Register */
+#define DSU_PID0_MASK               _Ul(0x000000FF) /**< \brief (DSU_PID0) MASK Register */
 
 /* -------- DSU_PID1 : (DSU Offset: 0x1FE4) (R/  32) Peripheral Identification 1 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1026,15 +1026,15 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_PID1_OFFSET             0x1FE4       /**< \brief (DSU_PID1 offset) Peripheral Identification 1 */
-#define DSU_PID1_RESETVALUE         _U(0x000000FC) /**< \brief (DSU_PID1 reset_value) Peripheral Identification 1 */
+#define DSU_PID1_RESETVALUE         _Ul(0x000000FC) /**< \brief (DSU_PID1 reset_value) Peripheral Identification 1 */
 
 #define DSU_PID1_PARTNBH_Pos        0            /**< \brief (DSU_PID1) Part Number High */
-#define DSU_PID1_PARTNBH_Msk        (_U(0xF) << DSU_PID1_PARTNBH_Pos)
+#define DSU_PID1_PARTNBH_Msk        (_Ul(0xF) << DSU_PID1_PARTNBH_Pos)
 #define DSU_PID1_PARTNBH(value)     (DSU_PID1_PARTNBH_Msk & ((value) << DSU_PID1_PARTNBH_Pos))
 #define DSU_PID1_JEPIDCL_Pos        4            /**< \brief (DSU_PID1) Low part of the JEP-106 Identity Code */
-#define DSU_PID1_JEPIDCL_Msk        (_U(0xF) << DSU_PID1_JEPIDCL_Pos)
+#define DSU_PID1_JEPIDCL_Msk        (_Ul(0xF) << DSU_PID1_JEPIDCL_Pos)
 #define DSU_PID1_JEPIDCL(value)     (DSU_PID1_JEPIDCL_Msk & ((value) << DSU_PID1_JEPIDCL_Pos))
-#define DSU_PID1_MASK               _U(0x000000FF) /**< \brief (DSU_PID1) MASK Register */
+#define DSU_PID1_MASK               _Ul(0x000000FF) /**< \brief (DSU_PID1) MASK Register */
 
 /* -------- DSU_PID2 : (DSU Offset: 0x1FE8) (R/  32) Peripheral Identification 2 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1050,17 +1050,17 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_PID2_OFFSET             0x1FE8       /**< \brief (DSU_PID2 offset) Peripheral Identification 2 */
-#define DSU_PID2_RESETVALUE         _U(0x00000009) /**< \brief (DSU_PID2 reset_value) Peripheral Identification 2 */
+#define DSU_PID2_RESETVALUE         _Ul(0x00000009) /**< \brief (DSU_PID2 reset_value) Peripheral Identification 2 */
 
 #define DSU_PID2_JEPIDCH_Pos        0            /**< \brief (DSU_PID2) JEP-106 Identity Code High */
-#define DSU_PID2_JEPIDCH_Msk        (_U(0x7) << DSU_PID2_JEPIDCH_Pos)
+#define DSU_PID2_JEPIDCH_Msk        (_Ul(0x7) << DSU_PID2_JEPIDCH_Pos)
 #define DSU_PID2_JEPIDCH(value)     (DSU_PID2_JEPIDCH_Msk & ((value) << DSU_PID2_JEPIDCH_Pos))
 #define DSU_PID2_JEPU_Pos           3            /**< \brief (DSU_PID2) JEP-106 Identity Code is used */
-#define DSU_PID2_JEPU               (_U(0x1) << DSU_PID2_JEPU_Pos)
+#define DSU_PID2_JEPU               (_Ul(0x1) << DSU_PID2_JEPU_Pos)
 #define DSU_PID2_REVISION_Pos       4            /**< \brief (DSU_PID2) Revision Number */
-#define DSU_PID2_REVISION_Msk       (_U(0xF) << DSU_PID2_REVISION_Pos)
+#define DSU_PID2_REVISION_Msk       (_Ul(0xF) << DSU_PID2_REVISION_Pos)
 #define DSU_PID2_REVISION(value)    (DSU_PID2_REVISION_Msk & ((value) << DSU_PID2_REVISION_Pos))
-#define DSU_PID2_MASK               _U(0x000000FF) /**< \brief (DSU_PID2) MASK Register */
+#define DSU_PID2_MASK               _Ul(0x000000FF) /**< \brief (DSU_PID2) MASK Register */
 
 /* -------- DSU_PID3 : (DSU Offset: 0x1FEC) (R/  32) Peripheral Identification 3 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1075,15 +1075,15 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_PID3_OFFSET             0x1FEC       /**< \brief (DSU_PID3 offset) Peripheral Identification 3 */
-#define DSU_PID3_RESETVALUE         _U(0x00000000) /**< \brief (DSU_PID3 reset_value) Peripheral Identification 3 */
+#define DSU_PID3_RESETVALUE         _Ul(0x00000000) /**< \brief (DSU_PID3 reset_value) Peripheral Identification 3 */
 
 #define DSU_PID3_CUSMOD_Pos         0            /**< \brief (DSU_PID3) ARM CUSMOD */
-#define DSU_PID3_CUSMOD_Msk         (_U(0xF) << DSU_PID3_CUSMOD_Pos)
+#define DSU_PID3_CUSMOD_Msk         (_Ul(0xF) << DSU_PID3_CUSMOD_Pos)
 #define DSU_PID3_CUSMOD(value)      (DSU_PID3_CUSMOD_Msk & ((value) << DSU_PID3_CUSMOD_Pos))
 #define DSU_PID3_REVAND_Pos         4            /**< \brief (DSU_PID3) Revision Number */
-#define DSU_PID3_REVAND_Msk         (_U(0xF) << DSU_PID3_REVAND_Pos)
+#define DSU_PID3_REVAND_Msk         (_Ul(0xF) << DSU_PID3_REVAND_Pos)
 #define DSU_PID3_REVAND(value)      (DSU_PID3_REVAND_Msk & ((value) << DSU_PID3_REVAND_Pos))
-#define DSU_PID3_MASK               _U(0x000000FF) /**< \brief (DSU_PID3) MASK Register */
+#define DSU_PID3_MASK               _Ul(0x000000FF) /**< \brief (DSU_PID3) MASK Register */
 
 /* -------- DSU_CID0 : (DSU Offset: 0x1FF0) (R/  32) Component Identification 0 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1097,12 +1097,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_CID0_OFFSET             0x1FF0       /**< \brief (DSU_CID0 offset) Component Identification 0 */
-#define DSU_CID0_RESETVALUE         _U(0x00000000) /**< \brief (DSU_CID0 reset_value) Component Identification 0 */
+#define DSU_CID0_RESETVALUE         _Ul(0x00000000) /**< \brief (DSU_CID0 reset_value) Component Identification 0 */
 
 #define DSU_CID0_PREAMBLEB0_Pos     0            /**< \brief (DSU_CID0) Preamble Byte 0 */
-#define DSU_CID0_PREAMBLEB0_Msk     (_U(0xFF) << DSU_CID0_PREAMBLEB0_Pos)
+#define DSU_CID0_PREAMBLEB0_Msk     (_Ul(0xFF) << DSU_CID0_PREAMBLEB0_Pos)
 #define DSU_CID0_PREAMBLEB0(value)  (DSU_CID0_PREAMBLEB0_Msk & ((value) << DSU_CID0_PREAMBLEB0_Pos))
-#define DSU_CID0_MASK               _U(0x000000FF) /**< \brief (DSU_CID0) MASK Register */
+#define DSU_CID0_MASK               _Ul(0x000000FF) /**< \brief (DSU_CID0) MASK Register */
 
 /* -------- DSU_CID1 : (DSU Offset: 0x1FF4) (R/  32) Component Identification 1 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1117,15 +1117,15 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_CID1_OFFSET             0x1FF4       /**< \brief (DSU_CID1 offset) Component Identification 1 */
-#define DSU_CID1_RESETVALUE         _U(0x00000000) /**< \brief (DSU_CID1 reset_value) Component Identification 1 */
+#define DSU_CID1_RESETVALUE         _Ul(0x00000000) /**< \brief (DSU_CID1 reset_value) Component Identification 1 */
 
 #define DSU_CID1_PREAMBLE_Pos       0            /**< \brief (DSU_CID1) Preamble */
-#define DSU_CID1_PREAMBLE_Msk       (_U(0xF) << DSU_CID1_PREAMBLE_Pos)
+#define DSU_CID1_PREAMBLE_Msk       (_Ul(0xF) << DSU_CID1_PREAMBLE_Pos)
 #define DSU_CID1_PREAMBLE(value)    (DSU_CID1_PREAMBLE_Msk & ((value) << DSU_CID1_PREAMBLE_Pos))
 #define DSU_CID1_CCLASS_Pos         4            /**< \brief (DSU_CID1) Component Class */
-#define DSU_CID1_CCLASS_Msk         (_U(0xF) << DSU_CID1_CCLASS_Pos)
+#define DSU_CID1_CCLASS_Msk         (_Ul(0xF) << DSU_CID1_CCLASS_Pos)
 #define DSU_CID1_CCLASS(value)      (DSU_CID1_CCLASS_Msk & ((value) << DSU_CID1_CCLASS_Pos))
-#define DSU_CID1_MASK               _U(0x000000FF) /**< \brief (DSU_CID1) MASK Register */
+#define DSU_CID1_MASK               _Ul(0x000000FF) /**< \brief (DSU_CID1) MASK Register */
 
 /* -------- DSU_CID2 : (DSU Offset: 0x1FF8) (R/  32) Component Identification 2 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1139,12 +1139,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_CID2_OFFSET             0x1FF8       /**< \brief (DSU_CID2 offset) Component Identification 2 */
-#define DSU_CID2_RESETVALUE         _U(0x00000000) /**< \brief (DSU_CID2 reset_value) Component Identification 2 */
+#define DSU_CID2_RESETVALUE         _Ul(0x00000000) /**< \brief (DSU_CID2 reset_value) Component Identification 2 */
 
 #define DSU_CID2_PREAMBLEB2_Pos     0            /**< \brief (DSU_CID2) Preamble Byte 2 */
-#define DSU_CID2_PREAMBLEB2_Msk     (_U(0xFF) << DSU_CID2_PREAMBLEB2_Pos)
+#define DSU_CID2_PREAMBLEB2_Msk     (_Ul(0xFF) << DSU_CID2_PREAMBLEB2_Pos)
 #define DSU_CID2_PREAMBLEB2(value)  (DSU_CID2_PREAMBLEB2_Msk & ((value) << DSU_CID2_PREAMBLEB2_Pos))
-#define DSU_CID2_MASK               _U(0x000000FF) /**< \brief (DSU_CID2) MASK Register */
+#define DSU_CID2_MASK               _Ul(0x000000FF) /**< \brief (DSU_CID2) MASK Register */
 
 /* -------- DSU_CID3 : (DSU Offset: 0x1FFC) (R/  32) Component Identification 3 -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1158,12 +1158,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define DSU_CID3_OFFSET             0x1FFC       /**< \brief (DSU_CID3 offset) Component Identification 3 */
-#define DSU_CID3_RESETVALUE         _U(0x00000000) /**< \brief (DSU_CID3 reset_value) Component Identification 3 */
+#define DSU_CID3_RESETVALUE         _Ul(0x00000000) /**< \brief (DSU_CID3 reset_value) Component Identification 3 */
 
 #define DSU_CID3_PREAMBLEB3_Pos     0            /**< \brief (DSU_CID3) Preamble Byte 3 */
-#define DSU_CID3_PREAMBLEB3_Msk     (_U(0xFF) << DSU_CID3_PREAMBLEB3_Pos)
+#define DSU_CID3_PREAMBLEB3_Msk     (_Ul(0xFF) << DSU_CID3_PREAMBLEB3_Pos)
 #define DSU_CID3_PREAMBLEB3(value)  (DSU_CID3_PREAMBLEB3_Msk & ((value) << DSU_CID3_PREAMBLEB3_Pos))
-#define DSU_CID3_MASK               _U(0x000000FF) /**< \brief (DSU_CID3) MASK Register */
+#define DSU_CID3_MASK               _Ul(0x000000FF) /**< \brief (DSU_CID3) MASK Register */
 
 /** \brief DSU hardware registers */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))

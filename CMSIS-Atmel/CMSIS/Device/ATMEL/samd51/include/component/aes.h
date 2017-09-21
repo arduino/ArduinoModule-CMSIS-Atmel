@@ -61,22 +61,22 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_CTRLA_OFFSET            0x00         /**< \brief (AES_CTRLA offset) Control A */
-#define AES_CTRLA_RESETVALUE        _U(0x00000000) /**< \brief (AES_CTRLA reset_value) Control A */
+#define AES_CTRLA_RESETVALUE        _Ul(0x00000000) /**< \brief (AES_CTRLA reset_value) Control A */
 
 #define AES_CTRLA_SWRST_Pos         0            /**< \brief (AES_CTRLA) Software Reset */
-#define AES_CTRLA_SWRST             (_U(0x1) << AES_CTRLA_SWRST_Pos)
+#define AES_CTRLA_SWRST             (_Ul(0x1) << AES_CTRLA_SWRST_Pos)
 #define AES_CTRLA_ENABLE_Pos        1            /**< \brief (AES_CTRLA) Enable */
-#define AES_CTRLA_ENABLE            (_U(0x1) << AES_CTRLA_ENABLE_Pos)
+#define AES_CTRLA_ENABLE            (_Ul(0x1) << AES_CTRLA_ENABLE_Pos)
 #define AES_CTRLA_AESMODE_Pos       2            /**< \brief (AES_CTRLA) AES Modes of operation */
-#define AES_CTRLA_AESMODE_Msk       (_U(0x7) << AES_CTRLA_AESMODE_Pos)
+#define AES_CTRLA_AESMODE_Msk       (_Ul(0x7) << AES_CTRLA_AESMODE_Pos)
 #define AES_CTRLA_AESMODE(value)    (AES_CTRLA_AESMODE_Msk & ((value) << AES_CTRLA_AESMODE_Pos))
-#define   AES_CTRLA_AESMODE_ECB_Val       _U(0x0)   /**< \brief (AES_CTRLA) Electronic code book mode */
-#define   AES_CTRLA_AESMODE_CBC_Val       _U(0x1)   /**< \brief (AES_CTRLA) Cipher block chaining mode */
-#define   AES_CTRLA_AESMODE_OFB_Val       _U(0x2)   /**< \brief (AES_CTRLA) Output feedback mode */
-#define   AES_CTRLA_AESMODE_CFB_Val       _U(0x3)   /**< \brief (AES_CTRLA) Cipher feedback mode */
-#define   AES_CTRLA_AESMODE_COUNTER_Val   _U(0x4)   /**< \brief (AES_CTRLA) Counter mode */
-#define   AES_CTRLA_AESMODE_CCM_Val       _U(0x5)   /**< \brief (AES_CTRLA) CCM mode */
-#define   AES_CTRLA_AESMODE_GCM_Val       _U(0x6)   /**< \brief (AES_CTRLA) Galois counter mode */
+#define   AES_CTRLA_AESMODE_ECB_Val       _Ul(0x0)   /**< \brief (AES_CTRLA) Electronic code book mode */
+#define   AES_CTRLA_AESMODE_CBC_Val       _Ul(0x1)   /**< \brief (AES_CTRLA) Cipher block chaining mode */
+#define   AES_CTRLA_AESMODE_OFB_Val       _Ul(0x2)   /**< \brief (AES_CTRLA) Output feedback mode */
+#define   AES_CTRLA_AESMODE_CFB_Val       _Ul(0x3)   /**< \brief (AES_CTRLA) Cipher feedback mode */
+#define   AES_CTRLA_AESMODE_COUNTER_Val   _Ul(0x4)   /**< \brief (AES_CTRLA) Counter mode */
+#define   AES_CTRLA_AESMODE_CCM_Val       _Ul(0x5)   /**< \brief (AES_CTRLA) CCM mode */
+#define   AES_CTRLA_AESMODE_GCM_Val       _Ul(0x6)   /**< \brief (AES_CTRLA) Galois counter mode */
 #define AES_CTRLA_AESMODE_ECB       (AES_CTRLA_AESMODE_ECB_Val     << AES_CTRLA_AESMODE_Pos)
 #define AES_CTRLA_AESMODE_CBC       (AES_CTRLA_AESMODE_CBC_Val     << AES_CTRLA_AESMODE_Pos)
 #define AES_CTRLA_AESMODE_OFB       (AES_CTRLA_AESMODE_OFB_Val     << AES_CTRLA_AESMODE_Pos)
@@ -85,61 +85,61 @@ typedef union {
 #define AES_CTRLA_AESMODE_CCM       (AES_CTRLA_AESMODE_CCM_Val     << AES_CTRLA_AESMODE_Pos)
 #define AES_CTRLA_AESMODE_GCM       (AES_CTRLA_AESMODE_GCM_Val     << AES_CTRLA_AESMODE_Pos)
 #define AES_CTRLA_CFBS_Pos          5            /**< \brief (AES_CTRLA) Cipher Feedback Block Size */
-#define AES_CTRLA_CFBS_Msk          (_U(0x7) << AES_CTRLA_CFBS_Pos)
+#define AES_CTRLA_CFBS_Msk          (_Ul(0x7) << AES_CTRLA_CFBS_Pos)
 #define AES_CTRLA_CFBS(value)       (AES_CTRLA_CFBS_Msk & ((value) << AES_CTRLA_CFBS_Pos))
-#define   AES_CTRLA_CFBS_128BIT_Val       _U(0x0)   /**< \brief (AES_CTRLA) 128-bit Input data block for Encryption/Decryption in Cipher Feedback mode */
-#define   AES_CTRLA_CFBS_64BIT_Val        _U(0x1)   /**< \brief (AES_CTRLA) 64-bit Input data block for Encryption/Decryption in Cipher Feedback mode */
-#define   AES_CTRLA_CFBS_32BIT_Val        _U(0x2)   /**< \brief (AES_CTRLA) 32-bit Input data block for Encryption/Decryption in Cipher Feedback mode */
-#define   AES_CTRLA_CFBS_16BIT_Val        _U(0x3)   /**< \brief (AES_CTRLA) 16-bit Input data block for Encryption/Decryption in Cipher Feedback mode */
-#define   AES_CTRLA_CFBS_8BIT_Val         _U(0x4)   /**< \brief (AES_CTRLA) 8-bit Input data block for Encryption/Decryption in Cipher Feedback mode */
+#define   AES_CTRLA_CFBS_128BIT_Val       _Ul(0x0)   /**< \brief (AES_CTRLA) 128-bit Input data block for Encryption/Decryption in Cipher Feedback mode */
+#define   AES_CTRLA_CFBS_64BIT_Val        _Ul(0x1)   /**< \brief (AES_CTRLA) 64-bit Input data block for Encryption/Decryption in Cipher Feedback mode */
+#define   AES_CTRLA_CFBS_32BIT_Val        _Ul(0x2)   /**< \brief (AES_CTRLA) 32-bit Input data block for Encryption/Decryption in Cipher Feedback mode */
+#define   AES_CTRLA_CFBS_16BIT_Val        _Ul(0x3)   /**< \brief (AES_CTRLA) 16-bit Input data block for Encryption/Decryption in Cipher Feedback mode */
+#define   AES_CTRLA_CFBS_8BIT_Val         _Ul(0x4)   /**< \brief (AES_CTRLA) 8-bit Input data block for Encryption/Decryption in Cipher Feedback mode */
 #define AES_CTRLA_CFBS_128BIT       (AES_CTRLA_CFBS_128BIT_Val     << AES_CTRLA_CFBS_Pos)
 #define AES_CTRLA_CFBS_64BIT        (AES_CTRLA_CFBS_64BIT_Val      << AES_CTRLA_CFBS_Pos)
 #define AES_CTRLA_CFBS_32BIT        (AES_CTRLA_CFBS_32BIT_Val      << AES_CTRLA_CFBS_Pos)
 #define AES_CTRLA_CFBS_16BIT        (AES_CTRLA_CFBS_16BIT_Val      << AES_CTRLA_CFBS_Pos)
 #define AES_CTRLA_CFBS_8BIT         (AES_CTRLA_CFBS_8BIT_Val       << AES_CTRLA_CFBS_Pos)
 #define AES_CTRLA_KEYSIZE_Pos       8            /**< \brief (AES_CTRLA) Encryption Key Size */
-#define AES_CTRLA_KEYSIZE_Msk       (_U(0x3) << AES_CTRLA_KEYSIZE_Pos)
+#define AES_CTRLA_KEYSIZE_Msk       (_Ul(0x3) << AES_CTRLA_KEYSIZE_Pos)
 #define AES_CTRLA_KEYSIZE(value)    (AES_CTRLA_KEYSIZE_Msk & ((value) << AES_CTRLA_KEYSIZE_Pos))
-#define   AES_CTRLA_KEYSIZE_128BIT_Val    _U(0x0)   /**< \brief (AES_CTRLA) 128-bit Key for Encryption / Decryption */
-#define   AES_CTRLA_KEYSIZE_192BIT_Val    _U(0x1)   /**< \brief (AES_CTRLA) 192-bit Key for Encryption / Decryption */
-#define   AES_CTRLA_KEYSIZE_256BIT_Val    _U(0x2)   /**< \brief (AES_CTRLA) 256-bit Key for Encryption / Decryption */
+#define   AES_CTRLA_KEYSIZE_128BIT_Val    _Ul(0x0)   /**< \brief (AES_CTRLA) 128-bit Key for Encryption / Decryption */
+#define   AES_CTRLA_KEYSIZE_192BIT_Val    _Ul(0x1)   /**< \brief (AES_CTRLA) 192-bit Key for Encryption / Decryption */
+#define   AES_CTRLA_KEYSIZE_256BIT_Val    _Ul(0x2)   /**< \brief (AES_CTRLA) 256-bit Key for Encryption / Decryption */
 #define AES_CTRLA_KEYSIZE_128BIT    (AES_CTRLA_KEYSIZE_128BIT_Val  << AES_CTRLA_KEYSIZE_Pos)
 #define AES_CTRLA_KEYSIZE_192BIT    (AES_CTRLA_KEYSIZE_192BIT_Val  << AES_CTRLA_KEYSIZE_Pos)
 #define AES_CTRLA_KEYSIZE_256BIT    (AES_CTRLA_KEYSIZE_256BIT_Val  << AES_CTRLA_KEYSIZE_Pos)
 #define AES_CTRLA_CIPHER_Pos        10           /**< \brief (AES_CTRLA) Cipher Mode */
-#define AES_CTRLA_CIPHER            (_U(0x1) << AES_CTRLA_CIPHER_Pos)
-#define   AES_CTRLA_CIPHER_DEC_Val        _U(0x0)   /**< \brief (AES_CTRLA) Decryption */
-#define   AES_CTRLA_CIPHER_ENC_Val        _U(0x1)   /**< \brief (AES_CTRLA) Encryption */
+#define AES_CTRLA_CIPHER            (_Ul(0x1) << AES_CTRLA_CIPHER_Pos)
+#define   AES_CTRLA_CIPHER_DEC_Val        _Ul(0x0)   /**< \brief (AES_CTRLA) Decryption */
+#define   AES_CTRLA_CIPHER_ENC_Val        _Ul(0x1)   /**< \brief (AES_CTRLA) Encryption */
 #define AES_CTRLA_CIPHER_DEC        (AES_CTRLA_CIPHER_DEC_Val      << AES_CTRLA_CIPHER_Pos)
 #define AES_CTRLA_CIPHER_ENC        (AES_CTRLA_CIPHER_ENC_Val      << AES_CTRLA_CIPHER_Pos)
 #define AES_CTRLA_STARTMODE_Pos     11           /**< \brief (AES_CTRLA) Start Mode Select */
-#define AES_CTRLA_STARTMODE         (_U(0x1) << AES_CTRLA_STARTMODE_Pos)
-#define   AES_CTRLA_STARTMODE_MANUAL_Val  _U(0x0)   /**< \brief (AES_CTRLA) Start Encryption / Decryption in Manual mode */
-#define   AES_CTRLA_STARTMODE_AUTO_Val    _U(0x1)   /**< \brief (AES_CTRLA) Start Encryption / Decryption in Auto mode */
+#define AES_CTRLA_STARTMODE         (_Ul(0x1) << AES_CTRLA_STARTMODE_Pos)
+#define   AES_CTRLA_STARTMODE_MANUAL_Val  _Ul(0x0)   /**< \brief (AES_CTRLA) Start Encryption / Decryption in Manual mode */
+#define   AES_CTRLA_STARTMODE_AUTO_Val    _Ul(0x1)   /**< \brief (AES_CTRLA) Start Encryption / Decryption in Auto mode */
 #define AES_CTRLA_STARTMODE_MANUAL  (AES_CTRLA_STARTMODE_MANUAL_Val << AES_CTRLA_STARTMODE_Pos)
 #define AES_CTRLA_STARTMODE_AUTO    (AES_CTRLA_STARTMODE_AUTO_Val  << AES_CTRLA_STARTMODE_Pos)
 #define AES_CTRLA_LOD_Pos           12           /**< \brief (AES_CTRLA) Last Output Data Mode */
-#define AES_CTRLA_LOD               (_U(0x1) << AES_CTRLA_LOD_Pos)
-#define   AES_CTRLA_LOD_NONE_Val          _U(0x0)   /**< \brief (AES_CTRLA) No effect */
-#define   AES_CTRLA_LOD_LAST_Val          _U(0x1)   /**< \brief (AES_CTRLA) Start encryption in Last Output Data mode */
+#define AES_CTRLA_LOD               (_Ul(0x1) << AES_CTRLA_LOD_Pos)
+#define   AES_CTRLA_LOD_NONE_Val          _Ul(0x0)   /**< \brief (AES_CTRLA) No effect */
+#define   AES_CTRLA_LOD_LAST_Val          _Ul(0x1)   /**< \brief (AES_CTRLA) Start encryption in Last Output Data mode */
 #define AES_CTRLA_LOD_NONE          (AES_CTRLA_LOD_NONE_Val        << AES_CTRLA_LOD_Pos)
 #define AES_CTRLA_LOD_LAST          (AES_CTRLA_LOD_LAST_Val        << AES_CTRLA_LOD_Pos)
 #define AES_CTRLA_KEYGEN_Pos        13           /**< \brief (AES_CTRLA) Last Key Generation */
-#define AES_CTRLA_KEYGEN            (_U(0x1) << AES_CTRLA_KEYGEN_Pos)
-#define   AES_CTRLA_KEYGEN_NONE_Val       _U(0x0)   /**< \brief (AES_CTRLA) No effect */
-#define   AES_CTRLA_KEYGEN_LAST_Val       _U(0x1)   /**< \brief (AES_CTRLA) Start Computation of the last NK words of the expanded key */
+#define AES_CTRLA_KEYGEN            (_Ul(0x1) << AES_CTRLA_KEYGEN_Pos)
+#define   AES_CTRLA_KEYGEN_NONE_Val       _Ul(0x0)   /**< \brief (AES_CTRLA) No effect */
+#define   AES_CTRLA_KEYGEN_LAST_Val       _Ul(0x1)   /**< \brief (AES_CTRLA) Start Computation of the last NK words of the expanded key */
 #define AES_CTRLA_KEYGEN_NONE       (AES_CTRLA_KEYGEN_NONE_Val     << AES_CTRLA_KEYGEN_Pos)
 #define AES_CTRLA_KEYGEN_LAST       (AES_CTRLA_KEYGEN_LAST_Val     << AES_CTRLA_KEYGEN_Pos)
 #define AES_CTRLA_XORKEY_Pos        14           /**< \brief (AES_CTRLA) XOR Key Operation */
-#define AES_CTRLA_XORKEY            (_U(0x1) << AES_CTRLA_XORKEY_Pos)
-#define   AES_CTRLA_XORKEY_NONE_Val       _U(0x0)   /**< \brief (AES_CTRLA) No effect */
-#define   AES_CTRLA_XORKEY_XOR_Val        _U(0x1)   /**< \brief (AES_CTRLA) The user keyword gets XORed with the previous keyword register content. */
+#define AES_CTRLA_XORKEY            (_Ul(0x1) << AES_CTRLA_XORKEY_Pos)
+#define   AES_CTRLA_XORKEY_NONE_Val       _Ul(0x0)   /**< \brief (AES_CTRLA) No effect */
+#define   AES_CTRLA_XORKEY_XOR_Val        _Ul(0x1)   /**< \brief (AES_CTRLA) The user keyword gets XORed with the previous keyword register content. */
 #define AES_CTRLA_XORKEY_NONE       (AES_CTRLA_XORKEY_NONE_Val     << AES_CTRLA_XORKEY_Pos)
 #define AES_CTRLA_XORKEY_XOR        (AES_CTRLA_XORKEY_XOR_Val      << AES_CTRLA_XORKEY_Pos)
 #define AES_CTRLA_CTYPE_Pos         16           /**< \brief (AES_CTRLA) Counter Measure Type */
-#define AES_CTRLA_CTYPE_Msk         (_U(0xF) << AES_CTRLA_CTYPE_Pos)
+#define AES_CTRLA_CTYPE_Msk         (_Ul(0xF) << AES_CTRLA_CTYPE_Pos)
 #define AES_CTRLA_CTYPE(value)      (AES_CTRLA_CTYPE_Msk & ((value) << AES_CTRLA_CTYPE_Pos))
-#define AES_CTRLA_MASK              _U(0x000F7FFF) /**< \brief (AES_CTRLA) MASK Register */
+#define AES_CTRLA_MASK              _Ul(0x000F7FFF) /**< \brief (AES_CTRLA) MASK Register */
 
 /* -------- AES_CTRLB : (AES Offset: 0x04) (R/W  8) Control B -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -156,17 +156,17 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_CTRLB_OFFSET            0x04         /**< \brief (AES_CTRLB offset) Control B */
-#define AES_CTRLB_RESETVALUE        _U(0x00)     /**< \brief (AES_CTRLB reset_value) Control B */
+#define AES_CTRLB_RESETVALUE        _Ul(0x00)     /**< \brief (AES_CTRLB reset_value) Control B */
 
 #define AES_CTRLB_START_Pos         0            /**< \brief (AES_CTRLB) Start Encryption/Decryption */
-#define AES_CTRLB_START             (_U(0x1) << AES_CTRLB_START_Pos)
+#define AES_CTRLB_START             (_Ul(0x1) << AES_CTRLB_START_Pos)
 #define AES_CTRLB_NEWMSG_Pos        1            /**< \brief (AES_CTRLB) New message */
-#define AES_CTRLB_NEWMSG            (_U(0x1) << AES_CTRLB_NEWMSG_Pos)
+#define AES_CTRLB_NEWMSG            (_Ul(0x1) << AES_CTRLB_NEWMSG_Pos)
 #define AES_CTRLB_EOM_Pos           2            /**< \brief (AES_CTRLB) End of message */
-#define AES_CTRLB_EOM               (_U(0x1) << AES_CTRLB_EOM_Pos)
+#define AES_CTRLB_EOM               (_Ul(0x1) << AES_CTRLB_EOM_Pos)
 #define AES_CTRLB_GFMUL_Pos         3            /**< \brief (AES_CTRLB) GF Multiplication */
-#define AES_CTRLB_GFMUL             (_U(0x1) << AES_CTRLB_GFMUL_Pos)
-#define AES_CTRLB_MASK              _U(0x0F)     /**< \brief (AES_CTRLB) MASK Register */
+#define AES_CTRLB_GFMUL             (_Ul(0x1) << AES_CTRLB_GFMUL_Pos)
+#define AES_CTRLB_MASK              _Ul(0x0F)     /**< \brief (AES_CTRLB) MASK Register */
 
 /* -------- AES_INTENCLR : (AES Offset: 0x05) (R/W  8) Interrupt Enable Clear -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -181,13 +181,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_INTENCLR_OFFSET         0x05         /**< \brief (AES_INTENCLR offset) Interrupt Enable Clear */
-#define AES_INTENCLR_RESETVALUE     _U(0x00)     /**< \brief (AES_INTENCLR reset_value) Interrupt Enable Clear */
+#define AES_INTENCLR_RESETVALUE     _Ul(0x00)     /**< \brief (AES_INTENCLR reset_value) Interrupt Enable Clear */
 
 #define AES_INTENCLR_ENCCMP_Pos     0            /**< \brief (AES_INTENCLR) Encryption Complete Interrupt Enable */
-#define AES_INTENCLR_ENCCMP         (_U(0x1) << AES_INTENCLR_ENCCMP_Pos)
+#define AES_INTENCLR_ENCCMP         (_Ul(0x1) << AES_INTENCLR_ENCCMP_Pos)
 #define AES_INTENCLR_GFMCMP_Pos     1            /**< \brief (AES_INTENCLR) GF Multiplication Complete Interrupt Enable */
-#define AES_INTENCLR_GFMCMP         (_U(0x1) << AES_INTENCLR_GFMCMP_Pos)
-#define AES_INTENCLR_MASK           _U(0x03)     /**< \brief (AES_INTENCLR) MASK Register */
+#define AES_INTENCLR_GFMCMP         (_Ul(0x1) << AES_INTENCLR_GFMCMP_Pos)
+#define AES_INTENCLR_MASK           _Ul(0x03)     /**< \brief (AES_INTENCLR) MASK Register */
 
 /* -------- AES_INTENSET : (AES Offset: 0x06) (R/W  8) Interrupt Enable Set -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -202,13 +202,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_INTENSET_OFFSET         0x06         /**< \brief (AES_INTENSET offset) Interrupt Enable Set */
-#define AES_INTENSET_RESETVALUE     _U(0x00)     /**< \brief (AES_INTENSET reset_value) Interrupt Enable Set */
+#define AES_INTENSET_RESETVALUE     _Ul(0x00)     /**< \brief (AES_INTENSET reset_value) Interrupt Enable Set */
 
 #define AES_INTENSET_ENCCMP_Pos     0            /**< \brief (AES_INTENSET) Encryption Complete Interrupt Enable */
-#define AES_INTENSET_ENCCMP         (_U(0x1) << AES_INTENSET_ENCCMP_Pos)
+#define AES_INTENSET_ENCCMP         (_Ul(0x1) << AES_INTENSET_ENCCMP_Pos)
 #define AES_INTENSET_GFMCMP_Pos     1            /**< \brief (AES_INTENSET) GF Multiplication Complete Interrupt Enable */
-#define AES_INTENSET_GFMCMP         (_U(0x1) << AES_INTENSET_GFMCMP_Pos)
-#define AES_INTENSET_MASK           _U(0x03)     /**< \brief (AES_INTENSET) MASK Register */
+#define AES_INTENSET_GFMCMP         (_Ul(0x1) << AES_INTENSET_GFMCMP_Pos)
+#define AES_INTENSET_MASK           _Ul(0x03)     /**< \brief (AES_INTENSET) MASK Register */
 
 /* -------- AES_INTFLAG : (AES Offset: 0x07) (R/W  8) Interrupt Flag Status -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -223,13 +223,13 @@ typedef union { // __I to avoid read-modify-write on write-to-clear register
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_INTFLAG_OFFSET          0x07         /**< \brief (AES_INTFLAG offset) Interrupt Flag Status */
-#define AES_INTFLAG_RESETVALUE      _U(0x00)     /**< \brief (AES_INTFLAG reset_value) Interrupt Flag Status */
+#define AES_INTFLAG_RESETVALUE      _Ul(0x00)     /**< \brief (AES_INTFLAG reset_value) Interrupt Flag Status */
 
 #define AES_INTFLAG_ENCCMP_Pos      0            /**< \brief (AES_INTFLAG) Encryption Complete */
-#define AES_INTFLAG_ENCCMP          (_U(0x1) << AES_INTFLAG_ENCCMP_Pos)
+#define AES_INTFLAG_ENCCMP          (_Ul(0x1) << AES_INTFLAG_ENCCMP_Pos)
 #define AES_INTFLAG_GFMCMP_Pos      1            /**< \brief (AES_INTFLAG) GF Multiplication Complete */
-#define AES_INTFLAG_GFMCMP          (_U(0x1) << AES_INTFLAG_GFMCMP_Pos)
-#define AES_INTFLAG_MASK            _U(0x03)     /**< \brief (AES_INTFLAG) MASK Register */
+#define AES_INTFLAG_GFMCMP          (_Ul(0x1) << AES_INTFLAG_GFMCMP_Pos)
+#define AES_INTFLAG_MASK            _Ul(0x03)     /**< \brief (AES_INTFLAG) MASK Register */
 
 /* -------- AES_DATABUFPTR : (AES Offset: 0x08) (R/W  8) Data buffer pointer -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -243,12 +243,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_DATABUFPTR_OFFSET       0x08         /**< \brief (AES_DATABUFPTR offset) Data buffer pointer */
-#define AES_DATABUFPTR_RESETVALUE   _U(0x00)     /**< \brief (AES_DATABUFPTR reset_value) Data buffer pointer */
+#define AES_DATABUFPTR_RESETVALUE   _Ul(0x00)     /**< \brief (AES_DATABUFPTR reset_value) Data buffer pointer */
 
 #define AES_DATABUFPTR_INDATAPTR_Pos 0            /**< \brief (AES_DATABUFPTR) Input Data Pointer */
-#define AES_DATABUFPTR_INDATAPTR_Msk (_U(0x3) << AES_DATABUFPTR_INDATAPTR_Pos)
+#define AES_DATABUFPTR_INDATAPTR_Msk (_Ul(0x3) << AES_DATABUFPTR_INDATAPTR_Pos)
 #define AES_DATABUFPTR_INDATAPTR(value) (AES_DATABUFPTR_INDATAPTR_Msk & ((value) << AES_DATABUFPTR_INDATAPTR_Pos))
-#define AES_DATABUFPTR_MASK         _U(0x03)     /**< \brief (AES_DATABUFPTR) MASK Register */
+#define AES_DATABUFPTR_MASK         _Ul(0x03)     /**< \brief (AES_DATABUFPTR) MASK Register */
 
 /* -------- AES_DBGCTRL : (AES Offset: 0x09) (R/W  8) Debug control -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -262,11 +262,11 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_DBGCTRL_OFFSET          0x09         /**< \brief (AES_DBGCTRL offset) Debug control */
-#define AES_DBGCTRL_RESETVALUE      _U(0x00)     /**< \brief (AES_DBGCTRL reset_value) Debug control */
+#define AES_DBGCTRL_RESETVALUE      _Ul(0x00)     /**< \brief (AES_DBGCTRL reset_value) Debug control */
 
 #define AES_DBGCTRL_DBGRUN_Pos      0            /**< \brief (AES_DBGCTRL) Debug Run */
-#define AES_DBGCTRL_DBGRUN          (_U(0x1) << AES_DBGCTRL_DBGRUN_Pos)
-#define AES_DBGCTRL_MASK            _U(0x01)     /**< \brief (AES_DBGCTRL) MASK Register */
+#define AES_DBGCTRL_DBGRUN          (_Ul(0x1) << AES_DBGCTRL_DBGRUN_Pos)
+#define AES_DBGCTRL_MASK            _Ul(0x01)     /**< \brief (AES_DBGCTRL) MASK Register */
 
 /* -------- AES_KEYWORD : (AES Offset: 0x0C) ( /W 32) Keyword n -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -276,8 +276,8 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_KEYWORD_OFFSET          0x0C         /**< \brief (AES_KEYWORD offset) Keyword n */
-#define AES_KEYWORD_RESETVALUE      _U(0x00000000) /**< \brief (AES_KEYWORD reset_value) Keyword n */
-#define AES_KEYWORD_MASK            _U(0xFFFFFFFF) /**< \brief (AES_KEYWORD) MASK Register */
+#define AES_KEYWORD_RESETVALUE      _Ul(0x00000000) /**< \brief (AES_KEYWORD reset_value) Keyword n */
+#define AES_KEYWORD_MASK            _Ul(0xFFFFFFFF) /**< \brief (AES_KEYWORD) MASK Register */
 
 /* -------- AES_INDATA : (AES Offset: 0x38) (R/W 32) Indata -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -287,8 +287,8 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_INDATA_OFFSET           0x38         /**< \brief (AES_INDATA offset) Indata */
-#define AES_INDATA_RESETVALUE       _U(0x00000000) /**< \brief (AES_INDATA reset_value) Indata */
-#define AES_INDATA_MASK             _U(0xFFFFFFFF) /**< \brief (AES_INDATA) MASK Register */
+#define AES_INDATA_RESETVALUE       _Ul(0x00000000) /**< \brief (AES_INDATA reset_value) Indata */
+#define AES_INDATA_MASK             _Ul(0xFFFFFFFF) /**< \brief (AES_INDATA) MASK Register */
 
 /* -------- AES_INTVECTV : (AES Offset: 0x3C) ( /W 32) Initialisation Vector n -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -298,8 +298,8 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_INTVECTV_OFFSET         0x3C         /**< \brief (AES_INTVECTV offset) Initialisation Vector n */
-#define AES_INTVECTV_RESETVALUE     _U(0x00000000) /**< \brief (AES_INTVECTV reset_value) Initialisation Vector n */
-#define AES_INTVECTV_MASK           _U(0xFFFFFFFF) /**< \brief (AES_INTVECTV) MASK Register */
+#define AES_INTVECTV_RESETVALUE     _Ul(0x00000000) /**< \brief (AES_INTVECTV reset_value) Initialisation Vector n */
+#define AES_INTVECTV_MASK           _Ul(0xFFFFFFFF) /**< \brief (AES_INTVECTV) MASK Register */
 
 /* -------- AES_HASHKEY : (AES Offset: 0x5C) (R/W 32) Hash key n -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -309,8 +309,8 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_HASHKEY_OFFSET          0x5C         /**< \brief (AES_HASHKEY offset) Hash key n */
-#define AES_HASHKEY_RESETVALUE      _U(0x00000000) /**< \brief (AES_HASHKEY reset_value) Hash key n */
-#define AES_HASHKEY_MASK            _U(0xFFFFFFFF) /**< \brief (AES_HASHKEY) MASK Register */
+#define AES_HASHKEY_RESETVALUE      _Ul(0x00000000) /**< \brief (AES_HASHKEY reset_value) Hash key n */
+#define AES_HASHKEY_MASK            _Ul(0xFFFFFFFF) /**< \brief (AES_HASHKEY) MASK Register */
 
 /* -------- AES_GHASH : (AES Offset: 0x6C) (R/W 32) Galois Hash n -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -320,8 +320,8 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_GHASH_OFFSET            0x6C         /**< \brief (AES_GHASH offset) Galois Hash n */
-#define AES_GHASH_RESETVALUE        _U(0x00000000) /**< \brief (AES_GHASH reset_value) Galois Hash n */
-#define AES_GHASH_MASK              _U(0xFFFFFFFF) /**< \brief (AES_GHASH) MASK Register */
+#define AES_GHASH_RESETVALUE        _Ul(0x00000000) /**< \brief (AES_GHASH reset_value) Galois Hash n */
+#define AES_GHASH_MASK              _Ul(0xFFFFFFFF) /**< \brief (AES_GHASH) MASK Register */
 
 /* -------- AES_CIPLEN : (AES Offset: 0x80) (R/W 32) Cipher Length -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -331,8 +331,8 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_CIPLEN_OFFSET           0x80         /**< \brief (AES_CIPLEN offset) Cipher Length */
-#define AES_CIPLEN_RESETVALUE       _U(0x00000000) /**< \brief (AES_CIPLEN reset_value) Cipher Length */
-#define AES_CIPLEN_MASK             _U(0xFFFFFFFF) /**< \brief (AES_CIPLEN) MASK Register */
+#define AES_CIPLEN_RESETVALUE       _Ul(0x00000000) /**< \brief (AES_CIPLEN reset_value) Cipher Length */
+#define AES_CIPLEN_MASK             _Ul(0xFFFFFFFF) /**< \brief (AES_CIPLEN) MASK Register */
 
 /* -------- AES_RANDSEED : (AES Offset: 0x84) (R/W 32) Random Seed -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -342,8 +342,8 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define AES_RANDSEED_OFFSET         0x84         /**< \brief (AES_RANDSEED offset) Random Seed */
-#define AES_RANDSEED_RESETVALUE     _U(0x00000000) /**< \brief (AES_RANDSEED reset_value) Random Seed */
-#define AES_RANDSEED_MASK           _U(0xFFFFFFFF) /**< \brief (AES_RANDSEED) MASK Register */
+#define AES_RANDSEED_RESETVALUE     _Ul(0x00000000) /**< \brief (AES_RANDSEED reset_value) Random Seed */
+#define AES_RANDSEED_MASK           _Ul(0xFFFFFFFF) /**< \brief (AES_RANDSEED) MASK Register */
 
 /** \brief AES hardware registers */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))

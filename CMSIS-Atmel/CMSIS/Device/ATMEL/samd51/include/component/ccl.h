@@ -53,15 +53,15 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define CCL_CTRL_OFFSET             0x0          /**< \brief (CCL_CTRL offset) Control */
-#define CCL_CTRL_RESETVALUE         _U(0x00)     /**< \brief (CCL_CTRL reset_value) Control */
+#define CCL_CTRL_RESETVALUE         _Ul(0x00)     /**< \brief (CCL_CTRL reset_value) Control */
 
 #define CCL_CTRL_SWRST_Pos          0            /**< \brief (CCL_CTRL) Software Reset */
-#define CCL_CTRL_SWRST              (_U(0x1) << CCL_CTRL_SWRST_Pos)
+#define CCL_CTRL_SWRST              (_Ul(0x1) << CCL_CTRL_SWRST_Pos)
 #define CCL_CTRL_ENABLE_Pos         1            /**< \brief (CCL_CTRL) Enable */
-#define CCL_CTRL_ENABLE             (_U(0x1) << CCL_CTRL_ENABLE_Pos)
+#define CCL_CTRL_ENABLE             (_Ul(0x1) << CCL_CTRL_ENABLE_Pos)
 #define CCL_CTRL_RUNSTDBY_Pos       6            /**< \brief (CCL_CTRL) Run in Standby */
-#define CCL_CTRL_RUNSTDBY           (_U(0x1) << CCL_CTRL_RUNSTDBY_Pos)
-#define CCL_CTRL_MASK               _U(0x43)     /**< \brief (CCL_CTRL) MASK Register */
+#define CCL_CTRL_RUNSTDBY           (_Ul(0x1) << CCL_CTRL_RUNSTDBY_Pos)
+#define CCL_CTRL_MASK               _Ul(0x43)     /**< \brief (CCL_CTRL) MASK Register */
 
 /* -------- CCL_SEQCTRL : (CCL Offset: 0x4) (R/W  8) SEQ Control x -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -75,22 +75,22 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define CCL_SEQCTRL_OFFSET          0x4          /**< \brief (CCL_SEQCTRL offset) SEQ Control x */
-#define CCL_SEQCTRL_RESETVALUE      _U(0x00)     /**< \brief (CCL_SEQCTRL reset_value) SEQ Control x */
+#define CCL_SEQCTRL_RESETVALUE      _Ul(0x00)     /**< \brief (CCL_SEQCTRL reset_value) SEQ Control x */
 
 #define CCL_SEQCTRL_SEQSEL_Pos      0            /**< \brief (CCL_SEQCTRL) Sequential Selection */
-#define CCL_SEQCTRL_SEQSEL_Msk      (_U(0xF) << CCL_SEQCTRL_SEQSEL_Pos)
+#define CCL_SEQCTRL_SEQSEL_Msk      (_Ul(0xF) << CCL_SEQCTRL_SEQSEL_Pos)
 #define CCL_SEQCTRL_SEQSEL(value)   (CCL_SEQCTRL_SEQSEL_Msk & ((value) << CCL_SEQCTRL_SEQSEL_Pos))
-#define   CCL_SEQCTRL_SEQSEL_DISABLE_Val  _U(0x0)   /**< \brief (CCL_SEQCTRL) Sequential logic is disabled */
-#define   CCL_SEQCTRL_SEQSEL_DFF_Val      _U(0x1)   /**< \brief (CCL_SEQCTRL) D flip flop */
-#define   CCL_SEQCTRL_SEQSEL_JK_Val       _U(0x2)   /**< \brief (CCL_SEQCTRL) JK flip flop */
-#define   CCL_SEQCTRL_SEQSEL_LATCH_Val    _U(0x3)   /**< \brief (CCL_SEQCTRL) D latch */
-#define   CCL_SEQCTRL_SEQSEL_RS_Val       _U(0x4)   /**< \brief (CCL_SEQCTRL) RS latch */
+#define   CCL_SEQCTRL_SEQSEL_DISABLE_Val  _Ul(0x0)   /**< \brief (CCL_SEQCTRL) Sequential logic is disabled */
+#define   CCL_SEQCTRL_SEQSEL_DFF_Val      _Ul(0x1)   /**< \brief (CCL_SEQCTRL) D flip flop */
+#define   CCL_SEQCTRL_SEQSEL_JK_Val       _Ul(0x2)   /**< \brief (CCL_SEQCTRL) JK flip flop */
+#define   CCL_SEQCTRL_SEQSEL_LATCH_Val    _Ul(0x3)   /**< \brief (CCL_SEQCTRL) D latch */
+#define   CCL_SEQCTRL_SEQSEL_RS_Val       _Ul(0x4)   /**< \brief (CCL_SEQCTRL) RS latch */
 #define CCL_SEQCTRL_SEQSEL_DISABLE  (CCL_SEQCTRL_SEQSEL_DISABLE_Val << CCL_SEQCTRL_SEQSEL_Pos)
 #define CCL_SEQCTRL_SEQSEL_DFF      (CCL_SEQCTRL_SEQSEL_DFF_Val    << CCL_SEQCTRL_SEQSEL_Pos)
 #define CCL_SEQCTRL_SEQSEL_JK       (CCL_SEQCTRL_SEQSEL_JK_Val     << CCL_SEQCTRL_SEQSEL_Pos)
 #define CCL_SEQCTRL_SEQSEL_LATCH    (CCL_SEQCTRL_SEQSEL_LATCH_Val  << CCL_SEQCTRL_SEQSEL_Pos)
 #define CCL_SEQCTRL_SEQSEL_RS       (CCL_SEQCTRL_SEQSEL_RS_Val     << CCL_SEQCTRL_SEQSEL_Pos)
-#define CCL_SEQCTRL_MASK            _U(0x0F)     /**< \brief (CCL_SEQCTRL) MASK Register */
+#define CCL_SEQCTRL_MASK            _Ul(0x0F)     /**< \brief (CCL_SEQCTRL) MASK Register */
 
 /* -------- CCL_LUTCTRL : (CCL Offset: 0x8) (R/W 32) LUT Control x -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -116,34 +116,34 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define CCL_LUTCTRL_OFFSET          0x8          /**< \brief (CCL_LUTCTRL offset) LUT Control x */
-#define CCL_LUTCTRL_RESETVALUE      _U(0x00000000) /**< \brief (CCL_LUTCTRL reset_value) LUT Control x */
+#define CCL_LUTCTRL_RESETVALUE      _Ul(0x00000000) /**< \brief (CCL_LUTCTRL reset_value) LUT Control x */
 
 #define CCL_LUTCTRL_ENABLE_Pos      1            /**< \brief (CCL_LUTCTRL) LUT Enable */
-#define CCL_LUTCTRL_ENABLE          (_U(0x1) << CCL_LUTCTRL_ENABLE_Pos)
+#define CCL_LUTCTRL_ENABLE          (_Ul(0x1) << CCL_LUTCTRL_ENABLE_Pos)
 #define CCL_LUTCTRL_FILTSEL_Pos     4            /**< \brief (CCL_LUTCTRL) Filter Selection */
-#define CCL_LUTCTRL_FILTSEL_Msk     (_U(0x3) << CCL_LUTCTRL_FILTSEL_Pos)
+#define CCL_LUTCTRL_FILTSEL_Msk     (_Ul(0x3) << CCL_LUTCTRL_FILTSEL_Pos)
 #define CCL_LUTCTRL_FILTSEL(value)  (CCL_LUTCTRL_FILTSEL_Msk & ((value) << CCL_LUTCTRL_FILTSEL_Pos))
-#define   CCL_LUTCTRL_FILTSEL_DISABLE_Val _U(0x0)   /**< \brief (CCL_LUTCTRL) Filter disabled */
-#define   CCL_LUTCTRL_FILTSEL_SYNCH_Val   _U(0x1)   /**< \brief (CCL_LUTCTRL) Synchronizer enabled */
-#define   CCL_LUTCTRL_FILTSEL_FILTER_Val  _U(0x2)   /**< \brief (CCL_LUTCTRL) Filter enabled */
+#define   CCL_LUTCTRL_FILTSEL_DISABLE_Val _Ul(0x0)   /**< \brief (CCL_LUTCTRL) Filter disabled */
+#define   CCL_LUTCTRL_FILTSEL_SYNCH_Val   _Ul(0x1)   /**< \brief (CCL_LUTCTRL) Synchronizer enabled */
+#define   CCL_LUTCTRL_FILTSEL_FILTER_Val  _Ul(0x2)   /**< \brief (CCL_LUTCTRL) Filter enabled */
 #define CCL_LUTCTRL_FILTSEL_DISABLE (CCL_LUTCTRL_FILTSEL_DISABLE_Val << CCL_LUTCTRL_FILTSEL_Pos)
 #define CCL_LUTCTRL_FILTSEL_SYNCH   (CCL_LUTCTRL_FILTSEL_SYNCH_Val << CCL_LUTCTRL_FILTSEL_Pos)
 #define CCL_LUTCTRL_FILTSEL_FILTER  (CCL_LUTCTRL_FILTSEL_FILTER_Val << CCL_LUTCTRL_FILTSEL_Pos)
 #define CCL_LUTCTRL_EDGESEL_Pos     7            /**< \brief (CCL_LUTCTRL) Edge Selection */
-#define CCL_LUTCTRL_EDGESEL         (_U(0x1) << CCL_LUTCTRL_EDGESEL_Pos)
+#define CCL_LUTCTRL_EDGESEL         (_Ul(0x1) << CCL_LUTCTRL_EDGESEL_Pos)
 #define CCL_LUTCTRL_INSEL0_Pos      8            /**< \brief (CCL_LUTCTRL) Input Selection 0 */
-#define CCL_LUTCTRL_INSEL0_Msk      (_U(0xF) << CCL_LUTCTRL_INSEL0_Pos)
+#define CCL_LUTCTRL_INSEL0_Msk      (_Ul(0xF) << CCL_LUTCTRL_INSEL0_Pos)
 #define CCL_LUTCTRL_INSEL0(value)   (CCL_LUTCTRL_INSEL0_Msk & ((value) << CCL_LUTCTRL_INSEL0_Pos))
-#define   CCL_LUTCTRL_INSEL0_MASK_Val     _U(0x0)   /**< \brief (CCL_LUTCTRL) Masked input */
-#define   CCL_LUTCTRL_INSEL0_FEEDBACK_Val _U(0x1)   /**< \brief (CCL_LUTCTRL) Feedback input source */
-#define   CCL_LUTCTRL_INSEL0_LINK_Val     _U(0x2)   /**< \brief (CCL_LUTCTRL) Linked LUT input source */
-#define   CCL_LUTCTRL_INSEL0_EVENT_Val    _U(0x3)   /**< \brief (CCL_LUTCTRL) Event input source */
-#define   CCL_LUTCTRL_INSEL0_IO_Val       _U(0x4)   /**< \brief (CCL_LUTCTRL) I/O pin input source */
-#define   CCL_LUTCTRL_INSEL0_AC_Val       _U(0x5)   /**< \brief (CCL_LUTCTRL) AC input source */
-#define   CCL_LUTCTRL_INSEL0_TC_Val       _U(0x6)   /**< \brief (CCL_LUTCTRL) TC input source */
-#define   CCL_LUTCTRL_INSEL0_ALTTC_Val    _U(0x7)   /**< \brief (CCL_LUTCTRL) Alternate TC input source */
-#define   CCL_LUTCTRL_INSEL0_TCC_Val      _U(0x8)   /**< \brief (CCL_LUTCTRL) TCC input source */
-#define   CCL_LUTCTRL_INSEL0_SERCOM_Val   _U(0x9)   /**< \brief (CCL_LUTCTRL) SERCOM input source */
+#define   CCL_LUTCTRL_INSEL0_MASK_Val     _Ul(0x0)   /**< \brief (CCL_LUTCTRL) Masked input */
+#define   CCL_LUTCTRL_INSEL0_FEEDBACK_Val _Ul(0x1)   /**< \brief (CCL_LUTCTRL) Feedback input source */
+#define   CCL_LUTCTRL_INSEL0_LINK_Val     _Ul(0x2)   /**< \brief (CCL_LUTCTRL) Linked LUT input source */
+#define   CCL_LUTCTRL_INSEL0_EVENT_Val    _Ul(0x3)   /**< \brief (CCL_LUTCTRL) Event input source */
+#define   CCL_LUTCTRL_INSEL0_IO_Val       _Ul(0x4)   /**< \brief (CCL_LUTCTRL) I/O pin input source */
+#define   CCL_LUTCTRL_INSEL0_AC_Val       _Ul(0x5)   /**< \brief (CCL_LUTCTRL) AC input source */
+#define   CCL_LUTCTRL_INSEL0_TC_Val       _Ul(0x6)   /**< \brief (CCL_LUTCTRL) TC input source */
+#define   CCL_LUTCTRL_INSEL0_ALTTC_Val    _Ul(0x7)   /**< \brief (CCL_LUTCTRL) Alternate TC input source */
+#define   CCL_LUTCTRL_INSEL0_TCC_Val      _Ul(0x8)   /**< \brief (CCL_LUTCTRL) TCC input source */
+#define   CCL_LUTCTRL_INSEL0_SERCOM_Val   _Ul(0x9)   /**< \brief (CCL_LUTCTRL) SERCOM input source */
 #define CCL_LUTCTRL_INSEL0_MASK     (CCL_LUTCTRL_INSEL0_MASK_Val   << CCL_LUTCTRL_INSEL0_Pos)
 #define CCL_LUTCTRL_INSEL0_FEEDBACK (CCL_LUTCTRL_INSEL0_FEEDBACK_Val << CCL_LUTCTRL_INSEL0_Pos)
 #define CCL_LUTCTRL_INSEL0_LINK     (CCL_LUTCTRL_INSEL0_LINK_Val   << CCL_LUTCTRL_INSEL0_Pos)
@@ -155,18 +155,18 @@ typedef union {
 #define CCL_LUTCTRL_INSEL0_TCC      (CCL_LUTCTRL_INSEL0_TCC_Val    << CCL_LUTCTRL_INSEL0_Pos)
 #define CCL_LUTCTRL_INSEL0_SERCOM   (CCL_LUTCTRL_INSEL0_SERCOM_Val << CCL_LUTCTRL_INSEL0_Pos)
 #define CCL_LUTCTRL_INSEL1_Pos      12           /**< \brief (CCL_LUTCTRL) Input Selection 1 */
-#define CCL_LUTCTRL_INSEL1_Msk      (_U(0xF) << CCL_LUTCTRL_INSEL1_Pos)
+#define CCL_LUTCTRL_INSEL1_Msk      (_Ul(0xF) << CCL_LUTCTRL_INSEL1_Pos)
 #define CCL_LUTCTRL_INSEL1(value)   (CCL_LUTCTRL_INSEL1_Msk & ((value) << CCL_LUTCTRL_INSEL1_Pos))
-#define   CCL_LUTCTRL_INSEL1_MASK_Val     _U(0x0)   /**< \brief (CCL_LUTCTRL) Masked input */
-#define   CCL_LUTCTRL_INSEL1_FEEDBACK_Val _U(0x1)   /**< \brief (CCL_LUTCTRL) Feedback input source */
-#define   CCL_LUTCTRL_INSEL1_LINK_Val     _U(0x2)   /**< \brief (CCL_LUTCTRL) Linked LUT input source */
-#define   CCL_LUTCTRL_INSEL1_EVENT_Val    _U(0x3)   /**< \brief (CCL_LUTCTRL) Event input source */
-#define   CCL_LUTCTRL_INSEL1_IO_Val       _U(0x4)   /**< \brief (CCL_LUTCTRL) I/O pin input source */
-#define   CCL_LUTCTRL_INSEL1_AC_Val       _U(0x5)   /**< \brief (CCL_LUTCTRL) AC input source */
-#define   CCL_LUTCTRL_INSEL1_TC_Val       _U(0x6)   /**< \brief (CCL_LUTCTRL) TC input source */
-#define   CCL_LUTCTRL_INSEL1_ALTTC_Val    _U(0x7)   /**< \brief (CCL_LUTCTRL) Alternate TC input source */
-#define   CCL_LUTCTRL_INSEL1_TCC_Val      _U(0x8)   /**< \brief (CCL_LUTCTRL) TCC input source */
-#define   CCL_LUTCTRL_INSEL1_SERCOM_Val   _U(0x9)   /**< \brief (CCL_LUTCTRL) SERCOM input source */
+#define   CCL_LUTCTRL_INSEL1_MASK_Val     _Ul(0x0)   /**< \brief (CCL_LUTCTRL) Masked input */
+#define   CCL_LUTCTRL_INSEL1_FEEDBACK_Val _Ul(0x1)   /**< \brief (CCL_LUTCTRL) Feedback input source */
+#define   CCL_LUTCTRL_INSEL1_LINK_Val     _Ul(0x2)   /**< \brief (CCL_LUTCTRL) Linked LUT input source */
+#define   CCL_LUTCTRL_INSEL1_EVENT_Val    _Ul(0x3)   /**< \brief (CCL_LUTCTRL) Event input source */
+#define   CCL_LUTCTRL_INSEL1_IO_Val       _Ul(0x4)   /**< \brief (CCL_LUTCTRL) I/O pin input source */
+#define   CCL_LUTCTRL_INSEL1_AC_Val       _Ul(0x5)   /**< \brief (CCL_LUTCTRL) AC input source */
+#define   CCL_LUTCTRL_INSEL1_TC_Val       _Ul(0x6)   /**< \brief (CCL_LUTCTRL) TC input source */
+#define   CCL_LUTCTRL_INSEL1_ALTTC_Val    _Ul(0x7)   /**< \brief (CCL_LUTCTRL) Alternate TC input source */
+#define   CCL_LUTCTRL_INSEL1_TCC_Val      _Ul(0x8)   /**< \brief (CCL_LUTCTRL) TCC input source */
+#define   CCL_LUTCTRL_INSEL1_SERCOM_Val   _Ul(0x9)   /**< \brief (CCL_LUTCTRL) SERCOM input source */
 #define CCL_LUTCTRL_INSEL1_MASK     (CCL_LUTCTRL_INSEL1_MASK_Val   << CCL_LUTCTRL_INSEL1_Pos)
 #define CCL_LUTCTRL_INSEL1_FEEDBACK (CCL_LUTCTRL_INSEL1_FEEDBACK_Val << CCL_LUTCTRL_INSEL1_Pos)
 #define CCL_LUTCTRL_INSEL1_LINK     (CCL_LUTCTRL_INSEL1_LINK_Val   << CCL_LUTCTRL_INSEL1_Pos)
@@ -178,18 +178,18 @@ typedef union {
 #define CCL_LUTCTRL_INSEL1_TCC      (CCL_LUTCTRL_INSEL1_TCC_Val    << CCL_LUTCTRL_INSEL1_Pos)
 #define CCL_LUTCTRL_INSEL1_SERCOM   (CCL_LUTCTRL_INSEL1_SERCOM_Val << CCL_LUTCTRL_INSEL1_Pos)
 #define CCL_LUTCTRL_INSEL2_Pos      16           /**< \brief (CCL_LUTCTRL) Input Selection 2 */
-#define CCL_LUTCTRL_INSEL2_Msk      (_U(0xF) << CCL_LUTCTRL_INSEL2_Pos)
+#define CCL_LUTCTRL_INSEL2_Msk      (_Ul(0xF) << CCL_LUTCTRL_INSEL2_Pos)
 #define CCL_LUTCTRL_INSEL2(value)   (CCL_LUTCTRL_INSEL2_Msk & ((value) << CCL_LUTCTRL_INSEL2_Pos))
-#define   CCL_LUTCTRL_INSEL2_MASK_Val     _U(0x0)   /**< \brief (CCL_LUTCTRL) Masked input */
-#define   CCL_LUTCTRL_INSEL2_FEEDBACK_Val _U(0x1)   /**< \brief (CCL_LUTCTRL) Feedback input source */
-#define   CCL_LUTCTRL_INSEL2_LINK_Val     _U(0x2)   /**< \brief (CCL_LUTCTRL) Linked LUT input source */
-#define   CCL_LUTCTRL_INSEL2_EVENT_Val    _U(0x3)   /**< \brief (CCL_LUTCTRL) Event input source */
-#define   CCL_LUTCTRL_INSEL2_IO_Val       _U(0x4)   /**< \brief (CCL_LUTCTRL) I/O pin input source */
-#define   CCL_LUTCTRL_INSEL2_AC_Val       _U(0x5)   /**< \brief (CCL_LUTCTRL) AC input source */
-#define   CCL_LUTCTRL_INSEL2_TC_Val       _U(0x6)   /**< \brief (CCL_LUTCTRL) TC input source */
-#define   CCL_LUTCTRL_INSEL2_ALTTC_Val    _U(0x7)   /**< \brief (CCL_LUTCTRL) Alternate TC input source */
-#define   CCL_LUTCTRL_INSEL2_TCC_Val      _U(0x8)   /**< \brief (CCL_LUTCTRL) TCC input source */
-#define   CCL_LUTCTRL_INSEL2_SERCOM_Val   _U(0x9)   /**< \brief (CCL_LUTCTRL) SERCOM input source */
+#define   CCL_LUTCTRL_INSEL2_MASK_Val     _Ul(0x0)   /**< \brief (CCL_LUTCTRL) Masked input */
+#define   CCL_LUTCTRL_INSEL2_FEEDBACK_Val _Ul(0x1)   /**< \brief (CCL_LUTCTRL) Feedback input source */
+#define   CCL_LUTCTRL_INSEL2_LINK_Val     _Ul(0x2)   /**< \brief (CCL_LUTCTRL) Linked LUT input source */
+#define   CCL_LUTCTRL_INSEL2_EVENT_Val    _Ul(0x3)   /**< \brief (CCL_LUTCTRL) Event input source */
+#define   CCL_LUTCTRL_INSEL2_IO_Val       _Ul(0x4)   /**< \brief (CCL_LUTCTRL) I/O pin input source */
+#define   CCL_LUTCTRL_INSEL2_AC_Val       _Ul(0x5)   /**< \brief (CCL_LUTCTRL) AC input source */
+#define   CCL_LUTCTRL_INSEL2_TC_Val       _Ul(0x6)   /**< \brief (CCL_LUTCTRL) TC input source */
+#define   CCL_LUTCTRL_INSEL2_ALTTC_Val    _Ul(0x7)   /**< \brief (CCL_LUTCTRL) Alternate TC input source */
+#define   CCL_LUTCTRL_INSEL2_TCC_Val      _Ul(0x8)   /**< \brief (CCL_LUTCTRL) TCC input source */
+#define   CCL_LUTCTRL_INSEL2_SERCOM_Val   _Ul(0x9)   /**< \brief (CCL_LUTCTRL) SERCOM input source */
 #define CCL_LUTCTRL_INSEL2_MASK     (CCL_LUTCTRL_INSEL2_MASK_Val   << CCL_LUTCTRL_INSEL2_Pos)
 #define CCL_LUTCTRL_INSEL2_FEEDBACK (CCL_LUTCTRL_INSEL2_FEEDBACK_Val << CCL_LUTCTRL_INSEL2_Pos)
 #define CCL_LUTCTRL_INSEL2_LINK     (CCL_LUTCTRL_INSEL2_LINK_Val   << CCL_LUTCTRL_INSEL2_Pos)
@@ -201,15 +201,15 @@ typedef union {
 #define CCL_LUTCTRL_INSEL2_TCC      (CCL_LUTCTRL_INSEL2_TCC_Val    << CCL_LUTCTRL_INSEL2_Pos)
 #define CCL_LUTCTRL_INSEL2_SERCOM   (CCL_LUTCTRL_INSEL2_SERCOM_Val << CCL_LUTCTRL_INSEL2_Pos)
 #define CCL_LUTCTRL_INVEI_Pos       20           /**< \brief (CCL_LUTCTRL) Inverted Event Input Enable */
-#define CCL_LUTCTRL_INVEI           (_U(0x1) << CCL_LUTCTRL_INVEI_Pos)
+#define CCL_LUTCTRL_INVEI           (_Ul(0x1) << CCL_LUTCTRL_INVEI_Pos)
 #define CCL_LUTCTRL_LUTEI_Pos       21           /**< \brief (CCL_LUTCTRL) LUT Event Input Enable */
-#define CCL_LUTCTRL_LUTEI           (_U(0x1) << CCL_LUTCTRL_LUTEI_Pos)
+#define CCL_LUTCTRL_LUTEI           (_Ul(0x1) << CCL_LUTCTRL_LUTEI_Pos)
 #define CCL_LUTCTRL_LUTEO_Pos       22           /**< \brief (CCL_LUTCTRL) LUT Event Output Enable */
-#define CCL_LUTCTRL_LUTEO           (_U(0x1) << CCL_LUTCTRL_LUTEO_Pos)
+#define CCL_LUTCTRL_LUTEO           (_Ul(0x1) << CCL_LUTCTRL_LUTEO_Pos)
 #define CCL_LUTCTRL_TRUTH_Pos       24           /**< \brief (CCL_LUTCTRL) Truth Value */
-#define CCL_LUTCTRL_TRUTH_Msk       (_U(0xFF) << CCL_LUTCTRL_TRUTH_Pos)
+#define CCL_LUTCTRL_TRUTH_Msk       (_Ul(0xFF) << CCL_LUTCTRL_TRUTH_Pos)
 #define CCL_LUTCTRL_TRUTH(value)    (CCL_LUTCTRL_TRUTH_Msk & ((value) << CCL_LUTCTRL_TRUTH_Pos))
-#define CCL_LUTCTRL_MASK            _U(0xFF7FFFB2) /**< \brief (CCL_LUTCTRL) MASK Register */
+#define CCL_LUTCTRL_MASK            _Ul(0xFF7FFFB2) /**< \brief (CCL_LUTCTRL) MASK Register */
 
 /** \brief CCL hardware registers */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))

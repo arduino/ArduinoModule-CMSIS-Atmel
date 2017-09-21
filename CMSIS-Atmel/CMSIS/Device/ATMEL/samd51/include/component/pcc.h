@@ -60,28 +60,28 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define PCC_MR_OFFSET               0x00         /**< \brief (PCC_MR offset) Mode Register */
-#define PCC_MR_RESETVALUE           _U(0x00000000) /**< \brief (PCC_MR reset_value) Mode Register */
+#define PCC_MR_RESETVALUE           _Ul(0x00000000) /**< \brief (PCC_MR reset_value) Mode Register */
 
 #define PCC_MR_PCEN_Pos             0            /**< \brief (PCC_MR) Parallel Capture Enable */
-#define PCC_MR_PCEN                 (_U(0x1) << PCC_MR_PCEN_Pos)
+#define PCC_MR_PCEN                 (_Ul(0x1) << PCC_MR_PCEN_Pos)
 #define PCC_MR_DSIZE_Pos            4            /**< \brief (PCC_MR) Data size */
-#define PCC_MR_DSIZE_Msk            (_U(0x3) << PCC_MR_DSIZE_Pos)
+#define PCC_MR_DSIZE_Msk            (_Ul(0x3) << PCC_MR_DSIZE_Pos)
 #define PCC_MR_DSIZE(value)         (PCC_MR_DSIZE_Msk & ((value) << PCC_MR_DSIZE_Pos))
 #define PCC_MR_SCALE_Pos            8            /**< \brief (PCC_MR) Scale data */
-#define PCC_MR_SCALE                (_U(0x1) << PCC_MR_SCALE_Pos)
+#define PCC_MR_SCALE                (_Ul(0x1) << PCC_MR_SCALE_Pos)
 #define PCC_MR_ALWYS_Pos            9            /**< \brief (PCC_MR) Always Sampling */
-#define PCC_MR_ALWYS                (_U(0x1) << PCC_MR_ALWYS_Pos)
+#define PCC_MR_ALWYS                (_Ul(0x1) << PCC_MR_ALWYS_Pos)
 #define PCC_MR_HALFS_Pos            10           /**< \brief (PCC_MR) Half Sampling */
-#define PCC_MR_HALFS                (_U(0x1) << PCC_MR_HALFS_Pos)
+#define PCC_MR_HALFS                (_Ul(0x1) << PCC_MR_HALFS_Pos)
 #define PCC_MR_FRSTS_Pos            11           /**< \brief (PCC_MR) First sample */
-#define PCC_MR_FRSTS                (_U(0x1) << PCC_MR_FRSTS_Pos)
+#define PCC_MR_FRSTS                (_Ul(0x1) << PCC_MR_FRSTS_Pos)
 #define PCC_MR_ISIZE_Pos            16           /**< \brief (PCC_MR) Input Data Size */
-#define PCC_MR_ISIZE_Msk            (_U(0x7) << PCC_MR_ISIZE_Pos)
+#define PCC_MR_ISIZE_Msk            (_Ul(0x7) << PCC_MR_ISIZE_Pos)
 #define PCC_MR_ISIZE(value)         (PCC_MR_ISIZE_Msk & ((value) << PCC_MR_ISIZE_Pos))
 #define PCC_MR_CID_Pos              30           /**< \brief (PCC_MR) Clear If Disabled */
-#define PCC_MR_CID_Msk              (_U(0x3) << PCC_MR_CID_Pos)
+#define PCC_MR_CID_Msk              (_Ul(0x3) << PCC_MR_CID_Pos)
 #define PCC_MR_CID(value)           (PCC_MR_CID_Msk & ((value) << PCC_MR_CID_Pos))
-#define PCC_MR_MASK                 _U(0xC0070F31) /**< \brief (PCC_MR) MASK Register */
+#define PCC_MR_MASK                 _Ul(0xC0070F31) /**< \brief (PCC_MR) MASK Register */
 
 /* -------- PCC_IER : (PCC Offset: 0x04) ( /W 32) Interrupt Enable Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -96,13 +96,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define PCC_IER_OFFSET              0x04         /**< \brief (PCC_IER offset) Interrupt Enable Register */
-#define PCC_IER_RESETVALUE          _U(0x00000000) /**< \brief (PCC_IER reset_value) Interrupt Enable Register */
+#define PCC_IER_RESETVALUE          _Ul(0x00000000) /**< \brief (PCC_IER reset_value) Interrupt Enable Register */
 
 #define PCC_IER_DRDY_Pos            0            /**< \brief (PCC_IER) Data Ready Interrupt Enable */
-#define PCC_IER_DRDY                (_U(0x1) << PCC_IER_DRDY_Pos)
+#define PCC_IER_DRDY                (_Ul(0x1) << PCC_IER_DRDY_Pos)
 #define PCC_IER_OVRE_Pos            1            /**< \brief (PCC_IER) Overrun Error Interrupt Enable */
-#define PCC_IER_OVRE                (_U(0x1) << PCC_IER_OVRE_Pos)
-#define PCC_IER_MASK                _U(0x00000003) /**< \brief (PCC_IER) MASK Register */
+#define PCC_IER_OVRE                (_Ul(0x1) << PCC_IER_OVRE_Pos)
+#define PCC_IER_MASK                _Ul(0x00000003) /**< \brief (PCC_IER) MASK Register */
 
 /* -------- PCC_IDR : (PCC Offset: 0x08) ( /W 32) Interrupt Disable Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -117,13 +117,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define PCC_IDR_OFFSET              0x08         /**< \brief (PCC_IDR offset) Interrupt Disable Register */
-#define PCC_IDR_RESETVALUE          _U(0x00000000) /**< \brief (PCC_IDR reset_value) Interrupt Disable Register */
+#define PCC_IDR_RESETVALUE          _Ul(0x00000000) /**< \brief (PCC_IDR reset_value) Interrupt Disable Register */
 
 #define PCC_IDR_DRDY_Pos            0            /**< \brief (PCC_IDR) Data Ready Interrupt Disable */
-#define PCC_IDR_DRDY                (_U(0x1) << PCC_IDR_DRDY_Pos)
+#define PCC_IDR_DRDY                (_Ul(0x1) << PCC_IDR_DRDY_Pos)
 #define PCC_IDR_OVRE_Pos            1            /**< \brief (PCC_IDR) Overrun Error Interrupt Disable */
-#define PCC_IDR_OVRE                (_U(0x1) << PCC_IDR_OVRE_Pos)
-#define PCC_IDR_MASK                _U(0x00000003) /**< \brief (PCC_IDR) MASK Register */
+#define PCC_IDR_OVRE                (_Ul(0x1) << PCC_IDR_OVRE_Pos)
+#define PCC_IDR_MASK                _Ul(0x00000003) /**< \brief (PCC_IDR) MASK Register */
 
 /* -------- PCC_IMR : (PCC Offset: 0x0C) (R/  32) Interrupt Mask Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -138,13 +138,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define PCC_IMR_OFFSET              0x0C         /**< \brief (PCC_IMR offset) Interrupt Mask Register */
-#define PCC_IMR_RESETVALUE          _U(0x00000000) /**< \brief (PCC_IMR reset_value) Interrupt Mask Register */
+#define PCC_IMR_RESETVALUE          _Ul(0x00000000) /**< \brief (PCC_IMR reset_value) Interrupt Mask Register */
 
 #define PCC_IMR_DRDY_Pos            0            /**< \brief (PCC_IMR) Data Ready Interrupt Mask */
-#define PCC_IMR_DRDY                (_U(0x1) << PCC_IMR_DRDY_Pos)
+#define PCC_IMR_DRDY                (_Ul(0x1) << PCC_IMR_DRDY_Pos)
 #define PCC_IMR_OVRE_Pos            1            /**< \brief (PCC_IMR) Overrun Error Interrupt Mask */
-#define PCC_IMR_OVRE                (_U(0x1) << PCC_IMR_OVRE_Pos)
-#define PCC_IMR_MASK                _U(0x00000003) /**< \brief (PCC_IMR) MASK Register */
+#define PCC_IMR_OVRE                (_Ul(0x1) << PCC_IMR_OVRE_Pos)
+#define PCC_IMR_MASK                _Ul(0x00000003) /**< \brief (PCC_IMR) MASK Register */
 
 /* -------- PCC_ISR : (PCC Offset: 0x10) (R/  32) Interrupt Status Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -159,13 +159,13 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define PCC_ISR_OFFSET              0x10         /**< \brief (PCC_ISR offset) Interrupt Status Register */
-#define PCC_ISR_RESETVALUE          _U(0x00000000) /**< \brief (PCC_ISR reset_value) Interrupt Status Register */
+#define PCC_ISR_RESETVALUE          _Ul(0x00000000) /**< \brief (PCC_ISR reset_value) Interrupt Status Register */
 
 #define PCC_ISR_DRDY_Pos            0            /**< \brief (PCC_ISR) Data Ready Interrupt Status */
-#define PCC_ISR_DRDY                (_U(0x1) << PCC_ISR_DRDY_Pos)
+#define PCC_ISR_DRDY                (_Ul(0x1) << PCC_ISR_DRDY_Pos)
 #define PCC_ISR_OVRE_Pos            1            /**< \brief (PCC_ISR) Overrun Error Interrupt Status */
-#define PCC_ISR_OVRE                (_U(0x1) << PCC_ISR_OVRE_Pos)
-#define PCC_ISR_MASK                _U(0x00000003) /**< \brief (PCC_ISR) MASK Register */
+#define PCC_ISR_OVRE                (_Ul(0x1) << PCC_ISR_OVRE_Pos)
+#define PCC_ISR_MASK                _Ul(0x00000003) /**< \brief (PCC_ISR) MASK Register */
 
 /* -------- PCC_RHR : (PCC Offset: 0x14) (R/  32) Reception Holding Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -178,12 +178,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define PCC_RHR_OFFSET              0x14         /**< \brief (PCC_RHR offset) Reception Holding Register */
-#define PCC_RHR_RESETVALUE          _U(0x00000000) /**< \brief (PCC_RHR reset_value) Reception Holding Register */
+#define PCC_RHR_RESETVALUE          _Ul(0x00000000) /**< \brief (PCC_RHR reset_value) Reception Holding Register */
 
 #define PCC_RHR_RDATA_Pos           0            /**< \brief (PCC_RHR) Reception Data */
-#define PCC_RHR_RDATA_Msk           (_U(0xFFFFFFFF) << PCC_RHR_RDATA_Pos)
+#define PCC_RHR_RDATA_Msk           (_Ul(0xFFFFFFFF) << PCC_RHR_RDATA_Pos)
 #define PCC_RHR_RDATA(value)        (PCC_RHR_RDATA_Msk & ((value) << PCC_RHR_RDATA_Pos))
-#define PCC_RHR_MASK                _U(0xFFFFFFFF) /**< \brief (PCC_RHR) MASK Register */
+#define PCC_RHR_MASK                _Ul(0xFFFFFFFF) /**< \brief (PCC_RHR) MASK Register */
 
 /* -------- PCC_WPMR : (PCC Offset: 0xE0) (R/W 32) Write Protection Mode Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -198,14 +198,14 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define PCC_WPMR_OFFSET             0xE0         /**< \brief (PCC_WPMR offset) Write Protection Mode Register */
-#define PCC_WPMR_RESETVALUE         _U(0x00000000) /**< \brief (PCC_WPMR reset_value) Write Protection Mode Register */
+#define PCC_WPMR_RESETVALUE         _Ul(0x00000000) /**< \brief (PCC_WPMR reset_value) Write Protection Mode Register */
 
 #define PCC_WPMR_WPEN_Pos           0            /**< \brief (PCC_WPMR) Write Protection Enable */
-#define PCC_WPMR_WPEN               (_U(0x1) << PCC_WPMR_WPEN_Pos)
+#define PCC_WPMR_WPEN               (_Ul(0x1) << PCC_WPMR_WPEN_Pos)
 #define PCC_WPMR_WPKEY_Pos          8            /**< \brief (PCC_WPMR) Write Protection Key */
-#define PCC_WPMR_WPKEY_Msk          (_U(0xFFFFFF) << PCC_WPMR_WPKEY_Pos)
+#define PCC_WPMR_WPKEY_Msk          (_Ul(0xFFFFFF) << PCC_WPMR_WPKEY_Pos)
 #define PCC_WPMR_WPKEY(value)       (PCC_WPMR_WPKEY_Msk & ((value) << PCC_WPMR_WPKEY_Pos))
-#define PCC_WPMR_MASK               _U(0xFFFFFF01) /**< \brief (PCC_WPMR) MASK Register */
+#define PCC_WPMR_MASK               _Ul(0xFFFFFF01) /**< \brief (PCC_WPMR) MASK Register */
 
 /* -------- PCC_WPSR : (PCC Offset: 0xE4) (R/  32) Write Protection Status Register -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -221,14 +221,14 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define PCC_WPSR_OFFSET             0xE4         /**< \brief (PCC_WPSR offset) Write Protection Status Register */
-#define PCC_WPSR_RESETVALUE         _U(0x00000000) /**< \brief (PCC_WPSR reset_value) Write Protection Status Register */
+#define PCC_WPSR_RESETVALUE         _Ul(0x00000000) /**< \brief (PCC_WPSR reset_value) Write Protection Status Register */
 
 #define PCC_WPSR_WPVS_Pos           0            /**< \brief (PCC_WPSR) Write Protection Violation Source */
-#define PCC_WPSR_WPVS               (_U(0x1) << PCC_WPSR_WPVS_Pos)
+#define PCC_WPSR_WPVS               (_Ul(0x1) << PCC_WPSR_WPVS_Pos)
 #define PCC_WPSR_WPVSRC_Pos         8            /**< \brief (PCC_WPSR) Write Protection Violation Status */
-#define PCC_WPSR_WPVSRC_Msk         (_U(0xFFFF) << PCC_WPSR_WPVSRC_Pos)
+#define PCC_WPSR_WPVSRC_Msk         (_Ul(0xFFFF) << PCC_WPSR_WPVSRC_Pos)
 #define PCC_WPSR_WPVSRC(value)      (PCC_WPSR_WPVSRC_Msk & ((value) << PCC_WPSR_WPVSRC_Pos))
-#define PCC_WPSR_MASK               _U(0x00FFFF01) /**< \brief (PCC_WPSR) MASK Register */
+#define PCC_WPSR_MASK               _Ul(0x00FFFF01) /**< \brief (PCC_WPSR) MASK Register */
 
 /** \brief PCC hardware registers */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))

@@ -46,9 +46,9 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define HMATRIXB_PRAS_OFFSET        0x080        /**< \brief (HMATRIXB_PRAS offset) Priority A for Slave */
-#define HMATRIXB_PRAS_RESETVALUE    _U(0x00000000) /**< \brief (HMATRIXB_PRAS reset_value) Priority A for Slave */
+#define HMATRIXB_PRAS_RESETVALUE    _Ul(0x00000000) /**< \brief (HMATRIXB_PRAS reset_value) Priority A for Slave */
 
-#define HMATRIXB_PRAS_MASK          _U(0x00000000) /**< \brief (HMATRIXB_PRAS) MASK Register */
+#define HMATRIXB_PRAS_MASK          _Ul(0x00000000) /**< \brief (HMATRIXB_PRAS) MASK Register */
 
 /* -------- HMATRIXB_PRBS : (HMATRIXB Offset: 0x084) (R/W 32) PRS Priority B for Slave -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -58,9 +58,9 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define HMATRIXB_PRBS_OFFSET        0x084        /**< \brief (HMATRIXB_PRBS offset) Priority B for Slave */
-#define HMATRIXB_PRBS_RESETVALUE    _U(0x00000000) /**< \brief (HMATRIXB_PRBS reset_value) Priority B for Slave */
+#define HMATRIXB_PRBS_RESETVALUE    _Ul(0x00000000) /**< \brief (HMATRIXB_PRBS reset_value) Priority B for Slave */
 
-#define HMATRIXB_PRBS_MASK          _U(0x00000000) /**< \brief (HMATRIXB_PRBS) MASK Register */
+#define HMATRIXB_PRBS_MASK          _Ul(0x00000000) /**< \brief (HMATRIXB_PRBS) MASK Register */
 
 /** \brief HmatrixbPrs hardware registers */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
