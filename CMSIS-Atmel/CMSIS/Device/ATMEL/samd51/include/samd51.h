@@ -34,6 +34,8 @@
  * \brief SAMD51 CMSIS Definitions.
  */
 
+#include <ctype.h>
+
 #if   defined(__SAMD51G18A__) || defined(__ATSAMD51G18A__)
   #include "samd51g18a.h"
 #elif defined(__SAMD51G19A__) || defined(__ATSAMD51G19A__)
