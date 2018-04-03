@@ -25,7 +25,7 @@ SHELL = /bin/sh
 ROOT_PATH := .
 
 PACKAGE_NAME := CMSIS-Atmel
-PACKAGE_VERSION := 1.1.0
+PACKAGE_VERSION := 1.2.0
 
 # -----------------------------------------------------------------------------
 # packaging specific
