@@ -527,7 +527,7 @@ void SDHC0_Handler               ( void );
 #define __DEBUG_LVL            3         /*!< Full debug plus DWT data matching */
 #define __FPU_PRESENT          1         /*!< FPU present or not */
 #define __MPU_PRESENT          1         /*!< MPU present or not */
-#define __NVIC_PRIO_BITS       2         /*!< Number of bits used for Priority Levels */
+#define __NVIC_PRIO_BITS       3         /*!< Number of bits used for Priority Levels */
 #define __TRACE_LVL            2         /*!< Full trace: ITM, DWT triggers and counters, ETM */
 #define __VTOR_PRESENT         1         /*!< VTOR present or not */
 #define __Vendor_SysTickConfig 0         /*!< Set to 1 if different SysTick Config is used */
