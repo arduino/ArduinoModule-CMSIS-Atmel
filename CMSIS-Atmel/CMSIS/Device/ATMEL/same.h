@@ -29,6 +29,7 @@
 #ifndef _SAME_INCLUDED_
 #define _SAME_INCLUDED_
 
+/* SAME70 series */
 #if defined (__SAME70J19__)
 #include "same70/include/same70.h"
 #elif defined (__SAME70J20__)
@@ -47,6 +48,22 @@
 #include "same70/include/same70.h"
 #elif defined (__SAME70Q21__)
 #include "same70/include/same70.h"
+
+/* SAME51 series */
+#elif defined(__SAME51G18A__)
+#include "same51/include/same51g18a.h"
+#elif defined(__SAME51G19A__)
+#include "same51/include/same51g19a.h"
+#elif defined(__SAME51J18A__)
+#include "same51/include/same51j18a.h"
+#elif defined(__SAME51J19A__)
+#include "same51/include/same51j19a.h"
+#elif defined(__SAME51J20A__)
+#include "same51/include/same51j20a.h"
+#elif defined(__SAME51N19A__)
+#include "same51/include/same51n19a.h"
+#elif defined(__SAME51N20A__)
+#include "same51/include/same51n20a.h"
 #endif
 
 #endif /* _SAME_INCLUDED_ */
