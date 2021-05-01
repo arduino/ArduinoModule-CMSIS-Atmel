@@ -1,0 +1,16 @@
+{
+  "name": "framework-cmsis-atmel",
+  "version": "1.2.1",
+  "description": "Atmel Smart ARM devices CMSIS module",
+  "keywords": [
+    "framework",
+    "arm",
+    "microchip",
+    "samd"
+  ],
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arduino/ArduinoModule-CMSIS-Atmel"
+  }
+}
